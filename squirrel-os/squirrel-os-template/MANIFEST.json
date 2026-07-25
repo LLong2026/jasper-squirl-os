@@ -1,0 +1,48 @@
+{
+  "template_name": "Squirrel OS",
+  "version": "1.0.0",
+  "created": "2026-07-19",
+  "author": "Gabriel (Archangel AI)",
+  "description": "AI Self-Healing Orchestration Template — Jasper Hypervisor + Amelia Aegis Healing System",
+  "components": {
+    "entities": [
+      "AegisAnomaly", "AegisPlaybook", "AegisHealingEvent",
+      "SystemHealth", "SystemHeartbeat",
+      "OrchestratorAgent", "OrchestratorNode", "OrchestratorTask",
+      "Pattern", "Insight", "NeuralNode", "LearningMetric",
+      "PredictiveAlert", "SelfImprovementProposal", "RemediationSweep"
+    ],
+    "functions": [
+      "healthCheck", "systemMetrics", "ameliaHeartbeat", "jasperRemediation"
+    ],
+    "workflows": [
+      "Squirrel OS Heartbeat Monitor",
+      "Squirrel OS Daily Sweep",
+      "Squirrel OS Anomaly Auto-Response"
+    ],
+    "skills": [
+      "heartbeat-check", "full-system-sweep", "anomaly-response", "pattern-learning"
+    ],
+    "rules": ["squirrel_os_policy.md"],
+    "seed_data": {
+      "playbooks": 10,
+      "agents": 2,
+      "nodes": 2
+    }
+  },
+  "anomaly_types_covered": [
+    "prompt_drift", "cpu_spike", "latency_spike", "token_overrun",
+    "node_orphan", "agent_overload", "export_pipeline_stall",
+    "heartbeat_miss", "quantum_vulnerability_detected", "unknown"
+  ],
+  "deployment_steps": [
+    "1. Create 15 entities (see entities/ directory)",
+    "2. Deploy 4 backend functions (see functions/ directory)",
+    "3. Seed 10 AegisPlaybooks + 2 agents + 2 nodes (see seed-data/)",
+    "4. Copy rules to .agents/rules/squirrel_os_policy.md",
+    "5. Copy skills to .agents/skills/",
+    "6. Create 3 workflows (see workflows/ directory)",
+    "7. Verify: call healthCheck, ameliaHeartbeat, systemMetrics"
+  ],
+  "patent_pending": "U.S. Patent Application No. 19/693,343 (ISO20022 Universal Bridge)"
+}

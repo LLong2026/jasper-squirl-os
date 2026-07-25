@@ -1,0 +1,102 @@
+{
+  "properties": {
+    "action_taken": {
+      "type": "string"
+    },
+    "actions": {
+      "items": {
+        "properties": {
+          "action": {
+            "type": "string"
+          },
+          "duration_ms": {
+            "type": "number"
+          },
+          "fallback": {
+            "type": "string"
+          },
+          "message": {
+            "type": "string"
+          },
+          "success": {
+            "type": "boolean"
+          },
+          "timestamp": {
+            "type": "number"
+          }
+        },
+        "type": "object"
+      },
+      "type": "array"
+    },
+    "agent_id": {
+      "type": "string"
+    },
+    "anomaly_id": {
+      "type": "string"
+    },
+    "completed_at": {
+      "type": "number"
+    },
+    "context_snapshot": {
+      "type": "object"
+    },
+    "duration_seconds": {
+      "type": "number"
+    },
+    "event_id": {
+      "type": "string"
+    },
+    "execution_time_ms": {
+      "type": "number"
+    },
+    "learning_extracted": {
+      "type": "boolean"
+    },
+    "node_id": {
+      "type": "string"
+    },
+    "outcome": {
+      "type": "string"
+    },
+    "playbook_id": {
+      "type": "string"
+    },
+    "playbook_name": {
+      "type": "string"
+    },
+    "result": {
+      "enum": [
+        "success",
+        "partial",
+        "failed"
+      ],
+      "type": "string"
+    },
+    "result_summary": {
+      "type": "string"
+    },
+    "started_at": {
+      "type": "number"
+    },
+    "steps_executed": {
+      "items": {
+        "type": "string"
+      },
+      "type": "array"
+    },
+    "timestamp": {
+      "type": "string"
+    },
+    "trigger": {
+      "enum": [
+        "automatic",
+        "manual"
+      ],
+      "type": "string"
+    }
+  },
+  "type": "object",
+  "required": [],
+  "name": "AegisHealingEvent"
+}

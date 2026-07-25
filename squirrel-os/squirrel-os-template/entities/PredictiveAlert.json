@@ -1,0 +1,48 @@
+{
+  "properties": {
+    "affected_components": {
+      "items": {
+        "type": "string"
+      },
+      "type": "array"
+    },
+    "alert_type": {
+      "type": "string"
+    },
+    "created_at": {
+      "type": "string"
+    },
+    "predicted_issue": {
+      "type": "string"
+    },
+    "probability": {
+      "type": "number"
+    },
+    "recommended_action": {
+      "type": "string"
+    },
+    "resolved_at": {
+      "type": "string"
+    },
+    "severity": {
+      "enum": [
+        "low",
+        "medium",
+        "high",
+        "critical"
+      ],
+      "type": "string"
+    },
+    "status": {
+      "enum": [
+        "pending",
+        "acknowledged",
+        "acted_on"
+      ],
+      "type": "string"
+    }
+  },
+  "type": "object",
+  "required": [],
+  "name": "PredictiveAlert"
+}

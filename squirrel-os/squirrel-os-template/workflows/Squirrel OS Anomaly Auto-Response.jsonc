@@ -1,0 +1,37 @@
+{
+  "name": "Squirrel OS Anomaly Auto-Response",
+  "description": "When a new AegisAnomaly is created, automatically triggers Jasper's Detect-Isolate-Heal protocol by running a system health check and collecting metrics for diagnosis.",
+  "trigger": {
+    "condition": "${ .trigger.data.status == \"detected\" }",
+    "config": {
+      "trigger_type": "entity",
+      "events": [
+        "create"
+      ],
+      "entity_name": "AegisAnomaly"
+    }
+  },
+  "definition": {
+    "document": {
+      "dsl": "1.0.0",
+      "name": "squirrel_os_anomaly_response",
+      "namespace": "base44",
+      "version": "1.0"
+    },
+    "do": [
+      {
+        "diagnose_anomaly": {
+          "call": "invoke_superagent_step",
+          "then": "end",
+          "with": {
+            "message": "A new AegisAnomaly was detected. Execute the Detect-Isolate-Heal protocol:\n\n1. DETECT: Read the anomaly details (type: ${ .trigger.data.anomaly_type }, severity: ${ .trigger.data.severity }, title: ${ .trigger.data.title }).\n2. ISOLATE: Search for a matching AegisPlaybook by anomaly_type. If found, check if the anomaly's confidence_score meets the playbook's confidence_threshold. If no playbook matches, create a SelfImprovementProposal and escalate.\n3. HEAL: If a playbook matches and confidence is sufficient, update the anomaly status to 'healing', execute the playbook's healing steps, create an AegisHealingEvent record with the full audit trail, then update the anomaly status to 'resolved'. If confidence is too low, create a PredictiveAlert for human review.\n4. LEARN: After healing, trigger pattern-learning \u2014 search for an existing Pattern matching this anomaly type, update or create it, and update LearningMetrics.\n\nFollow all Squirrel OS operating rules. NEVER auto-heal critical-severity anomalies in fintech transaction flows without human acknowledgment."
+          },
+          "x-base44": {
+            "description": "Detect-Isolate-Heal protocol",
+            "title": "Anomaly Auto-Response"
+          }
+        }
+      }
+    ]
+  }
+}

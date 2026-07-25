@@ -1,0 +1,42 @@
+{
+  "properties": {
+    "agent_id": {
+      "type": "string"
+    },
+    "cpu_usage": {
+      "type": "number"
+    },
+    "error_count": {
+      "type": "number"
+    },
+    "last_healthy_at": {
+      "type": "string"
+    },
+    "latency_ms": {
+      "type": "number"
+    },
+    "memory_usage": {
+      "type": "number"
+    },
+    "node_id": {
+      "type": "string"
+    },
+    "status": {
+      "enum": [
+        "alive",
+        "degraded",
+        "dead"
+      ],
+      "type": "string"
+    },
+    "timestamp": {
+      "type": "string"
+    },
+    "token_usage": {
+      "type": "number"
+    }
+  },
+  "type": "object",
+  "required": [],
+  "name": "SystemHeartbeat"
+}

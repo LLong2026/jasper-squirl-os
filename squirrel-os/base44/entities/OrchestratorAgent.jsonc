@@ -1,0 +1,46 @@
+{
+  "properties": {
+    "app_id": {
+      "type": "string"
+    },
+    "avg_latency_ms": {
+      "type": "number"
+    },
+    "avg_token_efficiency": {
+      "type": "number"
+    },
+    "current_task_count": {
+      "type": "number"
+    },
+    "domain": {
+      "type": "string"
+    },
+    "health_score": {
+      "type": "number"
+    },
+    "last_heartbeat_at": {
+      "type": "string"
+    },
+    "max_task_capacity": {
+      "type": "number"
+    },
+    "name": {
+      "type": "string"
+    },
+    "role": {
+      "type": "string"
+    },
+    "status": {
+      "enum": [
+        "active",
+        "idle",
+        "overloaded",
+        "failed"
+      ],
+      "type": "string"
+    }
+  },
+  "type": "object",
+  "required": [],
+  "name": "OrchestratorAgent"
+}
