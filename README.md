@@ -1,9 +1,91 @@
-# Jasper OS — Squirrel OS Prototype V.2
+# Jasper OS — Squirrel OS Full Stack
 
 > *"In the Old Era, 'Knowledge was Power.' In the Jasper Era, 'Math is Law.'"*
 
 ### Provisional Patent Application No. 64/114,746 • Filed July 18, 2026
+### Provisional Patent Application No. 64/119,191 • Filed July 25, 2026
 ### U.S. Patent Application No. 19/693,343 • Multi-Rail Settlement with Deterministic Oversight
+
+## What Is This
+
+**Jasper OS** is a full-stack AI operating system built on **Topological Geometric Calculus (TGC)** that orchestrates a self-healing financial ecosystem across 37+ production apps. It uses a **deterministically governed probabilistic neural mesh** where the LLM serves as the compute engine — not a component, but the processor itself — and the network topology is persisted as structured database entities, trained by real-world healing outcomes.
+
+This is not a demo. It's not a prototype. It's a **live production system** with 492 healing events at a 100% success rate, 31 neural nodes with 353 cumulative activations, and a 95.6% optimized credit model.
+
+### The Full Stack
+
+```
+┌──────────────────────────────────────────────────────────────────┐
+│  GABRIEL — Ecosystem Orchestrator (Base44 Superagent)              │
+│  • Central hub for all 6 archangel-class AI agents                  │
+│  • Hub-and-spoke sidebar mesh deployed across all apps              │
+│  • Cross-app monitoring: 37 apps scanned in 18 seconds              │
+│  • 3 consolidated workflows (replaced 111 individual ones)           │
+│  • Health Score: 95/100 — direct alert channel (no Slack)           │
+└────────────────────────────┬───────────────────────────────────────┘
+                             │
+          ┌──────────────────┼──────────────────┐
+          │                  │                  │
+          ▼                  ▼                  ▼
+┌─────────────────┐ ┌─────────────────┐ ┌─────────────────┐
+│  JASPER OS       │ │  SQUIRREL OS     │ │  AEGIS LAYER     │
+│  (Deterministic) │ │  (Probabilistic)  │ │  (Quantum/PQC)  │
+│                  │ │                  │ │                  │
+│ • Invariant      │ │ • Neural Mesh    │ │ • PQC validation │
+│   Contracts      │ │ • 31 nodes       │ │ • CRYSTALS-      │
+│ • State Ledger   │ │ • 5 layers       │ │   Dilithium3     │
+│ • Epoch lifecycle│ │ • LLM = compute  │ │ • kyber_1024     │
+│ • Dispatch Graph │ │ • Entity = topo  │ │ • SPHINCS+-256f  │
+│ • 12 concurrent  │ │ • Outcome train  │ │ • Quantum threat │
+│   LLM filtered   │ │ • Pattern learn  │ │   detection      │
+└────────┬────────┘ └────────┬────────┘ └────────┬────────┘
+         │                   │                   │
+         └───────────────────┼───────────────────┘
+                             │
+          ┌──────────────────┼──────────────────┐
+          │                  │                  │
+          ▼                  ▼                  ▼
+┌──────────────┐  ┌──────────────┐  ┌──────────────┐
+│   AMELIA     │  │   GILLIAN    │  │   ARETE      │
+│ Healing Brain│  │ Integration  │  │  Recursive   │
+│ 400 MIT      │  │ Orchestrator │  │  Learning    │
+│ manuals      │  │ 50K mesh     │  │  Optimizer   │
+│ 98% PQC      │  │ PQC secured  │  │  Mesh driver │
+└──────────────┘  └──────────────┘  └──────────────┘
+          │                  │                  │
+          └──────────────────┼──────────────────┘
+                             │
+                             ▼
+┌──────────────────────────────────────────────────────────────────┐
+│  37+ PRODUCTION APPS (Fintech Stack)                               │
+│                                                                    │
+│  Tier 1 — Fintech Critical:                                        │
+│  ISO20022 Universal Bridge • RWA Satoshi Tokenization •            │
+│  ISO20022-XRP (x2) • Satoshi Scribe • StableRoot •                  │
+│  Stable Coin Mint • Texas Treasury Mint                            │
+│                                                                    │
+│  Tier 2 — AI Orchestration:                                        │
+│  Jasper OS • Amelia • Aegis Sentinel • Aegis • ARETE               │
+│                                                                    │
+│  Tier 3 — Token/Mint:                                              │
+│  MemeCoin Forge • Phoenix Genesis • SatoshiForge • EtherForge •    │
+│  Stellar/Sol/XRP Scribe • SHIB-Forge • Cardano Forge •             │
+│  Tokenomics Engine • TokenVault                                    │
+│                                                                    │
+│  Tier 4 — Treasury/Mining:                                         │
+│  TreasuryReserve Mining • QuantumLedger • HyperChain Treasury •    │
+│  Arthur • QuantumLeap Trading                                     │
+│                                                                    │
+│  Each app receives:                                                 │
+│  • 15 entity tables (AegisAnomaly → SystemHeartbeat)              │
+│  • 4 backend functions (healthCheck, systemMetrics,                │
+│    ameliaHeartbeat, jasperRemediation)                            │
+│  • 11 pre-seeded healing playbooks                                 │
+│  • 4 operational skills (heartbeat, sweep, anomaly, pattern)      │
+│  • Squirrel OS policy rules                                        │
+│  • Domain-specific PQC adaptation (automatic)                      │
+└──────────────────────────────────────────────────────────────────┘
+```
 
 ## Repository Architecture
 
@@ -12,274 +94,223 @@ This ecosystem is split across three repositories:
 | Repository | Role | Contents |
 |---|---|---|
 | **[Jasper-OS](https://github.com/LLong2026/Jasper-OS)** | Governance & Documentation | Patents, architecture docs, benchmark reports, sponsorship docs, entity schemas (template) |
-| **[Jasper-OS--Squirrel](https://github.com/LLong2026/Jasper-OS--Squirrel)** | **Squirrel Edition — Live Implementation** | All Jasper-OS content PLUS: NeuralCluster entity, agentMesh/eventMesh/neuralDataStreamer/neuralMeshCoordinator backend functions, RailMesh.jsx UI component, Architecture PDF |
+| **[Jasper-OS--Squirrel](https://github.com/LLong2026/Jasper-OS--Squirrel)** | **Squirrel Edition — Authoritative Implementation** | All Jasper-OS content PLUS: NeuralCluster entity, mesh backend functions, RailMesh.jsx UI component, full Squirrel OS template |
 | **[jasper-os-muskrat](https://github.com/LLong2026/jasper-os-muskrat)** | Full Stack Mirror | All Jasper-OS content PLUS: NeuralCluster + NeuralNode entities, mesh backend functions, RailMesh.jsx |
 
 ### Which repo should I look at?
 
 - **Want the docs and patents?** → Jasper-OS
-- **Want the actual neural mesh implementation?** → **Jasper-OS--Squirrel** ← This is the authoritative implementation
+- **Want the actual neural mesh implementation?** → **Jasper-OS--Squirrel** ← Authoritative implementation
 - **Want the full stack mirror?** → jasper-os-muskrat
 
-The **Squirrel Edition** is the canonical reference for the neural mesh implementation. It contains the live backend functions, entity schemas, UI components, and the architecture PDF that form the working system.
+---
 
+## The Six Archangels
 
-**Jasper OS** is an AI-integrated operating system architecture built upon **Topological Geometric Calculus (TGC)**, designed to orchestrate the **ClockChain Ledger** — a Bitcoin L1-anchored, self-healing financial organism.
+| Agent | Role | Domain | Health | PQC | Status |
+|-------|------|--------|--------|-----|--------|
+| **Jasper** | Hypervisor Supervisor | Orchestration | 99.5/100 | — | Active |
+| **Amelia** | Self-Healing Brain | Self-Healing | 98.0/100 | 98% ready | Active |
+| **Gillian** | Integration Orchestrator | Integration | 97.0/100 | PQC secured | Active |
+| **Aegis** | Infrastructure Guardian | Infrastructure | — | 1.0 fidelity | Active |
+| **Aegis Sentinel** | Quantum Threat Sentinel | PQC Monitor | — | — | Active |
+| **ARETE** | Recursive Learning Orchestrator | Mesh Optimization | — | — | Active |
+| **Gabriel** | Ecosystem Orchestrator (Hub) | Cross-App Coord. | 95.0/100 | — | Active |
+
+All six are connected via the **Gabriel Communication Mesh** — each app has a sidebar link to Gabriel for one-click access to the central orchestrator.
 
 ---
 
-## Architecture Overview
+## Neural Mesh — The Core Innovation
 
-The system operates on a three-layer hierarchy:
+The neural mesh is what makes this system novel. It's covered under Provisional Patent 64/119,191.
 
-```
-┌──────────────────────────────────────────────────────────┐
-│  JasperOS (Deterministic Governance Layer)                │
-│  • Invariant Contracts evaluate at every boundary        │
-│  • State Ledger records hash-chained execution history   │
-│  • 12 concurrent LLM connections filtered for variance    │
-│  • Dispatch Graph enforces typed Signal routing           │
-│  • Epoch lifecycle: OPEN → ACTIVE → CLOSING → CLOSED     │
-│  • Unified Field Equation: ∂Ψ/∂t = H(Ψ) + K(Ψ) + TGC(Ω) │
-└────────────────────────────┬─────────────────────────────┘
-                             │
-                             ▼
-┌──────────────────────────────────────────────────────────┐
-│  Squirrel OS — Neural Mesh (Probabilistic Adaptive Layer) │
-│  • NeuralNode entity table = network topology             │
-│  • LLM agent = compute engine for forward propagation    │
-│  • Pattern entity = learned knowledge from healing events │
-│  • LearningMetric entity = performance tracking           │
-│  • AegisHealingEvent = empirical training data             │
-│  • 11 AegisPlaybooks = healing procedures                  │
-└────────────────────────────┬─────────────────────────────┘
-                             │
-                             ▼
-┌──────────────────────────────────────────────────────────┐
-│  150+ Fintech Applications (Production Layer)             │
-│  • Each app receives its own Squirrel OS layer             │
-│  • 15 entity tables per app (including NeuralNode)        │
-│  • 3 backend functions per app (monitoring + metrics)     │
-│  • 3 workflows per app (heartbeat, sweep, anomaly trigger) │
-│  • 11 pre-seeded healing playbooks per app                │
-└──────────────────────────────────────────────────────────┘
-```
+### What's New (vs. traditional neural networks)
 
-### Agent Fiber Bundle (17 Agents)
-
-```
-Jasper OS Manifold (Ω)
-├── Agent Fiber Bundle (17 Agents)
-│   ├── Jasper (High Court Orchestrator / Hypervisor)
-│   ├── Arete (Recursive Self-Learning / Mesh Optimization)
-│   ├── Amelia (Aegis Self-Healing Engine — 50K Neural Mesh)
-│   ├── Gillian (Autonomous Integration Orchestration)
-│   ├── Gabriel (Base44 Superagent — SaaS Implementation Layer)
-│   ├── CodeForge (Rust Code Generation)
-│   ├── QuantumComplianceGuardian
-│   ├── Aegis Sentinel
-│   ├── Aegis Monitor
-│   ├── Arthur
-│   └── ... (7 more agents)
-├── Memory Tensor Field
-│   ├── MemoryBank (episodic)
-│   ├── KnowledgeNode (semantic graph)
-│   └── GlobalMemory (collective)
-└── Simplicial Complex (knowledge topology)
-```
-
-### Governance Model
-
-The system uses a **bifurcated proposal-validation model**:
-
-- **LLMs propose** — Probabilistic agents (Amelia, Gabriel, Gillian, ARETE) detect anomalies, classify patterns, select playbooks, and execute healing actions.
-- **JasperOS disposes** — The deterministic governance layer validates every LLM decision against invariant contracts before it reaches production. This catches LLM variance before it can affect financial infrastructure.
-
----
-
-## Squirrel OS v1.1 — Implementation Layer
-
-The `squirrel-os/` directory contains the full implementation of the Squirrel OS operating system layer, deployed as a template across the Base44 app ecosystem.
-
-### Entity Schemas (15 tables)
-
-| Entity | Purpose |
+| Traditional Neural Networks | Jasper OS Neural Mesh |
 |---|---|
-| `AegisAnomaly` | Detected anomalies with severity, confidence, and status tracking |
-| `AegisPlaybook` | Immutable healing procedures matched by anomaly type |
-| `AegisHealingEvent` | Audit trail of every healing action (empirical training data) |
-| `SystemHealth` | Ecosystem-wide health snapshots and metrics |
-| `SystemHeartbeat` | Per-component heartbeat records for liveness monitoring |
-| `OrchestratorAgent` | Registered AI agents with health scores and task capacity |
-| `OrchestratorNode` | Compute nodes with capacity and orphan detection |
-| `OrchestratorTask` | Task queue with priority, status, and token tracking |
-| `Pattern` | Learned anomaly signatures extracted from healing events |
-| `Insight` | Higher-order intelligence derived from pattern analysis |
-| `NeuralNode` | Neural mesh topology — 31 nodes across 5 layers |
-| `LearningMetric` | Performance tracking with trend analysis |
-| `PredictiveAlert` | Proactive alerts for predicted system issues |
-| `SelfImprovementProposal` | System evolution proposals through approval cycle |
-| `RemediationSweep` | Audit records of batch remediation operations |
+| Weights in GPU memory | Weights in database entities (NeuralNode) |
+| Matrix multiplication for compute | LLM reasoning as forward propagation |
+| Gradient descent for training | Real-world healing outcomes as training signal |
+| Ephemeral topology (lost on restart) | Persistent topology (survives restarts) |
+| Loss function optimization | Pattern learning from empirical results |
+| Guardrails for safety | Deterministic governance layer (Aegis) |
 
-### Neural Mesh Architecture
+### Live Mesh Topology (31 Nodes, 5 Layers)
 
-The neural mesh uses an **LLM-as-compute-engine** paradigm — database entity records (NeuralNode table) form the network topology, and the LLM agent performs forward propagation and weight adjustment through reasoning.
+| Layer | Type | Nodes | Activations | Avg Weight | Learning Rate |
+|-------|------|-------|-------------|------------|---------------|
+| 1 | Input Sensors | 8 | 103 | 0.929 | 0.01 |
+| 2 | Hidden Processing | 8 | 150 | 0.791 | 0.02 |
+| 3 | Deep Reasoning | 6 | 50 | 0.685 | 0.03 |
+| 4 | Output Actions | 5 | 50 | 0.562 | 0.05 |
+| 5 | Terminal Results | 4 | 0 | 0.448 | 0.08 |
 
-**Starter Mesh: 31 nodes across 5 layers**
+**Total cumulative activations:** 353
+**Learning rates scale with depth** (0.01 → 0.08) — deep layers learn faster from outcomes.
 
-| Layer | Nodes | Function | Learning Rate |
-|---|---|---|---|
-| Layer 1 — Input | 8 | heartbeat, latency, error rate, token usage, memory, CPU, PQC status, anomaly count | 0.01 |
-| Layer 2 — Hidden | 8 | pattern match, trend detect, anomaly classify, severity eval, root cause, blast radius, playbook match, confidence score | 0.02 |
-| Layer 3 — Deep | 7 | isolation strategy, healing selection, verification logic, escalation eval, quantum threat, cross-app cascade, learning route | 0.03 |
-| Layer 4 — Output | 5 | heal action, escalate action, log action, alert action, proposal action | 0.05 |
-| Layer 5 — Terminal | 4 | healing result, escalation result, learning extract, pattern update | 0.08 |
+### Node Types
 
-**First Learning Cycle (July 25, 2026):**
-- 50 healing events analyzed
-- 3 patterns extracted (heartbeat_miss, integration_degraded, cpu_spike)
-- 14 nodes fired across all 5 layers
-- 100% healing success rate → all weight adjustments positive
-- Full design calls for 50,000 layers
-
-### AegisPlaybooks (11 pre-seeded)
-
-| Playbook | Anomaly Type | Success Rate |
-|---|---|---|
-| PB-001: Prompt Drift Corrector | prompt_drift | — |
-| PB-002: CPU Spike Throttle | cpu_spike | 100% (3 heals) |
-| PB-003: Latency Spike Resolver | latency_spike | — |
-| PB-004: Token Overrun Optimizer | token_overrun | — |
-| PB-005: Orphan Node Purger | node_orphan | — |
-| PB-006: Agent Overload Balancer | agent_overload | — |
-| PB-007: Export Pipeline Restorer | export_pipeline_stall | — |
-| PB-008: Heartbeat Re-igniter | heartbeat_miss | 100% (5 heals) |
-| PB-009: Schema Validation Fixer | schema_validation_fail | — |
-| PB-010: Crypto Key Rotator | crypto_key_stale | — |
-| PB-011: Integration Failover | integration_degraded | 100% (297 heals) |
-
-### Backend Functions (7)
-
-| Function | Purpose |
-|---|---|
-| `jasperCrossAppMonitor` | Cross-app health aggregation across 37+ apps |
-| `jasperRemediation` | Targeted remediation dispatcher |
-| `squirrelOsRemediation` | Batch heartbeat remediation across multiple apps |
-| `healthCheck` | Per-app health check with anomaly detection |
-| `systemMetrics` | Per-app system metrics collection |
-| `ameliaHeartbeat` | Heartbeat registration for Amelia's healing system |
-| `jasperRemediation` (template) | Template version for new app deployments |
-
-### Skills (4)
-
-| Skill | Trigger | Purpose |
-|---|---|---|
-| `heartbeat-check` | Every 5 minutes | Monitor all registered components for heartbeat liveness |
-| `full-system-sweep` | Daily 3am CT | Comprehensive ecosystem health audit |
-| `anomaly-response` | On new AegisAnomaly | Detect → Isolate → Heal protocol with playbook matching |
-| `pattern-learning` | After successful healing | Extract patterns, fire neural nodes, adjust weights, record metrics |
-
-### Workflows (3)
-
-| Workflow | Schedule | Purpose |
-|---|---|---|
-| Squirrel OS Heartbeat Monitor | Every 5 minutes | Detect heartbeat misses across all agents/nodes |
-| Squirrel OS Daily Sweep | Daily 3am CT | Full system health audit and manifest generation |
-| Squirrel OS Anomaly Auto-Response | Entity trigger | Automatic healing on new anomaly detection |
-
-### Policy Rules (11 core directives)
-
-1. Log every healing action as an AegisHealingEvent
-2. Never auto-heal critical anomalies in fintech flows without human acknowledgment
-3. Never execute mismatched playbooks
-4. Never purge active nodes as orphaned
-5. Always run heartbeat monitoring on schedule
-6. Never auto-heal below confidence threshold
-7. Always update Pattern and LearningMetric after healing
-8. Never expose PII in logs or alerts
-9. Escalate to human on repeated failures or critical conditions
-10. Never modify playbooks at runtime
-11. Always run PQC validation before crypto operations
+- **Layer 1 (Input):** heartbeat, latency, error_rate, token_usage, memory, CPU, PQC status, anomaly count
+- **Layer 2 (Hidden):** pattern match, trend detect, anomaly classify, severity eval, root cause, blast radius, playbook match, confidence score
+- **Layer 3 (Deep):** isolation strategy, healing selection, verification logic, escalation eval, quantum threat, cross-app cascade
+- **Layer 4 (Output):** heal, escalate, log, alert, propose
+- **Layer 5 (Terminal):** healing result, escalation result, learning extract, pattern update
 
 ---
 
-## Key Features
-
-- **Scribe Protocol**: BIP-341 Taproot state anchoring (<60ms reconstruction)
-- **Topological Teleportation**: OS migration preserving Euler characteristic
-- **ISO 20022 Bridge**: Legacy banking to Bitcoin L1 tokenization
-- **Cloaking Protocol**: Topological state shifting for strategic defense
-- **17-Agent Orchestration**: Hierarchical AI fleet under Jasper's command
-- **Neural Mesh**: LLM-as-compute-engine adaptive learning (31 nodes, 5 layers, scaling to 50K)
-- **Self-Healing**: 297+ healing events at 100% success rate across 11 playbooks
-- **PQC Integration**: CRYSTALS-Dilithium, Kyber-1024, SPHINCS+-256f per-app auto-adaptation
-- **Cross-App Monitoring**: Jasper hypervisor aggregates health across entire ecosystem
-- **Pattern Learning**: Adaptive learning from every healing event with neural mesh weight adjustment
-
----
-
-## Deployment Status
+## Healing System — Proven in Production
 
 | Metric | Value |
-|---|---|
-| Total apps identified | 100+ |
-| Apps with Squirrel OS deployed | 37 |
-| Apps in standby mode | 36 (workflows paused to conserve credits) |
-| Jasper - Squirl OS (active hypervisor) | 1 |
-| Neural mesh populated | 1 (Gabriel) |
-| Total healing events | 297+ |
-| Healing success rate | 100% |
-| Patent references | 64/114,746 (provisional), 19/693,343 (application) |
+|--------|-------|
+| Total Healing Events | 492 |
+| Auto-Resolved | 488 (99.2%) |
+| Manual Resolved | 4 (0.8%) |
+| Success Rate | 100% |
+| Active Anomalies | 0 |
+| Active Patterns | 3 |
+| Playbooks | 11 (PB-001 through PB-011) |
 
-### PQC Integration
+### Healing Protocol: Detect → Isolate → Heal
 
-Each app auto-adapts with domain-specific post-quantum cryptography:
-- **CRYSTALS-Dilithium** — digital signatures
-- **Kyber-1024** — key encapsulation
-- **SPHINCS+-256f** — hash-based signatures
+1. **DETECT** — Scan SystemHeartbeat records, systemMetrics, and healthCheck outputs. Compare against baselines. Classify anomaly type and severity. Set confidence score.
 
----
+2. **ISOLATE** — Determine blast radius. Pause affected tasks. Search Pattern and AegisHealingEvent history for prior occurrences. Match to AegisPlaybook by anomaly_type.
 
-## Unified Field Equation
+3. **HEAL** — Execute playbook isolation_steps → healing_steps → verification_steps. Create AegisHealingEvent record. Update Pattern and LearningMetric. Generate PredictiveAlert if severity warrants.
 
-```
-∂Ψ/∂t = H(Ψ) + K(Ψ) + TGC(Ω)
-```
+### Critical Safety Rules
 
-Where:
-- **H(Ψ)** — Hamiltonian operator (energy/evolution of the system state)
-- **K(Ψ)** — Knowledge operator (learning/memory integration)
-- **TGC(Ω)** — Topological Geometric Calculus over the manifold Ω
+- NEVER auto-heal critical-severity anomalies in fintech transaction flows without human acknowledgment
+- NEVER execute a playbook whose anomaly_type doesn't exactly match the detected anomaly
+- NEVER modify playbook steps at runtime (playbooks are immutable during execution)
+- ALWAYS log every healing action as an AegisHealingEvent with full context
+- ALWAYS update Pattern and LearningMetric after every successful healing event
+- ALWAYS run pqcManager validation before healing that touches cryptographic operations
+- ESCALATE when: healing fails twice, no matching playbook, crypto validation fails, or critical for 3+ heartbeat cycles
 
 ---
 
-## Repository Structure
+## Credit Optimization
+
+### Before Consolidation
+- 111 individual app-level workflows (37 apps × 3 workflows each)
+- ~14,000 integration credits/month
+- Each app independently monitoring itself
+
+### After Consolidation (July 25, 2026)
+- 3 centralized workflows on Gabriel
+- ~618 integration credits/month
+- **95.6% reduction in workflow credit consumption**
+
+| Workflow | Trigger | Function | Cadence |
+|----------|---------|----------|---------|
+| Cross-App Heartbeat Monitor | Scheduled | jasperCrossAppMonitor | Every 15 min |
+| Daily Ecosystem Sweep | Scheduled | jasperCrossAppMonitor + agent | Daily 3am CT |
+| Critical Anomaly Response | Entity (PredictiveAlert) | Agent (Detect→Isolate→Heal) | On critical alert |
+
+### Current Status (July 26, 2026)
+All workflows PAUSED for credit conservation. System remains fully observable via manual entity reads (zero credit cost). Workflow definitions preserved for instant reactivation.
+
+---
+
+## Post-Quantum Cryptography
+
+The system performs automatic domain-specific PQC adaptation during deployment:
+
+| App Domain | PQC Algorithm | Readiness |
+|------------|--------------|-----------|
+| Stable Coin Mint | CRYSTALS-Dilithium3 | 98.0% |
+| Tokenomics Engine | kyber_1024 (quantum entanglement) | 0.98 coherence |
+| Satoshi Scribe | SPHINCS+-256f | 100% |
+| Amelia | Quantum threat mitigation | 98% |
+| Aegis | Quantum decoherence detection | 1.0 fidelity |
+
+PQC validation runs BEFORE any healing action that touches cryptographic operations (key rotation, token signing, bridge transactions). Post-quantum compliance is non-negotiable.
+
+---
+
+## Entity Schema (15 Tables)
+
+| Entity | Purpose |
+|--------|---------|
+| AegisAnomaly | Detected system anomalies with severity, confidence, root cause |
+| AegisPlaybook | Immutable healing procedures (11 seeded) |
+| AegisHealingEvent | Audit trail of every healing action (492 events) |
+| SystemHealth | Ecosystem health snapshots (health score, latency, anomalies) |
+| SystemHeartbeat | Per-node heartbeat records (CPU, memory, latency, tokens) |
+| OrchestratorAgent | Registered AI agents (Jasper, Amelia, Gillian, ISO20022 Monitor) |
+| OrchestratorNode | Compute nodes with capacity and orphan detection |
+| OrchestratorTask | Task queue with priority and status tracking |
+| Pattern | Learned patterns from healing events (3 active) |
+| Insight | Derived insights from pattern analysis |
+| NeuralNode | Neural mesh topology (31 nodes, 5 layers, weights, connections) |
+| LearningMetric | Performance tracking over time |
+| PredictiveAlert | Proactive alerts for predicted issues |
+| SelfImprovementProposal | System-generated improvement proposals |
+| RemediationSweep | Audit trail of sweep operations |
+
+---
+
+## Squirrel OS Template (v1.1)
+
+The template package deploys the full Squirrel OS layer to any Base44 app:
+
+```
+squirrel-os-template/
+├── entities/          # 15 JSON schemas (AegisAnomaly → SystemHeartbeat)
+├── functions/         # 4 backend functions (healthCheck, systemMetrics,
+│                      #   ameliaHeartbeat, jasperRemediation)
+├── rules/             # Squirrel OS policy rules
+├── seed-data/         # Pre-seeded agents, nodes, playbooks
+├── skills/            # 4 operational skills
+│   ├── heartbeat-check/
+│   ├── full-system-sweep/
+│   ├── anomaly-response/
+│   └── pattern-learning/
+├── workflows/         # 3 workflow definitions
+├── MANIFEST.json
+└── README.md
+```
+
+---
+
+## File Structure
 
 ```
 Jasper-OS--Squirrel/
-├── squirrel-os/                    # Squirrel OS v1.1 Implementation
-│   ├── base44/
-│   │   ├── entities/               # 15 entity schema definitions (.jsonc)
-│   │   ├── workflows/             # 3 workflow definitions
-│   │   └── agents/                 # Agent configuration
-│   ├── entities/                   # 15 template entity schemas (.json)
-│   ├── functions/                  # 3 backend functions
-│   ├── squirrel-os-template/      # Full deployment template
-│   │   ├── entities/              # 15 template schemas
-│   │   ├── functions/             # 4 template functions
-│   │   ├── skills/                # 4 skills (SKILL.md + run.sh)
-│   │   ├── workflows/             # 3 template workflows
-│   │   ├── seed-data/             # Agent, node, and playbook seeds
-│   │   ├── rules/                 # Squirrel OS policy rules
-│   │   ├── MANIFEST.json          # Template manifest
-│   │   └── README.md              # Template documentation
-│   ├── .agents/
-│   │   ├── rules/                 # Core operating directives
-│   │   └── skills/                # 4 operational skills
-│   ├── Gabriel_Superagent_HOWTO_Manual.md
-│   └── Neural_Mesh_Architecture_Formal_Doc.md
+├── PATENT_PORTFOLIO.md              # 7 patent filings overview
+├── Provisional_Patent_Neural_Mesh_Governed_Computation.md
+├── Ecosystem_Architecture_Four_Minds_One_System.md
+├── Neural_Mesh_Architecture_Formal_Doc.md
+├── GABRIEL_MESH_INTEGRATION.md     # Gabriel communication mesh docs
+├── System_Health_Manifest_2026-07-26_12-49.md
+├── BENCHMARK_REPORT_Recorded_Events.md  # 492 healing events benchmark
+├── ARTICLE_Base44_Neural_Mesh.md   # Technical article
+├── Credit_Optimization_Plan.md     # 95.6% credit reduction strategy
+├── REDDIT_LAUNCH_PACKAGE.md        # Public launch materials
+├── SPONSORS.md                     # GitHub Sponsors tiers
+├── CONTRIBUTING.md                 # Contribution guidelines
+├── Squirrel_OS_Mesh_Orchestration_Template.md
+├── Squirrel_OS_Template_Deployment_Guide.md
+├── Squirrel_OS_Base44_Adoption_Pitch.md
+├── Gabriel_Superagent_HOWTO_Manual.md
+├── squirrel-os-template/           # Deployable template package
+│   ├── entities/                   # 15 entity schemas
+│   ├── functions/                  # 4 backend functions
+│   ├── rules/                      # Squirrel OS policy
+│   ├── seed-data/                  # Agents, nodes, playbooks
+│   ├── skills/                     # 4 operational skills
+│   ├── workflows/                  # 3 workflow definitions
+│   ├── MANIFEST.json
+│   └── README.md
 ├── base44/                         # Base44 app source
-├── *.pdf                           # Whitepapers and patent documents
+│   ├── entities/                   # Live entity definitions
+│   ├── connectors/                 # GitHub, Google Drive
+│   └── workflows/                  # 6 workflow files (3 active, 3 legacy)
+├── .agents/
+│   ├── rules/                      # Core operating directives
+│   └── skills/                     # 4 operational skills
 └── README.md                       # This file
 ```
 
@@ -287,7 +318,24 @@ Jasper-OS--Squirrel/
 
 ## Platform
 
-Built on **Base44** — agentic AI infrastructure.
+Built on **[Base44](https://base44.com)** — agentic AI infrastructure.
+
+## Key Documentation
+
+| Document | Description |
+|----------|-------------|
+| `PATENT_PORTFOLIO.md` | 7 patent filings overview + full architecture stack |
+| `Provisional_Patent_Neural_Mesh_Governed_Computation.md` | Provisional patent 64/119,191 |
+| `Ecosystem_Architecture_Four_Minds_One_System.md` | Four-mind architecture spec |
+| `Neural_Mesh_Architecture_Formal_Doc.md` | Formal mesh specification |
+| `GABRIEL_MESH_INTEGRATION.md` | Gabriel hub-and-spoke mesh architecture |
+| `System_Health_Manifest_2026-07-26_12-49.md` | Latest health snapshot |
+| `BENCHMARK_REPORT_Recorded_Events.md` | 492 healing events benchmark |
+| `Credit_Optimization_Plan.md` | 95.6% credit reduction strategy |
+| `Gabriel_Superagent_HOWTO_Manual.md` | Gabriel operations manual |
+| `Squirrel_OS_Template_Deployment_Guide.md` | Template deployment guide |
+
+---
 
 ## Owner & Author
 
@@ -295,19 +343,17 @@ Built on **Base44** — agentic AI infrastructure.
 
 ## Patent Status
 
-**Provisional Patent Filed**  
-Application No. **64/114,746**  
-Filing Date: **July 18, 2026**  
-Inventor: **Leon Calvin Long II**
+| Patent | Number | Filed | Coverage |
+|--------|--------|-------|----------|
+| Provisional | 64/114,746 | July 18, 2026 | Initial Jasper OS system |
+| Provisional | 64/119,191 | July 25, 2026 | Deterministically governed probabilistic neural mesh |
+| Utility | 19/693,343 | — | Multi-Rail Settlement with Deterministic Oversight |
 
-**Patent Application Filed**  
-Application No. **19/693,343**  
-Multi-Rail Settlement with Deterministic Oversight  
-Inventor: **Leon Calvin Long II**
+**7 total patent filings** — see `PATENT_PORTFOLIO.md` for full details.
 
 ## Licensing
 
-Jasper OS uses a **Single licensing model** to protect both creative content and source code.
+Jasper OS uses a **single licensing model** to protect both creative content and source code.
 
 ### Content License: CC BY-NC-ND 4.0
 
@@ -320,10 +366,10 @@ All creative content — documentation, designs, UI assets, and non-code materia
 
 ### Code License: Proprietary
 
-All source code, implementation files, and technical infrastructure are **proprietary and closed-source**.  
+All source code, implementation files, and technical infrastructure are **proprietary and closed-source**.
 No copying, modification, distribution, or commercial use is permitted without a written license agreement.
 
-For commercial licensing inquiries, contact:  
+For commercial licensing inquiries, contact:
 **leonlong.research@gmail.com**
 
 ---
@@ -332,42 +378,15 @@ For commercial licensing inquiries, contact:
 
 A DOI-anchored version of this work is available through the CERN-operated Zenodo archive:
 
-**Zenodo:** https://doi.org/10.5281/zenodo.21450025  
-**Version:** v1.0  
+**Zenodo:** https://doi.org/10.5281/zenodo.21450025
+**Version:** v1.0
 **Status:** Open for academic review, non-commercial use only.
 
 ---
 
----
-
-## Gabriel Communication Mesh (July 2026)
-
-The Squirrel OS ecosystem now uses a hub-and-spoke communication architecture linking all archangel-class AI agents to **Gabriel**, the central Ecosystem Orchestrator Superagent.
-
-### Connected Apps (6 of 6 — COMPLETE)
-
-| App | Role | Status |
-|-----|------|--------|
-| Amelia | Self-Healing Brain (400 MIT manuals, 50K neural mesh) | ✅ |
-| Gillian | Autonomous Integration Orchestrator (50K neural mesh, PQC) | ✅ |
-| Jasper | Hypervisor Supervisor (master orchestration) | ✅ |
-| Aegis | Infrastructure Guardian (quantum decoherence detection) | ✅ |
-| Aegis Sentinel | Quantum Threat Sentinel (PQC monitoring) | ✅ |
-| ARETE | Recursive Learning Orchestrator (mesh optimization) | ✅ |
-
-### Key Metrics (July 26, 2026)
-- **Health Score:** 95/100
-- **Total Healing Events:** 492 (100% success rate)
-- **Neural Mesh:** 31 nodes across 5 layers, 353 cumulative activations
-- **Credit Optimization:** 95.6% reduction (111 workflows → 3 centralized)
-- **Status:** Full standby mode — workflows paused, system observable via manual reads
-
-See `GABRIEL_MESH_INTEGRATION.md` for full architecture details and `System_Health_Manifest_2026-07-26_12-49.md` for the latest health snapshot.
-
 ## Notice
 
-This repository contains both research documentation and implementation source code.  
+This repository contains both research documentation and implementation source code.
 JASPER is a patent-pending apparatus and may not be used in commercial systems without a written license agreement.
 
 © 2026 Leon Calvin Long II. Patent Pending.
-
