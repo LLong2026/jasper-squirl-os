@@ -60,7 +60,6 @@ import InvestorDemo from './pages/InvestorDemo';
 import Partnerships from './pages/Partnerships';
 import ResearchWorkbench from './pages/ResearchWorkbench';
 import StabilityDashboard from './pages/StabilityDashboard';
-import StableCoinMint from './pages/StableCoinMint';
 import SystemStatus from './pages/SystemStatus';
 import TeslaFSDSolver from './pages/TeslaFSDSolver';
 import TexasSovereignLedger from './pages/TexasSovereignLedger';
@@ -85,7 +84,6 @@ export const PAGES = {
     "Partnerships": Partnerships,
     "ResearchWorkbench": ResearchWorkbench,
     "StabilityDashboard": StabilityDashboard,
-    "StableCoinMint": StableCoinMint,
     "SystemStatus": SystemStatus,
     "TeslaFSDSolver": TeslaFSDSolver,
     "TexasSovereignLedger": TexasSovereignLedger,

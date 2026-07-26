@@ -41,7 +41,6 @@ export default function Layout({ children, currentPageName }) {
                 { name: 'StabilityDashboard', href: createPageUrl('StabilityDashboard'), icon: Shield },
                 { name: 'GovernanceDashboard', href: createPageUrl('GovernanceDashboard'), icon: Shield },
                 { name: 'TexasSovereignLedger', href: createPageUrl('TexasSovereignLedger'), icon: Shield },
-                { name: 'StableCoinMint', href: createPageUrl('StableCoinMint'), icon: Sparkles },
             ]
         },
         {
