@@ -6,6 +6,7 @@ import { Button } from '@/components/ui/button';
 import { ScrollArea } from '@/components/ui/scroll-area';
 import { Brain, Network, Zap, Activity, GitMerge } from 'lucide-react';
 import { cn } from '@/lib/utils';
+import CollectiveThoughtsFeed from '@/components/hivemind/CollectiveThoughtsFeed';
 
 export default function HiveMindDashboard() {
     const [nodes, setNodes] = useState([]);
@@ -134,7 +135,7 @@ export default function HiveMindDashboard() {
                             <div className="flex items-center gap-2">
                                 <GitMerge className="h-5 w-5 text-yellow-500" />
                                 <span className="text-2xl font-bold text-white">
-                                    {thoughts.filter(t => t.status === 'processing').length}
+                                    {nodes.reduce((sum, n) => sum + (n.active_thoughts?.length || 0), 0)}
                                 </span>
                             </div>
                         </CardContent>
@@ -224,43 +225,7 @@ export default function HiveMindDashboard() {
                             </CardContent>
                         </Card>
 
-                        <Card className="bg-slate-800 border-slate-700">
-                            <CardHeader>
-                                <CardTitle className="flex items-center gap-2 text-white">
-                                    <GitMerge className="h-5 w-5" />
-                                    Collective Thoughts
-                                </CardTitle>
-                            </CardHeader>
-                            <CardContent>
-                                <ScrollArea className="h-[180px]">
-                                    <div className="space-y-2">
-                                        {thoughts.map(thought => (
-                                            <div key={thought.id} className="bg-slate-900 rounded p-2">
-                                                <div className="flex items-start justify-between mb-1">
-                                                    <Badge className={cn(
-                                                        "text-xs",
-                                                        thought.status === 'converged' ? "bg-green-500" :
-                                                        thought.status === 'processing' ? "bg-yellow-500" :
-                                                        "bg-slate-500"
-                                                    )}>
-                                                        {thought.status}
-                                                    </Badge>
-                                                    {thought.convergence_score && (
-                                                        <span className="text-xs text-slate-400">
-                                                            {(thought.convergence_score * 100).toFixed(0)}% convergence
-                                                        </span>
-                                                    )}
-                                                </div>
-                                                <p className="text-xs text-slate-300">{thought.objective}</p>
-                                                <div className="text-xs text-slate-500 mt-1">
-                                                    {thought.contributing_nodes?.length || 0} nodes
-                                                </div>
-                                            </div>
-                                        ))}
-                                    </div>
-                                </ScrollArea>
-                            </CardContent>
-                        </Card>
+                        <CollectiveThoughtsFeed nodes={nodes} />
                     </div>
                 </div>
             </div>
