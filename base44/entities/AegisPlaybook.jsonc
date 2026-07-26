@@ -1,0 +1,85 @@
+{
+  "name": "AegisPlaybook",
+  "type": "object",
+  "properties": {
+    "name": {
+      "type": "string",
+      "description": "Playbook name"
+    },
+    "category": {
+      "type": "string",
+      "enum": [
+        "SECURITY",
+        "PERFORMANCE",
+        "INFRASTRUCTURE",
+        "DATABASE",
+        "QUANTUM",
+        "AI_ML",
+        "COMPLIANCE",
+        "CORE",
+        "ADVANCED",
+        "AEROSPACE"
+      ],
+      "description": "Playbook category for filtering"
+    },
+    "anomaly_type": {
+      "type": "string",
+      "description": "Anomaly type this playbook addresses"
+    },
+    "trigger_condition": {
+      "type": "string",
+      "description": "Condition that triggers this playbook"
+    },
+    "confidence_threshold": {
+      "type": "number",
+      "default": 0.7,
+      "minimum": 0,
+      "maximum": 1,
+      "description": "Minimum analyzer confidence required to execute"
+    },
+    "isolation_steps": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "default": [],
+      "description": "Steps to isolate/contain the anomaly"
+    },
+    "healing_steps": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "default": [],
+      "description": "Steps to remediate/heal the anomaly"
+    },
+    "verification_steps": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "default": [],
+      "description": "Steps to verify healing was successful"
+    },
+    "avg_resolution_time_ms": {
+      "type": "number",
+      "default": 0,
+      "description": "Average resolution time in milliseconds"
+    },
+    "success_count": {
+      "type": "number",
+      "default": 0,
+      "description": "Number of successful executions"
+    },
+    "failure_count": {
+      "type": "number",
+      "default": 0,
+      "description": "Number of failed executions"
+    }
+  },
+  "required": [
+    "name",
+    "category",
+    "anomaly_type"
+  ]
+}
