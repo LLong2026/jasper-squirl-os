@@ -5,6 +5,25 @@
 ### Provisional Patent Application No. 64/114,746 • Filed July 18, 2026
 ### U.S. Patent Application No. 19/693,343 • Multi-Rail Settlement with Deterministic Oversight
 
+## Repository Architecture
+
+This ecosystem is split across three repositories:
+
+| Repository | Role | Contents |
+|---|---|---|
+| **[Jasper-OS](https://github.com/LLong2026/Jasper-OS)** | Governance & Documentation | Patents, architecture docs, benchmark reports, sponsorship docs, entity schemas (template) |
+| **[Jasper-OS--Squirrel](https://github.com/LLong2026/Jasper-OS--Squirrel)** | **Squirrel Edition — Live Implementation** | All Jasper-OS content PLUS: NeuralCluster entity, agentMesh/eventMesh/neuralDataStreamer/neuralMeshCoordinator backend functions, RailMesh.jsx UI component, Architecture PDF |
+| **[jasper-os-muskrat](https://github.com/LLong2026/jasper-os-muskrat)** | Full Stack Mirror | All Jasper-OS content PLUS: NeuralCluster + NeuralNode entities, mesh backend functions, RailMesh.jsx |
+
+### Which repo should I look at?
+
+- **Want the docs and patents?** → Jasper-OS
+- **Want the actual neural mesh implementation?** → **Jasper-OS--Squirrel** ← This is the authoritative implementation
+- **Want the full stack mirror?** → jasper-os-muskrat
+
+The **Squirrel Edition** is the canonical reference for the neural mesh implementation. It contains the live backend functions, entity schemas, UI components, and the architecture PDF that form the working system.
+
+
 **Jasper OS** is an AI-integrated operating system architecture built upon **Topological Geometric Calculus (TGC)**, designed to orchestrate the **ClockChain Ledger** — a Bitcoin L1-anchored, self-healing financial organism.
 
 ---
