@@ -4,8 +4,61 @@ import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
 import { Button } from '@/components/ui/button';
 import { ScrollArea } from '@/components/ui/scroll-area';
-import { GitBranch, Dna, Shield, TrendingUp, AlertTriangle, CheckCircle2 } from 'lucide-react';
+import { GitBranch, Dna, Shield, TrendingUp, CheckCircle2 } from 'lucide-react';
 import { cn } from '@/lib/utils';
+
+function GenomeNode({ genome, depth = 0, selectedGenome, onSelect }) {
+    const isSelected = selectedGenome?.id === genome.id;
+    const isActive = genome.is_active;
+
+    return (
+        <div style={{ marginLeft: depth * 24 }}>
+            <Button
+                variant={isSelected ? "default" : "ghost"}
+                className={cn(
+                    "w-full justify-start mb-2",
+                    isActive && "ring-2 ring-green-500"
+                )}
+                onClick={() => onSelect(genome)}
+            >
+                <GitBranch className="mr-2 h-4 w-4" />
+                Gen {genome.generation}
+                {isActive && <Badge className="ml-2 bg-green-500">ACTIVE</Badge>}
+                <span className="ml-auto text-xs text-slate-400">
+                    Fitness: {genome.fitness_score?.toFixed(1)}
+                </span>
+            </Button>
+            {genome.children?.map(child => (
+                <GenomeNode
+                    key={child.id}
+                    genome={child}
+                    depth={depth + 1}
+                    selectedGenome={selectedGenome}
+                    onSelect={onSelect}
+                />
+            ))}
+        </div>
+    );
+}
+
+function buildTree(genomes) {
+    const tree = [];
+    const genomeMap = {};
+
+    genomes.forEach(g => {
+        genomeMap[g.id] = { ...g, children: [] };
+    });
+
+    genomes.forEach(g => {
+        if (g.parent_genome_id && genomeMap[g.parent_genome_id]) {
+            genomeMap[g.parent_genome_id].children.push(genomeMap[g.id]);
+        } else {
+            tree.push(genomeMap[g.id]);
+        }
+    });
+
+    return tree;
+}
 
 export default function AgentGenealogyTree({ agentName }) {
     const [genomes, setGenomes] = useState([]);
@@ -25,13 +78,15 @@ export default function AgentGenealogyTree({ agentName }) {
             setGenomes(sortedGenomes);
 
             const emergentPatterns = await base44.entities.EmergentPattern.list();
-            const relevantPatterns = emergentPatterns.filter(p => 
+            const relevantPatterns = emergentPatterns.filter(p =>
                 p.participants?.includes(agentName) && p.formalized_as
             );
             setPatterns(relevantPatterns);
 
             if (sortedGenomes.length > 0) {
                 setSelectedGenome(sortedGenomes[sortedGenomes.length - 1]);
+            } else {
+                setSelectedGenome(null);
             }
         } catch (error) {
             console.error('Error loading genealogy:', error);
@@ -40,58 +95,11 @@ export default function AgentGenealogyTree({ agentName }) {
         }
     };
 
-    const buildTree = () => {
-        const tree = [];
-        const genomeMap = {};
-        
-        genomes.forEach(g => {
-            genomeMap[g.id] = { ...g, children: [] };
-        });
-
-        genomes.forEach(g => {
-            if (g.parent_genome_id && genomeMap[g.parent_genome_id]) {
-                genomeMap[g.parent_genome_id].children.push(genomeMap[g.id]);
-            } else {
-                tree.push(genomeMap[g.id]);
-            }
-        });
-
-        return tree;
-    };
-
-    const GenomeNode = ({ genome, depth = 0 }) => {
-        const isSelected = selectedGenome?.id === genome.id;
-        const isActive = genome.is_active;
-
-        return (
-            <div className={cn("ml-" + (depth * 8))}>
-                <Button
-                    variant={isSelected ? "default" : "ghost"}
-                    className={cn(
-                        "w-full justify-start mb-2",
-                        isActive && "ring-2 ring-green-500"
-                    )}
-                    onClick={() => setSelectedGenome(genome)}
-                >
-                    <GitBranch className="mr-2 h-4 w-4" />
-                    Gen {genome.generation}
-                    {isActive && <Badge className="ml-2 bg-green-500">ACTIVE</Badge>}
-                    <span className="ml-auto text-xs text-slate-400">
-                        Fitness: {genome.fitness_score?.toFixed(1)}
-                    </span>
-                </Button>
-                {genome.children?.map(child => (
-                    <GenomeNode key={child.id} genome={child} depth={depth + 1} />
-                ))}
-            </div>
-        );
-    };
-
     if (loading) {
         return <div className="p-4 text-slate-400">Loading genealogy...</div>;
     }
 
-    const tree = buildTree();
+    const tree = buildTree(genomes);
 
     return (
         <div className="grid grid-cols-2 gap-4 h-[600px]">
@@ -104,9 +112,20 @@ export default function AgentGenealogyTree({ agentName }) {
                 </CardHeader>
                 <CardContent>
                     <ScrollArea className="h-[480px]">
-                        {tree.map(root => (
-                            <GenomeNode key={root.id} genome={root} />
-                        ))}
+                        {tree.length > 0 ? (
+                            tree.map(root => (
+                                <GenomeNode
+                                    key={root.id}
+                                    genome={root}
+                                    selectedGenome={selectedGenome}
+                                    onSelect={setSelectedGenome}
+                                />
+                            ))
+                        ) : (
+                            <div className="text-center text-slate-500 py-8">
+                                No genomes recorded for {agentName} yet.
+                            </div>
+                        )}
                     </ScrollArea>
                 </CardContent>
             </Card>
@@ -129,7 +148,7 @@ export default function AgentGenealogyTree({ agentName }) {
                                     </h4>
                                     <div className="flex items-center gap-2">
                                         <div className="flex-1 bg-slate-900 rounded-full h-2">
-                                            <div 
+                                            <div
                                                 className="bg-green-500 h-2 rounded-full transition-all"
                                                 style={{ width: `${(selectedGenome.fitness_score || 0)}%` }}
                                             />
