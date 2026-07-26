@@ -338,9 +338,36 @@ A DOI-anchored version of this work is available through the CERN-operated Zenod
 
 ---
 
+---
+
+## Gabriel Communication Mesh (July 2026)
+
+The Squirrel OS ecosystem now uses a hub-and-spoke communication architecture linking all archangel-class AI agents to **Gabriel**, the central Ecosystem Orchestrator Superagent.
+
+### Connected Apps (6 of 6 — COMPLETE)
+
+| App | Role | Status |
+|-----|------|--------|
+| Amelia | Self-Healing Brain (400 MIT manuals, 50K neural mesh) | ✅ |
+| Gillian | Autonomous Integration Orchestrator (50K neural mesh, PQC) | ✅ |
+| Jasper | Hypervisor Supervisor (master orchestration) | ✅ |
+| Aegis | Infrastructure Guardian (quantum decoherence detection) | ✅ |
+| Aegis Sentinel | Quantum Threat Sentinel (PQC monitoring) | ✅ |
+| ARETE | Recursive Learning Orchestrator (mesh optimization) | ✅ |
+
+### Key Metrics (July 26, 2026)
+- **Health Score:** 95/100
+- **Total Healing Events:** 492 (100% success rate)
+- **Neural Mesh:** 31 nodes across 5 layers, 353 cumulative activations
+- **Credit Optimization:** 95.6% reduction (111 workflows → 3 centralized)
+- **Status:** Full standby mode — workflows paused, system observable via manual reads
+
+See `GABRIEL_MESH_INTEGRATION.md` for full architecture details and `System_Health_Manifest_2026-07-26_12-49.md` for the latest health snapshot.
+
 ## Notice
 
 This repository contains both research documentation and implementation source code.  
 JASPER is a patent-pending apparatus and may not be used in commercial systems without a written license agreement.
 
 © 2026 Leon Calvin Long II. Patent Pending.
+
