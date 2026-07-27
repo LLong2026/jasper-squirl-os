@@ -27,6 +27,15 @@
       "default": 0,
       "description": "Cumulative heartbeat pulses"
     },
+    "heartbeat_status": {
+      "type": "string",
+      "enum": [
+        "active",
+        "inactive"
+      ],
+      "default": "active",
+      "description": "Current heartbeat pulse status"
+    },
     "active_anomalies": {
       "type": "number",
       "default": 0
@@ -74,6 +83,13 @@
       "type": "number",
       "default": 1,
       "description": "Data integrity vitality score (0-1)"
+    },
+    "uptime_percentage": {
+      "type": "number",
+      "minimum": 0,
+      "maximum": 100,
+      "default": 99.9,
+      "description": "Fleet uptime percentage"
     },
     "timestamp": {
       "type": "number"
