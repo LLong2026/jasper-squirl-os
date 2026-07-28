@@ -1,0 +1,63 @@
+{
+  "properties": {
+    "alert_threshold": {
+      "type": "string"
+    },
+    "audit_trail_completeness": {
+      "type": "number"
+    },
+    "constitution_compliance_pct": {
+      "type": "number"
+    },
+    "current_value": {
+      "type": "number"
+    },
+    "escalation_rate_pct": {
+      "type": "number"
+    },
+    "false_positive_rate": {
+      "type": "number"
+    },
+    "healing_success_trend": {
+      "type": "number"
+    },
+    "kill_switch_available": {
+      "type": "boolean"
+    },
+    "last_checked": {
+      "type": "string"
+    },
+    "metric_name": {
+      "type": "string"
+    },
+    "neural_mesh_stability": {
+      "type": "number"
+    },
+    "playbook_coverage_pct": {
+      "type": "number"
+    },
+    "pqc_compliance_pct": {
+      "type": "number"
+    },
+    "resolution_time_trend": {
+      "type": "number"
+    },
+    "status": {
+      "type": "string",
+      "enum": [
+        "healthy",
+        "warning",
+        "critical"
+      ]
+    },
+    "tenant_isolation_violations": {
+      "type": "number"
+    },
+    "timestamp": {
+      "type": "string"
+    }
+  },
+  "type": "object",
+  "required": [],
+  "name": "MetaMonitor"
+}
