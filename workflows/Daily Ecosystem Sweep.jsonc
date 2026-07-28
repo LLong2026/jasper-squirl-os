@@ -1,0 +1,57 @@
+{
+  "name": "Daily Ecosystem Sweep",
+  "description": "Comprehensive daily health sweep at 3am CT. Runs the cross-app monitor, then generates a System Health Manifest for the owner. Replaces 37 individual daily sweep workflows with one consolidated sweep.",
+  "trigger": {
+    "condition": null,
+    "config": {
+      "trigger_type": "scheduled",
+      "events": [],
+      "schedule_mode": "recurring",
+      "cron_expression": "0 3 * * *",
+      "one_time_date": null,
+      "timezone": "America/Chicago",
+      "interval_value": null,
+      "interval_unit": null,
+      "interval_anchor": null,
+      "ends_type": "never",
+      "ends_on_date": null,
+      "ends_after_count": null
+    }
+  },
+  "definition": {
+    "document": {
+      "dsl": "1.0.0",
+      "name": "daily_ecosystem_sweep",
+      "version": "1.0",
+      "namespace": "base44"
+    },
+    "do": [
+      {
+        "sweep": {
+          "call": "invoke_backend_function",
+          "with": {
+            "function_name": "jasperCrossAppMonitor"
+          },
+          "then": "generate_manifest",
+          "x-base44": {
+            "title": "Run cross-app sweep",
+            "description": "Scan all 37 apps comprehensively"
+          }
+        }
+      },
+      {
+        "generate_manifest": {
+          "call": "invoke_superagent_step",
+          "with": {
+            "message": "Daily Ecosystem Sweep complete. Generate a System Health Manifest using the mandated format.\n\nScan results:\n- Total apps: ${ .sweep.ecosystem.total_apps }\n- Healthy: ${ .sweep.ecosystem.healthy }\n- Degraded: ${ .sweep.ecosystem.degraded }\n- Critical: ${ .sweep.ecosystem.critical }\n- Offline: ${ .sweep.ecosystem.offline }\n- Total agents: ${ .sweep.ecosystem.total_agents }\n- Active anomalies: ${ .sweep.ecosystem.active_anomalies }\n- Total healing events: ${ .sweep.ecosystem.total_healing_events }\n- Total successful heals: ${ .sweep.ecosystem.total_successful_heals }\n- Success rate: ${ .sweep.ecosystem.success_rate }\n- Avg PQC readiness: ${ .sweep.ecosystem.avg_pqc_readiness }%\n- Uptime: ${ .sweep.ecosystem.uptime_percentage }%\n- Critical alerts: ${ .sweep.ecosystem.critical_alerts }\n\nFormat this as a System Health Manifest with the Core System Pulse, Microservice & Agent Breakdown, Automated Remediation section, and Log Summary. If any apps are critical, note the remediation actions needed."
+          },
+          "then": "end",
+          "x-base44": {
+            "title": "Generate health manifest",
+            "description": "Agent creates System Health Manifest for owner"
+          }
+        }
+      }
+    ]
+  }
+}
