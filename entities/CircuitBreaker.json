@@ -1,0 +1,53 @@
+{
+  "properties": {
+    "adapter_name": {
+      "type": "string"
+    },
+    "app_id": {
+      "type": "string"
+    },
+    "consecutive_failures": {
+      "type": "number"
+    },
+    "cooldown_minutes": {
+      "type": "number"
+    },
+    "failure_threshold": {
+      "type": "number"
+    },
+    "last_failure_at": {
+      "type": "string"
+    },
+    "last_state_change": {
+      "type": "string"
+    },
+    "max_concurrent_actions": {
+      "type": "number"
+    },
+    "scope": {
+      "type": "string",
+      "enum": [
+        "per_app",
+        "per_adapter",
+        "global"
+      ]
+    },
+    "state": {
+      "type": "string",
+      "enum": [
+        "closed",
+        "open",
+        "half_open"
+      ]
+    },
+    "timestamp": {
+      "type": "string"
+    },
+    "trip_reason": {
+      "type": "string"
+    }
+  },
+  "type": "object",
+  "required": [],
+  "name": "CircuitBreaker"
+}
