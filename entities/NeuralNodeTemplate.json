@@ -1,0 +1,35 @@
+{
+  "properties": {
+    "connections": {
+      "items": {
+        "type": "string"
+      },
+      "type": "array"
+    },
+    "layer": {
+      "type": "number"
+    },
+    "llm_role": {
+      "type": "string"
+    },
+    "node_index": {
+      "type": "number"
+    },
+    "node_type": {
+      "type": "string"
+    },
+    "weight": {
+      "type": "number"
+    },
+    "learning_rate": {
+      "type": "number"
+    }
+  },
+  "required": [
+    "layer",
+    "node_index",
+    "node_type"
+  ],
+  "type": "object",
+  "name": "NeuralNodeTemplate"
+}
