@@ -1,0 +1,40 @@
+{
+  "properties": {
+    "agent_id": {
+      "type": "string"
+    },
+    "capacity": {
+      "type": "number"
+    },
+    "is_orphan": {
+      "type": "boolean"
+    },
+    "last_active_at": {
+      "type": "string"
+    },
+    "name": {
+      "type": "string"
+    },
+    "status": {
+      "enum": [
+        "active",
+        "orphaned",
+        "refreshing",
+        "failed"
+      ],
+      "type": "string"
+    },
+    "task_count": {
+      "type": "number"
+    },
+    "type": {
+      "type": "string"
+    },
+    "version": {
+      "type": "string"
+    }
+  },
+  "type": "object",
+  "required": [],
+  "name": "OrchestratorNode"
+}
