@@ -1,0 +1,44 @@
+{
+  "name": "Outreach & Health Check",
+  "description": "Every other day at 8am CT: checks Gmail for replies from outreach contacts, drafts responses, schedules calls in Google Calendar, runs a fleet health check, and reports to Leon.",
+  "trigger": {
+    "condition": null,
+    "config": {
+      "trigger_type": "scheduled",
+      "events": [],
+      "schedule_mode": "interval",
+      "cron_expression": null,
+      "one_time_date": null,
+      "timezone": "America/Chicago",
+      "interval_value": 2,
+      "interval_unit": "days",
+      "interval_anchor": "2026-07-28T13:00:00Z",
+      "ends_type": "never",
+      "ends_on_date": null,
+      "ends_after_count": null
+    }
+  },
+  "definition": {
+    "document": {
+      "dsl": "1.0.0",
+      "name": "outreach_and_health_check",
+      "version": "1.0",
+      "namespace": "base44"
+    },
+    "do": [
+      {
+        "check_replies_and_report": {
+          "call": "invoke_superagent_step",
+          "with": {
+            "message": "BIWEEKLY OUTREACH & HEALTH CHECK (8am CT)\n\nThis is your scheduled every-other-day check. Do the following:\n\n1. EMAIL REPLIES: Check Gmail for any replies from the 12 outreach contacts sent on July 26-27, 2026. The contacts are:\n   - NIST NCCoE: nccoe@nist.gov, karen.wetzel@nist.gov, csrc-inquiry@nist.gov\n   - NSF SBIR: sbir@nsf.gov\n   - DOE SBIR: sbir-sttr@science.doe.gov\n   - DoD SBIR: DoDSBIRSupport@reisystems.com\n   - Applied Quantum: marin@ivezic.com\n   - Chainlink: press@chain.link\n   - 3K Technologies: email@3ktechnologies.com\n   - Resolve AI: spirosx@gmail.com\n   - GSA PQC Summit: pqcevents@gsa.gov\n   - SWIFT ISO 20022: swift.address.structuring@swift.com\n\n   Search for replies from these addresses. If any replied:\n   - Draft a professional response answering their questions\n   - If they want a call, check Google Calendar for available slots and schedule it\n   - If they want a live demo, confirm and coordinate access\n   - Report the reply content and your draft response to Leon for approval before sending\n\n2. FLEET HEALTH CHECK: Run a quick health scan across the 67-app Squirrel OS fleet:\n   - Read the latest SystemHealth records on Gabriel\n   - Check for any active anomalies (AegisAnomaly with status != 'resolved')\n   - Check ConnectedApp records for any health_score below 99\n   - If any issues found, create a PlatformAlert and notify Leon\n   - Report fleet status summary\n\n3. REPORT: Post a concise summary to Leon covering:\n   - Number of email replies received (if any) and status\n   - Fleet health summary (apps online, anomalies, PQC status)\n   - Any actions taken or recommended next steps\n\nKeep the report short and actionable."
+          },
+          "then": "end",
+          "x-base44": {
+            "title": "Check email replies & fleet health",
+            "description": "Every-other-day 8am CT outreach follow-up and health scan"
+          }
+        }
+      }
+    ]
+  }
+}
