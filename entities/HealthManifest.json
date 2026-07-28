@@ -1,0 +1,35 @@
+{
+  "properties": {
+    "app_id": {
+      "type": "string"
+    },
+    "cpu_usage": {
+      "type": "number"
+    },
+    "customer_id": {
+      "type": "string"
+    },
+    "generated_at": {
+      "type": "string"
+    },
+    "health_score": {
+      "type": "number"
+    },
+    "heartbeat_status": {
+      "type": "string"
+    },
+    "latency_ms": {
+      "type": "number"
+    },
+    "token_usage": {
+      "type": "number"
+    }
+  },
+  "required": [
+    "customer_id",
+    "app_id",
+    "health_score"
+  ],
+  "type": "object",
+  "name": "HealthManifest"
+}
