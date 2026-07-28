@@ -1,0 +1,79 @@
+{
+  "name": "Cross-App Heartbeat Monitor",
+  "description": "Scans all 37 Squirrel OS apps every 15 minutes from Gabriel. Replaces 37 individual app-level heartbeat monitors with a single consolidated scan. Calls jasperCrossAppMonitor function which reads health data from all apps and stores results locally.",
+  "trigger": {
+    "condition": null,
+    "config": {
+      "trigger_type": "scheduled",
+      "events": [],
+      "schedule_mode": "recurring",
+      "cron_expression": "*/15 * * * *",
+      "one_time_date": null,
+      "timezone": "America/Chicago",
+      "interval_value": null,
+      "interval_unit": null,
+      "interval_anchor": null,
+      "ends_type": "never",
+      "ends_on_date": null,
+      "ends_after_count": null
+    }
+  },
+  "definition": {
+    "document": {
+      "dsl": "1.0.0",
+      "name": "cross_app_heartbeat",
+      "version": "1.0",
+      "namespace": "base44"
+    },
+    "do": [
+      {
+        "scan": {
+          "call": "invoke_backend_function",
+          "with": {
+            "function_name": "jasperCrossAppMonitor"
+          },
+          "then": "check_critical",
+          "x-base44": {
+            "title": "Scan all 37 apps",
+            "description": "Cross-app health monitor"
+          }
+        }
+      },
+      {
+        "check_critical": {
+          "switch": [
+            {
+              "when": "${ .scan.success == true and .scan.ecosystem.critical > 0 }",
+              "then": "alert_critical"
+            },
+            {
+              "when": "${ .scan.success == true }",
+              "then": "end"
+            },
+            {
+              "when": "${ true }",
+              "then": "end"
+            }
+          ],
+          "x-base44": {
+            "title": "Check for critical apps",
+            "description": "Branch on scan results"
+          }
+        }
+      },
+      {
+        "alert_critical": {
+          "call": "invoke_superagent_step",
+          "with": {
+            "message": "Cross-App Heartbeat detected ${ .scan.ecosystem.critical } critical app(s) in the Squirrel OS ecosystem.\n\nCritical alerts:\n${ .scan.ecosystem.critical_alerts }\n\nExecute the Detect-Isolate-Heal protocol for each critical app. Review the PredictiveAlerts that were just created and dispatch remediation to the affected apps."
+          },
+          "then": "end",
+          "x-base44": {
+            "title": "Alert Gabriel for healing",
+            "description": "Trigger agent to heal critical apps"
+          }
+        }
+      }
+    ]
+  }
+}
