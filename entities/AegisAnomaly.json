@@ -1,0 +1,103 @@
+{
+  "properties": {
+    "affected_agent_id": {
+      "type": "string"
+    },
+    "affected_node_id": {
+      "type": "string"
+    },
+    "anomaly_type": {
+      "enum": [
+        "prompt_drift",
+        "latency_spike",
+        "token_overrun",
+        "node_orphan",
+        "agent_overload",
+        "export_pipeline_stall",
+        "heartbeat_miss",
+        "quantum_vulnerability_detected",
+        "cpu_spike",
+        "integration_degraded",
+        "unknown"
+      ],
+      "type": "string"
+    },
+    "category": {
+      "enum": [
+        "infra",
+        "security",
+        "performance",
+        "fintech",
+        "orchestration"
+      ],
+      "type": "string"
+    },
+    "component": {
+      "type": "string"
+    },
+    "confidence_score": {
+      "type": "number"
+    },
+    "description": {
+      "type": "string"
+    },
+    "detected_at": {
+      "type": "string"
+    },
+    "estimated_break_year": {
+      "type": "number"
+    },
+    "linked_healing_event_id": {
+      "type": "string"
+    },
+    "linked_playbook_id": {
+      "type": "string"
+    },
+    "metrics": {
+      "type": "object"
+    },
+    "quantum_threat_level": {
+      "enum": [
+        "low_risk",
+        "high_risk",
+        "critical",
+        "none"
+      ],
+      "type": "string"
+    },
+    "root_cause": {
+      "type": "string"
+    },
+    "severity": {
+      "enum": [
+        "low",
+        "medium",
+        "high",
+        "critical"
+      ],
+      "type": "string"
+    },
+    "status": {
+      "enum": [
+        "detected",
+        "isolating",
+        "healing",
+        "resolved",
+        "escalated"
+      ],
+      "type": "string"
+    },
+    "suggested_pqc_algorithm": {
+      "type": "string"
+    },
+    "title": {
+      "type": "string"
+    },
+    "vulnerable_algorithm": {
+      "type": "string"
+    }
+  },
+  "type": "object",
+  "required": [],
+  "name": "AegisAnomaly"
+}
