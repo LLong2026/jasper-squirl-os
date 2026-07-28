@@ -1,0 +1,44 @@
+{
+  "name": "Friday Backend Monitoring",
+  "description": "Runs every Friday at 9am CT. Read-only entity scan (no workflow activation, no credit burn for monitoring). Generates a System Health Manifest and auto-pushes to Google Drive and all 3 GitHub repos.",
+  "trigger": {
+    "condition": null,
+    "config": {
+      "trigger_type": "scheduled",
+      "events": [],
+      "schedule_mode": "recurring",
+      "cron_expression": "0 9 * * 5",
+      "one_time_date": null,
+      "timezone": "America/Chicago",
+      "interval_value": null,
+      "interval_unit": null,
+      "interval_anchor": null,
+      "ends_type": "never",
+      "ends_on_date": null,
+      "ends_after_count": null
+    }
+  },
+  "definition": {
+    "document": {
+      "dsl": "1.0.0",
+      "name": "friday_backend_monitoring",
+      "namespace": "base44",
+      "version": "1.0"
+    },
+    "do": [
+      {
+        "friday_monitoring": {
+          "call": "invoke_superagent_step",
+          "then": "end",
+          "with": {
+            "message": "FRIDAY BACKEND MONITORING \u2014 automated trigger.\n\nExecute the following steps (NO workflow activation needed \u2014 this is read-only):\n1. Read all ConnectedApp records (entity read, all fields) \u2014 zero credit cost\n2. Aggregate AegisHealingEvent (total, auto_resolved), AegisPlaybook (total), NeuralNode (total, activations), AegisAnomaly (total, resolved, detected), Pattern (total), PredictiveAlert (total, active)\n3. Read the latest 2 SystemHealth snapshots\n4. Generate a System Health Manifest markdown file using the mandated format\n5. Save the file as System_Health_Manifest_{date}_Friday_Monitoring.md\n6. Upload the file to Google Drive in the 'Squirrel OS \u2014 Ecosystem Documentation' folder (folder ID: 1fDU02tUdPx65AkV9bqvidqQS8QCq9TS9)\n7. Also push the file to all 3 GitHub repos: LLong2026/Jasper-OS, LLong2026/Jasper-OS--Squirrel, LLong2026/jasper-os-muskrat\n8. Report the results to Leon via broadcast_message with a summary and the Drive link\n\nThis is the weekly Friday check \u2014 read-only, no workflow activation, auto-push to Drive and GitHub."
+          },
+          "x-base44": {
+            "description": "Read-only entity scan, generate manifest, push to Drive + GitHub",
+            "title": "Friday Backend Monitoring + Drive Push"
+          }
+        }
+      }
+    ]
+  }
+}
