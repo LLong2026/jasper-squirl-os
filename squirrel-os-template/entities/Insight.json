@@ -1,0 +1,44 @@
+{
+  "properties": {
+    "acted_on": {
+      "type": "boolean"
+    },
+    "category": {
+      "enum": [
+        "performance",
+        "reliability",
+        "security",
+        "cost",
+        "efficiency"
+      ],
+      "type": "string"
+    },
+    "created_at": {
+      "type": "string"
+    },
+    "insight_text": {
+      "type": "string"
+    },
+    "recommended_action": {
+      "type": "string"
+    },
+    "severity": {
+      "enum": [
+        "low",
+        "medium",
+        "high",
+        "critical"
+      ],
+      "type": "string"
+    },
+    "source_patterns": {
+      "items": {
+        "type": "string"
+      },
+      "type": "array"
+    }
+  },
+  "type": "object",
+  "required": [],
+  "name": "Insight"
+}
