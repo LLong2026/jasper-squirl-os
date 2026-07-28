@@ -1,0 +1,122 @@
+[
+  {
+    "name": "PB-001: Prompt Drift Corrector",
+    "anomaly_type": "prompt_drift",
+    "trigger_condition": "Agent output deviates >15% from baseline token pattern or semantic drift detected",
+    "isolation_steps": ["Capture current agent system_prompt and compare to baseline", "Log drift delta and affected conversation context", "Pause agent task queue to prevent cascading drift"],
+    "healing_steps": ["Flush agent context window", "Reload baseline system_prompt from AegisPlaybook template", "Apply context repair injection with corrected instructions", "Resume agent with fresh context"],
+    "verification_steps": ["Run test query against corrected agent", "Compare output to baseline within 5% tolerance", "Confirm token efficiency restored to baseline ±10%"],
+    "confidence_threshold": 0.75,
+    "success_count": 0,
+    "failure_count": 0,
+    "avg_resolution_time_ms": 0
+  },
+  {
+    "name": "PB-002: CPU Spike Throttle",
+    "anomaly_type": "cpu_spike",
+    "trigger_condition": "CPU usage exceeds 85% threshold on any OrchestratorNode",
+    "isolation_steps": ["Identify node with CPU spike via SystemHeartbeat", "Determine which OrchestratorTask is consuming CPU", "Check if spike is from training or normal load"],
+    "healing_steps": ["Throttle non-critical background tasks on affected node", "Redistribute load to alternate node with <50% CPU", "Enable dynamic CPU frequency scaling", "Clear process cache and optimize memory allocation"],
+    "verification_steps": ["Confirm CPU dropped below 85% threshold", "Verify redistributed tasks completed successfully", "Check SystemHealth for stable overall_status"],
+    "confidence_threshold": 0.9,
+    "success_count": 3,
+    "failure_count": 0,
+    "avg_resolution_time_ms": 8000
+  },
+  {
+    "name": "PB-003: Latency Spike Resolver",
+    "anomaly_type": "latency_spike",
+    "trigger_condition": "Agent avg_latency_ms exceeds 2x baseline or >5000ms",
+    "isolation_steps": ["Identify agent with elevated latency via OrchestratorAgent metrics", "Trace latency to upstream dependency", "Check OrchestratorNode CPU/memory for bottleneck"],
+    "healing_steps": ["Reroute agent tasks to lower-latency node", "Clear stale connection pools", "Warm agent context cache", "Apply fallback routing if upstream bottleneck"],
+    "verification_steps": ["Confirm agent latency returned to <2x baseline", "Verify no tasks dropped during reroute", "Log healing event with before/after metrics"],
+    "confidence_threshold": 0.8,
+    "success_count": 0,
+    "failure_count": 0,
+    "avg_resolution_time_ms": 0
+  },
+  {
+    "name": "PB-004: Token Overrun Optimizer",
+    "anomaly_type": "token_overrun",
+    "trigger_condition": "Agent token usage exceeds 150% of expected token budget per task",
+    "isolation_steps": ["Identify agent with token overrun via OrchestratorTask records", "Analyze token distribution (prompt vs completion vs context)", "Check for prompt bloat or redundant context injection"],
+    "healing_steps": ["Apply token budget enforcement with hard cap", "Strip non-essential context from agent prompt", "Compress system_prompt to essential directives only", "Enable context summarization for long conversations"],
+    "verification_steps": ["Confirm token usage within 110% of budget", "Verify agent output quality maintained", "Log token savings as LearningMetric"],
+    "confidence_threshold": 0.85,
+    "success_count": 0,
+    "failure_count": 0,
+    "avg_resolution_time_ms": 0
+  },
+  {
+    "name": "PB-005: Orphan Node Purger",
+    "anomaly_type": "node_orphan",
+    "trigger_condition": "OrchestratorNode with zero active OrchestratorTask records and last_active_at exceeds stale threshold",
+    "isolation_steps": ["Confirm node has zero active tasks via OrchestratorTask query", "Verify last_active_at exceeds stale threshold (default 24h)", "Check no pending tasks assigned to this node", "Mark node as is_orphan=true"],
+    "healing_steps": ["Drain any remaining idle connections on orphaned node", "Delete OrchestratorNode record", "Log purge in AegisHealingEvent", "Update SystemHealth orphan_node_count"],
+    "verification_steps": ["Confirm node record deleted", "Verify no tasks orphaned by deletion", "Confirm SystemHealth reflects reduced orphan count"],
+    "confidence_threshold": 0.95,
+    "success_count": 0,
+    "failure_count": 0,
+    "avg_resolution_time_ms": 0
+  },
+  {
+    "name": "PB-006: Agent Overload Balancer",
+    "anomaly_type": "agent_overload",
+    "trigger_condition": "OrchestratorAgent current_task_count exceeds 70% of max_task_capacity",
+    "isolation_steps": ["Identify overloaded agent via OrchestratorAgent load metrics", "Find underutilized agents with <40% load capacity", "Calculate optimal task redistribution plan"],
+    "healing_steps": ["Reroute incoming tasks from overloaded to underutilized agents", "Update current_task_count on all affected agents", "Refresh OrchestratorNode assignments", "Confirm heartbeat health post-rebalance"],
+    "verification_steps": ["Confirm all agents below 70% load threshold", "Verify no tasks dropped during redistribution", "Log rebalance as AegisHealingEvent"],
+    "confidence_threshold": 0.9,
+    "success_count": 0,
+    "failure_count": 0,
+    "avg_resolution_time_ms": 0
+  },
+  {
+    "name": "PB-007: Export Pipeline Restorer",
+    "anomaly_type": "export_pipeline_stall",
+    "trigger_condition": "Export telemetry shows transfer failure, formatting drop, or auth timeout",
+    "isolation_steps": ["Check export pipeline auth token validity", "Identify failed export batch and target document", "Determine failure type: auth_timeout, format_mismatch, rate_limit"],
+    "healing_steps": ["Refresh OAuth token for export pipeline", "Retry failed export with exponential backoff (3 attempts max)", "Normalize payload to expected schema if format mismatch", "Queue export for next available window if rate limited"],
+    "verification_steps": ["Confirm export completed successfully on retry", "Verify document formatting matches expected schema", "Log pipeline restore in AegisHealingEvent"],
+    "confidence_threshold": 0.7,
+    "success_count": 0,
+    "failure_count": 0,
+    "avg_resolution_time_ms": 0
+  },
+  {
+    "name": "PB-008: Heartbeat Re-igniter",
+    "anomaly_type": "heartbeat_miss",
+    "trigger_condition": "SystemHeartbeat record missing for any registered component beyond expected interval",
+    "isolation_steps": ["Identify component with missing heartbeat", "Check if component still registered in OrchestratorAgent/Node", "Determine if component crashed or monitoring loop stopped"],
+    "healing_steps": ["Re-invoke ameliaHeartbeat for affected component", "Restart via agentActivation if component crashed", "Restart heartbeat cron if monitoring loop stopped", "Register fresh SystemHeartbeat record"],
+    "verification_steps": ["Confirm new heartbeat record created", "Verify component status is 'alive' in SystemHeartbeat", "Log re-ignition in AegisHealingEvent"],
+    "confidence_threshold": 0.85,
+    "success_count": 1,
+    "failure_count": 0,
+    "avg_resolution_time_ms": 2000
+  },
+  {
+    "name": "PB-009: Quantum Vulnerability Migrator",
+    "anomaly_type": "quantum_vulnerability_detected",
+    "trigger_condition": "pqcManager detects legacy cryptographic algorithm (RSA, ECC, DH) in inter-agent comms or system config",
+    "isolation_steps": ["Identify vulnerable algorithm and affected component via AegisAnomaly", "Determine threat level and estimated break year", "Check if PQC replacement algorithm is available (Kyber, Dilithium, SPHINCS+)", "Flag as critical if in active fintech transaction path"],
+    "healing_steps": ["Migrate vulnerable algorithm to NIST-approved PQC alternative", "Update affected component configuration", "Verify hybrid scheme for backward compatibility", "Mark anomaly as resolved with migration log"],
+    "verification_steps": ["Confirm pqcManager validation passes post-migration", "Verify zero vulnerable_crypto_count in SystemHealth", "Log migration in AegisHealingEvent with before/after algorithms"],
+    "confidence_threshold": 0.8,
+    "success_count": 2,
+    "failure_count": 0,
+    "avg_resolution_time_ms": 5000
+  },
+  {
+    "name": "PB-010: Unknown Anomaly Escalator",
+    "anomaly_type": "unknown",
+    "trigger_condition": "Anomaly detected that does not match any known anomaly_type",
+    "isolation_steps": ["Capture full anomaly context (agent, node, metrics, timestamp)", "Search Pattern and AegisHealingEvent history for similar signatures", "Classify as 'unknown' if no match found"],
+    "healing_steps": ["Create SelfImprovementProposal for new anomaly type", "Generate PredictiveAlert with severity based on impact assessment", "Escalate to human operator via Slack #squirrel-os-alerts", "Set anomaly status to 'escalated'"],
+    "verification_steps": ["Confirm SelfImprovementProposal created", "Verify PredictiveAlert posted", "Confirm escalation notification sent"],
+    "confidence_threshold": 0.0,
+    "success_count": 0,
+    "failure_count": 0,
+    "avg_resolution_time_ms": 0
+  }
+]
