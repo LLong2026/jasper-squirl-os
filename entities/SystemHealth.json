@@ -1,0 +1,100 @@
+{
+  "properties": {
+    "active_anomaly_count": {
+      "type": "number"
+    },
+    "active_anomalies": {
+      "type": "number"
+    },
+    "agent_count": {
+      "type": "number"
+    },
+    "app_id": {
+      "type": "string"
+    },
+    "avg_latency_ms": {
+      "type": "number"
+    },
+    "avg_recovery_ms": {
+      "type": "number"
+    },
+    "avg_token_efficiency": {
+      "type": "number"
+    },
+    "chronos_vitality": {
+      "type": "number"
+    },
+    "entities_checked": {
+      "type": "number"
+    },
+    "functions_inventory": {
+      "type": "number"
+    },
+    "health_score": {
+      "type": "number"
+    },
+    "heartbeat_count": {
+      "type": "number"
+    },
+    "heartbeat_status": {
+      "enum": [
+        "alive",
+        "degraded",
+        "dead"
+      ],
+      "type": "string"
+    },
+    "node_count": {
+      "type": "number"
+    },
+    "orphan_node_count": {
+      "type": "number"
+    },
+    "overall_status": {
+      "enum": [
+        "healthy",
+        "degraded",
+        "critical"
+      ],
+      "type": "string"
+    },
+    "pqc_readiness_score": {
+      "type": "number"
+    },
+    "resolved_anomalies": {
+      "type": "number"
+    },
+    "snapshot_id": {
+      "type": "string"
+    },
+    "status": {
+      "enum": [
+        "healthy",
+        "degraded",
+        "critical"
+      ],
+      "type": "string"
+    },
+    "successful_heals": {
+      "type": "number"
+    },
+    "success_rate": {
+      "type": "number"
+    },
+    "timestamp": {
+      "type": "string"
+    },
+    "total_healing_events": {
+      "type": "number"
+    },
+    "uptime_percentage": {
+      "type": "number"
+    },
+    "vulnerable_crypto_count": {
+      "type": "number"
+    }
+  },
+  "type": "object",
+  "required": [],
+  "name": "SystemHealth"
+}
