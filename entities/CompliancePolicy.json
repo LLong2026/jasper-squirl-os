@@ -1,0 +1,54 @@
+{
+  "properties": {
+    "active": {
+      "type": "boolean"
+    },
+    "automated": {
+      "type": "boolean"
+    },
+    "category": {
+      "type": "string"
+    },
+    "compliance_standard": {
+      "type": "string"
+    },
+    "created_at": {
+      "type": "string"
+    },
+    "description": {
+      "type": "string"
+    },
+    "enforcement_level": {
+      "type": "string",
+      "enum": [
+        "advisory",
+        "mandatory",
+        "critical"
+      ]
+    },
+    "last_audited": {
+      "type": "string"
+    },
+    "name": {
+      "type": "string"
+    },
+    "policy_id": {
+      "type": "string"
+    },
+    "requires_human_approval": {
+      "type": "boolean"
+    },
+    "scope": {
+      "type": "string"
+    },
+    "validation_frequency": {
+      "type": "string"
+    },
+    "version": {
+      "type": "string"
+    }
+  },
+  "type": "object",
+  "required": [],
+  "name": "CompliancePolicy"
+}
