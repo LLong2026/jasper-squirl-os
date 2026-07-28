@@ -1,13 +1,13 @@
 {
   "name": "Squirrel OS Daily Sweep",
-  "description": "Jasper Hypervisor daily full remediation sweep at 3am CT \u2014 resolves stale anomalies, rebalances agents, purges orphans, refreshes nodes, logs RemediationSweep.",
+  "description": "Jasper Hypervisor weekly remediation sweep (conservation mode) \u2014 runs Mondays at 9am CT, resolves stale anomalies, rebalances agents, purges orphans, refreshes nodes, logs RemediationSweep.",
   "trigger": {
     "condition": null,
     "config": {
       "trigger_type": "scheduled",
       "events": [],
       "schedule_mode": "recurring",
-      "cron_expression": "0 3 * * *",
+      "cron_expression": "0 9 * * 1",
       "one_time_date": null,
       "timezone": "America/Chicago",
       "interval_value": null,
@@ -39,7 +39,7 @@
           "then": "collect_metrics",
           "x-base44": {
             "title": "Jasper Full System Sweep",
-            "description": "Daily 3am remediation sweep"
+            "description": "Weekly Monday 9am remediation sweep (conservation mode)"
           }
         }
       },

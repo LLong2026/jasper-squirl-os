@@ -1,13 +1,13 @@
 {
   "name": "Squirrel OS Heartbeat Monitor",
-  "description": "Amelia's heartbeat monitoring cycle \u2014 fires every 5 minutes, calls ameliaHeartbeat to collect SystemHeartbeat records, detect stale agents, and auto-create AegisAnomaly records for heartbeat misses.",
+  "description": "Amelia's heartbeat monitoring cycle \u2014 fires every 6 hours (conservation mode), calls ameliaHeartbeat to collect SystemHeartbeat records, detect stale agents, and auto-create AegisAnomaly records for heartbeat misses.",
   "trigger": {
     "condition": "${ true }",
     "config": {
       "trigger_type": "scheduled",
       "events": [],
       "schedule_mode": "recurring",
-      "cron_expression": "*/5 * * * *",
+      "cron_expression": "0 */6 * * *",
       "one_time_date": null,
       "timezone": "America/Chicago",
       "interval_value": null,
@@ -37,7 +37,7 @@
           },
           "x-base44": {
             "title": "Amelia Heartbeat Pulse",
-            "description": "5-min heartbeat cycle"
+            "description": "6-hour heartbeat cycle (conservation mode)"
           },
           "then": "check_health"
         }
