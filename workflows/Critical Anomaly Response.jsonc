@@ -1,0 +1,37 @@
+{
+  "name": "Critical Anomaly Response",
+  "description": "Triggers when a PredictiveAlert with severity 'critical' is created on Gabriel. Fires Gabriel to execute the Detect-Isolate-Heal protocol on the affected app. Replaces 37 app-level anomaly auto-response workflows.",
+  "trigger": {
+    "condition": "${ .trigger.data.severity == \"critical\" and .trigger.data.status == \"active\" }",
+    "config": {
+      "trigger_type": "entity",
+      "events": [
+        "create"
+      ],
+      "entity_name": "PredictiveAlert"
+    }
+  },
+  "definition": {
+    "document": {
+      "dsl": "1.0.0",
+      "name": "critical_anomaly_response",
+      "version": "1.0",
+      "namespace": "base44"
+    },
+    "do": [
+      {
+        "respond": {
+          "call": "invoke_superagent_step",
+          "with": {
+            "message": "CRITICAL ANOMALY ALERT triggered by the Squirrel OS cross-app monitor.\n\nAlert details:\n- Predicted issue: ${ .trigger.data.predicted_issue }\n- Affected components: ${ .trigger.data.affected_components }\n- Probability: ${ .trigger.data.probability }\n- Recommended action: ${ .trigger.data.recommended_action }\n\nExecute the Detect-Isolate-Heal protocol:\n1. DETECT: Identify the affected app and read its AegisAnomaly records\n2. ISOLATE: Determine blast radius, match to AegisPlaybook by anomaly_type\n3. HEAL: Execute the matching playbook steps on the affected app via send_message_to_builder\n4. LOG: Create an AegisHealingEvent record\n5. LEARN: Fire the pattern-learning skill to update neural mesh weights\n\nFollow all 11 Squirrel OS policy directives. If confidence is below threshold, do NOT auto-heal \u2014 escalate to human operator."
+          },
+          "then": "end",
+          "x-base44": {
+            "title": "Execute healing protocol",
+            "description": "Gabriel runs Detect-Isolate-Heal"
+          }
+        }
+      }
+    ]
+  }
+}
