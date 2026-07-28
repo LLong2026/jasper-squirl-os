@@ -1,0 +1,36 @@
+{
+  "properties": {
+    "comparison_to_previous": {
+      "type": "number"
+    },
+    "metric_name": {
+      "enum": [
+        "resolution_time",
+        "success_rate",
+        "auto_heal_rate",
+        "pattern_match_rate"
+      ],
+      "type": "string"
+    },
+    "period": {
+      "type": "string"
+    },
+    "recorded_at": {
+      "type": "string"
+    },
+    "trend": {
+      "enum": [
+        "improving",
+        "stable",
+        "degrading"
+      ],
+      "type": "string"
+    },
+    "value": {
+      "type": "number"
+    }
+  },
+  "type": "object",
+  "required": [],
+  "name": "LearningMetric"
+}
