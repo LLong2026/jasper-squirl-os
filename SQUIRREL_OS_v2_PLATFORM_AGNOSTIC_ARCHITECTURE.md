@@ -405,3 +405,42 @@ The 67-app Base44 fleet was the proof of concept. The ISO20022 Bridge was the fl
 **Document Version:** 1.0 Draft  
 **Classification:** Internal Architecture Proposal  
 **Next Action:** Review with Leon, then begin Phase 1 (Microsoft telemetry adapter)
+
+
+---
+
+## 10. Deployed Platform Adapters (July 28, 2026)
+
+All four platform adapters have been deployed as backend functions on the Squirrel OS Hub (Gabriel):
+
+| Adapter | Function Name | APIs Integrated | Playbooks | Status |
+|---------|--------------|-----------------|----------|--------|
+| Microsoft | microsoftAdapter | Azure Monitor, Microsoft Graph, Azure REST, Entra ID, Key Vault, Teams, Azure DevOps | 12 | Deployed — awaiting Azure credentials |
+| iOS | iosAdapter | App Store Connect, APNs, Apple Developer, CloudKit, MDM | 5 | Deployed — awaiting Apple credentials |
+| Windows | windowsAdapter | Microsoft Intune, Microsoft Graph, Defender for Endpoint, IIS | 5 | Deployed — awaiting Intune credentials |
+| macOS | macosAdapter | Jamf Pro, Apple Notary, launchd, Keychain, Time Machine | 5 | Deployed — awaiting Jamf credentials |
+
+### Total Cross-Platform Playbooks: 27
+
+| Platform | Categories Covered |
+|-----------|-------------------|
+| Microsoft Azure | App Service restart, Function recovery, token rotation, Key Vault PQC, Teams bot, SQL connection, Monitor alerts, Entra ID SP, Blob corruption, AKS pods, Power Automate, Azure DevOps |
+| iOS | App crash recovery, APNs cert renewal, TestFlight build recovery, iCloud sync failure, MDM enrollment |
+| Windows | Service restart, Update failure, Defender threat response, IIS App Pool, Registry corruption repair |
+| macOS | LaunchDaemon recovery, Keychain cert rotation, App notarization, Disk permissions, Time Machine backup |
+
+### Credentials Needed Per Platform
+
+| Platform | Credentials Required |
+|----------|---------------------|
+| Microsoft Azure | AZURE_TENANT_ID, AZURE_CLIENT_ID, AZURE_CLIENT_SECRET, AZURE_SUBSCRIPTION_ID |
+| iOS / Apple | APPLE_ISSUER_ID, APPLE_KEY_ID, APPLE_PRIVATE_KEY (App Store Connect API) |
+| Windows / Intune | INTUNE_TENANT_ID, INTUNE_CLIENT_ID, INTUNE_CLIENT_SECRET (or reuse Azure) |
+| macOS / Jamf | JAMF_API_URL, JAMF_CLIENT_ID, JAMF_CLIENT_SECRET |
+
+Each adapter supports three operations:
+- **GET** /api/functions/{adapter} — List platform-specific playbooks
+- **POST** with action: pull_health — Pull telemetry from external platform into Squirrel OS SystemHealth
+- **POST** with action: heal — Execute a healing action on an external resource
+
+All healing events are logged as AegisHealingEvent records regardless of platform — the audit trail is unified.
