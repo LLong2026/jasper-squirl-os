@@ -1,0 +1,44 @@
+{
+  "name": "Monthly Ecosystem Pulse",
+  "description": "Runs on the 1st and 15th of each month at 9am CT. Activates all monitoring workflows, fires 2 signal pulses 90 seconds apart, creates SystemHealth snapshots, then deactivates everything back to standby.",
+  "trigger": {
+    "condition": null,
+    "config": {
+      "trigger_type": "scheduled",
+      "events": [],
+      "schedule_mode": "recurring",
+      "cron_expression": "0 9 1,15 * *",
+      "one_time_date": null,
+      "timezone": "America/Chicago",
+      "interval_value": null,
+      "interval_unit": null,
+      "interval_anchor": null,
+      "ends_type": "never",
+      "ends_on_date": null,
+      "ends_after_count": null
+    }
+  },
+  "definition": {
+    "document": {
+      "dsl": "1.0.0",
+      "name": "monthly_ecosystem_pulse",
+      "namespace": "base44",
+      "version": "1.0"
+    },
+    "do": [
+      {
+        "activate_workflows": {
+          "call": "invoke_superagent_step",
+          "then": "end",
+          "with": {
+            "message": "MONTHLY ECOSYSTEM PULSE \u2014 automated trigger.\n\nExecute the following steps:\n1. Activate all 3 workflows: Cross-App Heartbeat Monitor, Daily Ecosystem Sweep, Critical Anomaly Response\n2. Wait 30 seconds for workflows to stabilize\n3. Read all ConnectedApp records (entity read, all fields)\n4. Aggregate AegisHealingEvent, AegisPlaybook, NeuralNode, AegisAnomaly, Pattern counts\n5. Create a SystemHealth snapshot with snapshot_id 'monthly-pulse-1-{timestamp}'\n6. Wait 90 seconds\n7. Read all ConnectedApp records again\n8. Aggregate same entities again\n9. Create a second SystemHealth snapshot with snapshot_id 'monthly-pulse-2-{timestamp}'\n10. Deactivate all 3 workflows (Cross-App Heartbeat Monitor, Daily Ecosystem Sweep, Critical Anomaly Response)\n11. Report the results to Leon via broadcast_message\n\nThis is the monthly health check \u2014 2 signal pushes 90 seconds apart, then back to sleep."
+          },
+          "x-base44": {
+            "description": "Activate workflows, 2 signal pushes 90s apart, deactivate, report",
+            "title": "Monthly Ecosystem Pulse"
+          }
+        }
+      }
+    ]
+  }
+}
