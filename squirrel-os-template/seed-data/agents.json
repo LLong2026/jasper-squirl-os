@@ -1,0 +1,28 @@
+[
+  {
+    "name": "Jasper Hypervisor",
+    "role": "master_supervisor",
+    "status": "active",
+    "domain": "orchestration",
+    "current_task_count": 0,
+    "max_task_capacity": 10,
+    "health_score": 99.5,
+    "avg_latency_ms": 120,
+    "avg_token_efficiency": 95.0,
+    "last_heartbeat_at": null,
+    "app_id": "{{APP_ID}}"
+  },
+  {
+    "name": "Amelia Aegis Core",
+    "role": "healing_brain",
+    "status": "active",
+    "domain": "self_healing",
+    "current_task_count": 0,
+    "max_task_capacity": 10,
+    "health_score": 98.0,
+    "avg_latency_ms": 85,
+    "avg_token_efficiency": 92.0,
+    "last_heartbeat_at": null,
+    "app_id": "{{APP_ID}}"
+  }
+]
