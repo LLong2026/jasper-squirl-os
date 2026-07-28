@@ -1,0 +1,60 @@
+{
+  "name": "Squirrel OS Heartbeat Monitor",
+  "description": "Amelia's heartbeat monitoring cycle \u2014 fires every 5 minutes, calls ameliaHeartbeat to collect SystemHeartbeat records, detect stale agents, and auto-create AegisAnomaly records for heartbeat misses.",
+  "trigger": {
+    "condition": "${ true }",
+    "config": {
+      "trigger_type": "scheduled",
+      "events": [],
+      "schedule_mode": "recurring",
+      "cron_expression": "*/5 * * * *",
+      "one_time_date": null,
+      "timezone": "America/Chicago",
+      "interval_value": null,
+      "interval_unit": null,
+      "interval_anchor": null,
+      "ends_type": "never",
+      "ends_on_date": null,
+      "ends_after_count": null
+    }
+  },
+  "definition": {
+    "document": {
+      "dsl": "1.0.0",
+      "name": "squirrel_os_heartbeat_monitor",
+      "namespace": "base44",
+      "version": "1.0"
+    },
+    "do": [
+      {
+        "heartbeat_pulse": {
+          "call": "invoke_backend_function",
+          "with": {
+            "args": {
+              "action": "pulse"
+            },
+            "function_name": "ameliaHeartbeat"
+          },
+          "x-base44": {
+            "title": "Amelia Heartbeat Pulse",
+            "description": "5-min heartbeat cycle"
+          },
+          "then": "check_health"
+        }
+      },
+      {
+        "check_health": {
+          "call": "invoke_backend_function",
+          "with": {
+            "function_name": "healthCheck"
+          },
+          "x-base44": {
+            "title": "System Health Check",
+            "description": "Update SystemHealth snapshot"
+          },
+          "then": "end"
+        }
+      }
+    ]
+  }
+}
