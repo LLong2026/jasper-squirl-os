@@ -1,0 +1,47 @@
+{
+  "properties": {
+    "alert_type": {
+      "enum": [
+        "health_drop",
+        "deploy_fail",
+        "credit_overage",
+        "heartbeat_miss"
+      ],
+      "type": "string"
+    },
+    "app_id": {
+      "type": "string"
+    },
+    "created_at": {
+      "type": "string"
+    },
+    "customer_id": {
+      "type": "string"
+    },
+    "escalated_to_gabriel": {
+      "type": "boolean"
+    },
+    "message": {
+      "type": "string"
+    },
+    "resolved_at": {
+      "type": "string"
+    },
+    "severity": {
+      "enum": [
+        "info",
+        "warning",
+        "critical"
+      ],
+      "type": "string"
+    }
+  },
+  "required": [
+    "customer_id",
+    "alert_type",
+    "severity",
+    "message"
+  ],
+  "type": "object",
+  "name": "PlatformAlert"
+}
