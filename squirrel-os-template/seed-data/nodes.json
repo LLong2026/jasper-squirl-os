@@ -1,0 +1,24 @@
+[
+  {
+    "name": "Squirrel-OS-Core",
+    "type": "compute",
+    "status": "active",
+    "agent_id": "jasper-hv",
+    "task_count": 0,
+    "capacity": 10,
+    "last_active_at": null,
+    "is_orphan": false,
+    "version": "1.0.0"
+  },
+  {
+    "name": "Amelia-Neural-Mesh",
+    "type": "memory_optimized",
+    "status": "active",
+    "agent_id": "amelia-aegis",
+    "task_count": 0,
+    "capacity": 10,
+    "last_active_at": null,
+    "is_orphan": false,
+    "version": "1.0.0"
+  }
+]
