@@ -1,0 +1,50 @@
+{
+  "properties": {
+    "app_id": {
+      "type": "string"
+    },
+    "app_name": {
+      "type": "string"
+    },
+    "customer_id": {
+      "type": "string"
+    },
+    "deployment_status": {
+      "enum": [
+        "pending",
+        "in_progress",
+        "complete",
+        "failed"
+      ],
+      "type": "string"
+    },
+    "health_score": {
+      "type": "number"
+    },
+    "last_heartbeat": {
+      "type": "string"
+    },
+    "neural_mesh_node_count": {
+      "type": "number"
+    },
+    "pqc_config": {
+      "type": "string"
+    },
+    "status": {
+      "enum": [
+        "active",
+        "degraded",
+        "offline",
+        "deploying"
+      ],
+      "type": "string"
+    }
+  },
+  "required": [
+    "customer_id",
+    "app_id",
+    "app_name"
+  ],
+  "type": "object",
+  "name": "ConnectedApp"
+}
