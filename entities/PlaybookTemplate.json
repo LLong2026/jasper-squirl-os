@@ -1,0 +1,35 @@
+{
+  "properties": {
+    "anomaly_type": {
+      "type": "string"
+    },
+    "code": {
+      "type": "string"
+    },
+    "confidence_threshold": {
+      "type": "number"
+    },
+    "github_ref": {
+      "type": "string"
+    },
+    "name": {
+      "type": "string"
+    },
+    "remediation_steps": {
+      "type": "string"
+    },
+    "trigger_condition": {
+      "type": "string"
+    },
+    "version": {
+      "type": "string"
+    }
+  },
+  "required": [
+    "code",
+    "name",
+    "anomaly_type"
+  ],
+  "type": "object",
+  "name": "PlaybookTemplate"
+}
