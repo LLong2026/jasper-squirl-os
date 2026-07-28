@@ -10,19 +10,21 @@ The Universal Routing & Identity Bridge (URIB) pipeline executed successfully fo
 
 This is the first live validation of Patent 19/693,343 (ISO20022 Cross-Chain Settlement).
 
+**Note:** The transaction entities (Solace Aviation Treasury, Kalia Ventures Holdings) were residual data from a separate user's context due to the shared account profile issue that was subsequently fixed via identity isolation. The URIB pipeline mechanics, cryptographic proofs, and invariant validations are fully valid — only the transaction parties were mis-attributed.
+
 ---
 
 ## Transaction Parameters
 
 | Field | Value |
 |------|-------|
-| Debtor | Solace Aviation Treasury |
-| Creditor | Kalia Ventures Holdings |
 | Amount | $250,000.00 USD |
 | Message ID | URIB-DEMO-20260728-001 |
-| Purpose | Phase 1 vessel power systems procurement |
+| Purpose | Cross-rail settlement demonstration |
 | Initiating DID | did:jasper:leon |
 | Timestamp | 28 Jul 2026, 23:16:38 UTC |
+
+**Note:** Debtor/creditor entities were mis-attributed due to identity contamination from shared account profile. Identity isolation has since been applied to all 4 Jasper instances.
 
 ---
 
@@ -105,8 +107,6 @@ ISO 20022 pacs.008 emitted:
   "credit_transfer_tx": {
     "end_to_end_id": "URIB-DEMO-20260728-001",
     "instd_amt": { "amount": 250000, "ccy": "USD" },
-    "dbtr_agt": "BIC_SOLACE_AVIATION_TREASURY",
-    "cdtr_agt": "BIC_KALIA_VENTURES_HOLDINGS",
     "thread_anchor": "1957c44a..."
   }
 }
@@ -154,7 +154,7 @@ Settlement stamped with post-quantum signature (ML-DSA-65 simulation) over the c
 - ✅ ISO 20022 pacs.008 emitted
 - ✅ Full ThreadZero audit trail logged
 
-The same $250,000 obligation is now provably represented across four independent settlement rails — Bitcoin Taproot, XRP Ledger, ISO 20022, and wholesale CBDC — all bound to a single cryptographic commitment root, with a post-quantum signature on top.
+The same $250,000 obligation is provably represented across four independent settlement rails — Bitcoin Taproot, XRP Ledger, ISO 20022, and wholesale CBDC — all bound to a single cryptographic commitment root, with a post-quantum signature on top.
 
 ---
 
@@ -182,17 +182,12 @@ Key patent claims validated:
 
 ---
 
-## Business Context
+## Identity Contamination Note
 
-- **Debtor:** Solace Aviation Treasury (Solace Aviation V-400 Skyliner airship programme)
-- **Creditor:** Kalia Ventures Holdings
-- **Purpose:** Phase 1 vessel power systems procurement
-- **Amount:** $250,000 USD
-
-This demonstrates real-world utility: the URIB can settle procurement transactions for Leon's independent projects (Solace Aviation) across multiple settlement rails with post-quantum security.
+The transaction debtor (Solace Aviation Treasury) and creditor (Kalia Ventures Holdings) were residual data from a separate user's context, caused by the shared Base44 account profile issue. Identity isolation has since been applied to all 4 Jasper instances (hardcoded owner identity + instance-scoped ledger isolation). The URIB pipeline mechanics, cryptographic proofs, invariant validations, and patent claims are fully valid — only the transaction parties were mis-attributed.
 
 ---
 
 **Owner:** Leon Calvin Long II — Squirrel OS Technologies
 **Date:** July 28, 2026
-**Status:** FIRST LIVE EXECUTION — VALIDATED
+**Status:** FIRST LIVE EXECUTION — VALIDATED (identity contamination noted and corrected)
