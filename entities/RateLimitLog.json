@@ -1,0 +1,35 @@
+{
+  "properties": {
+    "action_count": {
+      "type": "number"
+    },
+    "action_type": {
+      "type": "string"
+    },
+    "app_id": {
+      "type": "string"
+    },
+    "limit_hit": {
+      "type": "boolean"
+    },
+    "period": {
+      "type": "string"
+    },
+    "scope": {
+      "type": "string",
+      "enum": [
+        "per_app",
+        "global"
+      ]
+    },
+    "timestamp": {
+      "type": "string"
+    },
+    "window_minutes": {
+      "type": "number"
+    }
+  },
+  "type": "object",
+  "required": [],
+  "name": "RateLimitLog"
+}
