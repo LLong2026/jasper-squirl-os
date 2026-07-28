@@ -1,0 +1,25 @@
+{
+  "properties": {
+    "description": {
+      "type": "string"
+    },
+    "github_ref": {
+      "type": "string"
+    },
+    "name": {
+      "type": "string"
+    },
+    "steps": {
+      "type": "string"
+    },
+    "version": {
+      "type": "string"
+    }
+  },
+  "required": [
+    "name",
+    "description"
+  ],
+  "type": "object",
+  "name": "SkillTemplate"
+}
