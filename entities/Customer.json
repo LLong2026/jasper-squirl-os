@@ -1,0 +1,50 @@
+{
+  "properties": {
+    "admin_email": {
+      "type": "string"
+    },
+    "admin_name": {
+      "type": "string"
+    },
+    "billing_status": {
+      "enum": [
+        "active",
+        "past_due",
+        "suspended",
+        "trial"
+      ],
+      "type": "string"
+    },
+    "company_name": {
+      "type": "string"
+    },
+    "connected_app_count": {
+      "type": "number"
+    },
+    "credit_allotment": {
+      "type": "number"
+    },
+    "credit_used": {
+      "type": "number"
+    },
+    "patent_license_ref": {
+      "type": "string"
+    },
+    "tier": {
+      "enum": [
+        "free",
+        "licensed",
+        "saas"
+      ],
+      "type": "string"
+    }
+  },
+  "required": [
+    "company_name",
+    "admin_name",
+    "admin_email",
+    "tier"
+  ],
+  "type": "object",
+  "name": "Customer"
+}
