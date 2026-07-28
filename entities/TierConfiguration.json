@@ -1,0 +1,49 @@
+{
+  "properties": {
+    "cross_app_monitor_enabled": {
+      "type": "boolean"
+    },
+    "credit_allotment": {
+      "type": "number"
+    },
+    "entity_set": {
+      "type": "string"
+    },
+    "features": {
+      "items": {
+        "type": "string"
+      },
+      "type": "array"
+    },
+    "neural_mesh_enabled": {
+      "type": "boolean"
+    },
+    "playbook_set": {
+      "type": "string"
+    },
+    "pqc_enabled": {
+      "type": "boolean"
+    },
+    "price": {
+      "type": "string"
+    },
+    "skill_set": {
+      "type": "string"
+    },
+    "tier_name": {
+      "enum": [
+        "free",
+        "licensed",
+        "saas"
+      ],
+      "type": "string"
+    }
+  },
+  "required": [
+    "tier_name",
+    "features",
+    "price"
+  ],
+  "type": "object",
+  "name": "TierConfiguration"
+}
