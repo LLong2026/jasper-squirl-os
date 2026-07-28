@@ -54,6 +54,9 @@ export default function Layout({ children, currentPageName }) {
             items: [
                 { name: 'GoLive', href: createPageUrl('GoLive'), icon: Rocket },
                 { name: 'About', href: createPageUrl('About'), icon: Info },
+                { name: 'WhyWeBuiltThis', href: createPageUrl('WhyWeBuiltThis'), icon: Atom },
+                { name: 'HowItWorks', href: createPageUrl('HowItWorks'), icon: Cpu },
+                { name: 'Onboarding', href: createPageUrl('Onboarding'), icon: Rocket },
                 { name: 'Readme', href: createPageUrl('Readme'), icon: BookOpen },
                 { name: 'GitHubExport', href: createPageUrl('GitHubExport'), icon: GitBranch },
                 { name: 'CinematicDashboard', href: createPageUrl('CinematicDashboard'), icon: Sparkles },

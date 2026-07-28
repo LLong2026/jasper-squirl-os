@@ -20,6 +20,9 @@ import GoLive from './pages/GoLive';
 import About from './pages/About';
 import Readme from './pages/Readme';
 import Landing from './pages/Landing';
+import WhyWeBuiltThis from './pages/WhyWeBuiltThis';
+import HowItWorks from './pages/HowItWorks';
+import Onboarding from './pages/Onboarding';
 import { AuthProvider, useAuth } from '@/lib/AuthContext';
 import UserNotRegisteredError from '@/components/UserNotRegisteredError';
 
@@ -136,6 +139,21 @@ const AuthenticatedApp = () => {
       <Route path="/Landing" element={
         <LayoutWrapper currentPageName="Landing">
           <Landing />
+        </LayoutWrapper>
+      } />
+      <Route path="/WhyWeBuiltThis" element={
+        <LayoutWrapper currentPageName="WhyWeBuiltThis">
+          <WhyWeBuiltThis />
+        </LayoutWrapper>
+      } />
+      <Route path="/HowItWorks" element={
+        <LayoutWrapper currentPageName="HowItWorks">
+          <HowItWorks />
+        </LayoutWrapper>
+      } />
+      <Route path="/Onboarding" element={
+        <LayoutWrapper currentPageName="Onboarding">
+          <Onboarding />
         </LayoutWrapper>
       } />
       <Route path="*" element={<PageNotFound />} />
