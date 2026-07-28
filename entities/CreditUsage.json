@@ -1,0 +1,30 @@
+{
+  "properties": {
+    "credits_allotted": {
+      "type": "number"
+    },
+    "credits_used": {
+      "type": "number"
+    },
+    "customer_id": {
+      "type": "string"
+    },
+    "overage": {
+      "type": "number"
+    },
+    "period": {
+      "type": "string"
+    },
+    "tier": {
+      "type": "string"
+    }
+  },
+  "required": [
+    "customer_id",
+    "period",
+    "credits_used",
+    "tier"
+  ],
+  "type": "object",
+  "name": "CreditUsage"
+}
