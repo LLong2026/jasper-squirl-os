@@ -1,0 +1,68 @@
+name: Squirrel OS External Watchdog
+on:
+  schedule:
+    # Every 6 hours — independent of Squirrel OS infrastructure
+    - cron: '0 */6 * * *'
+  workflow_dispatch:
+
+jobs:
+  watchdog:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check Squirrel OS Health
+        run: |
+          echo "[$(date)] Squirrel OS External Watchdog — checking system health..."
+          
+          # Try to reach the Gabriel superagent health endpoint
+          RESPONSE=$(curl -s -w "\n%{http_code}" \
+            --connect-timeout 10 \
+            --max-time 30 \
+            -X POST \
+            -H "Content-Type: application/json" \
+            -d '{"action":"health_check","source":"github_watchdog"}' \
+            https://app.base44.com/api/agents/69b57683f2623117603736bc/functions/metaMonitor \
+            || echo "CONNECTION_FAILED")
+          
+          HTTP_CODE=$(echo "$RESPONSE" | tail -1)
+          BODY=$(echo "$RESPONSE" | head -n -1)
+          
+          echo "HTTP Status: $HTTP_CODE"
+          echo "Response: $BODY"
+          
+          if [ "$HTTP_CODE" = "200" ]; then
+            echo "✅ Squirrel OS is responding. System operational."
+            
+            # Check if response contains "healthy"
+            if echo "$BODY" | grep -q '"overall_status":"healthy"'; then
+              echo "All meta-monitor checks passed."
+            elif echo "$BODY" | grep -q '"overall_status":"warning"'; then
+              echo "⚠️ Meta-monitor detected warnings. Check Gabriel chat for details."
+            elif echo "$BODY" | grep -q '"overall_status":"critical"'; then
+              echo "🚨 CRITICAL: Meta-monitor detected critical issues!"
+              # Create GitHub issue for critical alerts
+              echo "::error::CRITICAL meta-monitor alert detected"
+            fi
+          elif [ "$HTTP_CODE" = "CONNECTION_FAILED" ]; then
+            echo "🚨 CRITICAL: Squirrel OS is NOT responding. System may be DOWN."
+            echo "::error::Squirrel OS unresponsive — external watchdog triggered"
+            # This is the worst case: the monitoring system itself is down
+            # Leon will see this in GitHub Actions tab and email notifications
+          else
+            echo "⚠️ Unexpected response: HTTP $HTTP_CODE"
+            echo "::warning::Unexpected response from Squirrel OS"
+          fi
+          
+          echo "[$(date)] Watchdog check complete."
+      
+      - name: Create issue on failure
+        if: failure()
+        uses: actions/github-script@v7
+        with:
+          script: |
+            github.rest.issues.create({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              title: '🚨 Squirrel OS Watchdog Alert',
+              body: `The external watchdog detected a problem with Squirrel OS at ${new Date().toISOString()}.\n\nCheck the [Gabriel chat](https://app.base44.com/superagent/69b57683f2623117603736bc) for details.\n\nThis issue was created automatically by the GitHub Actions watchdog.`,
+              labels: ['watchdog', 'critical']
+            });
