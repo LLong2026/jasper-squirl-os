@@ -1,0 +1,45 @@
+{
+  "properties": {
+    "description": {
+      "type": "string"
+    },
+    "expected_impact": {
+      "type": "string"
+    },
+    "implementation_difficulty": {
+      "enum": [
+        "low",
+        "medium",
+        "high"
+      ],
+      "type": "string"
+    },
+    "proposed_at": {
+      "type": "string"
+    },
+    "rationale": {
+      "type": "string"
+    },
+    "source_insight_id": {
+      "type": "string"
+    },
+    "source_pattern_id": {
+      "type": "string"
+    },
+    "status": {
+      "enum": [
+        "proposed",
+        "approved",
+        "implemented",
+        "rejected"
+      ],
+      "type": "string"
+    },
+    "title": {
+      "type": "string"
+    }
+  },
+  "type": "object",
+  "required": [],
+  "name": "SelfImprovementProposal"
+}
