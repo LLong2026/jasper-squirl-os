@@ -11,7 +11,40 @@ Deno.serve(async (req) => {
     const user = await base44.auth.me();
     if (!user) return Response.json({ error: 'Unauthorized' }, { status: 401 });
 
-    const { prompt, provider_preference, max_tokens, temperature } = await req.json();
+    const body = await req.json().catch(() => ({}));
+    const action = body.action || 'route';
+
+    // Health & provider-list endpoints (used by the Aegis Monitor probe / PB-017).
+    // Report router reachability + which providers have keys configured WITHOUT
+    // a live LLM call, so the probe never 503s merely because no provider keys
+    // are set yet — missing keys is a config state, not an integration outage.
+    if (action === 'health_check') {
+      const configured = [
+        { name: 'groq_free', configured: !!Deno.env.get('GROQ_API_KEY') },
+        { name: 'together_ai_free', configured: !!Deno.env.get('TOGETHER_API_KEY') },
+        { name: 'huggingface_inference', configured: !!Deno.env.get('HUGGINGFACE_API_KEY') },
+        { name: 'openai_paid', configured: !!Deno.env.get('OPENAI_API_KEY') },
+        { name: 'anthropic_paid', configured: !!Deno.env.get('ANTHROPIC_API_KEY') },
+      ];
+      const ready = configured.filter((p) => p.configured).map((p) => p.name);
+      return Response.json({
+        healthy: true, reachable: true,
+        status: ready.length > 0 ? 'operational' : 'no_keys_configured',
+        providers_configured: ready, healthy_provider: ready[0] || null,
+      });
+    }
+    if (action === 'list_providers') {
+      const providers = [
+        { name: 'groq_free', free: true, status: Deno.env.get('GROQ_API_KEY') ? 'available' : 'unavailable' },
+        { name: 'together_ai_free', free: true, status: Deno.env.get('TOGETHER_API_KEY') ? 'available' : 'unavailable' },
+        { name: 'huggingface_inference', free: true, status: Deno.env.get('HUGGINGFACE_API_KEY') ? 'available' : 'unavailable' },
+        { name: 'openai_paid', free: false, status: Deno.env.get('OPENAI_API_KEY') ? 'available' : 'unavailable' },
+        { name: 'anthropic_paid', free: false, status: Deno.env.get('ANTHROPIC_API_KEY') ? 'available' : 'unavailable' },
+      ];
+      return Response.json({ providers, available: providers.filter((p) => p.status === 'available') });
+    }
+
+    const { prompt, provider_preference, max_tokens, temperature } = body;
 
     const providers = [
       { name: 'groq_free', free: true, priority: 1 },

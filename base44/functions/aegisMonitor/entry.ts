@@ -119,15 +119,23 @@ Deno.serve(async (req) => {
         });
       }
 
-      // Persist anomalies (dedupe: skip if an active one of same type+component exists)
+      // Persist anomalies (dedupe + anti-flap cooldown):
+      //  - skip if an active (detected/analyzing/healing) one of same type+component exists
+      //  - skip if a same-type+component anomaly was resolved within COOLDOWN_MS, so a
+      //    transient blip can't flap detect -> resolve -> detect every sweep
+      const COOLDOWN_MS = 10 * 60 * 1000; // 10 minutes
       const persisted = [];
       for (const a of anomalies) {
-        const existing = await svc.AegisAnomaly.filter({ anomaly_type: a.anomaly_type, component: a.component, status: 'detected' }, '-created_date', 1);
-        if (!existing || existing.length === 0) {
-          persisted.push(await svc.AegisAnomaly.create(a));
-        } else {
-          persisted.push(existing[0]);
-        }
+        const recent = await svc.AegisAnomaly.filter({ anomaly_type: a.anomaly_type, component: a.component }, '-created_date', 5);
+        const active = recent.find((r) => r.status === 'detected' || r.status === 'analyzing' || r.status === 'healing');
+        if (active) { persisted.push(active); continue; }
+        const recentlyResolved = recent.find((r) => {
+          if (r.status !== 'resolved' || !r.updated_date) return false;
+          const sinceResolve = a.detected_at - new Date(r.updated_date).getTime();
+          return sinceResolve >= 0 && sinceResolve < COOLDOWN_MS;
+        });
+        if (recentlyResolved) { persisted.push(recentlyResolved); continue; }
+        persisted.push(await svc.AegisAnomaly.create(a));
       }
 
       // Aggregate stats for SystemHealth
