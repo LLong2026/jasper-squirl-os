@@ -6,7 +6,7 @@ import { createClientFromRequest } from 'npm:@base44/sdk@0.8.39';
 // and sends it to the app owner (Leon) via SendEmail.
 // Invoked by a weekly scheduled workflow (no user context — service role).
 
-const OWNER_EMAIL = 'longleon17@gmail.com';
+const OWNER_EMAIL = 'leonlong.research@gmail.com';
 const OWNER_NAME = 'Leon';
 const SEVEN_DAYS_MS = 7 * 24 * 60 * 60 * 1000;
 
