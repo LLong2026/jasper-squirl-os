@@ -1,0 +1,45 @@
+{
+  "name": "Weekly Aegis Digest Email",
+  "definition": {
+    "document": {
+      "dsl": "1.0.0",
+      "name": "weekly_aegis_digest_email",
+      "version": "1.0",
+      "namespace": "base44"
+    },
+    "do": [
+      {
+        "send_digest": {
+          "call": "invoke_backend_function",
+          "with": {
+            "function_name": "weeklyAegisDigest",
+            "args": {}
+          },
+          "then": "end",
+          "x-base44": {
+            "title": "Compile and email weekly Aegis digest",
+            "description": "Gathers 7 days of repair logs + stability trends and emails them to Leon"
+          }
+        }
+      }
+    ]
+  },
+  "description": "Every Monday at 9am (America/Chicago), compiles the last 7 days of Aegis healing events, anomalies, settlement alerts, and the latest system health snapshot into an HTML email sent to the app owner (Leon) for quick review. Conservation-mode aligned cadence.",
+  "trigger": {
+    "condition": null,
+    "config": {
+      "trigger_type": "scheduled",
+      "events": [],
+      "schedule_mode": "recurring",
+      "cron_expression": "0 9 * * 1",
+      "one_time_date": null,
+      "timezone": "America/Chicago",
+      "interval_value": null,
+      "interval_unit": null,
+      "interval_anchor": null,
+      "ends_type": "never",
+      "ends_on_date": null,
+      "ends_after_count": null
+    }
+  }
+}
