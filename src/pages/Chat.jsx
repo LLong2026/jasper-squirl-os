@@ -103,7 +103,7 @@ const Message = ({ message, onDeploy, showProof }) => {
       {!isUser && (
         <div className="h-8 w-8 rounded-full overflow-hidden flex-shrink-0 mt-1 ring-2 ring-blue-500/50 shadow-[0_0_12px_2px_rgba(59,130,246,0.6)]">
           <img 
-            src="https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/693d9a99ca82e178be7bca1b/e908cc8ba_arthur-artwork-1765675024047.png" 
+            src="https://media.base44.com/images/public/6a5c6e75ac7251ec3cbb403e/e8d19df22_Squirl.png" 
             alt="Jasper AI" 
             className="w-full h-full object-cover"
             onError={(e) => {
@@ -1014,7 +1014,7 @@ export default function ChatPage() {
             />
             <div className="h-7 w-7 rounded-full overflow-hidden ring-2 ring-blue-500/50 shadow-[0_0_10px_2px_rgba(59,130,246,0.6)]">
               <img 
-                src="https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/693d9a99ca82e178be7bca1b/e908cc8ba_arthur-artwork-1765675024047.png" 
+                src="https://media.base44.com/images/public/6a5c6e75ac7251ec3cbb403e/e8d19df22_Squirl.png" 
                 alt="Jasper AI" 
                 className="w-full h-full object-cover"
               />
@@ -1075,7 +1075,7 @@ export default function ChatPage() {
             <div className="flex gap-4 justify-start items-center">
                <div className="h-8 w-8 rounded-full overflow-hidden flex-shrink-0 ring-2 ring-blue-500/50 shadow-[0_0_12px_2px_rgba(59,130,246,0.6)]">
                  <img 
-                   src="https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/693d9a99ca82e178be7bca1b/e908cc8ba_arthur-artwork-1765675024047.png" 
+                   src="https://media.base44.com/images/public/6a5c6e75ac7251ec3cbb403e/e8d19df22_Squirl.png" 
                    alt="Jasper AI" 
                    className="w-full h-full object-cover"
                  />

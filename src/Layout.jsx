@@ -82,7 +82,7 @@ export default function Layout({ children, currentPageName }) {
                     title="Jasper AI"
                 >
                     <img 
-                        src="https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/693d9a99ca82e178be7bca1b/e908cc8ba_arthur-artwork-1765675024047.png"
+                        src="https://media.base44.com/images/public/6a5c6e75ac7251ec3cbb403e/e8d19df22_Squirl.png"
                         alt="Jasper AI"
                         className="h-10 w-10 object-cover"
                     />
