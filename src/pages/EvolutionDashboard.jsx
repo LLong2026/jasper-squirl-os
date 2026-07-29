@@ -65,7 +65,7 @@ export default function EvolutionDashboard() {
             ]);
 
             setEvolutionData({
-                activeEvolutions: improvements.filter(i => i.status === 'implemented').length,
+                activeEvolutions: improvements.filter(i => i.status === 'proposed' || i.status === 'approved').length,
                 improvements,
                 skillGaps,
                 fineTuningJobs: fineTuning
