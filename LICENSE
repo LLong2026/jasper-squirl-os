@@ -1,0 +1,36 @@
+Squirrel OS Technologies — Source Available License
+
+Copyright (c) 2026 Leon Calvin Long II / Squirrel OS Technologies
+All Rights Reserved.
+
+This source code is made publicly available for review, evaluation,
+and academic purposes only.
+
+NO COMMERCIAL USE IS PERMITTED without a separate commercial license
+obtained directly from Squirrel OS Technologies.
+
+Commercial use includes but is not limited to:
+- Deploying this software in a business or production environment
+- Using this software to provide services to customers or clients
+- Modifying, extending, or creating derivative works of this software
+- Distributing this software or derivative works to third parties
+- Incorporating this software into a commercial product or service
+
+Available Commercial Licenses:
+- Free Tier ($0): 11 playbooks, heartbeat monitoring only
+- Licensed Tier ($25,000 one-time): Full source code + deployment rights for one organization
+- SaaS Tier ($2,500/month): Hosted monitoring + managed healing + cross-app supervision
+
+Patent Notice:
+This software is protected by the following patent applications:
+- US Provisional 64/114,746 (Jasper Orchestrator)
+- US Provisional 64/119,191 (Deterministically Governed Probabilistic Neural Mesh)
+- US Utility 19/693,343 (ISO20022 Cross-Chain Settlement)
+Additional patent applications pending.
+
+For licensing inquiries:
+Email: leonlong.research@gmail.com
+GitHub: https://github.com/LLong2026
+
+Unauthorized commercial use of this software constitutes infringement
+of copyright and patent rights and may result in legal action.
