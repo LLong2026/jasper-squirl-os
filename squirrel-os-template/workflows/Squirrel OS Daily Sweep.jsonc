@@ -1,0 +1,74 @@
+{
+  "name": "Squirrel OS Daily Sweep",
+  "description": "Jasper Hypervisor daily full remediation sweep at 3am CT \u2014 resolves stale anomalies, rebalances agents, purges orphans, refreshes nodes, logs RemediationSweep.",
+  "trigger": {
+    "condition": null,
+    "config": {
+      "trigger_type": "scheduled",
+      "events": [],
+      "schedule_mode": "recurring",
+      "cron_expression": "0 3 * * *",
+      "one_time_date": null,
+      "timezone": "America/Chicago",
+      "interval_value": null,
+      "interval_unit": null,
+      "interval_anchor": null,
+      "ends_type": "never",
+      "ends_on_date": null,
+      "ends_after_count": null
+    }
+  },
+  "definition": {
+    "document": {
+      "dsl": "1.0.0",
+      "name": "squirrel_os_daily_sweep",
+      "namespace": "base44",
+      "version": "1.0"
+    },
+    "do": [
+      {
+        "run_sweep": {
+          "call": "invoke_backend_function",
+          "with": {
+            "args": {
+              "triggered_by": "scheduled-sweep",
+              "type": "scheduled"
+            },
+            "function_name": "jasperRemediation"
+          },
+          "then": "collect_metrics",
+          "x-base44": {
+            "title": "Jasper Full System Sweep",
+            "description": "Daily 3am remediation sweep"
+          }
+        }
+      },
+      {
+        "collect_metrics": {
+          "call": "invoke_backend_function",
+          "with": {
+            "function_name": "systemMetrics"
+          },
+          "then": "report_to_operator",
+          "x-base44": {
+            "title": "Collect System Metrics",
+            "description": "Post-sweep metrics snapshot"
+          }
+        }
+      },
+      {
+        "report_to_operator": {
+          "call": "invoke_superagent_step",
+          "with": {
+            "message": "Squirrel OS daily 3am sweep completed. Review the RemediationSweep results and post a System Health Manifest to the operator. Include: anomalies found/resolved, agents rebalanced, orphans purged, nodes refreshed, and overall system status. If any anomalies remain unresolved, create PredictiveAlerts."
+          },
+          "then": "end",
+          "x-base44": {
+            "title": "Report to Operator",
+            "description": "AI summarizes sweep results"
+          }
+        }
+      }
+    ]
+  }
+}
