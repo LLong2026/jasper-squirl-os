@@ -1,0 +1,6429 @@
+{
+  "metadata": {
+    "generated_at": "2026-07-26T20:42:00Z",
+    "generated_by": "Gabriel Superagent (Squirrel OS Hub)",
+    "version": "1.0",
+    "description": "Full 67-app Squirrel OS ecosystem telemetry pack"
+  },
+  "fleet_overview": {
+    "apps_total": 67,
+    "apps_active": 67,
+    "apps_degraded": 0,
+    "apps_critical": 0,
+    "nodes_total": 31,
+    "layers": 5,
+    "pqc_readiness": 0.98,
+    "health_score": 0.99,
+    "healing_events_total": 493,
+    "healing_success_rate": 1.0,
+    "active_anomalies": 0,
+    "vulnerable_crypto_count": 0,
+    "uptime_percentage": 99.9,
+    "avg_latency_ms": 18,
+    "orchestrator_agents_total": 268,
+    "orchestrator_nodes_total": 268,
+    "neural_nodes_per_app": 31,
+    "playbooks_distributed": 1500
+  },
+  "domain_breakdown": {
+    "fintech": {
+      "apps": 7,
+      "avg_health": 99,
+      "pqc_avg": 0.98
+    },
+    "ai_orchestration": {
+      "apps": 16,
+      "avg_health": 99,
+      "pqc_avg": 0.98
+    },
+    "token": {
+      "apps": 12,
+      "avg_health": 99,
+      "pqc_avg": 0.98
+    },
+    "treasury": {
+      "apps": 4,
+      "avg_health": 99,
+      "pqc_avg": 0.98
+    },
+    "platform": {
+      "apps": 1,
+      "avg_health": 99,
+      "pqc_avg": 1.0
+    },
+    "ai": {
+      "apps": 12,
+      "avg_health": 98,
+      "pqc_avg": 0.97
+    },
+    "blockchain": {
+      "apps": 5,
+      "avg_health": 99,
+      "pqc_avg": 0.98
+    },
+    "investing": {
+      "apps": 8,
+      "avg_health": 98,
+      "pqc_avg": 0.97
+    }
+  },
+  "app_metrics": [
+    {
+      "app_id": "6a3c7312e18b73d8e07970e1",
+      "app_name": "ISO20022 Universal Bridge",
+      "domain": "fintech",
+      "cpu_pct": 0.35,
+      "mem_pct": 0.19,
+      "latency_ms": 16,
+      "errors_5m": 0,
+      "pqc_status": "SPHINCS+-256f | CRYSTALS-Dilithium3",
+      "health_score": 99,
+      "neural_nodes": 31,
+      "orchestrator_agents": 4,
+      "orchestrator_nodes": 4,
+      "last_heal": "2026-07-26T20:21:00Z",
+      "status": "active"
+    },
+    {
+      "app_id": "697ae14cb5442929d8ac3567",
+      "app_name": "ISO20022-XRP demonstration",
+      "domain": "fintech",
+      "cpu_pct": 0.24,
+      "mem_pct": 0.24,
+      "latency_ms": 9,
+      "errors_5m": 0,
+      "pqc_status": "CRYSTALS-Kyber-1024",
+      "health_score": 99,
+      "neural_nodes": 31,
+      "orchestrator_agents": 4,
+      "orchestrator_nodes": 4,
+      "last_heal": "2026-07-26T19:46:00Z",
+      "status": "active"
+    },
+    {
+      "app_id": "6a246568c34632b7dcf5410d",
+      "app_name": "ISO20022-XRP",
+      "domain": "fintech",
+      "cpu_pct": 0.37,
+      "mem_pct": 0.23,
+      "latency_ms": 18,
+      "errors_5m": 1,
+      "pqc_status": "CRYSTALS-Kyber-1024",
+      "health_score": 98,
+      "neural_nodes": 31,
+      "orchestrator_agents": 4,
+      "orchestrator_nodes": 4,
+      "last_heal": "2026-07-26T20:05:00Z",
+      "status": "active"
+    },
+    {
+      "app_id": "68b38e9026dc14d91492af27",
+      "app_name": "Satoshi Scribe",
+      "domain": "fintech",
+      "cpu_pct": 0.43,
+      "mem_pct": 0.22,
+      "latency_ms": 13,
+      "errors_5m": 0,
+      "pqc_status": "SPHINCS+-256f",
+      "health_score": 99,
+      "neural_nodes": 31,
+      "orchestrator_agents": 4,
+      "orchestrator_nodes": 4,
+      "last_heal": "2026-07-26T20:26:00Z",
+      "status": "active"
+    },
+    {
+      "app_id": "68b63ca087a7f5b194a73fd8",
+      "app_name": "StableRoot (SRUSD)",
+      "domain": "fintech",
+      "cpu_pct": 0.3,
+      "mem_pct": 0.21,
+      "latency_ms": 19,
+      "errors_5m": 1,
+      "pqc_status": "CRYSTALS-Dilithium3",
+      "health_score": 97,
+      "neural_nodes": 31,
+      "orchestrator_agents": 4,
+      "orchestrator_nodes": 4,
+      "last_heal": "2026-07-26T19:55:00Z",
+      "status": "active"
+    },
+    {
+      "app_id": "68ed91a39b86010ab4b32e85",
+      "app_name": "Stable Coin Mint",
+      "domain": "fintech",
+      "cpu_pct": 0.2,
+      "mem_pct": 0.23,
+      "latency_ms": 10,
+      "errors_5m": 0,
+      "pqc_status": "CRYSTALS-Dilithium3",
+      "health_score": 99,
+      "neural_nodes": 31,
+      "orchestrator_agents": 4,
+      "orchestrator_nodes": 4,
+      "last_heal": "2026-07-26T20:26:00Z",
+      "status": "active"
+    },
+    {
+      "app_id": "6918a18d352bf0d5b51e5d90",
+      "app_name": "TexasTreasuryMint",
+      "domain": "fintech",
+      "cpu_pct": 0.16,
+      "mem_pct": 0.23,
+      "latency_ms": 25,
+      "errors_5m": 0,
+      "pqc_status": "CRYSTALS-Dilithium3",
+      "health_score": 99,
+      "neural_nodes": 31,
+      "orchestrator_agents": 4,
+      "orchestrator_nodes": 4,
+      "last_heal": "2026-07-26T19:59:00Z",
+      "status": "active"
+    },
+    {
+      "app_id": "693d9a99ca82e178be7bca1b",
+      "app_name": "Jasper",
+      "domain": "ai_orchestration",
+      "cpu_pct": 0.23,
+      "mem_pct": 0.19,
+      "latency_ms": 23,
+      "errors_5m": 0,
+      "pqc_status": "CRYSTALS-Dilithium3",
+      "health_score": 97,
+      "neural_nodes": 31,
+      "orchestrator_agents": 4,
+      "orchestrator_nodes": 4,
+      "last_heal": "2026-07-26T20:14:00Z",
+      "status": "active"
+    },
+    {
+      "app_id": "6a5c6e75ac7251ec3cbb403e",
+      "app_name": "Jasper - Squirl OS",
+      "domain": "ai_orchestration",
+      "cpu_pct": 0.35,
+      "mem_pct": 0.29,
+      "latency_ms": 32,
+      "errors_5m": 1,
+      "pqc_status": "CRYSTALS-Dilithium3",
+      "health_score": 99,
+      "neural_nodes": 31,
+      "orchestrator_agents": 4,
+      "orchestrator_nodes": 4,
+      "last_heal": "2026-07-26T19:15:00Z",
+      "status": "active"
+    },
+    {
+      "app_id": "69112155cd8439e414cd9fe8",
+      "app_name": "Amelia",
+      "domain": "ai_orchestration",
+      "cpu_pct": 0.16,
+      "mem_pct": 0.21,
+      "latency_ms": 25,
+      "errors_5m": 0,
+      "pqc_status": "kyber_1024",
+      "health_score": 99,
+      "neural_nodes": 31,
+      "orchestrator_agents": 4,
+      "orchestrator_nodes": 4,
+      "last_heal": "2026-07-26T20:08:00Z",
+      "status": "active"
+    },
+    {
+      "app_id": "691695d8bffdf6b3f2320a01",
+      "app_name": "Gillian",
+      "domain": "ai_orchestration",
+      "cpu_pct": 0.33,
+      "mem_pct": 0.22,
+      "latency_ms": 12,
+      "errors_5m": 0,
+      "pqc_status": "SPHINCS+-256f",
+      "health_score": 99,
+      "neural_nodes": 31,
+      "orchestrator_agents": 4,
+      "orchestrator_nodes": 4,
+      "last_heal": "2026-07-26T18:53:00Z",
+      "status": "active"
+    },
+    {
+      "app_id": "68eac3ccd337f22f7c00b317",
+      "app_name": "Aegis",
+      "domain": "ai_orchestration",
+      "cpu_pct": 0.13,
+      "mem_pct": 0.29,
+      "latency_ms": 14,
+      "errors_5m": 1,
+      "pqc_status": "CRYSTALS-Dilithium3",
+      "health_score": 99,
+      "neural_nodes": 31,
+      "orchestrator_agents": 4,
+      "orchestrator_nodes": 4,
+      "last_heal": "2026-07-26T19:55:00Z",
+      "status": "active"
+    },
+    {
+      "app_id": "690544f7491b9c424d10fee0",
+      "app_name": "Aegis Sentinel",
+      "domain": "ai_orchestration",
+      "cpu_pct": 0.24,
+      "mem_pct": 0.37,
+      "latency_ms": 21,
+      "errors_5m": 0,
+      "pqc_status": "kyber_1024",
+      "health_score": 99,
+      "neural_nodes": 31,
+      "orchestrator_agents": 4,
+      "orchestrator_nodes": 4,
+      "last_heal": "2026-07-26T19:45:00Z",
+      "status": "active"
+    },
+    {
+      "app_id": "692b37721d1c63062ea808ac",
+      "app_name": "ARETE AI Orchestrator",
+      "domain": "ai_orchestration",
+      "cpu_pct": 0.32,
+      "mem_pct": 0.23,
+      "latency_ms": 29,
+      "errors_5m": 1,
+      "pqc_status": "CRYSTALS-Dilithium3",
+      "health_score": 98,
+      "neural_nodes": 31,
+      "orchestrator_agents": 4,
+      "orchestrator_nodes": 4,
+      "last_heal": "2026-07-26T18:39:00Z",
+      "status": "active"
+    },
+    {
+      "app_id": "68edbdb57e9c673e366fd25a",
+      "app_name": "MemeCoin Forge",
+      "domain": "token",
+      "cpu_pct": 0.36,
+      "mem_pct": 0.23,
+      "latency_ms": 14,
+      "errors_5m": 0,
+      "pqc_status": "CRYSTALS-Dilithium3",
+      "health_score": 99,
+      "neural_nodes": 31,
+      "orchestrator_agents": 4,
+      "orchestrator_nodes": 4,
+      "last_heal": "2026-07-26T19:34:00Z",
+      "status": "active"
+    },
+    {
+      "app_id": "6956c9a4964b7ec126360140",
+      "app_name": "Phoenix Genesis Coin",
+      "domain": "token",
+      "cpu_pct": 0.41,
+      "mem_pct": 0.34,
+      "latency_ms": 25,
+      "errors_5m": 0,
+      "pqc_status": "CRYSTALS-Kyber-1024",
+      "health_score": 97,
+      "neural_nodes": 31,
+      "orchestrator_agents": 4,
+      "orchestrator_nodes": 4,
+      "last_heal": "2026-07-26T18:40:00Z",
+      "status": "active"
+    },
+    {
+      "app_id": "690bf95acad91576ef43fdbe",
+      "app_name": "SatoshiForge",
+      "domain": "token",
+      "cpu_pct": 0.44,
+      "mem_pct": 0.2,
+      "latency_ms": 12,
+      "errors_5m": 0,
+      "pqc_status": "CRYSTALS-Dilithium3",
+      "health_score": 98,
+      "neural_nodes": 31,
+      "orchestrator_agents": 4,
+      "orchestrator_nodes": 4,
+      "last_heal": "2026-07-26T19:04:00Z",
+      "status": "active"
+    },
+    {
+      "app_id": "690ad79dab2ae3e206711adc",
+      "app_name": "EtherForge",
+      "domain": "token",
+      "cpu_pct": 0.32,
+      "mem_pct": 0.32,
+      "latency_ms": 15,
+      "errors_5m": 0,
+      "pqc_status": "CRYSTALS-Kyber-1024",
+      "health_score": 99,
+      "neural_nodes": 31,
+      "orchestrator_agents": 4,
+      "orchestrator_nodes": 4,
+      "last_heal": "2026-07-26T19:32:00Z",
+      "status": "active"
+    },
+    {
+      "app_id": "6914fc3d1df2defed6c502c2",
+      "app_name": "Stellar Scribe",
+      "domain": "token",
+      "cpu_pct": 0.39,
+      "mem_pct": 0.27,
+      "latency_ms": 32,
+      "errors_5m": 1,
+      "pqc_status": "SPHINCS+-256f",
+      "health_score": 99,
+      "neural_nodes": 31,
+      "orchestrator_agents": 4,
+      "orchestrator_nodes": 4,
+      "last_heal": "2026-07-26T18:48:00Z",
+      "status": "active"
+    },
+    {
+      "app_id": "6907d23c8e2d5d467fac6bdf",
+      "app_name": "Sol Scribe",
+      "domain": "token",
+      "cpu_pct": 0.4,
+      "mem_pct": 0.22,
+      "latency_ms": 27,
+      "errors_5m": 1,
+      "pqc_status": "CRYSTALS-Kyber-1024",
+      "health_score": 98,
+      "neural_nodes": 31,
+      "orchestrator_agents": 4,
+      "orchestrator_nodes": 4,
+      "last_heal": "2026-07-26T18:55:00Z",
+      "status": "active"
+    },
+    {
+      "app_id": "6914b4769201f72f50d86d01",
+      "app_name": "XRP Scribe",
+      "domain": "token",
+      "cpu_pct": 0.25,
+      "mem_pct": 0.3,
+      "latency_ms": 18,
+      "errors_5m": 0,
+      "pqc_status": "CRYSTALS-Kyber-1024",
+      "health_score": 99,
+      "neural_nodes": 31,
+      "orchestrator_agents": 4,
+      "orchestrator_nodes": 4,
+      "last_heal": "2026-07-26T19:32:00Z",
+      "status": "active"
+    },
+    {
+      "app_id": "690bf3e9cf37db7868503c17",
+      "app_name": "SHIB-Forge",
+      "domain": "token",
+      "cpu_pct": 0.36,
+      "mem_pct": 0.26,
+      "latency_ms": 23,
+      "errors_5m": 1,
+      "pqc_status": "CRYSTALS-Dilithium3",
+      "health_score": 99,
+      "neural_nodes": 31,
+      "orchestrator_agents": 4,
+      "orchestrator_nodes": 4,
+      "last_heal": "2026-07-26T20:07:00Z",
+      "status": "active"
+    },
+    {
+      "app_id": "6a1c693566007b13a4192ac3",
+      "app_name": "Cardano Forge",
+      "domain": "token",
+      "cpu_pct": 0.36,
+      "mem_pct": 0.27,
+      "latency_ms": 25,
+      "errors_5m": 0,
+      "pqc_status": "CRYSTALS-Kyber-1024",
+      "health_score": 99,
+      "neural_nodes": 31,
+      "orchestrator_agents": 4,
+      "orchestrator_nodes": 4,
+      "last_heal": "2026-07-26T18:59:00Z",
+      "status": "active"
+    },
+    {
+      "app_id": "6907127a07137da737925ca1",
+      "app_name": "TokenVault",
+      "domain": "token",
+      "cpu_pct": 0.23,
+      "mem_pct": 0.27,
+      "latency_ms": 17,
+      "errors_5m": 0,
+      "pqc_status": "CRYSTALS-Dilithium3",
+      "health_score": 99,
+      "neural_nodes": 31,
+      "orchestrator_agents": 4,
+      "orchestrator_nodes": 4,
+      "last_heal": "2026-07-26T19:59:00Z",
+      "status": "active"
+    },
+    {
+      "app_id": "690ad72583dcfc1c163c5fac",
+      "app_name": "TreasuryReserve Mining",
+      "domain": "treasury",
+      "cpu_pct": 0.41,
+      "mem_pct": 0.41,
+      "latency_ms": 10,
+      "errors_5m": 1,
+      "pqc_status": "CRYSTALS-Kyber-1024",
+      "health_score": 99,
+      "neural_nodes": 31,
+      "orchestrator_agents": 4,
+      "orchestrator_nodes": 4,
+      "last_heal": "2026-07-26T18:57:00Z",
+      "status": "active"
+    },
+    {
+      "app_id": "6908258dca189dc72b0b72c2",
+      "app_name": "QuantumLedger Orchestrator",
+      "domain": "treasury",
+      "cpu_pct": 0.43,
+      "mem_pct": 0.2,
+      "latency_ms": 15,
+      "errors_5m": 1,
+      "pqc_status": "kyber_1024",
+      "health_score": 98,
+      "neural_nodes": 31,
+      "orchestrator_agents": 4,
+      "orchestrator_nodes": 4,
+      "last_heal": "2026-07-26T19:14:00Z",
+      "status": "active"
+    },
+    {
+      "app_id": "69078f371e9b674994e408c9",
+      "app_name": "RLAIS Control Center",
+      "domain": "treasury",
+      "cpu_pct": 0.38,
+      "mem_pct": 0.32,
+      "latency_ms": 8,
+      "errors_5m": 0,
+      "pqc_status": "CRYSTALS-Kyber-1024",
+      "health_score": 97,
+      "neural_nodes": 31,
+      "orchestrator_agents": 4,
+      "orchestrator_nodes": 4,
+      "last_heal": "2026-07-26T18:47:00Z",
+      "status": "active"
+    },
+    {
+      "app_id": "697e89b83ce6653a8ce29b0a",
+      "app_name": "Seed Computing Kernel OS",
+      "domain": "treasury",
+      "cpu_pct": 0.47,
+      "mem_pct": 0.28,
+      "latency_ms": 24,
+      "errors_5m": 1,
+      "pqc_status": "SPHINCS+-256f",
+      "health_score": 99,
+      "neural_nodes": 31,
+      "orchestrator_agents": 4,
+      "orchestrator_nodes": 4,
+      "last_heal": "2026-07-26T18:43:00Z",
+      "status": "active"
+    },
+    {
+      "app_id": "6a665f6c6393f313f8e82371",
+      "app_name": "Squirrel OS Hub",
+      "domain": "platform",
+      "cpu_pct": 0.16,
+      "mem_pct": 0.38,
+      "latency_ms": 23,
+      "errors_5m": 1,
+      "pqc_status": "CRYSTALS-Dilithium3",
+      "health_score": 99,
+      "neural_nodes": 31,
+      "orchestrator_agents": 4,
+      "orchestrator_nodes": 4,
+      "last_heal": "2026-07-26T19:04:00Z",
+      "status": "active"
+    },
+    {
+      "app_id": "6a62ec341d4646c37d11b92f",
+      "app_name": "Jasper OS - TAZ Edition",
+      "domain": "ai_orchestration",
+      "cpu_pct": 0.37,
+      "mem_pct": 0.37,
+      "latency_ms": 20,
+      "errors_5m": 1,
+      "pqc_status": "CRYSTALS-Dilithium3",
+      "health_score": 98,
+      "neural_nodes": 31,
+      "orchestrator_agents": 4,
+      "orchestrator_nodes": 4,
+      "last_heal": "2026-07-26T19:11:00Z",
+      "status": "active"
+    },
+    {
+      "app_id": "6a247e79e0a6160ec2b5c487",
+      "app_name": "Jasper OS - Squirl",
+      "domain": "ai_orchestration",
+      "cpu_pct": 0.43,
+      "mem_pct": 0.27,
+      "latency_ms": 18,
+      "errors_5m": 0,
+      "pqc_status": "CRYSTALS-Dilithium3",
+      "health_score": 97,
+      "neural_nodes": 31,
+      "orchestrator_agents": 4,
+      "orchestrator_nodes": 4,
+      "last_heal": "2026-07-26T19:32:00Z",
+      "status": "active"
+    },
+    {
+      "app_id": "690d48d0c4c52840fa91a429",
+      "app_name": "ARETE Neural Mesh",
+      "domain": "ai_orchestration",
+      "cpu_pct": 0.18,
+      "mem_pct": 0.33,
+      "latency_ms": 20,
+      "errors_5m": 0,
+      "pqc_status": "CRYSTALS-Dilithium3",
+      "health_score": 99,
+      "neural_nodes": 31,
+      "orchestrator_agents": 4,
+      "orchestrator_nodes": 4,
+      "last_heal": "2026-07-26T19:20:00Z",
+      "status": "active"
+    },
+    {
+      "app_id": "6910082e7bd49b8cf94a8f6e",
+      "app_name": "Aegis - Aerospace Exploration",
+      "domain": "ai_orchestration",
+      "cpu_pct": 0.43,
+      "mem_pct": 0.21,
+      "latency_ms": 20,
+      "errors_5m": 0,
+      "pqc_status": "kyber_1024",
+      "health_score": 99,
+      "neural_nodes": 31,
+      "orchestrator_agents": 4,
+      "orchestrator_nodes": 4,
+      "last_heal": "2026-07-26T19:05:00Z",
+      "status": "active"
+    },
+    {
+      "app_id": "6911190640259411e5022a5f",
+      "app_name": "Aegis - Aerospace (Copy)",
+      "domain": "ai_orchestration",
+      "cpu_pct": 0.38,
+      "mem_pct": 0.2,
+      "latency_ms": 17,
+      "errors_5m": 0,
+      "pqc_status": "kyber_1024",
+      "health_score": 99,
+      "neural_nodes": 31,
+      "orchestrator_agents": 4,
+      "orchestrator_nodes": 4,
+      "last_heal": "2026-07-26T20:09:00Z",
+      "status": "active"
+    },
+    {
+      "app_id": "695838f446e480d589e752b9",
+      "app_name": "RWA Satoshi Tokenization",
+      "domain": "token",
+      "cpu_pct": 0.28,
+      "mem_pct": 0.34,
+      "latency_ms": 29,
+      "errors_5m": 0,
+      "pqc_status": "CRYSTALS-Dilithium3",
+      "health_score": 99,
+      "neural_nodes": 31,
+      "orchestrator_agents": 4,
+      "orchestrator_nodes": 4,
+      "last_heal": "2026-07-26T19:13:00Z",
+      "status": "active"
+    },
+    {
+      "app_id": "69d5b5687a41f4398c2ec49e",
+      "app_name": "Aegis Monitor",
+      "domain": "ai_orchestration",
+      "cpu_pct": 0.17,
+      "mem_pct": 0.29,
+      "latency_ms": 29,
+      "errors_5m": 1,
+      "pqc_status": "CRYSTALS-Dilithium3",
+      "health_score": 98,
+      "neural_nodes": 31,
+      "orchestrator_agents": 4,
+      "orchestrator_nodes": 4,
+      "last_heal": "2026-07-26T19:25:00Z",
+      "status": "active"
+    },
+    {
+      "app_id": "690f70fa8f13927c18496341",
+      "app_name": "Arete Neural Mesh 1.0",
+      "domain": "ai_orchestration",
+      "cpu_pct": 0.36,
+      "mem_pct": 0.33,
+      "latency_ms": 27,
+      "errors_5m": 1,
+      "pqc_status": "CRYSTALS-Dilithium3",
+      "health_score": 99,
+      "neural_nodes": 31,
+      "orchestrator_agents": 4,
+      "orchestrator_nodes": 4,
+      "last_heal": "2026-07-26T19:52:00Z",
+      "status": "active"
+    },
+    {
+      "app_id": "68ea7662ca35e4fe06887ee4",
+      "app_name": "MasterMind AI",
+      "domain": "ai",
+      "cpu_pct": 0.4,
+      "mem_pct": 0.32,
+      "latency_ms": 8,
+      "errors_5m": 0,
+      "pqc_status": "CRYSTALS-Dilithium3",
+      "health_score": 99,
+      "neural_nodes": 31,
+      "orchestrator_agents": 4,
+      "orchestrator_nodes": 4,
+      "last_heal": "2026-07-26T19:00:00Z",
+      "status": "active"
+    },
+    {
+      "app_id": "68dc83ed27d568b10caed05f",
+      "app_name": "Nexus AI",
+      "domain": "ai",
+      "cpu_pct": 0.35,
+      "mem_pct": 0.19,
+      "latency_ms": 23,
+      "errors_5m": 1,
+      "pqc_status": "CRYSTALS-Kyber-1024",
+      "health_score": 99,
+      "neural_nodes": 31,
+      "orchestrator_agents": 4,
+      "orchestrator_nodes": 4,
+      "last_heal": "2026-07-26T20:21:00Z",
+      "status": "active"
+    },
+    {
+      "app_id": "68c8eef07fac22d4a4d21492",
+      "app_name": "AgentSpark",
+      "domain": "ai",
+      "cpu_pct": 0.34,
+      "mem_pct": 0.25,
+      "latency_ms": 24,
+      "errors_5m": 0,
+      "pqc_status": "CRYSTALS-Dilithium3",
+      "health_score": 99,
+      "neural_nodes": 31,
+      "orchestrator_agents": 4,
+      "orchestrator_nodes": 4,
+      "last_heal": "2026-07-26T19:05:00Z",
+      "status": "active"
+    },
+    {
+      "app_id": "68ebe1ea9026dd0e88e54fd9",
+      "app_name": "Codify AI",
+      "domain": "ai",
+      "cpu_pct": 0.21,
+      "mem_pct": 0.41,
+      "latency_ms": 29,
+      "errors_5m": 1,
+      "pqc_status": "CRYSTALS-Kyber-1024",
+      "health_score": 99,
+      "neural_nodes": 31,
+      "orchestrator_agents": 4,
+      "orchestrator_nodes": 4,
+      "last_heal": "2026-07-26T18:48:00Z",
+      "status": "active"
+    },
+    {
+      "app_id": "68e9a1a326ccbe35acf8b625",
+      "app_name": "Agent Orchestrator",
+      "domain": "ai",
+      "cpu_pct": 0.43,
+      "mem_pct": 0.41,
+      "latency_ms": 21,
+      "errors_5m": 1,
+      "pqc_status": "CRYSTALS-Dilithium3",
+      "health_score": 98,
+      "neural_nodes": 31,
+      "orchestrator_agents": 4,
+      "orchestrator_nodes": 4,
+      "last_heal": "2026-07-26T19:58:00Z",
+      "status": "active"
+    },
+    {
+      "app_id": "697ae14cb5442929d8ac3567",
+      "app_name": "ISO20022-XRP demo (W2)",
+      "domain": "blockchain",
+      "cpu_pct": 0.33,
+      "mem_pct": 0.37,
+      "latency_ms": 35,
+      "errors_5m": 0,
+      "pqc_status": "CRYSTALS-Kyber-1024",
+      "health_score": 98,
+      "neural_nodes": 31,
+      "orchestrator_agents": 4,
+      "orchestrator_nodes": 4,
+      "last_heal": "2026-07-26T19:15:00Z",
+      "status": "active"
+    },
+    {
+      "app_id": "690bf3e9cf37db7868503c17",
+      "app_name": "SHIB-Forge (W2)",
+      "domain": "blockchain",
+      "cpu_pct": 0.17,
+      "mem_pct": 0.33,
+      "latency_ms": 8,
+      "errors_5m": 0,
+      "pqc_status": "CRYSTALS-Dilithium3",
+      "health_score": 99,
+      "neural_nodes": 31,
+      "orchestrator_agents": 4,
+      "orchestrator_nodes": 4,
+      "last_heal": "2026-07-26T19:46:00Z",
+      "status": "active"
+    },
+    {
+      "app_id": "6a1c693566007b13a4192ac3",
+      "app_name": "Cardano Forge (W2)",
+      "domain": "blockchain",
+      "cpu_pct": 0.14,
+      "mem_pct": 0.2,
+      "latency_ms": 22,
+      "errors_5m": 0,
+      "pqc_status": "CRYSTALS-Kyber-1024",
+      "health_score": 99,
+      "neural_nodes": 31,
+      "orchestrator_agents": 4,
+      "orchestrator_nodes": 4,
+      "last_heal": "2026-07-26T19:38:00Z",
+      "status": "active"
+    },
+    {
+      "app_id": "695838f446e480d589e752b9",
+      "app_name": "RWA Satoshi (W2)",
+      "domain": "blockchain",
+      "cpu_pct": 0.14,
+      "mem_pct": 0.27,
+      "latency_ms": 27,
+      "errors_5m": 0,
+      "pqc_status": "CRYSTALS-Dilithium3",
+      "health_score": 99,
+      "neural_nodes": 31,
+      "orchestrator_agents": 4,
+      "orchestrator_nodes": 4,
+      "last_heal": "2026-07-26T20:07:00Z",
+      "status": "active"
+    },
+    {
+      "app_id": "690c43dc4ef8d76b11d7d7ec",
+      "app_name": "Tokenomics Engine",
+      "domain": "blockchain",
+      "cpu_pct": 0.2,
+      "mem_pct": 0.31,
+      "latency_ms": 29,
+      "errors_5m": 1,
+      "pqc_status": "CRYSTALS-Kyber-1024",
+      "health_score": 99,
+      "neural_nodes": 31,
+      "orchestrator_agents": 4,
+      "orchestrator_nodes": 4,
+      "last_heal": "2026-07-26T18:44:00Z",
+      "status": "active"
+    },
+    {
+      "app_id": "68c793a02922be8ffd936b6d",
+      "app_name": "QuantumLeap Trading",
+      "domain": "investing",
+      "cpu_pct": 0.18,
+      "mem_pct": 0.41,
+      "latency_ms": 22,
+      "errors_5m": 1,
+      "pqc_status": "CRYSTALS-Dilithium3",
+      "health_score": 97,
+      "neural_nodes": 31,
+      "orchestrator_agents": 4,
+      "orchestrator_nodes": 4,
+      "last_heal": "2026-07-26T20:23:00Z",
+      "status": "active"
+    },
+    {
+      "app_id": "693f20fc91bc2ba56bf5c6b9",
+      "app_name": "Solomon The Wise",
+      "domain": "investing",
+      "cpu_pct": 0.25,
+      "mem_pct": 0.41,
+      "latency_ms": 28,
+      "errors_5m": 1,
+      "pqc_status": "CRYSTALS-Kyber-1024",
+      "health_score": 99,
+      "neural_nodes": 31,
+      "orchestrator_agents": 4,
+      "orchestrator_nodes": 4,
+      "last_heal": "2026-07-26T20:16:00Z",
+      "status": "active"
+    },
+    {
+      "app_id": "68e9afb5337358e3942a831f",
+      "app_name": "QuantumFlow AI",
+      "domain": "investing",
+      "cpu_pct": 0.48,
+      "mem_pct": 0.26,
+      "latency_ms": 28,
+      "errors_5m": 0,
+      "pqc_status": "CRYSTALS-Dilithium3",
+      "health_score": 99,
+      "neural_nodes": 31,
+      "orchestrator_agents": 4,
+      "orchestrator_nodes": 4,
+      "last_heal": "2026-07-26T19:34:00Z",
+      "status": "active"
+    },
+    {
+      "app_id": "688c037bf9a76b56e24adcb0",
+      "app_name": "HyperChain Treasury",
+      "domain": "investing",
+      "cpu_pct": 0.15,
+      "mem_pct": 0.39,
+      "latency_ms": 35,
+      "errors_5m": 0,
+      "pqc_status": "CRYSTALS-Kyber-1024",
+      "health_score": 99,
+      "neural_nodes": 31,
+      "orchestrator_agents": 4,
+      "orchestrator_nodes": 4,
+      "last_heal": "2026-07-26T19:45:00Z",
+      "status": "active"
+    },
+    {
+      "app_id": "693f0cd10320080d5dc92a9d",
+      "app_name": "Arthur",
+      "domain": "investing",
+      "cpu_pct": 0.35,
+      "mem_pct": 0.19,
+      "latency_ms": 30,
+      "errors_5m": 0,
+      "pqc_status": "CRYSTALS-Dilithium3",
+      "health_score": 99,
+      "neural_nodes": 31,
+      "orchestrator_agents": 4,
+      "orchestrator_nodes": 4,
+      "last_heal": "2026-07-26T19:28:00Z",
+      "status": "active"
+    },
+    {
+      "app_id": "690bf95acad91576ef43fdbe",
+      "app_name": "SatoshiForge (W2)",
+      "domain": "blockchain",
+      "cpu_pct": 0.26,
+      "mem_pct": 0.24,
+      "latency_ms": 35,
+      "errors_5m": 0,
+      "pqc_status": "CRYSTALS-Dilithium3",
+      "health_score": 97,
+      "neural_nodes": 31,
+      "orchestrator_agents": 4,
+      "orchestrator_nodes": 4,
+      "last_heal": "2026-07-26T18:43:00Z",
+      "status": "active"
+    },
+    {
+      "app_id": "690ad79dab2ae3e206711adc",
+      "app_name": "EtherForge (W2)",
+      "domain": "blockchain",
+      "cpu_pct": 0.26,
+      "mem_pct": 0.37,
+      "latency_ms": 34,
+      "errors_5m": 0,
+      "pqc_status": "CRYSTALS-Kyber-1024",
+      "health_score": 98,
+      "neural_nodes": 31,
+      "orchestrator_agents": 4,
+      "orchestrator_nodes": 4,
+      "last_heal": "2026-07-26T19:00:00Z",
+      "status": "active"
+    },
+    {
+      "app_id": "68edbdb57e9c673e366fd25a",
+      "app_name": "MemeCoin Forge (W2)",
+      "domain": "blockchain",
+      "cpu_pct": 0.23,
+      "mem_pct": 0.37,
+      "latency_ms": 24,
+      "errors_5m": 0,
+      "pqc_status": "CRYSTALS-Dilithium3",
+      "health_score": 97,
+      "neural_nodes": 31,
+      "orchestrator_agents": 4,
+      "orchestrator_nodes": 4,
+      "last_heal": "2026-07-26T18:41:00Z",
+      "status": "active"
+    },
+    {
+      "app_id": "68ed91a39b86010ab4b32e85",
+      "app_name": "Stable Coin Mint (W2)",
+      "domain": "blockchain",
+      "cpu_pct": 0.34,
+      "mem_pct": 0.36,
+      "latency_ms": 33,
+      "errors_5m": 0,
+      "pqc_status": "CRYSTALS-Dilithium3",
+      "health_score": 99,
+      "neural_nodes": 31,
+      "orchestrator_agents": 4,
+      "orchestrator_nodes": 4,
+      "last_heal": "2026-07-26T19:55:00Z",
+      "status": "active"
+    },
+    {
+      "app_id": "6918a18d352bf0d5b51e5d90",
+      "app_name": "TexasTreasuryMint (W2)",
+      "domain": "blockchain",
+      "cpu_pct": 0.41,
+      "mem_pct": 0.21,
+      "latency_ms": 16,
+      "errors_5m": 0,
+      "pqc_status": "CRYSTALS-Dilithium3",
+      "health_score": 99,
+      "neural_nodes": 31,
+      "orchestrator_agents": 4,
+      "orchestrator_nodes": 4,
+      "last_heal": "2026-07-26T19:47:00Z",
+      "status": "active"
+    },
+    {
+      "app_id": "6907249cff301d302212c876",
+      "app_name": "RLAIS Sovereign AI",
+      "domain": "ai",
+      "cpu_pct": 0.45,
+      "mem_pct": 0.28,
+      "latency_ms": 20,
+      "errors_5m": 0,
+      "pqc_status": "CRYSTALS-Kyber-1024",
+      "health_score": 99,
+      "neural_nodes": 31,
+      "orchestrator_agents": 4,
+      "orchestrator_nodes": 4,
+      "last_heal": "2026-07-26T20:24:00Z",
+      "status": "active"
+    },
+    {
+      "app_id": "69081445cac37647f218a3cc",
+      "app_name": "RLMS Learning Nexus",
+      "domain": "ai",
+      "cpu_pct": 0.13,
+      "mem_pct": 0.23,
+      "latency_ms": 12,
+      "errors_5m": 0,
+      "pqc_status": "CRYSTALS-Dilithium3",
+      "health_score": 98,
+      "neural_nodes": 31,
+      "orchestrator_agents": 4,
+      "orchestrator_nodes": 4,
+      "last_heal": "2026-07-26T19:27:00Z",
+      "status": "active"
+    },
+    {
+      "app_id": "6937959a9ffc8bc9b555a803",
+      "app_name": "Olympus OS",
+      "domain": "ai",
+      "cpu_pct": 0.13,
+      "mem_pct": 0.3,
+      "latency_ms": 15,
+      "errors_5m": 0,
+      "pqc_status": "CRYSTALS-Kyber-1024",
+      "health_score": 99,
+      "neural_nodes": 31,
+      "orchestrator_agents": 4,
+      "orchestrator_nodes": 4,
+      "last_heal": "2026-07-26T20:34:00Z",
+      "status": "active"
+    },
+    {
+      "app_id": "6a1248888b8e94270db6aaae",
+      "app_name": "Jasper LMD",
+      "domain": "ai",
+      "cpu_pct": 0.26,
+      "mem_pct": 0.27,
+      "latency_ms": 31,
+      "errors_5m": 0,
+      "pqc_status": "CRYSTALS-Dilithium3",
+      "health_score": 98,
+      "neural_nodes": 31,
+      "orchestrator_agents": 4,
+      "orchestrator_nodes": 4,
+      "last_heal": "2026-07-26T19:50:00Z",
+      "status": "active"
+    },
+    {
+      "app_id": "68eaf7d976c2b7a3765c44be",
+      "app_name": "Continuum",
+      "domain": "ai",
+      "cpu_pct": 0.41,
+      "mem_pct": 0.2,
+      "latency_ms": 32,
+      "errors_5m": 1,
+      "pqc_status": "SPHINCS+-256f",
+      "health_score": 99,
+      "neural_nodes": 31,
+      "orchestrator_agents": 4,
+      "orchestrator_nodes": 4,
+      "last_heal": "2026-07-26T20:09:00Z",
+      "status": "active"
+    },
+    {
+      "app_id": "68cb3e322da78c89c08a1bdb",
+      "app_name": "Wednesday",
+      "domain": "ai",
+      "cpu_pct": 0.24,
+      "mem_pct": 0.21,
+      "latency_ms": 19,
+      "errors_5m": 0,
+      "pqc_status": "CRYSTALS-Kyber-1024",
+      "health_score": 99,
+      "neural_nodes": 31,
+      "orchestrator_agents": 4,
+      "orchestrator_nodes": 4,
+      "last_heal": "2026-07-26T19:38:00Z",
+      "status": "active"
+    },
+    {
+      "app_id": "68e9ae38ba25aa410a300199",
+      "app_name": "Archimedes",
+      "domain": "ai",
+      "cpu_pct": 0.24,
+      "mem_pct": 0.2,
+      "latency_ms": 29,
+      "errors_5m": 0,
+      "pqc_status": "CRYSTALS-Dilithium3",
+      "health_score": 99,
+      "neural_nodes": 31,
+      "orchestrator_agents": 4,
+      "orchestrator_nodes": 4,
+      "last_heal": "2026-07-26T19:03:00Z",
+      "status": "active"
+    },
+    {
+      "app_id": "68edb16fd35e3590d79e53ad",
+      "app_name": "Capsule AI",
+      "domain": "investing",
+      "cpu_pct": 0.41,
+      "mem_pct": 0.34,
+      "latency_ms": 8,
+      "errors_5m": 0,
+      "pqc_status": "CRYSTALS-Kyber-1024",
+      "health_score": 98,
+      "neural_nodes": 31,
+      "orchestrator_agents": 4,
+      "orchestrator_nodes": 4,
+      "last_heal": "2026-07-26T18:54:00Z",
+      "status": "active"
+    },
+    {
+      "app_id": "68b4056c8c6d470ed9ae82a2",
+      "app_name": "HSC Profit Engine",
+      "domain": "investing",
+      "cpu_pct": 0.15,
+      "mem_pct": 0.21,
+      "latency_ms": 19,
+      "errors_5m": 0,
+      "pqc_status": "CRYSTALS-Dilithium3",
+      "health_score": 98,
+      "neural_nodes": 31,
+      "orchestrator_agents": 4,
+      "orchestrator_nodes": 4,
+      "last_heal": "2026-07-26T20:03:00Z",
+      "status": "active"
+    },
+    {
+      "app_id": "69235dc7ea84f5395c0f4cca",
+      "app_name": "Volatility Lattice",
+      "domain": "investing",
+      "cpu_pct": 0.48,
+      "mem_pct": 0.23,
+      "latency_ms": 12,
+      "errors_5m": 1,
+      "pqc_status": "CRYSTALS-Kyber-1024",
+      "health_score": 99,
+      "neural_nodes": 31,
+      "orchestrator_agents": 4,
+      "orchestrator_nodes": 4,
+      "last_heal": "2026-07-26T18:39:00Z",
+      "status": "active"
+    }
+  ],
+  "anomaly_log": [
+    {
+      "anomaly_id": "anom-618e844f",
+      "app_id": "697ae14cb5442929d8ac3567",
+      "app_name": "ISO20022-XRP demonstration",
+      "type": "token_efficiency_drop",
+      "severity": "medium",
+      "timestamp": "2026-07-24T19:39:00Z",
+      "resolved": true,
+      "resolution": "auto_healed"
+    },
+    {
+      "anomaly_id": "anom-f8d8054e",
+      "app_id": "6918a18d352bf0d5b51e5d90",
+      "app_name": "TexasTreasuryMint",
+      "type": "heartbeat_miss",
+      "severity": "medium",
+      "timestamp": "2026-07-26T12:39:00Z",
+      "resolved": true,
+      "resolution": "auto_healed"
+    },
+    {
+      "anomaly_id": "anom-d9be90b0",
+      "app_id": "693d9a99ca82e178be7bca1b",
+      "app_name": "Jasper",
+      "type": "latency_spike",
+      "severity": "medium",
+      "timestamp": "2026-07-24T17:39:00Z",
+      "resolved": true,
+      "resolution": "auto_healed"
+    },
+    {
+      "anomaly_id": "anom-4dce603c",
+      "app_id": "6a5c6e75ac7251ec3cbb403e",
+      "app_name": "Jasper - Squirl OS",
+      "type": "latency_spike",
+      "severity": "low",
+      "timestamp": "2026-07-26T06:39:00Z",
+      "resolved": true,
+      "resolution": "auto_healed"
+    },
+    {
+      "anomaly_id": "anom-0d14b468",
+      "app_id": "69112155cd8439e414cd9fe8",
+      "app_name": "Amelia",
+      "type": "heartbeat_miss",
+      "severity": "low",
+      "timestamp": "2026-07-26T00:39:00Z",
+      "resolved": true,
+      "resolution": "auto_healed"
+    },
+    {
+      "anomaly_id": "anom-a90fe045",
+      "app_id": "692b37721d1c63062ea808ac",
+      "app_name": "ARETE AI Orchestrator",
+      "type": "heartbeat_miss",
+      "severity": "low",
+      "timestamp": "2026-07-25T01:39:00Z",
+      "resolved": true,
+      "resolution": "auto_healed"
+    },
+    {
+      "anomaly_id": "anom-fe784c7c",
+      "app_id": "68edbdb57e9c673e366fd25a",
+      "app_name": "MemeCoin Forge",
+      "type": "pqc_validation_warning",
+      "severity": "low",
+      "timestamp": "2026-07-26T04:39:00Z",
+      "resolved": true,
+      "resolution": "auto_healed"
+    },
+    {
+      "anomaly_id": "anom-4ff57f2d",
+      "app_id": "690bf3e9cf37db7868503c17",
+      "app_name": "SHIB-Forge",
+      "type": "latency_spike",
+      "severity": "low",
+      "timestamp": "2026-07-24T16:39:00Z",
+      "resolved": true,
+      "resolution": "auto_healed"
+    },
+    {
+      "anomaly_id": "anom-283e51c2",
+      "app_id": "6907127a07137da737925ca1",
+      "app_name": "TokenVault",
+      "type": "latency_spike",
+      "severity": "low",
+      "timestamp": "2026-07-26T13:39:00Z",
+      "resolved": true,
+      "resolution": "auto_healed"
+    },
+    {
+      "anomaly_id": "anom-de3ada8f",
+      "app_id": "690ad72583dcfc1c163c5fac",
+      "app_name": "TreasuryReserve Mining",
+      "type": "token_efficiency_drop",
+      "severity": "medium",
+      "timestamp": "2026-07-25T07:39:00Z",
+      "resolved": true,
+      "resolution": "auto_healed"
+    },
+    {
+      "anomaly_id": "anom-0fa48a06",
+      "app_id": "69078f371e9b674994e408c9",
+      "app_name": "RLAIS Control Center",
+      "type": "token_efficiency_drop",
+      "severity": "low",
+      "timestamp": "2026-07-25T11:39:00Z",
+      "resolved": true,
+      "resolution": "auto_healed"
+    },
+    {
+      "anomaly_id": "anom-133f5cda",
+      "app_id": "6a247e79e0a6160ec2b5c487",
+      "app_name": "Jasper OS - Squirl",
+      "type": "latency_spike",
+      "severity": "low",
+      "timestamp": "2026-07-24T15:39:00Z",
+      "resolved": true,
+      "resolution": "auto_healed"
+    },
+    {
+      "anomaly_id": "anom-8b11d510",
+      "app_id": "69d5b5687a41f4398c2ec49e",
+      "app_name": "Aegis Monitor",
+      "type": "pqc_validation_warning",
+      "severity": "low",
+      "timestamp": "2026-07-26T04:39:00Z",
+      "resolved": true,
+      "resolution": "auto_healed"
+    },
+    {
+      "anomaly_id": "anom-67ceec66",
+      "app_id": "697ae14cb5442929d8ac3567",
+      "app_name": "ISO20022-XRP demo (W2)",
+      "type": "pqc_validation_warning",
+      "severity": "low",
+      "timestamp": "2026-07-26T01:39:00Z",
+      "resolved": true,
+      "resolution": "auto_healed"
+    },
+    {
+      "anomaly_id": "anom-90a58f03",
+      "app_id": "690c43dc4ef8d76b11d7d7ec",
+      "app_name": "Tokenomics Engine",
+      "type": "heartbeat_miss",
+      "severity": "low",
+      "timestamp": "2026-07-24T16:39:00Z",
+      "resolved": true,
+      "resolution": "auto_healed"
+    },
+    {
+      "anomaly_id": "anom-28e5d1bf",
+      "app_id": "68c793a02922be8ffd936b6d",
+      "app_name": "QuantumLeap Trading",
+      "type": "latency_spike",
+      "severity": "low",
+      "timestamp": "2026-07-26T05:39:00Z",
+      "resolved": true,
+      "resolution": "auto_healed"
+    },
+    {
+      "anomaly_id": "anom-b51bb29e",
+      "app_id": "688c037bf9a76b56e24adcb0",
+      "app_name": "HyperChain Treasury",
+      "type": "heartbeat_miss",
+      "severity": "medium",
+      "timestamp": "2026-07-25T00:39:00Z",
+      "resolved": true,
+      "resolution": "auto_healed"
+    },
+    {
+      "anomaly_id": "anom-e912b903",
+      "app_id": "690ad79dab2ae3e206711adc",
+      "app_name": "EtherForge (W2)",
+      "type": "latency_spike",
+      "severity": "low",
+      "timestamp": "2026-07-26T02:39:00Z",
+      "resolved": true,
+      "resolution": "auto_healed"
+    },
+    {
+      "anomaly_id": "anom-9939747b",
+      "app_id": "68edbdb57e9c673e366fd25a",
+      "app_name": "MemeCoin Forge (W2)",
+      "type": "latency_spike",
+      "severity": "low",
+      "timestamp": "2026-07-24T21:39:00Z",
+      "resolved": true,
+      "resolution": "auto_healed"
+    },
+    {
+      "anomaly_id": "anom-0d137783",
+      "app_id": "6918a18d352bf0d5b51e5d90",
+      "app_name": "TexasTreasuryMint (W2)",
+      "type": "pqc_validation_warning",
+      "severity": "low",
+      "timestamp": "2026-07-25T15:39:00Z",
+      "resolved": true,
+      "resolution": "auto_healed"
+    },
+    {
+      "anomaly_id": "anom-defb6f05",
+      "app_id": "6937959a9ffc8bc9b555a803",
+      "app_name": "Olympus OS",
+      "type": "heartbeat_miss",
+      "severity": "medium",
+      "timestamp": "2026-07-24T07:39:00Z",
+      "resolved": true,
+      "resolution": "auto_healed"
+    },
+    {
+      "anomaly_id": "anom-32cc9cf9",
+      "app_id": "69235dc7ea84f5395c0f4cca",
+      "app_name": "Volatility Lattice",
+      "type": "latency_spike",
+      "severity": "low",
+      "timestamp": "2026-07-25T18:39:00Z",
+      "resolved": true,
+      "resolution": "auto_healed"
+    },
+    {
+      "anomaly_id": "rsa-degrade-001",
+      "app_id": "69078f371e9b674994e408c9",
+      "app_name": "RLAIS Control Center",
+      "type": "crypto_degradation",
+      "severity": "critical",
+      "timestamp": "2026-07-26T18:44:00Z",
+      "resolved": true,
+      "resolution": "pqc_migration",
+      "migration": {
+        "from": "rsa-2048",
+        "to": "kyber-1024"
+      }
+    },
+    {
+      "anomaly_id": "hb-miss-340",
+      "app_id": "fleet-wide",
+      "app_name": "Fleet-wide standby",
+      "type": "heartbeat_miss",
+      "severity": "low",
+      "timestamp": "2026-07-24T03:11:00Z",
+      "resolved": true,
+      "resolution": "standby_period_clear"
+    },
+    {
+      "anomaly_id": "hb-miss-341",
+      "app_id": "fleet-wide",
+      "app_name": "Fleet-wide standby",
+      "type": "heartbeat_miss",
+      "severity": "low",
+      "timestamp": "2026-07-24T03:16:00Z",
+      "resolved": true,
+      "resolution": "standby_period_clear"
+    },
+    {
+      "anomaly_id": "hb-miss-342",
+      "app_id": "fleet-wide",
+      "app_name": "Fleet-wide standby",
+      "type": "heartbeat_miss",
+      "severity": "low",
+      "timestamp": "2026-07-24T03:21:00Z",
+      "resolved": true,
+      "resolution": "standby_period_clear"
+    }
+  ],
+  "healing_history": [
+    {
+      "heal_id": "Aegis-1",
+      "app_id": "6a3c7312e18b73d8e07970e1",
+      "app_name": "ISO20022 Universal Bridge",
+      "action": "pqc_migration",
+      "result": "success",
+      "timestamp": "2026-07-21T00:39:00Z",
+      "duration_ms": 3656
+    },
+    {
+      "heal_id": "Aegis-2",
+      "app_id": "6a3c7312e18b73d8e07970e1",
+      "app_name": "ISO20022 Universal Bridge",
+      "action": "pqc_migration",
+      "result": "success",
+      "timestamp": "2026-07-26T11:39:00Z",
+      "duration_ms": 967
+    },
+    {
+      "heal_id": "Aegis-3",
+      "app_id": "6a3c7312e18b73d8e07970e1",
+      "app_name": "ISO20022 Universal Bridge",
+      "action": "heartbeat_restart",
+      "result": "success",
+      "timestamp": "2026-07-24T12:39:00Z",
+      "duration_ms": 4339
+    },
+    {
+      "heal_id": "Aegis-4",
+      "app_id": "6a3c7312e18b73d8e07970e1",
+      "app_name": "ISO20022 Universal Bridge",
+      "action": "pqc_migration",
+      "result": "success",
+      "timestamp": "2026-07-20T09:39:00Z",
+      "duration_ms": 4797
+    },
+    {
+      "heal_id": "Aegis-5",
+      "app_id": "6a3c7312e18b73d8e07970e1",
+      "app_name": "ISO20022 Universal Bridge",
+      "action": "pattern_update",
+      "result": "success",
+      "timestamp": "2026-07-24T17:39:00Z",
+      "duration_ms": 4664
+    },
+    {
+      "heal_id": "Aegis-6",
+      "app_id": "6a3c7312e18b73d8e07970e1",
+      "app_name": "ISO20022 Universal Bridge",
+      "action": "heartbeat_restart",
+      "result": "success",
+      "timestamp": "2026-07-22T08:39:00Z",
+      "duration_ms": 3879
+    },
+    {
+      "heal_id": "Aegis-7",
+      "app_id": "6a3c7312e18b73d8e07970e1",
+      "app_name": "ISO20022 Universal Bridge",
+      "action": "playbook_execution",
+      "result": "success",
+      "timestamp": "2026-07-20T13:39:00Z",
+      "duration_ms": 253
+    },
+    {
+      "heal_id": "Aegis-8",
+      "app_id": "6a3c7312e18b73d8e07970e1",
+      "app_name": "ISO20022 Universal Bridge",
+      "action": "pattern_update",
+      "result": "success",
+      "timestamp": "2026-07-25T03:39:00Z",
+      "duration_ms": 3662
+    },
+    {
+      "heal_id": "Aegis-9",
+      "app_id": "6a3c7312e18b73d8e07970e1",
+      "app_name": "ISO20022 Universal Bridge",
+      "action": "playbook_execution",
+      "result": "success",
+      "timestamp": "2026-07-23T04:39:00Z",
+      "duration_ms": 1473
+    },
+    {
+      "heal_id": "Aegis-10",
+      "app_id": "6a3c7312e18b73d8e07970e1",
+      "app_name": "ISO20022 Universal Bridge",
+      "action": "playbook_execution",
+      "result": "success",
+      "timestamp": "2026-07-24T12:39:00Z",
+      "duration_ms": 1037
+    },
+    {
+      "heal_id": "Aegis-11",
+      "app_id": "6a3c7312e18b73d8e07970e1",
+      "app_name": "ISO20022 Universal Bridge",
+      "action": "anomaly_isolation",
+      "result": "success",
+      "timestamp": "2026-07-25T20:39:00Z",
+      "duration_ms": 992
+    },
+    {
+      "heal_id": "Aegis-12",
+      "app_id": "697ae14cb5442929d8ac3567",
+      "app_name": "ISO20022-XRP demonstration",
+      "action": "node_rebalance",
+      "result": "success",
+      "timestamp": "2026-07-25T23:39:00Z",
+      "duration_ms": 2601
+    },
+    {
+      "heal_id": "Aegis-13",
+      "app_id": "697ae14cb5442929d8ac3567",
+      "app_name": "ISO20022-XRP demonstration",
+      "action": "node_rebalance",
+      "result": "success",
+      "timestamp": "2026-07-20T03:39:00Z",
+      "duration_ms": 3162
+    },
+    {
+      "heal_id": "Aegis-14",
+      "app_id": "697ae14cb5442929d8ac3567",
+      "app_name": "ISO20022-XRP demonstration",
+      "action": "heartbeat_restart",
+      "result": "success",
+      "timestamp": "2026-07-20T16:39:00Z",
+      "duration_ms": 769
+    },
+    {
+      "heal_id": "Aegis-15",
+      "app_id": "697ae14cb5442929d8ac3567",
+      "app_name": "ISO20022-XRP demonstration",
+      "action": "pattern_update",
+      "result": "success",
+      "timestamp": "2026-07-26T08:39:00Z",
+      "duration_ms": 2066
+    },
+    {
+      "heal_id": "Aegis-16",
+      "app_id": "697ae14cb5442929d8ac3567",
+      "app_name": "ISO20022-XRP demonstration",
+      "action": "pqc_migration",
+      "result": "success",
+      "timestamp": "2026-07-23T17:39:00Z",
+      "duration_ms": 2107
+    },
+    {
+      "heal_id": "Aegis-17",
+      "app_id": "697ae14cb5442929d8ac3567",
+      "app_name": "ISO20022-XRP demonstration",
+      "action": "anomaly_isolation",
+      "result": "success",
+      "timestamp": "2026-07-25T18:39:00Z",
+      "duration_ms": 2477
+    },
+    {
+      "heal_id": "Aegis-18",
+      "app_id": "697ae14cb5442929d8ac3567",
+      "app_name": "ISO20022-XRP demonstration",
+      "action": "pattern_update",
+      "result": "success",
+      "timestamp": "2026-07-21T23:39:00Z",
+      "duration_ms": 3188
+    },
+    {
+      "heal_id": "Aegis-19",
+      "app_id": "697ae14cb5442929d8ac3567",
+      "app_name": "ISO20022-XRP demonstration",
+      "action": "playbook_execution",
+      "result": "success",
+      "timestamp": "2026-07-25T02:39:00Z",
+      "duration_ms": 3110
+    },
+    {
+      "heal_id": "Aegis-20",
+      "app_id": "697ae14cb5442929d8ac3567",
+      "app_name": "ISO20022-XRP demonstration",
+      "action": "pattern_update",
+      "result": "success",
+      "timestamp": "2026-07-24T14:39:00Z",
+      "duration_ms": 2387
+    },
+    {
+      "heal_id": "Aegis-21",
+      "app_id": "697ae14cb5442929d8ac3567",
+      "app_name": "ISO20022-XRP demonstration",
+      "action": "pqc_migration",
+      "result": "success",
+      "timestamp": "2026-07-19T22:39:00Z",
+      "duration_ms": 1601
+    },
+    {
+      "heal_id": "Aegis-22",
+      "app_id": "697ae14cb5442929d8ac3567",
+      "app_name": "ISO20022-XRP demonstration",
+      "action": "pattern_update",
+      "result": "success",
+      "timestamp": "2026-07-21T03:39:00Z",
+      "duration_ms": 2205
+    },
+    {
+      "heal_id": "Aegis-23",
+      "app_id": "6a246568c34632b7dcf5410d",
+      "app_name": "ISO20022-XRP",
+      "action": "playbook_execution",
+      "result": "success",
+      "timestamp": "2026-07-26T11:39:00Z",
+      "duration_ms": 3486
+    },
+    {
+      "heal_id": "Aegis-24",
+      "app_id": "6a246568c34632b7dcf5410d",
+      "app_name": "ISO20022-XRP",
+      "action": "pqc_migration",
+      "result": "success",
+      "timestamp": "2026-07-23T23:39:00Z",
+      "duration_ms": 1928
+    },
+    {
+      "heal_id": "Aegis-25",
+      "app_id": "6a246568c34632b7dcf5410d",
+      "app_name": "ISO20022-XRP",
+      "action": "pattern_update",
+      "result": "success",
+      "timestamp": "2026-07-20T18:39:00Z",
+      "duration_ms": 2777
+    },
+    {
+      "heal_id": "Aegis-26",
+      "app_id": "6a246568c34632b7dcf5410d",
+      "app_name": "ISO20022-XRP",
+      "action": "pattern_update",
+      "result": "success",
+      "timestamp": "2026-07-24T13:39:00Z",
+      "duration_ms": 4289
+    },
+    {
+      "heal_id": "Aegis-27",
+      "app_id": "6a246568c34632b7dcf5410d",
+      "app_name": "ISO20022-XRP",
+      "action": "pattern_update",
+      "result": "success",
+      "timestamp": "2026-07-22T14:39:00Z",
+      "duration_ms": 3958
+    },
+    {
+      "heal_id": "Aegis-28",
+      "app_id": "6a246568c34632b7dcf5410d",
+      "app_name": "ISO20022-XRP",
+      "action": "playbook_execution",
+      "result": "success",
+      "timestamp": "2026-07-25T07:39:00Z",
+      "duration_ms": 1343
+    },
+    {
+      "heal_id": "Aegis-29",
+      "app_id": "6a246568c34632b7dcf5410d",
+      "app_name": "ISO20022-XRP",
+      "action": "pattern_update",
+      "result": "success",
+      "timestamp": "2026-07-24T04:39:00Z",
+      "duration_ms": 4798
+    },
+    {
+      "heal_id": "Aegis-30",
+      "app_id": "6a246568c34632b7dcf5410d",
+      "app_name": "ISO20022-XRP",
+      "action": "playbook_execution",
+      "result": "success",
+      "timestamp": "2026-07-21T02:39:00Z",
+      "duration_ms": 4988
+    },
+    {
+      "heal_id": "Aegis-31",
+      "app_id": "6a246568c34632b7dcf5410d",
+      "app_name": "ISO20022-XRP",
+      "action": "node_rebalance",
+      "result": "success",
+      "timestamp": "2026-07-22T06:39:00Z",
+      "duration_ms": 3471
+    },
+    {
+      "heal_id": "Aegis-32",
+      "app_id": "6a246568c34632b7dcf5410d",
+      "app_name": "ISO20022-XRP",
+      "action": "heartbeat_restart",
+      "result": "success",
+      "timestamp": "2026-07-22T23:39:00Z",
+      "duration_ms": 1333
+    },
+    {
+      "heal_id": "Aegis-33",
+      "app_id": "6a246568c34632b7dcf5410d",
+      "app_name": "ISO20022-XRP",
+      "action": "anomaly_isolation",
+      "result": "success",
+      "timestamp": "2026-07-21T09:39:00Z",
+      "duration_ms": 944
+    },
+    {
+      "heal_id": "Aegis-34",
+      "app_id": "68b38e9026dc14d91492af27",
+      "app_name": "Satoshi Scribe",
+      "action": "anomaly_isolation",
+      "result": "success",
+      "timestamp": "2026-07-22T17:39:00Z",
+      "duration_ms": 4034
+    },
+    {
+      "heal_id": "Aegis-35",
+      "app_id": "68b38e9026dc14d91492af27",
+      "app_name": "Satoshi Scribe",
+      "action": "playbook_execution",
+      "result": "success",
+      "timestamp": "2026-07-21T04:39:00Z",
+      "duration_ms": 4732
+    },
+    {
+      "heal_id": "Aegis-36",
+      "app_id": "68b38e9026dc14d91492af27",
+      "app_name": "Satoshi Scribe",
+      "action": "pattern_update",
+      "result": "success",
+      "timestamp": "2026-07-26T17:39:00Z",
+      "duration_ms": 1138
+    },
+    {
+      "heal_id": "Aegis-37",
+      "app_id": "68b38e9026dc14d91492af27",
+      "app_name": "Satoshi Scribe",
+      "action": "playbook_execution",
+      "result": "success",
+      "timestamp": "2026-07-21T02:39:00Z",
+      "duration_ms": 2986
+    },
+    {
+      "heal_id": "Aegis-38",
+      "app_id": "68b38e9026dc14d91492af27",
+      "app_name": "Satoshi Scribe",
+      "action": "playbook_execution",
+      "result": "success",
+      "timestamp": "2026-07-25T15:39:00Z",
+      "duration_ms": 3761
+    },
+    {
+      "heal_id": "Aegis-39",
+      "app_id": "68b38e9026dc14d91492af27",
+      "app_name": "Satoshi Scribe",
+      "action": "anomaly_isolation",
+      "result": "success",
+      "timestamp": "2026-07-25T03:39:00Z",
+      "duration_ms": 226
+    },
+    {
+      "heal_id": "Aegis-40",
+      "app_id": "68b38e9026dc14d91492af27",
+      "app_name": "Satoshi Scribe",
+      "action": "node_rebalance",
+      "result": "success",
+      "timestamp": "2026-07-24T00:39:00Z",
+      "duration_ms": 1663
+    },
+    {
+      "heal_id": "Aegis-41",
+      "app_id": "68b38e9026dc14d91492af27",
+      "app_name": "Satoshi Scribe",
+      "action": "pqc_migration",
+      "result": "success",
+      "timestamp": "2026-07-21T10:39:00Z",
+      "duration_ms": 2644
+    },
+    {
+      "heal_id": "Aegis-42",
+      "app_id": "68b38e9026dc14d91492af27",
+      "app_name": "Satoshi Scribe",
+      "action": "node_rebalance",
+      "result": "success",
+      "timestamp": "2026-07-20T00:39:00Z",
+      "duration_ms": 1829
+    },
+    {
+      "heal_id": "Aegis-43",
+      "app_id": "68b38e9026dc14d91492af27",
+      "app_name": "Satoshi Scribe",
+      "action": "playbook_execution",
+      "result": "success",
+      "timestamp": "2026-07-25T04:39:00Z",
+      "duration_ms": 1523
+    },
+    {
+      "heal_id": "Aegis-44",
+      "app_id": "68b38e9026dc14d91492af27",
+      "app_name": "Satoshi Scribe",
+      "action": "node_rebalance",
+      "result": "success",
+      "timestamp": "2026-07-21T01:39:00Z",
+      "duration_ms": 204
+    },
+    {
+      "heal_id": "Aegis-45",
+      "app_id": "68b63ca087a7f5b194a73fd8",
+      "app_name": "StableRoot (SRUSD)",
+      "action": "pqc_migration",
+      "result": "success",
+      "timestamp": "2026-07-24T06:39:00Z",
+      "duration_ms": 2173
+    },
+    {
+      "heal_id": "Aegis-46",
+      "app_id": "68b63ca087a7f5b194a73fd8",
+      "app_name": "StableRoot (SRUSD)",
+      "action": "pqc_migration",
+      "result": "success",
+      "timestamp": "2026-07-20T18:39:00Z",
+      "duration_ms": 901
+    },
+    {
+      "heal_id": "Aegis-47",
+      "app_id": "68b63ca087a7f5b194a73fd8",
+      "app_name": "StableRoot (SRUSD)",
+      "action": "pqc_migration",
+      "result": "success",
+      "timestamp": "2026-07-21T15:39:00Z",
+      "duration_ms": 4563
+    },
+    {
+      "heal_id": "Aegis-48",
+      "app_id": "68b63ca087a7f5b194a73fd8",
+      "app_name": "StableRoot (SRUSD)",
+      "action": "heartbeat_restart",
+      "result": "success",
+      "timestamp": "2026-07-25T11:39:00Z",
+      "duration_ms": 4093
+    },
+    {
+      "heal_id": "Aegis-49",
+      "app_id": "68b63ca087a7f5b194a73fd8",
+      "app_name": "StableRoot (SRUSD)",
+      "action": "heartbeat_restart",
+      "result": "success",
+      "timestamp": "2026-07-20T23:39:00Z",
+      "duration_ms": 2371
+    },
+    {
+      "heal_id": "Aegis-50",
+      "app_id": "68b63ca087a7f5b194a73fd8",
+      "app_name": "StableRoot (SRUSD)",
+      "action": "node_rebalance",
+      "result": "success",
+      "timestamp": "2026-07-21T04:39:00Z",
+      "duration_ms": 3666
+    },
+    {
+      "heal_id": "Aegis-51",
+      "app_id": "68b63ca087a7f5b194a73fd8",
+      "app_name": "StableRoot (SRUSD)",
+      "action": "node_rebalance",
+      "result": "success",
+      "timestamp": "2026-07-24T13:39:00Z",
+      "duration_ms": 1847
+    },
+    {
+      "heal_id": "Aegis-52",
+      "app_id": "68b63ca087a7f5b194a73fd8",
+      "app_name": "StableRoot (SRUSD)",
+      "action": "anomaly_isolation",
+      "result": "success",
+      "timestamp": "2026-07-23T12:39:00Z",
+      "duration_ms": 3259
+    },
+    {
+      "heal_id": "Aegis-53",
+      "app_id": "68b63ca087a7f5b194a73fd8",
+      "app_name": "StableRoot (SRUSD)",
+      "action": "node_rebalance",
+      "result": "success",
+      "timestamp": "2026-07-22T03:39:00Z",
+      "duration_ms": 3898
+    },
+    {
+      "heal_id": "Aegis-54",
+      "app_id": "68b63ca087a7f5b194a73fd8",
+      "app_name": "StableRoot (SRUSD)",
+      "action": "heartbeat_restart",
+      "result": "success",
+      "timestamp": "2026-07-25T13:39:00Z",
+      "duration_ms": 2040
+    },
+    {
+      "heal_id": "Aegis-55",
+      "app_id": "68b63ca087a7f5b194a73fd8",
+      "app_name": "StableRoot (SRUSD)",
+      "action": "playbook_execution",
+      "result": "success",
+      "timestamp": "2026-07-26T03:39:00Z",
+      "duration_ms": 372
+    },
+    {
+      "heal_id": "Aegis-56",
+      "app_id": "68ed91a39b86010ab4b32e85",
+      "app_name": "Stable Coin Mint",
+      "action": "playbook_execution",
+      "result": "success",
+      "timestamp": "2026-07-26T11:39:00Z",
+      "duration_ms": 780
+    },
+    {
+      "heal_id": "Aegis-57",
+      "app_id": "68ed91a39b86010ab4b32e85",
+      "app_name": "Stable Coin Mint",
+      "action": "heartbeat_restart",
+      "result": "success",
+      "timestamp": "2026-07-21T08:39:00Z",
+      "duration_ms": 2481
+    },
+    {
+      "heal_id": "Aegis-58",
+      "app_id": "68ed91a39b86010ab4b32e85",
+      "app_name": "Stable Coin Mint",
+      "action": "heartbeat_restart",
+      "result": "success",
+      "timestamp": "2026-07-21T15:39:00Z",
+      "duration_ms": 4617
+    },
+    {
+      "heal_id": "Aegis-59",
+      "app_id": "68ed91a39b86010ab4b32e85",
+      "app_name": "Stable Coin Mint",
+      "action": "pattern_update",
+      "result": "success",
+      "timestamp": "2026-07-25T10:39:00Z",
+      "duration_ms": 4877
+    },
+    {
+      "heal_id": "Aegis-60",
+      "app_id": "68ed91a39b86010ab4b32e85",
+      "app_name": "Stable Coin Mint",
+      "action": "anomaly_isolation",
+      "result": "success",
+      "timestamp": "2026-07-20T16:39:00Z",
+      "duration_ms": 2190
+    },
+    {
+      "heal_id": "Aegis-61",
+      "app_id": "68ed91a39b86010ab4b32e85",
+      "app_name": "Stable Coin Mint",
+      "action": "anomaly_isolation",
+      "result": "success",
+      "timestamp": "2026-07-21T18:39:00Z",
+      "duration_ms": 1759
+    },
+    {
+      "heal_id": "Aegis-62",
+      "app_id": "68ed91a39b86010ab4b32e85",
+      "app_name": "Stable Coin Mint",
+      "action": "pqc_migration",
+      "result": "success",
+      "timestamp": "2026-07-25T19:39:00Z",
+      "duration_ms": 3731
+    },
+    {
+      "heal_id": "Aegis-63",
+      "app_id": "68ed91a39b86010ab4b32e85",
+      "app_name": "Stable Coin Mint",
+      "action": "anomaly_isolation",
+      "result": "success",
+      "timestamp": "2026-07-23T01:39:00Z",
+      "duration_ms": 3567
+    },
+    {
+      "heal_id": "Aegis-64",
+      "app_id": "68ed91a39b86010ab4b32e85",
+      "app_name": "Stable Coin Mint",
+      "action": "pattern_update",
+      "result": "success",
+      "timestamp": "2026-07-21T20:39:00Z",
+      "duration_ms": 643
+    },
+    {
+      "heal_id": "Aegis-65",
+      "app_id": "68ed91a39b86010ab4b32e85",
+      "app_name": "Stable Coin Mint",
+      "action": "pattern_update",
+      "result": "success",
+      "timestamp": "2026-07-19T20:39:00Z",
+      "duration_ms": 1006
+    },
+    {
+      "heal_id": "Aegis-66",
+      "app_id": "68ed91a39b86010ab4b32e85",
+      "app_name": "Stable Coin Mint",
+      "action": "anomaly_isolation",
+      "result": "success",
+      "timestamp": "2026-07-26T04:39:00Z",
+      "duration_ms": 2979
+    },
+    {
+      "heal_id": "Aegis-67",
+      "app_id": "6918a18d352bf0d5b51e5d90",
+      "app_name": "TexasTreasuryMint",
+      "action": "heartbeat_restart",
+      "result": "success",
+      "timestamp": "2026-07-21T21:39:00Z",
+      "duration_ms": 817
+    },
+    {
+      "heal_id": "Aegis-68",
+      "app_id": "6918a18d352bf0d5b51e5d90",
+      "app_name": "TexasTreasuryMint",
+      "action": "node_rebalance",
+      "result": "success",
+      "timestamp": "2026-07-22T02:39:00Z",
+      "duration_ms": 1002
+    },
+    {
+      "heal_id": "Aegis-69",
+      "app_id": "6918a18d352bf0d5b51e5d90",
+      "app_name": "TexasTreasuryMint",
+      "action": "pattern_update",
+      "result": "success",
+      "timestamp": "2026-07-26T07:39:00Z",
+      "duration_ms": 4628
+    },
+    {
+      "heal_id": "Aegis-70",
+      "app_id": "6918a18d352bf0d5b51e5d90",
+      "app_name": "TexasTreasuryMint",
+      "action": "pqc_migration",
+      "result": "success",
+      "timestamp": "2026-07-26T16:39:00Z",
+      "duration_ms": 2136
+    },
+    {
+      "heal_id": "Aegis-71",
+      "app_id": "6918a18d352bf0d5b51e5d90",
+      "app_name": "TexasTreasuryMint",
+      "action": "anomaly_isolation",
+      "result": "success",
+      "timestamp": "2026-07-25T01:39:00Z",
+      "duration_ms": 4178
+    },
+    {
+      "heal_id": "Aegis-72",
+      "app_id": "6918a18d352bf0d5b51e5d90",
+      "app_name": "TexasTreasuryMint",
+      "action": "heartbeat_restart",
+      "result": "success",
+      "timestamp": "2026-07-21T16:39:00Z",
+      "duration_ms": 3485
+    },
+    {
+      "heal_id": "Aegis-73",
+      "app_id": "6918a18d352bf0d5b51e5d90",
+      "app_name": "TexasTreasuryMint",
+      "action": "heartbeat_restart",
+      "result": "success",
+      "timestamp": "2026-07-26T04:39:00Z",
+      "duration_ms": 3304
+    },
+    {
+      "heal_id": "Aegis-74",
+      "app_id": "6918a18d352bf0d5b51e5d90",
+      "app_name": "TexasTreasuryMint",
+      "action": "anomaly_isolation",
+      "result": "success",
+      "timestamp": "2026-07-26T19:39:00Z",
+      "duration_ms": 2372
+    },
+    {
+      "heal_id": "Aegis-75",
+      "app_id": "6918a18d352bf0d5b51e5d90",
+      "app_name": "TexasTreasuryMint",
+      "action": "playbook_execution",
+      "result": "success",
+      "timestamp": "2026-07-21T23:39:00Z",
+      "duration_ms": 3665
+    },
+    {
+      "heal_id": "Aegis-76",
+      "app_id": "6918a18d352bf0d5b51e5d90",
+      "app_name": "TexasTreasuryMint",
+      "action": "pattern_update",
+      "result": "success",
+      "timestamp": "2026-07-20T21:39:00Z",
+      "duration_ms": 4186
+    },
+    {
+      "heal_id": "Aegis-77",
+      "app_id": "6918a18d352bf0d5b51e5d90",
+      "app_name": "TexasTreasuryMint",
+      "action": "heartbeat_restart",
+      "result": "success",
+      "timestamp": "2026-07-25T04:39:00Z",
+      "duration_ms": 2630
+    },
+    {
+      "heal_id": "Aegis-78",
+      "app_id": "693d9a99ca82e178be7bca1b",
+      "app_name": "Jasper",
+      "action": "node_rebalance",
+      "result": "success",
+      "timestamp": "2026-07-26T05:39:00Z",
+      "duration_ms": 856
+    },
+    {
+      "heal_id": "Aegis-79",
+      "app_id": "693d9a99ca82e178be7bca1b",
+      "app_name": "Jasper",
+      "action": "pqc_migration",
+      "result": "success",
+      "timestamp": "2026-07-24T20:39:00Z",
+      "duration_ms": 756
+    },
+    {
+      "heal_id": "Aegis-80",
+      "app_id": "693d9a99ca82e178be7bca1b",
+      "app_name": "Jasper",
+      "action": "anomaly_isolation",
+      "result": "success",
+      "timestamp": "2026-07-24T07:39:00Z",
+      "duration_ms": 1182
+    },
+    {
+      "heal_id": "Aegis-81",
+      "app_id": "693d9a99ca82e178be7bca1b",
+      "app_name": "Jasper",
+      "action": "heartbeat_restart",
+      "result": "success",
+      "timestamp": "2026-07-20T18:39:00Z",
+      "duration_ms": 4942
+    },
+    {
+      "heal_id": "Aegis-82",
+      "app_id": "693d9a99ca82e178be7bca1b",
+      "app_name": "Jasper",
+      "action": "pqc_migration",
+      "result": "success",
+      "timestamp": "2026-07-20T11:39:00Z",
+      "duration_ms": 871
+    },
+    {
+      "heal_id": "Aegis-83",
+      "app_id": "693d9a99ca82e178be7bca1b",
+      "app_name": "Jasper",
+      "action": "pattern_update",
+      "result": "success",
+      "timestamp": "2026-07-22T08:39:00Z",
+      "duration_ms": 4981
+    },
+    {
+      "heal_id": "Aegis-84",
+      "app_id": "693d9a99ca82e178be7bca1b",
+      "app_name": "Jasper",
+      "action": "node_rebalance",
+      "result": "success",
+      "timestamp": "2026-07-20T19:39:00Z",
+      "duration_ms": 2791
+    },
+    {
+      "heal_id": "Aegis-85",
+      "app_id": "693d9a99ca82e178be7bca1b",
+      "app_name": "Jasper",
+      "action": "heartbeat_restart",
+      "result": "success",
+      "timestamp": "2026-07-24T01:39:00Z",
+      "duration_ms": 2773
+    },
+    {
+      "heal_id": "Aegis-86",
+      "app_id": "6a5c6e75ac7251ec3cbb403e",
+      "app_name": "Jasper - Squirl OS",
+      "action": "pqc_migration",
+      "result": "success",
+      "timestamp": "2026-07-20T19:39:00Z",
+      "duration_ms": 800
+    },
+    {
+      "heal_id": "Aegis-87",
+      "app_id": "6a5c6e75ac7251ec3cbb403e",
+      "app_name": "Jasper - Squirl OS",
+      "action": "heartbeat_restart",
+      "result": "success",
+      "timestamp": "2026-07-21T02:39:00Z",
+      "duration_ms": 4344
+    },
+    {
+      "heal_id": "Aegis-88",
+      "app_id": "6a5c6e75ac7251ec3cbb403e",
+      "app_name": "Jasper - Squirl OS",
+      "action": "heartbeat_restart",
+      "result": "success",
+      "timestamp": "2026-07-24T00:39:00Z",
+      "duration_ms": 3059
+    },
+    {
+      "heal_id": "Aegis-89",
+      "app_id": "6a5c6e75ac7251ec3cbb403e",
+      "app_name": "Jasper - Squirl OS",
+      "action": "heartbeat_restart",
+      "result": "success",
+      "timestamp": "2026-07-26T02:39:00Z",
+      "duration_ms": 3227
+    },
+    {
+      "heal_id": "Aegis-90",
+      "app_id": "6a5c6e75ac7251ec3cbb403e",
+      "app_name": "Jasper - Squirl OS",
+      "action": "heartbeat_restart",
+      "result": "success",
+      "timestamp": "2026-07-23T19:39:00Z",
+      "duration_ms": 3789
+    },
+    {
+      "heal_id": "Aegis-91",
+      "app_id": "6a5c6e75ac7251ec3cbb403e",
+      "app_name": "Jasper - Squirl OS",
+      "action": "pattern_update",
+      "result": "success",
+      "timestamp": "2026-07-21T00:39:00Z",
+      "duration_ms": 2678
+    },
+    {
+      "heal_id": "Aegis-92",
+      "app_id": "6a5c6e75ac7251ec3cbb403e",
+      "app_name": "Jasper - Squirl OS",
+      "action": "pattern_update",
+      "result": "success",
+      "timestamp": "2026-07-20T07:39:00Z",
+      "duration_ms": 4533
+    },
+    {
+      "heal_id": "Aegis-93",
+      "app_id": "6a5c6e75ac7251ec3cbb403e",
+      "app_name": "Jasper - Squirl OS",
+      "action": "pattern_update",
+      "result": "success",
+      "timestamp": "2026-07-26T17:39:00Z",
+      "duration_ms": 4743
+    },
+    {
+      "heal_id": "Aegis-94",
+      "app_id": "69112155cd8439e414cd9fe8",
+      "app_name": "Amelia",
+      "action": "heartbeat_restart",
+      "result": "success",
+      "timestamp": "2026-07-23T04:39:00Z",
+      "duration_ms": 2362
+    },
+    {
+      "heal_id": "Aegis-95",
+      "app_id": "69112155cd8439e414cd9fe8",
+      "app_name": "Amelia",
+      "action": "anomaly_isolation",
+      "result": "success",
+      "timestamp": "2026-07-21T10:39:00Z",
+      "duration_ms": 2257
+    },
+    {
+      "heal_id": "Aegis-96",
+      "app_id": "69112155cd8439e414cd9fe8",
+      "app_name": "Amelia",
+      "action": "pqc_migration",
+      "result": "success",
+      "timestamp": "2026-07-26T06:39:00Z",
+      "duration_ms": 3669
+    },
+    {
+      "heal_id": "Aegis-97",
+      "app_id": "69112155cd8439e414cd9fe8",
+      "app_name": "Amelia",
+      "action": "pqc_migration",
+      "result": "success",
+      "timestamp": "2026-07-23T21:39:00Z",
+      "duration_ms": 229
+    },
+    {
+      "heal_id": "Aegis-98",
+      "app_id": "69112155cd8439e414cd9fe8",
+      "app_name": "Amelia",
+      "action": "heartbeat_restart",
+      "result": "success",
+      "timestamp": "2026-07-23T06:39:00Z",
+      "duration_ms": 2345
+    },
+    {
+      "heal_id": "Aegis-99",
+      "app_id": "69112155cd8439e414cd9fe8",
+      "app_name": "Amelia",
+      "action": "pattern_update",
+      "result": "success",
+      "timestamp": "2026-07-25T02:39:00Z",
+      "duration_ms": 3819
+    },
+    {
+      "heal_id": "Aegis-100",
+      "app_id": "69112155cd8439e414cd9fe8",
+      "app_name": "Amelia",
+      "action": "pattern_update",
+      "result": "success",
+      "timestamp": "2026-07-20T22:39:00Z",
+      "duration_ms": 3703
+    },
+    {
+      "heal_id": "Aegis-101",
+      "app_id": "69112155cd8439e414cd9fe8",
+      "app_name": "Amelia",
+      "action": "pqc_migration",
+      "result": "success",
+      "timestamp": "2026-07-20T20:39:00Z",
+      "duration_ms": 1116
+    },
+    {
+      "heal_id": "Aegis-102",
+      "app_id": "691695d8bffdf6b3f2320a01",
+      "app_name": "Gillian",
+      "action": "playbook_execution",
+      "result": "success",
+      "timestamp": "2026-07-26T09:39:00Z",
+      "duration_ms": 1920
+    },
+    {
+      "heal_id": "Aegis-103",
+      "app_id": "691695d8bffdf6b3f2320a01",
+      "app_name": "Gillian",
+      "action": "pattern_update",
+      "result": "success",
+      "timestamp": "2026-07-24T04:39:00Z",
+      "duration_ms": 1042
+    },
+    {
+      "heal_id": "Aegis-104",
+      "app_id": "691695d8bffdf6b3f2320a01",
+      "app_name": "Gillian",
+      "action": "node_rebalance",
+      "result": "success",
+      "timestamp": "2026-07-23T01:39:00Z",
+      "duration_ms": 3529
+    },
+    {
+      "heal_id": "Aegis-105",
+      "app_id": "691695d8bffdf6b3f2320a01",
+      "app_name": "Gillian",
+      "action": "pattern_update",
+      "result": "success",
+      "timestamp": "2026-07-20T05:39:00Z",
+      "duration_ms": 1466
+    },
+    {
+      "heal_id": "Aegis-106",
+      "app_id": "691695d8bffdf6b3f2320a01",
+      "app_name": "Gillian",
+      "action": "heartbeat_restart",
+      "result": "success",
+      "timestamp": "2026-07-24T07:39:00Z",
+      "duration_ms": 1650
+    },
+    {
+      "heal_id": "Aegis-107",
+      "app_id": "691695d8bffdf6b3f2320a01",
+      "app_name": "Gillian",
+      "action": "pqc_migration",
+      "result": "success",
+      "timestamp": "2026-07-22T10:39:00Z",
+      "duration_ms": 1669
+    },
+    {
+      "heal_id": "Aegis-108",
+      "app_id": "691695d8bffdf6b3f2320a01",
+      "app_name": "Gillian",
+      "action": "anomaly_isolation",
+      "result": "success",
+      "timestamp": "2026-07-23T06:39:00Z",
+      "duration_ms": 2232
+    },
+    {
+      "heal_id": "Aegis-109",
+      "app_id": "691695d8bffdf6b3f2320a01",
+      "app_name": "Gillian",
+      "action": "heartbeat_restart",
+      "result": "success",
+      "timestamp": "2026-07-23T23:39:00Z",
+      "duration_ms": 1085
+    },
+    {
+      "heal_id": "Aegis-110",
+      "app_id": "68eac3ccd337f22f7c00b317",
+      "app_name": "Aegis",
+      "action": "heartbeat_restart",
+      "result": "success",
+      "timestamp": "2026-07-24T09:39:00Z",
+      "duration_ms": 393
+    },
+    {
+      "heal_id": "Aegis-111",
+      "app_id": "68eac3ccd337f22f7c00b317",
+      "app_name": "Aegis",
+      "action": "anomaly_isolation",
+      "result": "success",
+      "timestamp": "2026-07-24T18:39:00Z",
+      "duration_ms": 2889
+    },
+    {
+      "heal_id": "Aegis-112",
+      "app_id": "68eac3ccd337f22f7c00b317",
+      "app_name": "Aegis",
+      "action": "pqc_migration",
+      "result": "success",
+      "timestamp": "2026-07-23T20:39:00Z",
+      "duration_ms": 2486
+    },
+    {
+      "heal_id": "Aegis-113",
+      "app_id": "68eac3ccd337f22f7c00b317",
+      "app_name": "Aegis",
+      "action": "pattern_update",
+      "result": "success",
+      "timestamp": "2026-07-23T02:39:00Z",
+      "duration_ms": 4373
+    },
+    {
+      "heal_id": "Aegis-114",
+      "app_id": "68eac3ccd337f22f7c00b317",
+      "app_name": "Aegis",
+      "action": "pattern_update",
+      "result": "success",
+      "timestamp": "2026-07-22T13:39:00Z",
+      "duration_ms": 4592
+    },
+    {
+      "heal_id": "Aegis-115",
+      "app_id": "68eac3ccd337f22f7c00b317",
+      "app_name": "Aegis",
+      "action": "pqc_migration",
+      "result": "success",
+      "timestamp": "2026-07-23T07:39:00Z",
+      "duration_ms": 1144
+    },
+    {
+      "heal_id": "Aegis-116",
+      "app_id": "68eac3ccd337f22f7c00b317",
+      "app_name": "Aegis",
+      "action": "heartbeat_restart",
+      "result": "success",
+      "timestamp": "2026-07-24T01:39:00Z",
+      "duration_ms": 4956
+    },
+    {
+      "heal_id": "Aegis-117",
+      "app_id": "68eac3ccd337f22f7c00b317",
+      "app_name": "Aegis",
+      "action": "pqc_migration",
+      "result": "success",
+      "timestamp": "2026-07-24T00:39:00Z",
+      "duration_ms": 1088
+    },
+    {
+      "heal_id": "Aegis-118",
+      "app_id": "690544f7491b9c424d10fee0",
+      "app_name": "Aegis Sentinel",
+      "action": "heartbeat_restart",
+      "result": "success",
+      "timestamp": "2026-07-20T16:39:00Z",
+      "duration_ms": 2286
+    },
+    {
+      "heal_id": "Aegis-119",
+      "app_id": "690544f7491b9c424d10fee0",
+      "app_name": "Aegis Sentinel",
+      "action": "pattern_update",
+      "result": "success",
+      "timestamp": "2026-07-26T08:39:00Z",
+      "duration_ms": 3772
+    },
+    {
+      "heal_id": "Aegis-120",
+      "app_id": "690544f7491b9c424d10fee0",
+      "app_name": "Aegis Sentinel",
+      "action": "node_rebalance",
+      "result": "success",
+      "timestamp": "2026-07-26T19:39:00Z",
+      "duration_ms": 4610
+    },
+    {
+      "heal_id": "Aegis-121",
+      "app_id": "690544f7491b9c424d10fee0",
+      "app_name": "Aegis Sentinel",
+      "action": "playbook_execution",
+      "result": "success",
+      "timestamp": "2026-07-24T17:39:00Z",
+      "duration_ms": 3733
+    },
+    {
+      "heal_id": "Aegis-122",
+      "app_id": "690544f7491b9c424d10fee0",
+      "app_name": "Aegis Sentinel",
+      "action": "pattern_update",
+      "result": "success",
+      "timestamp": "2026-07-26T02:39:00Z",
+      "duration_ms": 2904
+    },
+    {
+      "heal_id": "Aegis-123",
+      "app_id": "690544f7491b9c424d10fee0",
+      "app_name": "Aegis Sentinel",
+      "action": "playbook_execution",
+      "result": "success",
+      "timestamp": "2026-07-20T04:39:00Z",
+      "duration_ms": 1220
+    },
+    {
+      "heal_id": "Aegis-124",
+      "app_id": "690544f7491b9c424d10fee0",
+      "app_name": "Aegis Sentinel",
+      "action": "node_rebalance",
+      "result": "success",
+      "timestamp": "2026-07-23T15:39:00Z",
+      "duration_ms": 2733
+    },
+    {
+      "heal_id": "Aegis-125",
+      "app_id": "690544f7491b9c424d10fee0",
+      "app_name": "Aegis Sentinel",
+      "action": "playbook_execution",
+      "result": "success",
+      "timestamp": "2026-07-22T11:39:00Z",
+      "duration_ms": 3496
+    },
+    {
+      "heal_id": "Aegis-126",
+      "app_id": "692b37721d1c63062ea808ac",
+      "app_name": "ARETE AI Orchestrator",
+      "action": "node_rebalance",
+      "result": "success",
+      "timestamp": "2026-07-24T23:39:00Z",
+      "duration_ms": 4862
+    },
+    {
+      "heal_id": "Aegis-127",
+      "app_id": "692b37721d1c63062ea808ac",
+      "app_name": "ARETE AI Orchestrator",
+      "action": "anomaly_isolation",
+      "result": "success",
+      "timestamp": "2026-07-23T14:39:00Z",
+      "duration_ms": 4688
+    },
+    {
+      "heal_id": "Aegis-128",
+      "app_id": "692b37721d1c63062ea808ac",
+      "app_name": "ARETE AI Orchestrator",
+      "action": "playbook_execution",
+      "result": "success",
+      "timestamp": "2026-07-26T19:39:00Z",
+      "duration_ms": 2550
+    },
+    {
+      "heal_id": "Aegis-129",
+      "app_id": "692b37721d1c63062ea808ac",
+      "app_name": "ARETE AI Orchestrator",
+      "action": "anomaly_isolation",
+      "result": "success",
+      "timestamp": "2026-07-24T14:39:00Z",
+      "duration_ms": 4951
+    },
+    {
+      "heal_id": "Aegis-130",
+      "app_id": "692b37721d1c63062ea808ac",
+      "app_name": "ARETE AI Orchestrator",
+      "action": "pattern_update",
+      "result": "success",
+      "timestamp": "2026-07-20T08:39:00Z",
+      "duration_ms": 2839
+    },
+    {
+      "heal_id": "Aegis-131",
+      "app_id": "692b37721d1c63062ea808ac",
+      "app_name": "ARETE AI Orchestrator",
+      "action": "anomaly_isolation",
+      "result": "success",
+      "timestamp": "2026-07-21T20:39:00Z",
+      "duration_ms": 3822
+    },
+    {
+      "heal_id": "Aegis-132",
+      "app_id": "692b37721d1c63062ea808ac",
+      "app_name": "ARETE AI Orchestrator",
+      "action": "node_rebalance",
+      "result": "success",
+      "timestamp": "2026-07-24T13:39:00Z",
+      "duration_ms": 4076
+    },
+    {
+      "heal_id": "Aegis-133",
+      "app_id": "692b37721d1c63062ea808ac",
+      "app_name": "ARETE AI Orchestrator",
+      "action": "pattern_update",
+      "result": "success",
+      "timestamp": "2026-07-25T00:39:00Z",
+      "duration_ms": 894
+    },
+    {
+      "heal_id": "Aegis-134",
+      "app_id": "68edbdb57e9c673e366fd25a",
+      "app_name": "MemeCoin Forge",
+      "action": "pqc_migration",
+      "result": "success",
+      "timestamp": "2026-07-20T07:39:00Z",
+      "duration_ms": 3930
+    },
+    {
+      "heal_id": "Aegis-135",
+      "app_id": "68edbdb57e9c673e366fd25a",
+      "app_name": "MemeCoin Forge",
+      "action": "pattern_update",
+      "result": "success",
+      "timestamp": "2026-07-22T09:39:00Z",
+      "duration_ms": 4915
+    },
+    {
+      "heal_id": "Aegis-136",
+      "app_id": "68edbdb57e9c673e366fd25a",
+      "app_name": "MemeCoin Forge",
+      "action": "pattern_update",
+      "result": "success",
+      "timestamp": "2026-07-24T18:39:00Z",
+      "duration_ms": 3345
+    },
+    {
+      "heal_id": "Aegis-137",
+      "app_id": "68edbdb57e9c673e366fd25a",
+      "app_name": "MemeCoin Forge",
+      "action": "anomaly_isolation",
+      "result": "success",
+      "timestamp": "2026-07-21T13:39:00Z",
+      "duration_ms": 2198
+    },
+    {
+      "heal_id": "Aegis-138",
+      "app_id": "68edbdb57e9c673e366fd25a",
+      "app_name": "MemeCoin Forge",
+      "action": "pattern_update",
+      "result": "success",
+      "timestamp": "2026-07-25T06:39:00Z",
+      "duration_ms": 245
+    },
+    {
+      "heal_id": "Aegis-139",
+      "app_id": "68edbdb57e9c673e366fd25a",
+      "app_name": "MemeCoin Forge",
+      "action": "anomaly_isolation",
+      "result": "success",
+      "timestamp": "2026-07-25T16:39:00Z",
+      "duration_ms": 1992
+    },
+    {
+      "heal_id": "Aegis-140",
+      "app_id": "68edbdb57e9c673e366fd25a",
+      "app_name": "MemeCoin Forge",
+      "action": "pattern_update",
+      "result": "success",
+      "timestamp": "2026-07-24T22:39:00Z",
+      "duration_ms": 4443
+    },
+    {
+      "heal_id": "Aegis-141",
+      "app_id": "68edbdb57e9c673e366fd25a",
+      "app_name": "MemeCoin Forge",
+      "action": "pqc_migration",
+      "result": "success",
+      "timestamp": "2026-07-21T21:39:00Z",
+      "duration_ms": 4766
+    },
+    {
+      "heal_id": "Aegis-142",
+      "app_id": "6956c9a4964b7ec126360140",
+      "app_name": "Phoenix Genesis Coin",
+      "action": "node_rebalance",
+      "result": "success",
+      "timestamp": "2026-07-22T02:39:00Z",
+      "duration_ms": 4335
+    },
+    {
+      "heal_id": "Aegis-143",
+      "app_id": "6956c9a4964b7ec126360140",
+      "app_name": "Phoenix Genesis Coin",
+      "action": "node_rebalance",
+      "result": "success",
+      "timestamp": "2026-07-22T06:39:00Z",
+      "duration_ms": 3852
+    },
+    {
+      "heal_id": "Aegis-144",
+      "app_id": "6956c9a4964b7ec126360140",
+      "app_name": "Phoenix Genesis Coin",
+      "action": "pattern_update",
+      "result": "success",
+      "timestamp": "2026-07-25T03:39:00Z",
+      "duration_ms": 4088
+    },
+    {
+      "heal_id": "Aegis-145",
+      "app_id": "6956c9a4964b7ec126360140",
+      "app_name": "Phoenix Genesis Coin",
+      "action": "playbook_execution",
+      "result": "success",
+      "timestamp": "2026-07-22T00:39:00Z",
+      "duration_ms": 2225
+    },
+    {
+      "heal_id": "Aegis-146",
+      "app_id": "6956c9a4964b7ec126360140",
+      "app_name": "Phoenix Genesis Coin",
+      "action": "playbook_execution",
+      "result": "success",
+      "timestamp": "2026-07-20T00:39:00Z",
+      "duration_ms": 4470
+    },
+    {
+      "heal_id": "Aegis-147",
+      "app_id": "6956c9a4964b7ec126360140",
+      "app_name": "Phoenix Genesis Coin",
+      "action": "pattern_update",
+      "result": "success",
+      "timestamp": "2026-07-21T15:39:00Z",
+      "duration_ms": 2159
+    },
+    {
+      "heal_id": "Aegis-148",
+      "app_id": "6956c9a4964b7ec126360140",
+      "app_name": "Phoenix Genesis Coin",
+      "action": "anomaly_isolation",
+      "result": "success",
+      "timestamp": "2026-07-23T21:39:00Z",
+      "duration_ms": 834
+    },
+    {
+      "heal_id": "Aegis-149",
+      "app_id": "6956c9a4964b7ec126360140",
+      "app_name": "Phoenix Genesis Coin",
+      "action": "heartbeat_restart",
+      "result": "success",
+      "timestamp": "2026-07-23T18:39:00Z",
+      "duration_ms": 2425
+    },
+    {
+      "heal_id": "Aegis-150",
+      "app_id": "690bf95acad91576ef43fdbe",
+      "app_name": "SatoshiForge",
+      "action": "pqc_migration",
+      "result": "success",
+      "timestamp": "2026-07-24T13:39:00Z",
+      "duration_ms": 3598
+    },
+    {
+      "heal_id": "Aegis-151",
+      "app_id": "690bf95acad91576ef43fdbe",
+      "app_name": "SatoshiForge",
+      "action": "playbook_execution",
+      "result": "success",
+      "timestamp": "2026-07-22T11:39:00Z",
+      "duration_ms": 4645
+    },
+    {
+      "heal_id": "Aegis-152",
+      "app_id": "690bf95acad91576ef43fdbe",
+      "app_name": "SatoshiForge",
+      "action": "anomaly_isolation",
+      "result": "success",
+      "timestamp": "2026-07-21T20:39:00Z",
+      "duration_ms": 710
+    },
+    {
+      "heal_id": "Aegis-153",
+      "app_id": "690bf95acad91576ef43fdbe",
+      "app_name": "SatoshiForge",
+      "action": "anomaly_isolation",
+      "result": "success",
+      "timestamp": "2026-07-24T15:39:00Z",
+      "duration_ms": 3390
+    },
+    {
+      "heal_id": "Aegis-154",
+      "app_id": "690bf95acad91576ef43fdbe",
+      "app_name": "SatoshiForge",
+      "action": "pattern_update",
+      "result": "success",
+      "timestamp": "2026-07-20T14:39:00Z",
+      "duration_ms": 360
+    },
+    {
+      "heal_id": "Aegis-155",
+      "app_id": "690bf95acad91576ef43fdbe",
+      "app_name": "SatoshiForge",
+      "action": "anomaly_isolation",
+      "result": "success",
+      "timestamp": "2026-07-20T16:39:00Z",
+      "duration_ms": 4107
+    },
+    {
+      "heal_id": "Aegis-156",
+      "app_id": "690bf95acad91576ef43fdbe",
+      "app_name": "SatoshiForge",
+      "action": "playbook_execution",
+      "result": "success",
+      "timestamp": "2026-07-26T18:39:00Z",
+      "duration_ms": 2646
+    },
+    {
+      "heal_id": "Aegis-157",
+      "app_id": "690bf95acad91576ef43fdbe",
+      "app_name": "SatoshiForge",
+      "action": "anomaly_isolation",
+      "result": "success",
+      "timestamp": "2026-07-22T16:39:00Z",
+      "duration_ms": 4609
+    },
+    {
+      "heal_id": "Aegis-158",
+      "app_id": "690ad79dab2ae3e206711adc",
+      "app_name": "EtherForge",
+      "action": "anomaly_isolation",
+      "result": "success",
+      "timestamp": "2026-07-26T12:39:00Z",
+      "duration_ms": 2953
+    },
+    {
+      "heal_id": "Aegis-159",
+      "app_id": "690ad79dab2ae3e206711adc",
+      "app_name": "EtherForge",
+      "action": "pattern_update",
+      "result": "success",
+      "timestamp": "2026-07-22T12:39:00Z",
+      "duration_ms": 1552
+    },
+    {
+      "heal_id": "Aegis-160",
+      "app_id": "690ad79dab2ae3e206711adc",
+      "app_name": "EtherForge",
+      "action": "heartbeat_restart",
+      "result": "success",
+      "timestamp": "2026-07-21T20:39:00Z",
+      "duration_ms": 4575
+    },
+    {
+      "heal_id": "Aegis-161",
+      "app_id": "690ad79dab2ae3e206711adc",
+      "app_name": "EtherForge",
+      "action": "anomaly_isolation",
+      "result": "success",
+      "timestamp": "2026-07-26T13:39:00Z",
+      "duration_ms": 4823
+    },
+    {
+      "heal_id": "Aegis-162",
+      "app_id": "690ad79dab2ae3e206711adc",
+      "app_name": "EtherForge",
+      "action": "pqc_migration",
+      "result": "success",
+      "timestamp": "2026-07-26T13:39:00Z",
+      "duration_ms": 3711
+    },
+    {
+      "heal_id": "Aegis-163",
+      "app_id": "690ad79dab2ae3e206711adc",
+      "app_name": "EtherForge",
+      "action": "anomaly_isolation",
+      "result": "success",
+      "timestamp": "2026-07-25T09:39:00Z",
+      "duration_ms": 1688
+    },
+    {
+      "heal_id": "Aegis-164",
+      "app_id": "690ad79dab2ae3e206711adc",
+      "app_name": "EtherForge",
+      "action": "playbook_execution",
+      "result": "success",
+      "timestamp": "2026-07-26T07:39:00Z",
+      "duration_ms": 3305
+    },
+    {
+      "heal_id": "Aegis-165",
+      "app_id": "690ad79dab2ae3e206711adc",
+      "app_name": "EtherForge",
+      "action": "heartbeat_restart",
+      "result": "success",
+      "timestamp": "2026-07-23T08:39:00Z",
+      "duration_ms": 3924
+    },
+    {
+      "heal_id": "Aegis-166",
+      "app_id": "6914fc3d1df2defed6c502c2",
+      "app_name": "Stellar Scribe",
+      "action": "anomaly_isolation",
+      "result": "success",
+      "timestamp": "2026-07-25T23:39:00Z",
+      "duration_ms": 358
+    },
+    {
+      "heal_id": "Aegis-167",
+      "app_id": "6914fc3d1df2defed6c502c2",
+      "app_name": "Stellar Scribe",
+      "action": "pqc_migration",
+      "result": "success",
+      "timestamp": "2026-07-21T01:39:00Z",
+      "duration_ms": 3066
+    },
+    {
+      "heal_id": "Aegis-168",
+      "app_id": "6914fc3d1df2defed6c502c2",
+      "app_name": "Stellar Scribe",
+      "action": "pattern_update",
+      "result": "success",
+      "timestamp": "2026-07-24T10:39:00Z",
+      "duration_ms": 762
+    },
+    {
+      "heal_id": "Aegis-169",
+      "app_id": "6914fc3d1df2defed6c502c2",
+      "app_name": "Stellar Scribe",
+      "action": "pqc_migration",
+      "result": "success",
+      "timestamp": "2026-07-19T21:39:00Z",
+      "duration_ms": 454
+    },
+    {
+      "heal_id": "Aegis-170",
+      "app_id": "6914fc3d1df2defed6c502c2",
+      "app_name": "Stellar Scribe",
+      "action": "heartbeat_restart",
+      "result": "success",
+      "timestamp": "2026-07-24T04:39:00Z",
+      "duration_ms": 366
+    },
+    {
+      "heal_id": "Aegis-171",
+      "app_id": "6914fc3d1df2defed6c502c2",
+      "app_name": "Stellar Scribe",
+      "action": "heartbeat_restart",
+      "result": "success",
+      "timestamp": "2026-07-20T04:39:00Z",
+      "duration_ms": 2154
+    },
+    {
+      "heal_id": "Aegis-172",
+      "app_id": "6914fc3d1df2defed6c502c2",
+      "app_name": "Stellar Scribe",
+      "action": "anomaly_isolation",
+      "result": "success",
+      "timestamp": "2026-07-25T11:39:00Z",
+      "duration_ms": 1137
+    },
+    {
+      "heal_id": "Aegis-173",
+      "app_id": "6914fc3d1df2defed6c502c2",
+      "app_name": "Stellar Scribe",
+      "action": "heartbeat_restart",
+      "result": "success",
+      "timestamp": "2026-07-20T19:39:00Z",
+      "duration_ms": 4009
+    },
+    {
+      "heal_id": "Aegis-174",
+      "app_id": "6907d23c8e2d5d467fac6bdf",
+      "app_name": "Sol Scribe",
+      "action": "playbook_execution",
+      "result": "success",
+      "timestamp": "2026-07-25T02:39:00Z",
+      "duration_ms": 1085
+    },
+    {
+      "heal_id": "Aegis-175",
+      "app_id": "6907d23c8e2d5d467fac6bdf",
+      "app_name": "Sol Scribe",
+      "action": "pqc_migration",
+      "result": "success",
+      "timestamp": "2026-07-20T15:39:00Z",
+      "duration_ms": 2755
+    },
+    {
+      "heal_id": "Aegis-176",
+      "app_id": "6907d23c8e2d5d467fac6bdf",
+      "app_name": "Sol Scribe",
+      "action": "pattern_update",
+      "result": "success",
+      "timestamp": "2026-07-20T16:39:00Z",
+      "duration_ms": 3274
+    },
+    {
+      "heal_id": "Aegis-177",
+      "app_id": "6907d23c8e2d5d467fac6bdf",
+      "app_name": "Sol Scribe",
+      "action": "pattern_update",
+      "result": "success",
+      "timestamp": "2026-07-22T14:39:00Z",
+      "duration_ms": 1824
+    },
+    {
+      "heal_id": "Aegis-178",
+      "app_id": "6907d23c8e2d5d467fac6bdf",
+      "app_name": "Sol Scribe",
+      "action": "node_rebalance",
+      "result": "success",
+      "timestamp": "2026-07-26T00:39:00Z",
+      "duration_ms": 2189
+    },
+    {
+      "heal_id": "Aegis-179",
+      "app_id": "6907d23c8e2d5d467fac6bdf",
+      "app_name": "Sol Scribe",
+      "action": "pattern_update",
+      "result": "success",
+      "timestamp": "2026-07-25T17:39:00Z",
+      "duration_ms": 2670
+    },
+    {
+      "heal_id": "Aegis-180",
+      "app_id": "6907d23c8e2d5d467fac6bdf",
+      "app_name": "Sol Scribe",
+      "action": "pqc_migration",
+      "result": "success",
+      "timestamp": "2026-07-20T10:39:00Z",
+      "duration_ms": 4836
+    },
+    {
+      "heal_id": "Aegis-181",
+      "app_id": "6907d23c8e2d5d467fac6bdf",
+      "app_name": "Sol Scribe",
+      "action": "playbook_execution",
+      "result": "success",
+      "timestamp": "2026-07-26T09:39:00Z",
+      "duration_ms": 4564
+    },
+    {
+      "heal_id": "Aegis-182",
+      "app_id": "6914b4769201f72f50d86d01",
+      "app_name": "XRP Scribe",
+      "action": "anomaly_isolation",
+      "result": "success",
+      "timestamp": "2026-07-25T16:39:00Z",
+      "duration_ms": 3167
+    },
+    {
+      "heal_id": "Aegis-183",
+      "app_id": "6914b4769201f72f50d86d01",
+      "app_name": "XRP Scribe",
+      "action": "anomaly_isolation",
+      "result": "success",
+      "timestamp": "2026-07-20T01:39:00Z",
+      "duration_ms": 1453
+    },
+    {
+      "heal_id": "Aegis-184",
+      "app_id": "6914b4769201f72f50d86d01",
+      "app_name": "XRP Scribe",
+      "action": "heartbeat_restart",
+      "result": "success",
+      "timestamp": "2026-07-22T04:39:00Z",
+      "duration_ms": 4474
+    },
+    {
+      "heal_id": "Aegis-185",
+      "app_id": "6914b4769201f72f50d86d01",
+      "app_name": "XRP Scribe",
+      "action": "playbook_execution",
+      "result": "success",
+      "timestamp": "2026-07-19T21:39:00Z",
+      "duration_ms": 4608
+    },
+    {
+      "heal_id": "Aegis-186",
+      "app_id": "6914b4769201f72f50d86d01",
+      "app_name": "XRP Scribe",
+      "action": "anomaly_isolation",
+      "result": "success",
+      "timestamp": "2026-07-21T16:39:00Z",
+      "duration_ms": 3768
+    },
+    {
+      "heal_id": "Aegis-187",
+      "app_id": "6914b4769201f72f50d86d01",
+      "app_name": "XRP Scribe",
+      "action": "playbook_execution",
+      "result": "success",
+      "timestamp": "2026-07-20T12:39:00Z",
+      "duration_ms": 2840
+    },
+    {
+      "heal_id": "Aegis-188",
+      "app_id": "6914b4769201f72f50d86d01",
+      "app_name": "XRP Scribe",
+      "action": "pqc_migration",
+      "result": "success",
+      "timestamp": "2026-07-24T05:39:00Z",
+      "duration_ms": 2484
+    },
+    {
+      "heal_id": "Aegis-189",
+      "app_id": "6914b4769201f72f50d86d01",
+      "app_name": "XRP Scribe",
+      "action": "heartbeat_restart",
+      "result": "success",
+      "timestamp": "2026-07-22T00:39:00Z",
+      "duration_ms": 4006
+    },
+    {
+      "heal_id": "Aegis-190",
+      "app_id": "690bf3e9cf37db7868503c17",
+      "app_name": "SHIB-Forge",
+      "action": "playbook_execution",
+      "result": "success",
+      "timestamp": "2026-07-23T01:39:00Z",
+      "duration_ms": 2988
+    },
+    {
+      "heal_id": "Aegis-191",
+      "app_id": "690bf3e9cf37db7868503c17",
+      "app_name": "SHIB-Forge",
+      "action": "node_rebalance",
+      "result": "success",
+      "timestamp": "2026-07-23T20:39:00Z",
+      "duration_ms": 2463
+    },
+    {
+      "heal_id": "Aegis-192",
+      "app_id": "690bf3e9cf37db7868503c17",
+      "app_name": "SHIB-Forge",
+      "action": "pqc_migration",
+      "result": "success",
+      "timestamp": "2026-07-20T21:39:00Z",
+      "duration_ms": 4432
+    },
+    {
+      "heal_id": "Aegis-193",
+      "app_id": "690bf3e9cf37db7868503c17",
+      "app_name": "SHIB-Forge",
+      "action": "pqc_migration",
+      "result": "success",
+      "timestamp": "2026-07-24T19:39:00Z",
+      "duration_ms": 2177
+    },
+    {
+      "heal_id": "Aegis-194",
+      "app_id": "690bf3e9cf37db7868503c17",
+      "app_name": "SHIB-Forge",
+      "action": "anomaly_isolation",
+      "result": "success",
+      "timestamp": "2026-07-22T11:39:00Z",
+      "duration_ms": 4748
+    },
+    {
+      "heal_id": "Aegis-195",
+      "app_id": "690bf3e9cf37db7868503c17",
+      "app_name": "SHIB-Forge",
+      "action": "pattern_update",
+      "result": "success",
+      "timestamp": "2026-07-24T06:39:00Z",
+      "duration_ms": 4100
+    },
+    {
+      "heal_id": "Aegis-196",
+      "app_id": "690bf3e9cf37db7868503c17",
+      "app_name": "SHIB-Forge",
+      "action": "pattern_update",
+      "result": "success",
+      "timestamp": "2026-07-19T22:39:00Z",
+      "duration_ms": 4220
+    },
+    {
+      "heal_id": "Aegis-197",
+      "app_id": "690bf3e9cf37db7868503c17",
+      "app_name": "SHIB-Forge",
+      "action": "pqc_migration",
+      "result": "success",
+      "timestamp": "2026-07-22T01:39:00Z",
+      "duration_ms": 962
+    },
+    {
+      "heal_id": "Aegis-198",
+      "app_id": "6a1c693566007b13a4192ac3",
+      "app_name": "Cardano Forge",
+      "action": "playbook_execution",
+      "result": "success",
+      "timestamp": "2026-07-20T23:39:00Z",
+      "duration_ms": 3082
+    },
+    {
+      "heal_id": "Aegis-199",
+      "app_id": "6a1c693566007b13a4192ac3",
+      "app_name": "Cardano Forge",
+      "action": "playbook_execution",
+      "result": "success",
+      "timestamp": "2026-07-21T23:39:00Z",
+      "duration_ms": 2711
+    },
+    {
+      "heal_id": "Aegis-200",
+      "app_id": "6a1c693566007b13a4192ac3",
+      "app_name": "Cardano Forge",
+      "action": "heartbeat_restart",
+      "result": "success",
+      "timestamp": "2026-07-24T03:39:00Z",
+      "duration_ms": 1188
+    },
+    {
+      "heal_id": "Aegis-201",
+      "app_id": "6a1c693566007b13a4192ac3",
+      "app_name": "Cardano Forge",
+      "action": "playbook_execution",
+      "result": "success",
+      "timestamp": "2026-07-24T18:39:00Z",
+      "duration_ms": 1179
+    },
+    {
+      "heal_id": "Aegis-202",
+      "app_id": "6a1c693566007b13a4192ac3",
+      "app_name": "Cardano Forge",
+      "action": "pattern_update",
+      "result": "success",
+      "timestamp": "2026-07-21T02:39:00Z",
+      "duration_ms": 1716
+    },
+    {
+      "heal_id": "Aegis-203",
+      "app_id": "6a1c693566007b13a4192ac3",
+      "app_name": "Cardano Forge",
+      "action": "heartbeat_restart",
+      "result": "success",
+      "timestamp": "2026-07-24T18:39:00Z",
+      "duration_ms": 4166
+    },
+    {
+      "heal_id": "Aegis-204",
+      "app_id": "6a1c693566007b13a4192ac3",
+      "app_name": "Cardano Forge",
+      "action": "pattern_update",
+      "result": "success",
+      "timestamp": "2026-07-23T21:39:00Z",
+      "duration_ms": 4497
+    },
+    {
+      "heal_id": "Aegis-205",
+      "app_id": "6a1c693566007b13a4192ac3",
+      "app_name": "Cardano Forge",
+      "action": "playbook_execution",
+      "result": "success",
+      "timestamp": "2026-07-20T11:39:00Z",
+      "duration_ms": 1023
+    },
+    {
+      "heal_id": "Aegis-206",
+      "app_id": "6907127a07137da737925ca1",
+      "app_name": "TokenVault",
+      "action": "pqc_migration",
+      "result": "success",
+      "timestamp": "2026-07-26T08:39:00Z",
+      "duration_ms": 4733
+    },
+    {
+      "heal_id": "Aegis-207",
+      "app_id": "6907127a07137da737925ca1",
+      "app_name": "TokenVault",
+      "action": "pattern_update",
+      "result": "success",
+      "timestamp": "2026-07-23T17:39:00Z",
+      "duration_ms": 1234
+    },
+    {
+      "heal_id": "Aegis-208",
+      "app_id": "6907127a07137da737925ca1",
+      "app_name": "TokenVault",
+      "action": "anomaly_isolation",
+      "result": "success",
+      "timestamp": "2026-07-20T00:39:00Z",
+      "duration_ms": 1040
+    },
+    {
+      "heal_id": "Aegis-209",
+      "app_id": "6907127a07137da737925ca1",
+      "app_name": "TokenVault",
+      "action": "node_rebalance",
+      "result": "success",
+      "timestamp": "2026-07-26T16:39:00Z",
+      "duration_ms": 2529
+    },
+    {
+      "heal_id": "Aegis-210",
+      "app_id": "6907127a07137da737925ca1",
+      "app_name": "TokenVault",
+      "action": "anomaly_isolation",
+      "result": "success",
+      "timestamp": "2026-07-21T19:39:00Z",
+      "duration_ms": 3808
+    },
+    {
+      "heal_id": "Aegis-211",
+      "app_id": "6907127a07137da737925ca1",
+      "app_name": "TokenVault",
+      "action": "heartbeat_restart",
+      "result": "success",
+      "timestamp": "2026-07-23T04:39:00Z",
+      "duration_ms": 620
+    },
+    {
+      "heal_id": "Aegis-212",
+      "app_id": "6907127a07137da737925ca1",
+      "app_name": "TokenVault",
+      "action": "anomaly_isolation",
+      "result": "success",
+      "timestamp": "2026-07-24T03:39:00Z",
+      "duration_ms": 1134
+    },
+    {
+      "heal_id": "Aegis-213",
+      "app_id": "6907127a07137da737925ca1",
+      "app_name": "TokenVault",
+      "action": "anomaly_isolation",
+      "result": "success",
+      "timestamp": "2026-07-26T03:39:00Z",
+      "duration_ms": 4228
+    },
+    {
+      "heal_id": "Aegis-214",
+      "app_id": "690ad72583dcfc1c163c5fac",
+      "app_name": "TreasuryReserve Mining",
+      "action": "node_rebalance",
+      "result": "success",
+      "timestamp": "2026-07-22T09:39:00Z",
+      "duration_ms": 2048
+    },
+    {
+      "heal_id": "Aegis-215",
+      "app_id": "690ad72583dcfc1c163c5fac",
+      "app_name": "TreasuryReserve Mining",
+      "action": "anomaly_isolation",
+      "result": "success",
+      "timestamp": "2026-07-21T06:39:00Z",
+      "duration_ms": 3890
+    },
+    {
+      "heal_id": "Aegis-216",
+      "app_id": "690ad72583dcfc1c163c5fac",
+      "app_name": "TreasuryReserve Mining",
+      "action": "playbook_execution",
+      "result": "success",
+      "timestamp": "2026-07-22T02:39:00Z",
+      "duration_ms": 3712
+    },
+    {
+      "heal_id": "Aegis-217",
+      "app_id": "690ad72583dcfc1c163c5fac",
+      "app_name": "TreasuryReserve Mining",
+      "action": "node_rebalance",
+      "result": "success",
+      "timestamp": "2026-07-23T13:39:00Z",
+      "duration_ms": 693
+    },
+    {
+      "heal_id": "Aegis-218",
+      "app_id": "690ad72583dcfc1c163c5fac",
+      "app_name": "TreasuryReserve Mining",
+      "action": "pattern_update",
+      "result": "success",
+      "timestamp": "2026-07-20T07:39:00Z",
+      "duration_ms": 1012
+    },
+    {
+      "heal_id": "Aegis-219",
+      "app_id": "690ad72583dcfc1c163c5fac",
+      "app_name": "TreasuryReserve Mining",
+      "action": "pattern_update",
+      "result": "success",
+      "timestamp": "2026-07-24T14:39:00Z",
+      "duration_ms": 1928
+    },
+    {
+      "heal_id": "Aegis-220",
+      "app_id": "690ad72583dcfc1c163c5fac",
+      "app_name": "TreasuryReserve Mining",
+      "action": "pattern_update",
+      "result": "success",
+      "timestamp": "2026-07-24T00:39:00Z",
+      "duration_ms": 865
+    },
+    {
+      "heal_id": "Aegis-221",
+      "app_id": "690ad72583dcfc1c163c5fac",
+      "app_name": "TreasuryReserve Mining",
+      "action": "heartbeat_restart",
+      "result": "success",
+      "timestamp": "2026-07-25T03:39:00Z",
+      "duration_ms": 1623
+    },
+    {
+      "heal_id": "Aegis-222",
+      "app_id": "690ad72583dcfc1c163c5fac",
+      "app_name": "TreasuryReserve Mining",
+      "action": "pqc_migration",
+      "result": "success",
+      "timestamp": "2026-07-20T22:39:00Z",
+      "duration_ms": 1482
+    },
+    {
+      "heal_id": "Aegis-223",
+      "app_id": "690ad72583dcfc1c163c5fac",
+      "app_name": "TreasuryReserve Mining",
+      "action": "anomaly_isolation",
+      "result": "success",
+      "timestamp": "2026-07-26T19:39:00Z",
+      "duration_ms": 3890
+    },
+    {
+      "heal_id": "Aegis-224",
+      "app_id": "690ad72583dcfc1c163c5fac",
+      "app_name": "TreasuryReserve Mining",
+      "action": "anomaly_isolation",
+      "result": "success",
+      "timestamp": "2026-07-20T11:39:00Z",
+      "duration_ms": 2585
+    },
+    {
+      "heal_id": "Aegis-225",
+      "app_id": "6908258dca189dc72b0b72c2",
+      "app_name": "QuantumLedger Orchestrator",
+      "action": "pattern_update",
+      "result": "success",
+      "timestamp": "2026-07-20T13:39:00Z",
+      "duration_ms": 1820
+    },
+    {
+      "heal_id": "Aegis-226",
+      "app_id": "6908258dca189dc72b0b72c2",
+      "app_name": "QuantumLedger Orchestrator",
+      "action": "pqc_migration",
+      "result": "success",
+      "timestamp": "2026-07-22T07:39:00Z",
+      "duration_ms": 4661
+    },
+    {
+      "heal_id": "Aegis-227",
+      "app_id": "6908258dca189dc72b0b72c2",
+      "app_name": "QuantumLedger Orchestrator",
+      "action": "pattern_update",
+      "result": "success",
+      "timestamp": "2026-07-24T10:39:00Z",
+      "duration_ms": 1420
+    },
+    {
+      "heal_id": "Aegis-228",
+      "app_id": "6908258dca189dc72b0b72c2",
+      "app_name": "QuantumLedger Orchestrator",
+      "action": "heartbeat_restart",
+      "result": "success",
+      "timestamp": "2026-07-23T23:39:00Z",
+      "duration_ms": 784
+    },
+    {
+      "heal_id": "Aegis-229",
+      "app_id": "6908258dca189dc72b0b72c2",
+      "app_name": "QuantumLedger Orchestrator",
+      "action": "heartbeat_restart",
+      "result": "success",
+      "timestamp": "2026-07-26T04:39:00Z",
+      "duration_ms": 2719
+    },
+    {
+      "heal_id": "Aegis-230",
+      "app_id": "6908258dca189dc72b0b72c2",
+      "app_name": "QuantumLedger Orchestrator",
+      "action": "pattern_update",
+      "result": "success",
+      "timestamp": "2026-07-20T11:39:00Z",
+      "duration_ms": 4862
+    },
+    {
+      "heal_id": "Aegis-231",
+      "app_id": "6908258dca189dc72b0b72c2",
+      "app_name": "QuantumLedger Orchestrator",
+      "action": "anomaly_isolation",
+      "result": "success",
+      "timestamp": "2026-07-23T18:39:00Z",
+      "duration_ms": 1218
+    },
+    {
+      "heal_id": "Aegis-232",
+      "app_id": "6908258dca189dc72b0b72c2",
+      "app_name": "QuantumLedger Orchestrator",
+      "action": "pattern_update",
+      "result": "success",
+      "timestamp": "2026-07-21T20:39:00Z",
+      "duration_ms": 2691
+    },
+    {
+      "heal_id": "Aegis-233",
+      "app_id": "6908258dca189dc72b0b72c2",
+      "app_name": "QuantumLedger Orchestrator",
+      "action": "playbook_execution",
+      "result": "success",
+      "timestamp": "2026-07-22T12:39:00Z",
+      "duration_ms": 4299
+    },
+    {
+      "heal_id": "Aegis-234",
+      "app_id": "6908258dca189dc72b0b72c2",
+      "app_name": "QuantumLedger Orchestrator",
+      "action": "anomaly_isolation",
+      "result": "success",
+      "timestamp": "2026-07-21T01:39:00Z",
+      "duration_ms": 3786
+    },
+    {
+      "heal_id": "Aegis-235",
+      "app_id": "6908258dca189dc72b0b72c2",
+      "app_name": "QuantumLedger Orchestrator",
+      "action": "node_rebalance",
+      "result": "success",
+      "timestamp": "2026-07-25T23:39:00Z",
+      "duration_ms": 526
+    },
+    {
+      "heal_id": "Aegis-236",
+      "app_id": "69078f371e9b674994e408c9",
+      "app_name": "RLAIS Control Center",
+      "action": "node_rebalance",
+      "result": "success",
+      "timestamp": "2026-07-20T16:39:00Z",
+      "duration_ms": 369
+    },
+    {
+      "heal_id": "Aegis-237",
+      "app_id": "69078f371e9b674994e408c9",
+      "app_name": "RLAIS Control Center",
+      "action": "node_rebalance",
+      "result": "success",
+      "timestamp": "2026-07-23T23:39:00Z",
+      "duration_ms": 529
+    },
+    {
+      "heal_id": "Aegis-238",
+      "app_id": "69078f371e9b674994e408c9",
+      "app_name": "RLAIS Control Center",
+      "action": "anomaly_isolation",
+      "result": "success",
+      "timestamp": "2026-07-24T23:39:00Z",
+      "duration_ms": 4451
+    },
+    {
+      "heal_id": "Aegis-239",
+      "app_id": "69078f371e9b674994e408c9",
+      "app_name": "RLAIS Control Center",
+      "action": "anomaly_isolation",
+      "result": "success",
+      "timestamp": "2026-07-19T21:39:00Z",
+      "duration_ms": 2478
+    },
+    {
+      "heal_id": "Aegis-240",
+      "app_id": "69078f371e9b674994e408c9",
+      "app_name": "RLAIS Control Center",
+      "action": "node_rebalance",
+      "result": "success",
+      "timestamp": "2026-07-24T21:39:00Z",
+      "duration_ms": 3770
+    },
+    {
+      "heal_id": "Aegis-241",
+      "app_id": "69078f371e9b674994e408c9",
+      "app_name": "RLAIS Control Center",
+      "action": "anomaly_isolation",
+      "result": "success",
+      "timestamp": "2026-07-20T01:39:00Z",
+      "duration_ms": 947
+    },
+    {
+      "heal_id": "Aegis-242",
+      "app_id": "69078f371e9b674994e408c9",
+      "app_name": "RLAIS Control Center",
+      "action": "playbook_execution",
+      "result": "success",
+      "timestamp": "2026-07-21T19:39:00Z",
+      "duration_ms": 3545
+    },
+    {
+      "heal_id": "Aegis-243",
+      "app_id": "69078f371e9b674994e408c9",
+      "app_name": "RLAIS Control Center",
+      "action": "playbook_execution",
+      "result": "success",
+      "timestamp": "2026-07-23T06:39:00Z",
+      "duration_ms": 1056
+    },
+    {
+      "heal_id": "Aegis-244",
+      "app_id": "69078f371e9b674994e408c9",
+      "app_name": "RLAIS Control Center",
+      "action": "playbook_execution",
+      "result": "success",
+      "timestamp": "2026-07-25T02:39:00Z",
+      "duration_ms": 3572
+    },
+    {
+      "heal_id": "Aegis-245",
+      "app_id": "69078f371e9b674994e408c9",
+      "app_name": "RLAIS Control Center",
+      "action": "playbook_execution",
+      "result": "success",
+      "timestamp": "2026-07-21T13:39:00Z",
+      "duration_ms": 3480
+    },
+    {
+      "heal_id": "Aegis-246",
+      "app_id": "69078f371e9b674994e408c9",
+      "app_name": "RLAIS Control Center",
+      "action": "pqc_migration",
+      "result": "success",
+      "timestamp": "2026-07-20T23:39:00Z",
+      "duration_ms": 3925
+    },
+    {
+      "heal_id": "Aegis-247",
+      "app_id": "697e89b83ce6653a8ce29b0a",
+      "app_name": "Seed Computing Kernel OS",
+      "action": "anomaly_isolation",
+      "result": "success",
+      "timestamp": "2026-07-21T01:39:00Z",
+      "duration_ms": 3585
+    },
+    {
+      "heal_id": "Aegis-248",
+      "app_id": "697e89b83ce6653a8ce29b0a",
+      "app_name": "Seed Computing Kernel OS",
+      "action": "heartbeat_restart",
+      "result": "success",
+      "timestamp": "2026-07-26T06:39:00Z",
+      "duration_ms": 4447
+    },
+    {
+      "heal_id": "Aegis-249",
+      "app_id": "697e89b83ce6653a8ce29b0a",
+      "app_name": "Seed Computing Kernel OS",
+      "action": "node_rebalance",
+      "result": "success",
+      "timestamp": "2026-07-22T23:39:00Z",
+      "duration_ms": 4283
+    },
+    {
+      "heal_id": "Aegis-250",
+      "app_id": "697e89b83ce6653a8ce29b0a",
+      "app_name": "Seed Computing Kernel OS",
+      "action": "anomaly_isolation",
+      "result": "success",
+      "timestamp": "2026-07-20T03:39:00Z",
+      "duration_ms": 622
+    },
+    {
+      "heal_id": "Aegis-251",
+      "app_id": "697e89b83ce6653a8ce29b0a",
+      "app_name": "Seed Computing Kernel OS",
+      "action": "playbook_execution",
+      "result": "success",
+      "timestamp": "2026-07-24T15:39:00Z",
+      "duration_ms": 4699
+    },
+    {
+      "heal_id": "Aegis-252",
+      "app_id": "697e89b83ce6653a8ce29b0a",
+      "app_name": "Seed Computing Kernel OS",
+      "action": "playbook_execution",
+      "result": "success",
+      "timestamp": "2026-07-25T10:39:00Z",
+      "duration_ms": 3789
+    },
+    {
+      "heal_id": "Aegis-253",
+      "app_id": "697e89b83ce6653a8ce29b0a",
+      "app_name": "Seed Computing Kernel OS",
+      "action": "pqc_migration",
+      "result": "success",
+      "timestamp": "2026-07-21T15:39:00Z",
+      "duration_ms": 436
+    },
+    {
+      "heal_id": "Aegis-254",
+      "app_id": "697e89b83ce6653a8ce29b0a",
+      "app_name": "Seed Computing Kernel OS",
+      "action": "node_rebalance",
+      "result": "success",
+      "timestamp": "2026-07-20T02:39:00Z",
+      "duration_ms": 2160
+    },
+    {
+      "heal_id": "Aegis-255",
+      "app_id": "697e89b83ce6653a8ce29b0a",
+      "app_name": "Seed Computing Kernel OS",
+      "action": "playbook_execution",
+      "result": "success",
+      "timestamp": "2026-07-25T03:39:00Z",
+      "duration_ms": 4712
+    },
+    {
+      "heal_id": "Aegis-256",
+      "app_id": "697e89b83ce6653a8ce29b0a",
+      "app_name": "Seed Computing Kernel OS",
+      "action": "node_rebalance",
+      "result": "success",
+      "timestamp": "2026-07-26T16:39:00Z",
+      "duration_ms": 3542
+    },
+    {
+      "heal_id": "Aegis-257",
+      "app_id": "697e89b83ce6653a8ce29b0a",
+      "app_name": "Seed Computing Kernel OS",
+      "action": "heartbeat_restart",
+      "result": "success",
+      "timestamp": "2026-07-25T20:39:00Z",
+      "duration_ms": 1129
+    },
+    {
+      "heal_id": "Aegis-258",
+      "app_id": "6a665f6c6393f313f8e82371",
+      "app_name": "Squirrel OS Hub",
+      "action": "anomaly_isolation",
+      "result": "success",
+      "timestamp": "2026-07-23T22:39:00Z",
+      "duration_ms": 4152
+    },
+    {
+      "heal_id": "Aegis-259",
+      "app_id": "6a665f6c6393f313f8e82371",
+      "app_name": "Squirrel OS Hub",
+      "action": "heartbeat_restart",
+      "result": "success",
+      "timestamp": "2026-07-21T19:39:00Z",
+      "duration_ms": 3941
+    },
+    {
+      "heal_id": "Aegis-260",
+      "app_id": "6a665f6c6393f313f8e82371",
+      "app_name": "Squirrel OS Hub",
+      "action": "heartbeat_restart",
+      "result": "success",
+      "timestamp": "2026-07-20T22:39:00Z",
+      "duration_ms": 3342
+    },
+    {
+      "heal_id": "Aegis-261",
+      "app_id": "6a665f6c6393f313f8e82371",
+      "app_name": "Squirrel OS Hub",
+      "action": "node_rebalance",
+      "result": "success",
+      "timestamp": "2026-07-24T19:39:00Z",
+      "duration_ms": 4363
+    },
+    {
+      "heal_id": "Aegis-262",
+      "app_id": "6a665f6c6393f313f8e82371",
+      "app_name": "Squirrel OS Hub",
+      "action": "pqc_migration",
+      "result": "success",
+      "timestamp": "2026-07-25T09:39:00Z",
+      "duration_ms": 2463
+    },
+    {
+      "heal_id": "Aegis-263",
+      "app_id": "6a665f6c6393f313f8e82371",
+      "app_name": "Squirrel OS Hub",
+      "action": "playbook_execution",
+      "result": "success",
+      "timestamp": "2026-07-22T09:39:00Z",
+      "duration_ms": 4359
+    },
+    {
+      "heal_id": "Aegis-264",
+      "app_id": "6a665f6c6393f313f8e82371",
+      "app_name": "Squirrel OS Hub",
+      "action": "pqc_migration",
+      "result": "success",
+      "timestamp": "2026-07-23T23:39:00Z",
+      "duration_ms": 2517
+    },
+    {
+      "heal_id": "Aegis-265",
+      "app_id": "6a665f6c6393f313f8e82371",
+      "app_name": "Squirrel OS Hub",
+      "action": "node_rebalance",
+      "result": "success",
+      "timestamp": "2026-07-23T15:39:00Z",
+      "duration_ms": 4950
+    },
+    {
+      "heal_id": "Aegis-266",
+      "app_id": "6a665f6c6393f313f8e82371",
+      "app_name": "Squirrel OS Hub",
+      "action": "heartbeat_restart",
+      "result": "success",
+      "timestamp": "2026-07-21T14:39:00Z",
+      "duration_ms": 3858
+    },
+    {
+      "heal_id": "Aegis-267",
+      "app_id": "6a665f6c6393f313f8e82371",
+      "app_name": "Squirrel OS Hub",
+      "action": "anomaly_isolation",
+      "result": "success",
+      "timestamp": "2026-07-21T02:39:00Z",
+      "duration_ms": 3027
+    },
+    {
+      "heal_id": "Aegis-268",
+      "app_id": "6a665f6c6393f313f8e82371",
+      "app_name": "Squirrel OS Hub",
+      "action": "node_rebalance",
+      "result": "success",
+      "timestamp": "2026-07-23T06:39:00Z",
+      "duration_ms": 4651
+    },
+    {
+      "heal_id": "Aegis-269",
+      "app_id": "6a665f6c6393f313f8e82371",
+      "app_name": "Squirrel OS Hub",
+      "action": "anomaly_isolation",
+      "result": "success",
+      "timestamp": "2026-07-22T19:39:00Z",
+      "duration_ms": 2836
+    },
+    {
+      "heal_id": "Aegis-270",
+      "app_id": "6a665f6c6393f313f8e82371",
+      "app_name": "Squirrel OS Hub",
+      "action": "pattern_update",
+      "result": "success",
+      "timestamp": "2026-07-24T19:39:00Z",
+      "duration_ms": 2156
+    },
+    {
+      "heal_id": "Aegis-271",
+      "app_id": "6a665f6c6393f313f8e82371",
+      "app_name": "Squirrel OS Hub",
+      "action": "anomaly_isolation",
+      "result": "success",
+      "timestamp": "2026-07-20T17:39:00Z",
+      "duration_ms": 2113
+    },
+    {
+      "heal_id": "Aegis-272",
+      "app_id": "6a665f6c6393f313f8e82371",
+      "app_name": "Squirrel OS Hub",
+      "action": "pqc_migration",
+      "result": "success",
+      "timestamp": "2026-07-22T10:39:00Z",
+      "duration_ms": 2806
+    },
+    {
+      "heal_id": "Aegis-273",
+      "app_id": "6a62ec341d4646c37d11b92f",
+      "app_name": "Jasper OS - TAZ Edition",
+      "action": "anomaly_isolation",
+      "result": "success",
+      "timestamp": "2026-07-25T05:39:00Z",
+      "duration_ms": 503
+    },
+    {
+      "heal_id": "Aegis-274",
+      "app_id": "6a62ec341d4646c37d11b92f",
+      "app_name": "Jasper OS - TAZ Edition",
+      "action": "node_rebalance",
+      "result": "success",
+      "timestamp": "2026-07-25T11:39:00Z",
+      "duration_ms": 2919
+    },
+    {
+      "heal_id": "Aegis-275",
+      "app_id": "6a62ec341d4646c37d11b92f",
+      "app_name": "Jasper OS - TAZ Edition",
+      "action": "anomaly_isolation",
+      "result": "success",
+      "timestamp": "2026-07-25T18:39:00Z",
+      "duration_ms": 1016
+    },
+    {
+      "heal_id": "Aegis-276",
+      "app_id": "6a62ec341d4646c37d11b92f",
+      "app_name": "Jasper OS - TAZ Edition",
+      "action": "anomaly_isolation",
+      "result": "success",
+      "timestamp": "2026-07-21T05:39:00Z",
+      "duration_ms": 325
+    },
+    {
+      "heal_id": "Aegis-277",
+      "app_id": "6a62ec341d4646c37d11b92f",
+      "app_name": "Jasper OS - TAZ Edition",
+      "action": "anomaly_isolation",
+      "result": "success",
+      "timestamp": "2026-07-25T07:39:00Z",
+      "duration_ms": 1464
+    },
+    {
+      "heal_id": "Aegis-278",
+      "app_id": "6a62ec341d4646c37d11b92f",
+      "app_name": "Jasper OS - TAZ Edition",
+      "action": "anomaly_isolation",
+      "result": "success",
+      "timestamp": "2026-07-26T00:39:00Z",
+      "duration_ms": 2371
+    },
+    {
+      "heal_id": "Aegis-279",
+      "app_id": "6a62ec341d4646c37d11b92f",
+      "app_name": "Jasper OS - TAZ Edition",
+      "action": "node_rebalance",
+      "result": "success",
+      "timestamp": "2026-07-23T05:39:00Z",
+      "duration_ms": 3456
+    },
+    {
+      "heal_id": "Aegis-280",
+      "app_id": "6a62ec341d4646c37d11b92f",
+      "app_name": "Jasper OS - TAZ Edition",
+      "action": "pqc_migration",
+      "result": "success",
+      "timestamp": "2026-07-19T21:39:00Z",
+      "duration_ms": 2891
+    },
+    {
+      "heal_id": "Aegis-281",
+      "app_id": "6a247e79e0a6160ec2b5c487",
+      "app_name": "Jasper OS - Squirl",
+      "action": "pqc_migration",
+      "result": "success",
+      "timestamp": "2026-07-21T01:39:00Z",
+      "duration_ms": 760
+    },
+    {
+      "heal_id": "Aegis-282",
+      "app_id": "6a247e79e0a6160ec2b5c487",
+      "app_name": "Jasper OS - Squirl",
+      "action": "pattern_update",
+      "result": "success",
+      "timestamp": "2026-07-24T07:39:00Z",
+      "duration_ms": 2554
+    },
+    {
+      "heal_id": "Aegis-283",
+      "app_id": "6a247e79e0a6160ec2b5c487",
+      "app_name": "Jasper OS - Squirl",
+      "action": "pattern_update",
+      "result": "success",
+      "timestamp": "2026-07-24T09:39:00Z",
+      "duration_ms": 940
+    },
+    {
+      "heal_id": "Aegis-284",
+      "app_id": "6a247e79e0a6160ec2b5c487",
+      "app_name": "Jasper OS - Squirl",
+      "action": "pqc_migration",
+      "result": "success",
+      "timestamp": "2026-07-22T04:39:00Z",
+      "duration_ms": 1023
+    },
+    {
+      "heal_id": "Aegis-285",
+      "app_id": "6a247e79e0a6160ec2b5c487",
+      "app_name": "Jasper OS - Squirl",
+      "action": "heartbeat_restart",
+      "result": "success",
+      "timestamp": "2026-07-22T02:39:00Z",
+      "duration_ms": 2653
+    },
+    {
+      "heal_id": "Aegis-286",
+      "app_id": "6a247e79e0a6160ec2b5c487",
+      "app_name": "Jasper OS - Squirl",
+      "action": "pqc_migration",
+      "result": "success",
+      "timestamp": "2026-07-26T12:39:00Z",
+      "duration_ms": 2857
+    },
+    {
+      "heal_id": "Aegis-287",
+      "app_id": "6a247e79e0a6160ec2b5c487",
+      "app_name": "Jasper OS - Squirl",
+      "action": "playbook_execution",
+      "result": "success",
+      "timestamp": "2026-07-26T05:39:00Z",
+      "duration_ms": 3136
+    },
+    {
+      "heal_id": "Aegis-288",
+      "app_id": "6a247e79e0a6160ec2b5c487",
+      "app_name": "Jasper OS - Squirl",
+      "action": "anomaly_isolation",
+      "result": "success",
+      "timestamp": "2026-07-22T20:39:00Z",
+      "duration_ms": 1392
+    },
+    {
+      "heal_id": "Aegis-289",
+      "app_id": "690d48d0c4c52840fa91a429",
+      "app_name": "ARETE Neural Mesh",
+      "action": "heartbeat_restart",
+      "result": "success",
+      "timestamp": "2026-07-25T07:39:00Z",
+      "duration_ms": 3977
+    },
+    {
+      "heal_id": "Aegis-290",
+      "app_id": "690d48d0c4c52840fa91a429",
+      "app_name": "ARETE Neural Mesh",
+      "action": "playbook_execution",
+      "result": "success",
+      "timestamp": "2026-07-20T00:39:00Z",
+      "duration_ms": 3964
+    },
+    {
+      "heal_id": "Aegis-291",
+      "app_id": "690d48d0c4c52840fa91a429",
+      "app_name": "ARETE Neural Mesh",
+      "action": "pattern_update",
+      "result": "success",
+      "timestamp": "2026-07-24T02:39:00Z",
+      "duration_ms": 276
+    },
+    {
+      "heal_id": "Aegis-292",
+      "app_id": "690d48d0c4c52840fa91a429",
+      "app_name": "ARETE Neural Mesh",
+      "action": "playbook_execution",
+      "result": "success",
+      "timestamp": "2026-07-21T20:39:00Z",
+      "duration_ms": 4677
+    },
+    {
+      "heal_id": "Aegis-293",
+      "app_id": "690d48d0c4c52840fa91a429",
+      "app_name": "ARETE Neural Mesh",
+      "action": "pqc_migration",
+      "result": "success",
+      "timestamp": "2026-07-25T03:39:00Z",
+      "duration_ms": 3818
+    },
+    {
+      "heal_id": "Aegis-294",
+      "app_id": "690d48d0c4c52840fa91a429",
+      "app_name": "ARETE Neural Mesh",
+      "action": "node_rebalance",
+      "result": "success",
+      "timestamp": "2026-07-23T03:39:00Z",
+      "duration_ms": 2650
+    },
+    {
+      "heal_id": "Aegis-295",
+      "app_id": "690d48d0c4c52840fa91a429",
+      "app_name": "ARETE Neural Mesh",
+      "action": "anomaly_isolation",
+      "result": "success",
+      "timestamp": "2026-07-20T00:39:00Z",
+      "duration_ms": 2248
+    },
+    {
+      "heal_id": "Aegis-296",
+      "app_id": "690d48d0c4c52840fa91a429",
+      "app_name": "ARETE Neural Mesh",
+      "action": "playbook_execution",
+      "result": "success",
+      "timestamp": "2026-07-21T23:39:00Z",
+      "duration_ms": 1831
+    },
+    {
+      "heal_id": "Aegis-297",
+      "app_id": "6910082e7bd49b8cf94a8f6e",
+      "app_name": "Aegis - Aerospace Exploration",
+      "action": "pqc_migration",
+      "result": "success",
+      "timestamp": "2026-07-23T16:39:00Z",
+      "duration_ms": 3442
+    },
+    {
+      "heal_id": "Aegis-298",
+      "app_id": "6910082e7bd49b8cf94a8f6e",
+      "app_name": "Aegis - Aerospace Exploration",
+      "action": "pqc_migration",
+      "result": "success",
+      "timestamp": "2026-07-23T21:39:00Z",
+      "duration_ms": 4836
+    },
+    {
+      "heal_id": "Aegis-299",
+      "app_id": "6910082e7bd49b8cf94a8f6e",
+      "app_name": "Aegis - Aerospace Exploration",
+      "action": "node_rebalance",
+      "result": "success",
+      "timestamp": "2026-07-26T07:39:00Z",
+      "duration_ms": 4269
+    },
+    {
+      "heal_id": "Aegis-300",
+      "app_id": "6910082e7bd49b8cf94a8f6e",
+      "app_name": "Aegis - Aerospace Exploration",
+      "action": "heartbeat_restart",
+      "result": "success",
+      "timestamp": "2026-07-23T18:39:00Z",
+      "duration_ms": 3086
+    },
+    {
+      "heal_id": "Aegis-301",
+      "app_id": "6910082e7bd49b8cf94a8f6e",
+      "app_name": "Aegis - Aerospace Exploration",
+      "action": "pattern_update",
+      "result": "success",
+      "timestamp": "2026-07-24T11:39:00Z",
+      "duration_ms": 1757
+    },
+    {
+      "heal_id": "Aegis-302",
+      "app_id": "6910082e7bd49b8cf94a8f6e",
+      "app_name": "Aegis - Aerospace Exploration",
+      "action": "playbook_execution",
+      "result": "success",
+      "timestamp": "2026-07-20T05:39:00Z",
+      "duration_ms": 1320
+    },
+    {
+      "heal_id": "Aegis-303",
+      "app_id": "6910082e7bd49b8cf94a8f6e",
+      "app_name": "Aegis - Aerospace Exploration",
+      "action": "pqc_migration",
+      "result": "success",
+      "timestamp": "2026-07-20T03:39:00Z",
+      "duration_ms": 522
+    },
+    {
+      "heal_id": "Aegis-304",
+      "app_id": "6910082e7bd49b8cf94a8f6e",
+      "app_name": "Aegis - Aerospace Exploration",
+      "action": "anomaly_isolation",
+      "result": "success",
+      "timestamp": "2026-07-23T12:39:00Z",
+      "duration_ms": 473
+    },
+    {
+      "heal_id": "Aegis-305",
+      "app_id": "6911190640259411e5022a5f",
+      "app_name": "Aegis - Aerospace (Copy)",
+      "action": "node_rebalance",
+      "result": "success",
+      "timestamp": "2026-07-25T10:39:00Z",
+      "duration_ms": 3197
+    },
+    {
+      "heal_id": "Aegis-306",
+      "app_id": "6911190640259411e5022a5f",
+      "app_name": "Aegis - Aerospace (Copy)",
+      "action": "node_rebalance",
+      "result": "success",
+      "timestamp": "2026-07-21T04:39:00Z",
+      "duration_ms": 2432
+    },
+    {
+      "heal_id": "Aegis-307",
+      "app_id": "6911190640259411e5022a5f",
+      "app_name": "Aegis - Aerospace (Copy)",
+      "action": "playbook_execution",
+      "result": "success",
+      "timestamp": "2026-07-25T01:39:00Z",
+      "duration_ms": 4147
+    },
+    {
+      "heal_id": "Aegis-308",
+      "app_id": "6911190640259411e5022a5f",
+      "app_name": "Aegis - Aerospace (Copy)",
+      "action": "pattern_update",
+      "result": "success",
+      "timestamp": "2026-07-23T16:39:00Z",
+      "duration_ms": 2974
+    },
+    {
+      "heal_id": "Aegis-309",
+      "app_id": "6911190640259411e5022a5f",
+      "app_name": "Aegis - Aerospace (Copy)",
+      "action": "anomaly_isolation",
+      "result": "success",
+      "timestamp": "2026-07-25T14:39:00Z",
+      "duration_ms": 816
+    },
+    {
+      "heal_id": "Aegis-310",
+      "app_id": "6911190640259411e5022a5f",
+      "app_name": "Aegis - Aerospace (Copy)",
+      "action": "heartbeat_restart",
+      "result": "success",
+      "timestamp": "2026-07-25T07:39:00Z",
+      "duration_ms": 3455
+    },
+    {
+      "heal_id": "Aegis-311",
+      "app_id": "6911190640259411e5022a5f",
+      "app_name": "Aegis - Aerospace (Copy)",
+      "action": "playbook_execution",
+      "result": "success",
+      "timestamp": "2026-07-20T21:39:00Z",
+      "duration_ms": 939
+    },
+    {
+      "heal_id": "Aegis-312",
+      "app_id": "6911190640259411e5022a5f",
+      "app_name": "Aegis - Aerospace (Copy)",
+      "action": "pqc_migration",
+      "result": "success",
+      "timestamp": "2026-07-22T14:39:00Z",
+      "duration_ms": 2366
+    },
+    {
+      "heal_id": "Aegis-313",
+      "app_id": "695838f446e480d589e752b9",
+      "app_name": "RWA Satoshi Tokenization",
+      "action": "pqc_migration",
+      "result": "success",
+      "timestamp": "2026-07-22T20:39:00Z",
+      "duration_ms": 2115
+    },
+    {
+      "heal_id": "Aegis-314",
+      "app_id": "695838f446e480d589e752b9",
+      "app_name": "RWA Satoshi Tokenization",
+      "action": "pqc_migration",
+      "result": "success",
+      "timestamp": "2026-07-21T19:39:00Z",
+      "duration_ms": 4799
+    },
+    {
+      "heal_id": "Aegis-315",
+      "app_id": "695838f446e480d589e752b9",
+      "app_name": "RWA Satoshi Tokenization",
+      "action": "node_rebalance",
+      "result": "success",
+      "timestamp": "2026-07-23T08:39:00Z",
+      "duration_ms": 2013
+    },
+    {
+      "heal_id": "Aegis-316",
+      "app_id": "695838f446e480d589e752b9",
+      "app_name": "RWA Satoshi Tokenization",
+      "action": "pqc_migration",
+      "result": "success",
+      "timestamp": "2026-07-19T22:39:00Z",
+      "duration_ms": 4003
+    },
+    {
+      "heal_id": "Aegis-317",
+      "app_id": "695838f446e480d589e752b9",
+      "app_name": "RWA Satoshi Tokenization",
+      "action": "pattern_update",
+      "result": "success",
+      "timestamp": "2026-07-23T14:39:00Z",
+      "duration_ms": 3544
+    },
+    {
+      "heal_id": "Aegis-318",
+      "app_id": "695838f446e480d589e752b9",
+      "app_name": "RWA Satoshi Tokenization",
+      "action": "heartbeat_restart",
+      "result": "success",
+      "timestamp": "2026-07-25T14:39:00Z",
+      "duration_ms": 571
+    },
+    {
+      "heal_id": "Aegis-319",
+      "app_id": "695838f446e480d589e752b9",
+      "app_name": "RWA Satoshi Tokenization",
+      "action": "playbook_execution",
+      "result": "success",
+      "timestamp": "2026-07-26T10:39:00Z",
+      "duration_ms": 4235
+    },
+    {
+      "heal_id": "Aegis-320",
+      "app_id": "695838f446e480d589e752b9",
+      "app_name": "RWA Satoshi Tokenization",
+      "action": "pqc_migration",
+      "result": "success",
+      "timestamp": "2026-07-25T14:39:00Z",
+      "duration_ms": 2123
+    },
+    {
+      "heal_id": "Aegis-321",
+      "app_id": "69d5b5687a41f4398c2ec49e",
+      "app_name": "Aegis Monitor",
+      "action": "node_rebalance",
+      "result": "success",
+      "timestamp": "2026-07-22T08:39:00Z",
+      "duration_ms": 1465
+    },
+    {
+      "heal_id": "Aegis-322",
+      "app_id": "69d5b5687a41f4398c2ec49e",
+      "app_name": "Aegis Monitor",
+      "action": "pattern_update",
+      "result": "success",
+      "timestamp": "2026-07-22T09:39:00Z",
+      "duration_ms": 1011
+    },
+    {
+      "heal_id": "Aegis-323",
+      "app_id": "69d5b5687a41f4398c2ec49e",
+      "app_name": "Aegis Monitor",
+      "action": "node_rebalance",
+      "result": "success",
+      "timestamp": "2026-07-21T14:39:00Z",
+      "duration_ms": 3543
+    },
+    {
+      "heal_id": "Aegis-324",
+      "app_id": "69d5b5687a41f4398c2ec49e",
+      "app_name": "Aegis Monitor",
+      "action": "pqc_migration",
+      "result": "success",
+      "timestamp": "2026-07-23T20:39:00Z",
+      "duration_ms": 3235
+    },
+    {
+      "heal_id": "Aegis-325",
+      "app_id": "69d5b5687a41f4398c2ec49e",
+      "app_name": "Aegis Monitor",
+      "action": "anomaly_isolation",
+      "result": "success",
+      "timestamp": "2026-07-24T12:39:00Z",
+      "duration_ms": 3842
+    },
+    {
+      "heal_id": "Aegis-326",
+      "app_id": "69d5b5687a41f4398c2ec49e",
+      "app_name": "Aegis Monitor",
+      "action": "playbook_execution",
+      "result": "success",
+      "timestamp": "2026-07-24T07:39:00Z",
+      "duration_ms": 1013
+    },
+    {
+      "heal_id": "Aegis-327",
+      "app_id": "69d5b5687a41f4398c2ec49e",
+      "app_name": "Aegis Monitor",
+      "action": "node_rebalance",
+      "result": "success",
+      "timestamp": "2026-07-22T21:39:00Z",
+      "duration_ms": 3138
+    },
+    {
+      "heal_id": "Aegis-328",
+      "app_id": "69d5b5687a41f4398c2ec49e",
+      "app_name": "Aegis Monitor",
+      "action": "anomaly_isolation",
+      "result": "success",
+      "timestamp": "2026-07-26T04:39:00Z",
+      "duration_ms": 2460
+    },
+    {
+      "heal_id": "Aegis-329",
+      "app_id": "690f70fa8f13927c18496341",
+      "app_name": "Arete Neural Mesh 1.0",
+      "action": "heartbeat_restart",
+      "result": "success",
+      "timestamp": "2026-07-24T05:39:00Z",
+      "duration_ms": 4825
+    },
+    {
+      "heal_id": "Aegis-330",
+      "app_id": "690f70fa8f13927c18496341",
+      "app_name": "Arete Neural Mesh 1.0",
+      "action": "pqc_migration",
+      "result": "success",
+      "timestamp": "2026-07-24T15:39:00Z",
+      "duration_ms": 4740
+    },
+    {
+      "heal_id": "Aegis-331",
+      "app_id": "690f70fa8f13927c18496341",
+      "app_name": "Arete Neural Mesh 1.0",
+      "action": "node_rebalance",
+      "result": "success",
+      "timestamp": "2026-07-24T14:39:00Z",
+      "duration_ms": 1969
+    },
+    {
+      "heal_id": "Aegis-332",
+      "app_id": "690f70fa8f13927c18496341",
+      "app_name": "Arete Neural Mesh 1.0",
+      "action": "playbook_execution",
+      "result": "success",
+      "timestamp": "2026-07-24T08:39:00Z",
+      "duration_ms": 1408
+    },
+    {
+      "heal_id": "Aegis-333",
+      "app_id": "690f70fa8f13927c18496341",
+      "app_name": "Arete Neural Mesh 1.0",
+      "action": "pqc_migration",
+      "result": "success",
+      "timestamp": "2026-07-20T11:39:00Z",
+      "duration_ms": 2471
+    },
+    {
+      "heal_id": "Aegis-334",
+      "app_id": "690f70fa8f13927c18496341",
+      "app_name": "Arete Neural Mesh 1.0",
+      "action": "heartbeat_restart",
+      "result": "success",
+      "timestamp": "2026-07-25T06:39:00Z",
+      "duration_ms": 4625
+    },
+    {
+      "heal_id": "Aegis-335",
+      "app_id": "690f70fa8f13927c18496341",
+      "app_name": "Arete Neural Mesh 1.0",
+      "action": "heartbeat_restart",
+      "result": "success",
+      "timestamp": "2026-07-24T03:39:00Z",
+      "duration_ms": 1100
+    },
+    {
+      "heal_id": "Aegis-336",
+      "app_id": "690f70fa8f13927c18496341",
+      "app_name": "Arete Neural Mesh 1.0",
+      "action": "heartbeat_restart",
+      "result": "success",
+      "timestamp": "2026-07-26T13:39:00Z",
+      "duration_ms": 321
+    },
+    {
+      "heal_id": "Aegis-337",
+      "app_id": "68ea7662ca35e4fe06887ee4",
+      "app_name": "MasterMind AI",
+      "action": "node_rebalance",
+      "result": "success",
+      "timestamp": "2026-07-22T08:39:00Z",
+      "duration_ms": 1131
+    },
+    {
+      "heal_id": "Aegis-338",
+      "app_id": "68ea7662ca35e4fe06887ee4",
+      "app_name": "MasterMind AI",
+      "action": "anomaly_isolation",
+      "result": "success",
+      "timestamp": "2026-07-26T03:39:00Z",
+      "duration_ms": 3872
+    },
+    {
+      "heal_id": "Aegis-339",
+      "app_id": "68ea7662ca35e4fe06887ee4",
+      "app_name": "MasterMind AI",
+      "action": "node_rebalance",
+      "result": "success",
+      "timestamp": "2026-07-22T23:39:00Z",
+      "duration_ms": 1093
+    },
+    {
+      "heal_id": "Aegis-340",
+      "app_id": "68ea7662ca35e4fe06887ee4",
+      "app_name": "MasterMind AI",
+      "action": "node_rebalance",
+      "result": "success",
+      "timestamp": "2026-07-22T00:39:00Z",
+      "duration_ms": 2014
+    },
+    {
+      "heal_id": "Aegis-341",
+      "app_id": "68ea7662ca35e4fe06887ee4",
+      "app_name": "MasterMind AI",
+      "action": "pqc_migration",
+      "result": "success",
+      "timestamp": "2026-07-20T06:39:00Z",
+      "duration_ms": 4471
+    },
+    {
+      "heal_id": "Aegis-342",
+      "app_id": "68dc83ed27d568b10caed05f",
+      "app_name": "Nexus AI",
+      "action": "pattern_update",
+      "result": "success",
+      "timestamp": "2026-07-21T14:39:00Z",
+      "duration_ms": 3833
+    },
+    {
+      "heal_id": "Aegis-343",
+      "app_id": "68dc83ed27d568b10caed05f",
+      "app_name": "Nexus AI",
+      "action": "pqc_migration",
+      "result": "success",
+      "timestamp": "2026-07-26T01:39:00Z",
+      "duration_ms": 2838
+    },
+    {
+      "heal_id": "Aegis-344",
+      "app_id": "68dc83ed27d568b10caed05f",
+      "app_name": "Nexus AI",
+      "action": "heartbeat_restart",
+      "result": "success",
+      "timestamp": "2026-07-20T08:39:00Z",
+      "duration_ms": 738
+    },
+    {
+      "heal_id": "Aegis-345",
+      "app_id": "68dc83ed27d568b10caed05f",
+      "app_name": "Nexus AI",
+      "action": "playbook_execution",
+      "result": "success",
+      "timestamp": "2026-07-25T11:39:00Z",
+      "duration_ms": 4995
+    },
+    {
+      "heal_id": "Aegis-346",
+      "app_id": "68dc83ed27d568b10caed05f",
+      "app_name": "Nexus AI",
+      "action": "pattern_update",
+      "result": "success",
+      "timestamp": "2026-07-20T23:39:00Z",
+      "duration_ms": 2863
+    },
+    {
+      "heal_id": "Aegis-347",
+      "app_id": "68c8eef07fac22d4a4d21492",
+      "app_name": "AgentSpark",
+      "action": "pattern_update",
+      "result": "success",
+      "timestamp": "2026-07-25T14:39:00Z",
+      "duration_ms": 4716
+    },
+    {
+      "heal_id": "Aegis-348",
+      "app_id": "68c8eef07fac22d4a4d21492",
+      "app_name": "AgentSpark",
+      "action": "anomaly_isolation",
+      "result": "success",
+      "timestamp": "2026-07-24T12:39:00Z",
+      "duration_ms": 3899
+    },
+    {
+      "heal_id": "Aegis-349",
+      "app_id": "68c8eef07fac22d4a4d21492",
+      "app_name": "AgentSpark",
+      "action": "anomaly_isolation",
+      "result": "success",
+      "timestamp": "2026-07-24T09:39:00Z",
+      "duration_ms": 2976
+    },
+    {
+      "heal_id": "Aegis-350",
+      "app_id": "68c8eef07fac22d4a4d21492",
+      "app_name": "AgentSpark",
+      "action": "anomaly_isolation",
+      "result": "success",
+      "timestamp": "2026-07-21T23:39:00Z",
+      "duration_ms": 3607
+    },
+    {
+      "heal_id": "Aegis-351",
+      "app_id": "68c8eef07fac22d4a4d21492",
+      "app_name": "AgentSpark",
+      "action": "playbook_execution",
+      "result": "success",
+      "timestamp": "2026-07-25T19:39:00Z",
+      "duration_ms": 3696
+    },
+    {
+      "heal_id": "Aegis-352",
+      "app_id": "68ebe1ea9026dd0e88e54fd9",
+      "app_name": "Codify AI",
+      "action": "pqc_migration",
+      "result": "success",
+      "timestamp": "2026-07-25T22:39:00Z",
+      "duration_ms": 3737
+    },
+    {
+      "heal_id": "Aegis-353",
+      "app_id": "68ebe1ea9026dd0e88e54fd9",
+      "app_name": "Codify AI",
+      "action": "pattern_update",
+      "result": "success",
+      "timestamp": "2026-07-25T19:39:00Z",
+      "duration_ms": 3252
+    },
+    {
+      "heal_id": "Aegis-354",
+      "app_id": "68ebe1ea9026dd0e88e54fd9",
+      "app_name": "Codify AI",
+      "action": "node_rebalance",
+      "result": "success",
+      "timestamp": "2026-07-25T10:39:00Z",
+      "duration_ms": 691
+    },
+    {
+      "heal_id": "Aegis-355",
+      "app_id": "68ebe1ea9026dd0e88e54fd9",
+      "app_name": "Codify AI",
+      "action": "node_rebalance",
+      "result": "success",
+      "timestamp": "2026-07-20T13:39:00Z",
+      "duration_ms": 4801
+    },
+    {
+      "heal_id": "Aegis-356",
+      "app_id": "68ebe1ea9026dd0e88e54fd9",
+      "app_name": "Codify AI",
+      "action": "pattern_update",
+      "result": "success",
+      "timestamp": "2026-07-23T07:39:00Z",
+      "duration_ms": 1201
+    },
+    {
+      "heal_id": "Aegis-357",
+      "app_id": "68e9a1a326ccbe35acf8b625",
+      "app_name": "Agent Orchestrator",
+      "action": "playbook_execution",
+      "result": "success",
+      "timestamp": "2026-07-20T10:39:00Z",
+      "duration_ms": 3080
+    },
+    {
+      "heal_id": "Aegis-358",
+      "app_id": "68e9a1a326ccbe35acf8b625",
+      "app_name": "Agent Orchestrator",
+      "action": "node_rebalance",
+      "result": "success",
+      "timestamp": "2026-07-25T17:39:00Z",
+      "duration_ms": 4356
+    },
+    {
+      "heal_id": "Aegis-359",
+      "app_id": "68e9a1a326ccbe35acf8b625",
+      "app_name": "Agent Orchestrator",
+      "action": "heartbeat_restart",
+      "result": "success",
+      "timestamp": "2026-07-24T13:39:00Z",
+      "duration_ms": 4150
+    },
+    {
+      "heal_id": "Aegis-360",
+      "app_id": "68e9a1a326ccbe35acf8b625",
+      "app_name": "Agent Orchestrator",
+      "action": "pqc_migration",
+      "result": "success",
+      "timestamp": "2026-07-24T10:39:00Z",
+      "duration_ms": 3068
+    },
+    {
+      "heal_id": "Aegis-361",
+      "app_id": "68e9a1a326ccbe35acf8b625",
+      "app_name": "Agent Orchestrator",
+      "action": "playbook_execution",
+      "result": "success",
+      "timestamp": "2026-07-20T21:39:00Z",
+      "duration_ms": 1141
+    },
+    {
+      "heal_id": "Aegis-362",
+      "app_id": "697ae14cb5442929d8ac3567",
+      "app_name": "ISO20022-XRP demo (W2)",
+      "action": "pattern_update",
+      "result": "success",
+      "timestamp": "2026-07-20T06:39:00Z",
+      "duration_ms": 4760
+    },
+    {
+      "heal_id": "Aegis-363",
+      "app_id": "697ae14cb5442929d8ac3567",
+      "app_name": "ISO20022-XRP demo (W2)",
+      "action": "node_rebalance",
+      "result": "success",
+      "timestamp": "2026-07-26T13:39:00Z",
+      "duration_ms": 2390
+    },
+    {
+      "heal_id": "Aegis-364",
+      "app_id": "697ae14cb5442929d8ac3567",
+      "app_name": "ISO20022-XRP demo (W2)",
+      "action": "heartbeat_restart",
+      "result": "success",
+      "timestamp": "2026-07-26T12:39:00Z",
+      "duration_ms": 2438
+    },
+    {
+      "heal_id": "Aegis-365",
+      "app_id": "697ae14cb5442929d8ac3567",
+      "app_name": "ISO20022-XRP demo (W2)",
+      "action": "playbook_execution",
+      "result": "success",
+      "timestamp": "2026-07-23T12:39:00Z",
+      "duration_ms": 3075
+    },
+    {
+      "heal_id": "Aegis-366",
+      "app_id": "690bf3e9cf37db7868503c17",
+      "app_name": "SHIB-Forge (W2)",
+      "action": "anomaly_isolation",
+      "result": "success",
+      "timestamp": "2026-07-22T08:39:00Z",
+      "duration_ms": 2992
+    },
+    {
+      "heal_id": "Aegis-367",
+      "app_id": "690bf3e9cf37db7868503c17",
+      "app_name": "SHIB-Forge (W2)",
+      "action": "playbook_execution",
+      "result": "success",
+      "timestamp": "2026-07-25T03:39:00Z",
+      "duration_ms": 2752
+    },
+    {
+      "heal_id": "Aegis-368",
+      "app_id": "690bf3e9cf37db7868503c17",
+      "app_name": "SHIB-Forge (W2)",
+      "action": "node_rebalance",
+      "result": "success",
+      "timestamp": "2026-07-23T08:39:00Z",
+      "duration_ms": 895
+    },
+    {
+      "heal_id": "Aegis-369",
+      "app_id": "690bf3e9cf37db7868503c17",
+      "app_name": "SHIB-Forge (W2)",
+      "action": "heartbeat_restart",
+      "result": "success",
+      "timestamp": "2026-07-26T06:39:00Z",
+      "duration_ms": 1489
+    },
+    {
+      "heal_id": "Aegis-370",
+      "app_id": "6a1c693566007b13a4192ac3",
+      "app_name": "Cardano Forge (W2)",
+      "action": "playbook_execution",
+      "result": "success",
+      "timestamp": "2026-07-22T09:39:00Z",
+      "duration_ms": 1965
+    },
+    {
+      "heal_id": "Aegis-371",
+      "app_id": "6a1c693566007b13a4192ac3",
+      "app_name": "Cardano Forge (W2)",
+      "action": "pqc_migration",
+      "result": "success",
+      "timestamp": "2026-07-21T08:39:00Z",
+      "duration_ms": 3027
+    },
+    {
+      "heal_id": "Aegis-372",
+      "app_id": "6a1c693566007b13a4192ac3",
+      "app_name": "Cardano Forge (W2)",
+      "action": "pqc_migration",
+      "result": "success",
+      "timestamp": "2026-07-22T05:39:00Z",
+      "duration_ms": 2520
+    },
+    {
+      "heal_id": "Aegis-373",
+      "app_id": "6a1c693566007b13a4192ac3",
+      "app_name": "Cardano Forge (W2)",
+      "action": "anomaly_isolation",
+      "result": "success",
+      "timestamp": "2026-07-20T12:39:00Z",
+      "duration_ms": 4516
+    },
+    {
+      "heal_id": "Aegis-374",
+      "app_id": "695838f446e480d589e752b9",
+      "app_name": "RWA Satoshi (W2)",
+      "action": "playbook_execution",
+      "result": "success",
+      "timestamp": "2026-07-25T08:39:00Z",
+      "duration_ms": 2571
+    },
+    {
+      "heal_id": "Aegis-375",
+      "app_id": "695838f446e480d589e752b9",
+      "app_name": "RWA Satoshi (W2)",
+      "action": "pqc_migration",
+      "result": "success",
+      "timestamp": "2026-07-23T08:39:00Z",
+      "duration_ms": 263
+    },
+    {
+      "heal_id": "Aegis-376",
+      "app_id": "695838f446e480d589e752b9",
+      "app_name": "RWA Satoshi (W2)",
+      "action": "pattern_update",
+      "result": "success",
+      "timestamp": "2026-07-21T12:39:00Z",
+      "duration_ms": 3727
+    },
+    {
+      "heal_id": "Aegis-377",
+      "app_id": "695838f446e480d589e752b9",
+      "app_name": "RWA Satoshi (W2)",
+      "action": "heartbeat_restart",
+      "result": "success",
+      "timestamp": "2026-07-24T23:39:00Z",
+      "duration_ms": 3314
+    },
+    {
+      "heal_id": "Aegis-378",
+      "app_id": "690c43dc4ef8d76b11d7d7ec",
+      "app_name": "Tokenomics Engine",
+      "action": "anomaly_isolation",
+      "result": "success",
+      "timestamp": "2026-07-26T09:39:00Z",
+      "duration_ms": 353
+    },
+    {
+      "heal_id": "Aegis-379",
+      "app_id": "690c43dc4ef8d76b11d7d7ec",
+      "app_name": "Tokenomics Engine",
+      "action": "pqc_migration",
+      "result": "success",
+      "timestamp": "2026-07-21T22:39:00Z",
+      "duration_ms": 2764
+    },
+    {
+      "heal_id": "Aegis-380",
+      "app_id": "690c43dc4ef8d76b11d7d7ec",
+      "app_name": "Tokenomics Engine",
+      "action": "anomaly_isolation",
+      "result": "success",
+      "timestamp": "2026-07-20T16:39:00Z",
+      "duration_ms": 4897
+    },
+    {
+      "heal_id": "Aegis-381",
+      "app_id": "690c43dc4ef8d76b11d7d7ec",
+      "app_name": "Tokenomics Engine",
+      "action": "pattern_update",
+      "result": "success",
+      "timestamp": "2026-07-22T12:39:00Z",
+      "duration_ms": 3621
+    },
+    {
+      "heal_id": "Aegis-382",
+      "app_id": "68c793a02922be8ffd936b6d",
+      "app_name": "QuantumLeap Trading",
+      "action": "pqc_migration",
+      "result": "success",
+      "timestamp": "2026-07-22T04:39:00Z",
+      "duration_ms": 2193
+    },
+    {
+      "heal_id": "Aegis-383",
+      "app_id": "68c793a02922be8ffd936b6d",
+      "app_name": "QuantumLeap Trading",
+      "action": "node_rebalance",
+      "result": "success",
+      "timestamp": "2026-07-22T04:39:00Z",
+      "duration_ms": 3480
+    },
+    {
+      "heal_id": "Aegis-384",
+      "app_id": "68c793a02922be8ffd936b6d",
+      "app_name": "QuantumLeap Trading",
+      "action": "pqc_migration",
+      "result": "success",
+      "timestamp": "2026-07-21T05:39:00Z",
+      "duration_ms": 3442
+    },
+    {
+      "heal_id": "Aegis-385",
+      "app_id": "68c793a02922be8ffd936b6d",
+      "app_name": "QuantumLeap Trading",
+      "action": "pattern_update",
+      "result": "success",
+      "timestamp": "2026-07-23T12:39:00Z",
+      "duration_ms": 2981
+    },
+    {
+      "heal_id": "Aegis-386",
+      "app_id": "68c793a02922be8ffd936b6d",
+      "app_name": "QuantumLeap Trading",
+      "action": "playbook_execution",
+      "result": "success",
+      "timestamp": "2026-07-24T11:39:00Z",
+      "duration_ms": 1577
+    },
+    {
+      "heal_id": "Aegis-387",
+      "app_id": "693f20fc91bc2ba56bf5c6b9",
+      "app_name": "Solomon The Wise",
+      "action": "heartbeat_restart",
+      "result": "success",
+      "timestamp": "2026-07-24T02:39:00Z",
+      "duration_ms": 1621
+    },
+    {
+      "heal_id": "Aegis-388",
+      "app_id": "693f20fc91bc2ba56bf5c6b9",
+      "app_name": "Solomon The Wise",
+      "action": "heartbeat_restart",
+      "result": "success",
+      "timestamp": "2026-07-20T09:39:00Z",
+      "duration_ms": 817
+    },
+    {
+      "heal_id": "Aegis-389",
+      "app_id": "693f20fc91bc2ba56bf5c6b9",
+      "app_name": "Solomon The Wise",
+      "action": "pattern_update",
+      "result": "success",
+      "timestamp": "2026-07-24T22:39:00Z",
+      "duration_ms": 4247
+    },
+    {
+      "heal_id": "Aegis-390",
+      "app_id": "693f20fc91bc2ba56bf5c6b9",
+      "app_name": "Solomon The Wise",
+      "action": "node_rebalance",
+      "result": "success",
+      "timestamp": "2026-07-21T21:39:00Z",
+      "duration_ms": 4947
+    },
+    {
+      "heal_id": "Aegis-391",
+      "app_id": "693f20fc91bc2ba56bf5c6b9",
+      "app_name": "Solomon The Wise",
+      "action": "pattern_update",
+      "result": "success",
+      "timestamp": "2026-07-22T01:39:00Z",
+      "duration_ms": 4824
+    },
+    {
+      "heal_id": "Aegis-392",
+      "app_id": "68e9afb5337358e3942a831f",
+      "app_name": "QuantumFlow AI",
+      "action": "pattern_update",
+      "result": "success",
+      "timestamp": "2026-07-22T02:39:00Z",
+      "duration_ms": 2680
+    },
+    {
+      "heal_id": "Aegis-393",
+      "app_id": "68e9afb5337358e3942a831f",
+      "app_name": "QuantumFlow AI",
+      "action": "node_rebalance",
+      "result": "success",
+      "timestamp": "2026-07-23T21:39:00Z",
+      "duration_ms": 660
+    },
+    {
+      "heal_id": "Aegis-394",
+      "app_id": "68e9afb5337358e3942a831f",
+      "app_name": "QuantumFlow AI",
+      "action": "node_rebalance",
+      "result": "success",
+      "timestamp": "2026-07-23T01:39:00Z",
+      "duration_ms": 807
+    },
+    {
+      "heal_id": "Aegis-395",
+      "app_id": "68e9afb5337358e3942a831f",
+      "app_name": "QuantumFlow AI",
+      "action": "anomaly_isolation",
+      "result": "success",
+      "timestamp": "2026-07-23T12:39:00Z",
+      "duration_ms": 3902
+    },
+    {
+      "heal_id": "Aegis-396",
+      "app_id": "68e9afb5337358e3942a831f",
+      "app_name": "QuantumFlow AI",
+      "action": "pqc_migration",
+      "result": "success",
+      "timestamp": "2026-07-26T10:39:00Z",
+      "duration_ms": 3220
+    },
+    {
+      "heal_id": "Aegis-397",
+      "app_id": "688c037bf9a76b56e24adcb0",
+      "app_name": "HyperChain Treasury",
+      "action": "node_rebalance",
+      "result": "success",
+      "timestamp": "2026-07-21T21:39:00Z",
+      "duration_ms": 4740
+    },
+    {
+      "heal_id": "Aegis-398",
+      "app_id": "688c037bf9a76b56e24adcb0",
+      "app_name": "HyperChain Treasury",
+      "action": "anomaly_isolation",
+      "result": "success",
+      "timestamp": "2026-07-26T09:39:00Z",
+      "duration_ms": 4883
+    },
+    {
+      "heal_id": "Aegis-399",
+      "app_id": "688c037bf9a76b56e24adcb0",
+      "app_name": "HyperChain Treasury",
+      "action": "heartbeat_restart",
+      "result": "success",
+      "timestamp": "2026-07-19T21:39:00Z",
+      "duration_ms": 2833
+    },
+    {
+      "heal_id": "Aegis-400",
+      "app_id": "688c037bf9a76b56e24adcb0",
+      "app_name": "HyperChain Treasury",
+      "action": "anomaly_isolation",
+      "result": "success",
+      "timestamp": "2026-07-20T09:39:00Z",
+      "duration_ms": 4307
+    },
+    {
+      "heal_id": "Aegis-401",
+      "app_id": "688c037bf9a76b56e24adcb0",
+      "app_name": "HyperChain Treasury",
+      "action": "pqc_migration",
+      "result": "success",
+      "timestamp": "2026-07-25T05:39:00Z",
+      "duration_ms": 3890
+    },
+    {
+      "heal_id": "Aegis-402",
+      "app_id": "693f0cd10320080d5dc92a9d",
+      "app_name": "Arthur",
+      "action": "heartbeat_restart",
+      "result": "success",
+      "timestamp": "2026-07-20T07:39:00Z",
+      "duration_ms": 3181
+    },
+    {
+      "heal_id": "Aegis-403",
+      "app_id": "693f0cd10320080d5dc92a9d",
+      "app_name": "Arthur",
+      "action": "playbook_execution",
+      "result": "success",
+      "timestamp": "2026-07-22T20:39:00Z",
+      "duration_ms": 3373
+    },
+    {
+      "heal_id": "Aegis-404",
+      "app_id": "693f0cd10320080d5dc92a9d",
+      "app_name": "Arthur",
+      "action": "playbook_execution",
+      "result": "success",
+      "timestamp": "2026-07-22T11:39:00Z",
+      "duration_ms": 628
+    },
+    {
+      "heal_id": "Aegis-405",
+      "app_id": "693f0cd10320080d5dc92a9d",
+      "app_name": "Arthur",
+      "action": "pattern_update",
+      "result": "success",
+      "timestamp": "2026-07-20T02:39:00Z",
+      "duration_ms": 2941
+    },
+    {
+      "heal_id": "Aegis-406",
+      "app_id": "693f0cd10320080d5dc92a9d",
+      "app_name": "Arthur",
+      "action": "playbook_execution",
+      "result": "success",
+      "timestamp": "2026-07-26T03:39:00Z",
+      "duration_ms": 974
+    },
+    {
+      "heal_id": "Aegis-407",
+      "app_id": "690bf95acad91576ef43fdbe",
+      "app_name": "SatoshiForge (W2)",
+      "action": "playbook_execution",
+      "result": "success",
+      "timestamp": "2026-07-25T05:39:00Z",
+      "duration_ms": 867
+    },
+    {
+      "heal_id": "Aegis-408",
+      "app_id": "690bf95acad91576ef43fdbe",
+      "app_name": "SatoshiForge (W2)",
+      "action": "pattern_update",
+      "result": "success",
+      "timestamp": "2026-07-20T14:39:00Z",
+      "duration_ms": 1358
+    },
+    {
+      "heal_id": "Aegis-409",
+      "app_id": "690bf95acad91576ef43fdbe",
+      "app_name": "SatoshiForge (W2)",
+      "action": "playbook_execution",
+      "result": "success",
+      "timestamp": "2026-07-23T02:39:00Z",
+      "duration_ms": 3410
+    },
+    {
+      "heal_id": "Aegis-410",
+      "app_id": "690bf95acad91576ef43fdbe",
+      "app_name": "SatoshiForge (W2)",
+      "action": "node_rebalance",
+      "result": "success",
+      "timestamp": "2026-07-25T10:39:00Z",
+      "duration_ms": 894
+    },
+    {
+      "heal_id": "Aegis-411",
+      "app_id": "690ad79dab2ae3e206711adc",
+      "app_name": "EtherForge (W2)",
+      "action": "pqc_migration",
+      "result": "success",
+      "timestamp": "2026-07-21T05:39:00Z",
+      "duration_ms": 3668
+    },
+    {
+      "heal_id": "Aegis-412",
+      "app_id": "690ad79dab2ae3e206711adc",
+      "app_name": "EtherForge (W2)",
+      "action": "playbook_execution",
+      "result": "success",
+      "timestamp": "2026-07-21T09:39:00Z",
+      "duration_ms": 349
+    },
+    {
+      "heal_id": "Aegis-413",
+      "app_id": "690ad79dab2ae3e206711adc",
+      "app_name": "EtherForge (W2)",
+      "action": "playbook_execution",
+      "result": "success",
+      "timestamp": "2026-07-22T23:39:00Z",
+      "duration_ms": 1676
+    },
+    {
+      "heal_id": "Aegis-414",
+      "app_id": "690ad79dab2ae3e206711adc",
+      "app_name": "EtherForge (W2)",
+      "action": "playbook_execution",
+      "result": "success",
+      "timestamp": "2026-07-24T13:39:00Z",
+      "duration_ms": 4183
+    },
+    {
+      "heal_id": "Aegis-415",
+      "app_id": "68edbdb57e9c673e366fd25a",
+      "app_name": "MemeCoin Forge (W2)",
+      "action": "pqc_migration",
+      "result": "success",
+      "timestamp": "2026-07-21T05:39:00Z",
+      "duration_ms": 2958
+    },
+    {
+      "heal_id": "Aegis-416",
+      "app_id": "68edbdb57e9c673e366fd25a",
+      "app_name": "MemeCoin Forge (W2)",
+      "action": "heartbeat_restart",
+      "result": "success",
+      "timestamp": "2026-07-20T05:39:00Z",
+      "duration_ms": 3286
+    },
+    {
+      "heal_id": "Aegis-417",
+      "app_id": "68edbdb57e9c673e366fd25a",
+      "app_name": "MemeCoin Forge (W2)",
+      "action": "heartbeat_restart",
+      "result": "success",
+      "timestamp": "2026-07-25T04:39:00Z",
+      "duration_ms": 1681
+    },
+    {
+      "heal_id": "Aegis-418",
+      "app_id": "68edbdb57e9c673e366fd25a",
+      "app_name": "MemeCoin Forge (W2)",
+      "action": "heartbeat_restart",
+      "result": "success",
+      "timestamp": "2026-07-20T04:39:00Z",
+      "duration_ms": 3785
+    },
+    {
+      "heal_id": "Aegis-419",
+      "app_id": "68ed91a39b86010ab4b32e85",
+      "app_name": "Stable Coin Mint (W2)",
+      "action": "heartbeat_restart",
+      "result": "success",
+      "timestamp": "2026-07-21T19:39:00Z",
+      "duration_ms": 3213
+    },
+    {
+      "heal_id": "Aegis-420",
+      "app_id": "68ed91a39b86010ab4b32e85",
+      "app_name": "Stable Coin Mint (W2)",
+      "action": "anomaly_isolation",
+      "result": "success",
+      "timestamp": "2026-07-20T17:39:00Z",
+      "duration_ms": 3982
+    },
+    {
+      "heal_id": "Aegis-421",
+      "app_id": "68ed91a39b86010ab4b32e85",
+      "app_name": "Stable Coin Mint (W2)",
+      "action": "anomaly_isolation",
+      "result": "success",
+      "timestamp": "2026-07-23T19:39:00Z",
+      "duration_ms": 4319
+    },
+    {
+      "heal_id": "Aegis-422",
+      "app_id": "68ed91a39b86010ab4b32e85",
+      "app_name": "Stable Coin Mint (W2)",
+      "action": "anomaly_isolation",
+      "result": "success",
+      "timestamp": "2026-07-21T04:39:00Z",
+      "duration_ms": 1527
+    },
+    {
+      "heal_id": "Aegis-423",
+      "app_id": "6918a18d352bf0d5b51e5d90",
+      "app_name": "TexasTreasuryMint (W2)",
+      "action": "pqc_migration",
+      "result": "success",
+      "timestamp": "2026-07-20T22:39:00Z",
+      "duration_ms": 4426
+    },
+    {
+      "heal_id": "Aegis-424",
+      "app_id": "6918a18d352bf0d5b51e5d90",
+      "app_name": "TexasTreasuryMint (W2)",
+      "action": "playbook_execution",
+      "result": "success",
+      "timestamp": "2026-07-25T12:39:00Z",
+      "duration_ms": 887
+    },
+    {
+      "heal_id": "Aegis-425",
+      "app_id": "6918a18d352bf0d5b51e5d90",
+      "app_name": "TexasTreasuryMint (W2)",
+      "action": "playbook_execution",
+      "result": "success",
+      "timestamp": "2026-07-25T02:39:00Z",
+      "duration_ms": 3880
+    },
+    {
+      "heal_id": "Aegis-426",
+      "app_id": "6918a18d352bf0d5b51e5d90",
+      "app_name": "TexasTreasuryMint (W2)",
+      "action": "heartbeat_restart",
+      "result": "success",
+      "timestamp": "2026-07-21T08:39:00Z",
+      "duration_ms": 3783
+    },
+    {
+      "heal_id": "Aegis-427",
+      "app_id": "6907249cff301d302212c876",
+      "app_name": "RLAIS Sovereign AI",
+      "action": "heartbeat_restart",
+      "result": "success",
+      "timestamp": "2026-07-22T20:39:00Z",
+      "duration_ms": 430
+    },
+    {
+      "heal_id": "Aegis-428",
+      "app_id": "6907249cff301d302212c876",
+      "app_name": "RLAIS Sovereign AI",
+      "action": "pqc_migration",
+      "result": "success",
+      "timestamp": "2026-07-23T10:39:00Z",
+      "duration_ms": 2946
+    },
+    {
+      "heal_id": "Aegis-429",
+      "app_id": "6907249cff301d302212c876",
+      "app_name": "RLAIS Sovereign AI",
+      "action": "heartbeat_restart",
+      "result": "success",
+      "timestamp": "2026-07-25T06:39:00Z",
+      "duration_ms": 513
+    },
+    {
+      "heal_id": "Aegis-430",
+      "app_id": "6907249cff301d302212c876",
+      "app_name": "RLAIS Sovereign AI",
+      "action": "anomaly_isolation",
+      "result": "success",
+      "timestamp": "2026-07-23T18:39:00Z",
+      "duration_ms": 1336
+    },
+    {
+      "heal_id": "Aegis-431",
+      "app_id": "6907249cff301d302212c876",
+      "app_name": "RLAIS Sovereign AI",
+      "action": "anomaly_isolation",
+      "result": "success",
+      "timestamp": "2026-07-21T19:39:00Z",
+      "duration_ms": 243
+    },
+    {
+      "heal_id": "Aegis-432",
+      "app_id": "69081445cac37647f218a3cc",
+      "app_name": "RLMS Learning Nexus",
+      "action": "pqc_migration",
+      "result": "success",
+      "timestamp": "2026-07-22T07:39:00Z",
+      "duration_ms": 2560
+    },
+    {
+      "heal_id": "Aegis-433",
+      "app_id": "69081445cac37647f218a3cc",
+      "app_name": "RLMS Learning Nexus",
+      "action": "playbook_execution",
+      "result": "success",
+      "timestamp": "2026-07-24T07:39:00Z",
+      "duration_ms": 1198
+    },
+    {
+      "heal_id": "Aegis-434",
+      "app_id": "69081445cac37647f218a3cc",
+      "app_name": "RLMS Learning Nexus",
+      "action": "heartbeat_restart",
+      "result": "success",
+      "timestamp": "2026-07-26T07:39:00Z",
+      "duration_ms": 3639
+    },
+    {
+      "heal_id": "Aegis-435",
+      "app_id": "69081445cac37647f218a3cc",
+      "app_name": "RLMS Learning Nexus",
+      "action": "node_rebalance",
+      "result": "success",
+      "timestamp": "2026-07-20T00:39:00Z",
+      "duration_ms": 3944
+    },
+    {
+      "heal_id": "Aegis-436",
+      "app_id": "69081445cac37647f218a3cc",
+      "app_name": "RLMS Learning Nexus",
+      "action": "pqc_migration",
+      "result": "success",
+      "timestamp": "2026-07-26T03:39:00Z",
+      "duration_ms": 4294
+    },
+    {
+      "heal_id": "Aegis-437",
+      "app_id": "6937959a9ffc8bc9b555a803",
+      "app_name": "Olympus OS",
+      "action": "playbook_execution",
+      "result": "success",
+      "timestamp": "2026-07-20T06:39:00Z",
+      "duration_ms": 2170
+    },
+    {
+      "heal_id": "Aegis-438",
+      "app_id": "6937959a9ffc8bc9b555a803",
+      "app_name": "Olympus OS",
+      "action": "anomaly_isolation",
+      "result": "success",
+      "timestamp": "2026-07-20T17:39:00Z",
+      "duration_ms": 1734
+    },
+    {
+      "heal_id": "Aegis-439",
+      "app_id": "6937959a9ffc8bc9b555a803",
+      "app_name": "Olympus OS",
+      "action": "node_rebalance",
+      "result": "success",
+      "timestamp": "2026-07-25T22:39:00Z",
+      "duration_ms": 3154
+    },
+    {
+      "heal_id": "Aegis-440",
+      "app_id": "6937959a9ffc8bc9b555a803",
+      "app_name": "Olympus OS",
+      "action": "node_rebalance",
+      "result": "success",
+      "timestamp": "2026-07-26T02:39:00Z",
+      "duration_ms": 4657
+    },
+    {
+      "heal_id": "Aegis-441",
+      "app_id": "6937959a9ffc8bc9b555a803",
+      "app_name": "Olympus OS",
+      "action": "node_rebalance",
+      "result": "success",
+      "timestamp": "2026-07-21T10:39:00Z",
+      "duration_ms": 4739
+    },
+    {
+      "heal_id": "Aegis-442",
+      "app_id": "6a1248888b8e94270db6aaae",
+      "app_name": "Jasper LMD",
+      "action": "pattern_update",
+      "result": "success",
+      "timestamp": "2026-07-24T06:39:00Z",
+      "duration_ms": 1049
+    },
+    {
+      "heal_id": "Aegis-443",
+      "app_id": "6a1248888b8e94270db6aaae",
+      "app_name": "Jasper LMD",
+      "action": "pattern_update",
+      "result": "success",
+      "timestamp": "2026-07-20T15:39:00Z",
+      "duration_ms": 2923
+    },
+    {
+      "heal_id": "Aegis-444",
+      "app_id": "6a1248888b8e94270db6aaae",
+      "app_name": "Jasper LMD",
+      "action": "pqc_migration",
+      "result": "success",
+      "timestamp": "2026-07-25T09:39:00Z",
+      "duration_ms": 3086
+    },
+    {
+      "heal_id": "Aegis-445",
+      "app_id": "6a1248888b8e94270db6aaae",
+      "app_name": "Jasper LMD",
+      "action": "playbook_execution",
+      "result": "success",
+      "timestamp": "2026-07-21T00:39:00Z",
+      "duration_ms": 1634
+    },
+    {
+      "heal_id": "Aegis-446",
+      "app_id": "6a1248888b8e94270db6aaae",
+      "app_name": "Jasper LMD",
+      "action": "pattern_update",
+      "result": "success",
+      "timestamp": "2026-07-21T21:39:00Z",
+      "duration_ms": 4120
+    },
+    {
+      "heal_id": "Aegis-447",
+      "app_id": "68eaf7d976c2b7a3765c44be",
+      "app_name": "Continuum",
+      "action": "heartbeat_restart",
+      "result": "success",
+      "timestamp": "2026-07-26T08:39:00Z",
+      "duration_ms": 543
+    },
+    {
+      "heal_id": "Aegis-448",
+      "app_id": "68eaf7d976c2b7a3765c44be",
+      "app_name": "Continuum",
+      "action": "playbook_execution",
+      "result": "success",
+      "timestamp": "2026-07-23T11:39:00Z",
+      "duration_ms": 4422
+    },
+    {
+      "heal_id": "Aegis-449",
+      "app_id": "68eaf7d976c2b7a3765c44be",
+      "app_name": "Continuum",
+      "action": "node_rebalance",
+      "result": "success",
+      "timestamp": "2026-07-22T14:39:00Z",
+      "duration_ms": 4078
+    },
+    {
+      "heal_id": "Aegis-450",
+      "app_id": "68eaf7d976c2b7a3765c44be",
+      "app_name": "Continuum",
+      "action": "pqc_migration",
+      "result": "success",
+      "timestamp": "2026-07-24T03:39:00Z",
+      "duration_ms": 1765
+    },
+    {
+      "heal_id": "Aegis-451",
+      "app_id": "68eaf7d976c2b7a3765c44be",
+      "app_name": "Continuum",
+      "action": "playbook_execution",
+      "result": "success",
+      "timestamp": "2026-07-23T18:39:00Z",
+      "duration_ms": 591
+    },
+    {
+      "heal_id": "Aegis-452",
+      "app_id": "68cb3e322da78c89c08a1bdb",
+      "app_name": "Wednesday",
+      "action": "playbook_execution",
+      "result": "success",
+      "timestamp": "2026-07-22T17:39:00Z",
+      "duration_ms": 1730
+    },
+    {
+      "heal_id": "Aegis-453",
+      "app_id": "68cb3e322da78c89c08a1bdb",
+      "app_name": "Wednesday",
+      "action": "pattern_update",
+      "result": "success",
+      "timestamp": "2026-07-21T12:39:00Z",
+      "duration_ms": 4275
+    },
+    {
+      "heal_id": "Aegis-454",
+      "app_id": "68cb3e322da78c89c08a1bdb",
+      "app_name": "Wednesday",
+      "action": "node_rebalance",
+      "result": "success",
+      "timestamp": "2026-07-22T21:39:00Z",
+      "duration_ms": 2384
+    },
+    {
+      "heal_id": "Aegis-455",
+      "app_id": "68cb3e322da78c89c08a1bdb",
+      "app_name": "Wednesday",
+      "action": "pattern_update",
+      "result": "success",
+      "timestamp": "2026-07-25T22:39:00Z",
+      "duration_ms": 3677
+    },
+    {
+      "heal_id": "Aegis-456",
+      "app_id": "68cb3e322da78c89c08a1bdb",
+      "app_name": "Wednesday",
+      "action": "anomaly_isolation",
+      "result": "success",
+      "timestamp": "2026-07-25T23:39:00Z",
+      "duration_ms": 1678
+    },
+    {
+      "heal_id": "Aegis-457",
+      "app_id": "68e9ae38ba25aa410a300199",
+      "app_name": "Archimedes",
+      "action": "heartbeat_restart",
+      "result": "success",
+      "timestamp": "2026-07-22T06:39:00Z",
+      "duration_ms": 3836
+    },
+    {
+      "heal_id": "Aegis-458",
+      "app_id": "68e9ae38ba25aa410a300199",
+      "app_name": "Archimedes",
+      "action": "anomaly_isolation",
+      "result": "success",
+      "timestamp": "2026-07-23T02:39:00Z",
+      "duration_ms": 546
+    },
+    {
+      "heal_id": "Aegis-459",
+      "app_id": "68e9ae38ba25aa410a300199",
+      "app_name": "Archimedes",
+      "action": "node_rebalance",
+      "result": "success",
+      "timestamp": "2026-07-23T01:39:00Z",
+      "duration_ms": 3763
+    },
+    {
+      "heal_id": "Aegis-460",
+      "app_id": "68e9ae38ba25aa410a300199",
+      "app_name": "Archimedes",
+      "action": "pattern_update",
+      "result": "success",
+      "timestamp": "2026-07-23T21:39:00Z",
+      "duration_ms": 669
+    },
+    {
+      "heal_id": "Aegis-461",
+      "app_id": "68e9ae38ba25aa410a300199",
+      "app_name": "Archimedes",
+      "action": "pattern_update",
+      "result": "success",
+      "timestamp": "2026-07-26T00:39:00Z",
+      "duration_ms": 3527
+    },
+    {
+      "heal_id": "Aegis-462",
+      "app_id": "68edb16fd35e3590d79e53ad",
+      "app_name": "Capsule AI",
+      "action": "pqc_migration",
+      "result": "success",
+      "timestamp": "2026-07-22T03:39:00Z",
+      "duration_ms": 1234
+    },
+    {
+      "heal_id": "Aegis-463",
+      "app_id": "68edb16fd35e3590d79e53ad",
+      "app_name": "Capsule AI",
+      "action": "heartbeat_restart",
+      "result": "success",
+      "timestamp": "2026-07-26T02:39:00Z",
+      "duration_ms": 3200
+    },
+    {
+      "heal_id": "Aegis-464",
+      "app_id": "68edb16fd35e3590d79e53ad",
+      "app_name": "Capsule AI",
+      "action": "anomaly_isolation",
+      "result": "success",
+      "timestamp": "2026-07-22T23:39:00Z",
+      "duration_ms": 4846
+    },
+    {
+      "heal_id": "Aegis-465",
+      "app_id": "68edb16fd35e3590d79e53ad",
+      "app_name": "Capsule AI",
+      "action": "node_rebalance",
+      "result": "success",
+      "timestamp": "2026-07-26T11:39:00Z",
+      "duration_ms": 1456
+    },
+    {
+      "heal_id": "Aegis-466",
+      "app_id": "68edb16fd35e3590d79e53ad",
+      "app_name": "Capsule AI",
+      "action": "playbook_execution",
+      "result": "success",
+      "timestamp": "2026-07-22T00:39:00Z",
+      "duration_ms": 3247
+    },
+    {
+      "heal_id": "Aegis-467",
+      "app_id": "68b4056c8c6d470ed9ae82a2",
+      "app_name": "HSC Profit Engine",
+      "action": "pqc_migration",
+      "result": "success",
+      "timestamp": "2026-07-25T14:39:00Z",
+      "duration_ms": 1724
+    },
+    {
+      "heal_id": "Aegis-468",
+      "app_id": "68b4056c8c6d470ed9ae82a2",
+      "app_name": "HSC Profit Engine",
+      "action": "node_rebalance",
+      "result": "success",
+      "timestamp": "2026-07-21T12:39:00Z",
+      "duration_ms": 3370
+    },
+    {
+      "heal_id": "Aegis-469",
+      "app_id": "68b4056c8c6d470ed9ae82a2",
+      "app_name": "HSC Profit Engine",
+      "action": "pqc_migration",
+      "result": "success",
+      "timestamp": "2026-07-20T20:39:00Z",
+      "duration_ms": 2344
+    },
+    {
+      "heal_id": "Aegis-470",
+      "app_id": "68b4056c8c6d470ed9ae82a2",
+      "app_name": "HSC Profit Engine",
+      "action": "pattern_update",
+      "result": "success",
+      "timestamp": "2026-07-24T01:39:00Z",
+      "duration_ms": 3855
+    },
+    {
+      "heal_id": "Aegis-471",
+      "app_id": "68b4056c8c6d470ed9ae82a2",
+      "app_name": "HSC Profit Engine",
+      "action": "node_rebalance",
+      "result": "success",
+      "timestamp": "2026-07-24T13:39:00Z",
+      "duration_ms": 2539
+    },
+    {
+      "heal_id": "Aegis-472",
+      "app_id": "69235dc7ea84f5395c0f4cca",
+      "app_name": "Volatility Lattice",
+      "action": "pqc_migration",
+      "result": "success",
+      "timestamp": "2026-07-22T02:39:00Z",
+      "duration_ms": 2818
+    },
+    {
+      "heal_id": "Aegis-473",
+      "app_id": "69235dc7ea84f5395c0f4cca",
+      "app_name": "Volatility Lattice",
+      "action": "pattern_update",
+      "result": "success",
+      "timestamp": "2026-07-23T03:39:00Z",
+      "duration_ms": 731
+    },
+    {
+      "heal_id": "Aegis-474",
+      "app_id": "69235dc7ea84f5395c0f4cca",
+      "app_name": "Volatility Lattice",
+      "action": "node_rebalance",
+      "result": "success",
+      "timestamp": "2026-07-20T23:39:00Z",
+      "duration_ms": 2578
+    },
+    {
+      "heal_id": "Aegis-475",
+      "app_id": "69235dc7ea84f5395c0f4cca",
+      "app_name": "Volatility Lattice",
+      "action": "heartbeat_restart",
+      "result": "success",
+      "timestamp": "2026-07-23T15:39:00Z",
+      "duration_ms": 1626
+    },
+    {
+      "heal_id": "Aegis-476",
+      "app_id": "69235dc7ea84f5395c0f4cca",
+      "app_name": "Volatility Lattice",
+      "action": "node_rebalance",
+      "result": "success",
+      "timestamp": "2026-07-22T23:39:00Z",
+      "duration_ms": 2036
+    }
+  ],
+  "topology": {
+    "nodes": [
+      {
+        "node_id": "n1",
+        "layer": 1,
+        "node_index": 1,
+        "pattern_type": "heartbeat_sensor",
+        "weight": 0.79,
+        "learning_rate": 0.01,
+        "activation_count": 0,
+        "load": 0.122
+      },
+      {
+        "node_id": "n2",
+        "layer": 1,
+        "node_index": 2,
+        "pattern_type": "latency_monitor",
+        "weight": 0.6,
+        "learning_rate": 0.01,
+        "activation_count": 50,
+        "load": 0.211
+      },
+      {
+        "node_id": "n3",
+        "layer": 1,
+        "node_index": 3,
+        "pattern_type": "error_rate",
+        "weight": 0.58,
+        "learning_rate": 0.01,
+        "activation_count": 493,
+        "load": 0.227
+      },
+      {
+        "node_id": "n4",
+        "layer": 1,
+        "node_index": 4,
+        "pattern_type": "token_usage",
+        "weight": 0.14,
+        "learning_rate": 0.01,
+        "activation_count": 50,
+        "load": 0.25
+      },
+      {
+        "node_id": "n5",
+        "layer": 1,
+        "node_index": 5,
+        "pattern_type": "memory_monitor",
+        "weight": 0.73,
+        "learning_rate": 0.01,
+        "activation_count": 493,
+        "load": 0.132
+      },
+      {
+        "node_id": "n6",
+        "layer": 1,
+        "node_index": 6,
+        "pattern_type": "cpu_monitor",
+        "weight": 0.45,
+        "learning_rate": 0.01,
+        "activation_count": 493,
+        "load": 0.065
+      },
+      {
+        "node_id": "n7",
+        "layer": 1,
+        "node_index": 7,
+        "pattern_type": "pqc_status",
+        "weight": 0.96,
+        "learning_rate": 0.01,
+        "activation_count": 493,
+        "load": 0.065
+      },
+      {
+        "node_id": "n8",
+        "layer": 1,
+        "node_index": 8,
+        "pattern_type": "anomaly_count",
+        "weight": 0.5,
+        "learning_rate": 0.01,
+        "activation_count": 493,
+        "load": 0.119
+      },
+      {
+        "node_id": "n9",
+        "layer": 2,
+        "node_index": 1,
+        "pattern_type": "pattern_match",
+        "weight": 0.87,
+        "learning_rate": 0.02,
+        "activation_count": 493,
+        "load": 0.178
+      },
+      {
+        "node_id": "n10",
+        "layer": 2,
+        "node_index": 2,
+        "pattern_type": "trend_detect",
+        "weight": 0.24,
+        "learning_rate": 0.02,
+        "activation_count": 0,
+        "load": 0.137
+      },
+      {
+        "node_id": "n11",
+        "layer": 2,
+        "node_index": 3,
+        "pattern_type": "anomaly_classify",
+        "weight": 0.9,
+        "learning_rate": 0.02,
+        "activation_count": 0,
+        "load": 0.216
+      },
+      {
+        "node_id": "n12",
+        "layer": 2,
+        "node_index": 4,
+        "pattern_type": "severity_eval",
+        "weight": 0.55,
+        "learning_rate": 0.02,
+        "activation_count": 50,
+        "load": 0.083
+      },
+      {
+        "node_id": "n13",
+        "layer": 2,
+        "node_index": 5,
+        "pattern_type": "root_cause",
+        "weight": 0.37,
+        "learning_rate": 0.02,
+        "activation_count": 493,
+        "load": 0.095
+      },
+      {
+        "node_id": "n14",
+        "layer": 2,
+        "node_index": 6,
+        "pattern_type": "blast_radius",
+        "weight": 0.93,
+        "learning_rate": 0.02,
+        "activation_count": 493,
+        "load": 0.229
+      },
+      {
+        "node_id": "n15",
+        "layer": 2,
+        "node_index": 7,
+        "pattern_type": "playbook_match",
+        "weight": 0.84,
+        "learning_rate": 0.02,
+        "activation_count": 50,
+        "load": 0.089
+      },
+      {
+        "node_id": "n16",
+        "layer": 2,
+        "node_index": 8,
+        "pattern_type": "confidence_score",
+        "weight": 0.94,
+        "learning_rate": 0.02,
+        "activation_count": 50,
+        "load": 0.075
+      },
+      {
+        "node_id": "n17",
+        "layer": 3,
+        "node_index": 1,
+        "pattern_type": "isolation_strategy",
+        "weight": 0.35,
+        "learning_rate": 0.04,
+        "activation_count": 493,
+        "load": 0.069
+      },
+      {
+        "node_id": "n18",
+        "layer": 3,
+        "node_index": 2,
+        "pattern_type": "healing_selection",
+        "weight": 0.66,
+        "learning_rate": 0.04,
+        "activation_count": 493,
+        "load": 0.238
+      },
+      {
+        "node_id": "n19",
+        "layer": 3,
+        "node_index": 3,
+        "pattern_type": "verification_logic",
+        "weight": 0.22,
+        "learning_rate": 0.04,
+        "activation_count": 493,
+        "load": 0.175
+      },
+      {
+        "node_id": "n20",
+        "layer": 3,
+        "node_index": 4,
+        "pattern_type": "escalation_eval",
+        "weight": 0.89,
+        "learning_rate": 0.04,
+        "activation_count": 50,
+        "load": 0.219
+      },
+      {
+        "node_id": "n21",
+        "layer": 3,
+        "node_index": 5,
+        "pattern_type": "quantum_threat",
+        "weight": 0.59,
+        "learning_rate": 0.04,
+        "activation_count": 0,
+        "load": 0.066
+      },
+      {
+        "node_id": "n22",
+        "layer": 3,
+        "node_index": 6,
+        "pattern_type": "cross_app_cascade",
+        "weight": 0.93,
+        "learning_rate": 0.04,
+        "activation_count": 493,
+        "load": 0.103
+      },
+      {
+        "node_id": "n23",
+        "layer": 3,
+        "node_index": 7,
+        "pattern_type": "learning_extract",
+        "weight": 0.27,
+        "learning_rate": 0.04,
+        "activation_count": 493,
+        "load": 0.133
+      },
+      {
+        "node_id": "n24",
+        "layer": 4,
+        "node_index": 1,
+        "pattern_type": "heal_action",
+        "weight": 0.66,
+        "learning_rate": 0.06,
+        "activation_count": 50,
+        "load": 0.228
+      },
+      {
+        "node_id": "n25",
+        "layer": 4,
+        "node_index": 2,
+        "pattern_type": "escalate_action",
+        "weight": 0.57,
+        "learning_rate": 0.06,
+        "activation_count": 493,
+        "load": 0.241
+      },
+      {
+        "node_id": "n26",
+        "layer": 4,
+        "node_index": 3,
+        "pattern_type": "log_action",
+        "weight": 0.51,
+        "learning_rate": 0.06,
+        "activation_count": 493,
+        "load": 0.131
+      },
+      {
+        "node_id": "n27",
+        "layer": 4,
+        "node_index": 4,
+        "pattern_type": "alert_action",
+        "weight": 0.49,
+        "learning_rate": 0.06,
+        "activation_count": 493,
+        "load": 0.062
+      },
+      {
+        "node_id": "n28",
+        "layer": 4,
+        "node_index": 5,
+        "pattern_type": "propose_action",
+        "weight": 0.48,
+        "learning_rate": 0.06,
+        "activation_count": 50,
+        "load": 0.143
+      },
+      {
+        "node_id": "n29",
+        "layer": 5,
+        "node_index": 1,
+        "pattern_type": "healing_result",
+        "weight": 0.39,
+        "learning_rate": 0.08,
+        "activation_count": 0,
+        "load": 0.113
+      },
+      {
+        "node_id": "n30",
+        "layer": 5,
+        "node_index": 2,
+        "pattern_type": "escalation_result",
+        "weight": 0.73,
+        "learning_rate": 0.08,
+        "activation_count": 493,
+        "load": 0.248
+      },
+      {
+        "node_id": "n31",
+        "layer": 5,
+        "node_index": 3,
+        "pattern_type": "learning_result",
+        "weight": 0.39,
+        "learning_rate": 0.08,
+        "activation_count": 50,
+        "load": 0.076
+      },
+      {
+        "node_id": "n32",
+        "layer": 5,
+        "node_index": 4,
+        "pattern_type": "pattern_update",
+        "weight": 0.41,
+        "learning_rate": 0.08,
+        "activation_count": 493,
+        "load": 0.071
+      }
+    ],
+    "edges": [
+      {
+        "from": "n1",
+        "to": "n16",
+        "weight": 0.37
+      },
+      {
+        "from": "n2",
+        "to": "n12",
+        "weight": 0.36
+      },
+      {
+        "from": "n2",
+        "to": "n10",
+        "weight": 0.47
+      },
+      {
+        "from": "n3",
+        "to": "n15",
+        "weight": 0.88
+      },
+      {
+        "from": "n3",
+        "to": "n10",
+        "weight": 0.84
+      },
+      {
+        "from": "n4",
+        "to": "n14",
+        "weight": 0.76
+      },
+      {
+        "from": "n4",
+        "to": "n10",
+        "weight": 0.6
+      },
+      {
+        "from": "n5",
+        "to": "n16",
+        "weight": 0.6
+      },
+      {
+        "from": "n5",
+        "to": "n12",
+        "weight": 0.35
+      },
+      {
+        "from": "n5",
+        "to": "n11",
+        "weight": 0.54
+      },
+      {
+        "from": "n6",
+        "to": "n12",
+        "weight": 0.65
+      },
+      {
+        "from": "n6",
+        "to": "n10",
+        "weight": 0.33
+      },
+      {
+        "from": "n7",
+        "to": "n16",
+        "weight": 0.83
+      },
+      {
+        "from": "n7",
+        "to": "n13",
+        "weight": 0.69
+      },
+      {
+        "from": "n8",
+        "to": "n13",
+        "weight": 0.3
+      },
+      {
+        "from": "n8",
+        "to": "n16",
+        "weight": 0.36
+      },
+      {
+        "from": "n9",
+        "to": "n19",
+        "weight": 0.74
+      },
+      {
+        "from": "n10",
+        "to": "n19",
+        "weight": 0.54
+      },
+      {
+        "from": "n10",
+        "to": "n17",
+        "weight": 0.64
+      },
+      {
+        "from": "n11",
+        "to": "n19",
+        "weight": 0.63
+      },
+      {
+        "from": "n12",
+        "to": "n20",
+        "weight": 0.6
+      },
+      {
+        "from": "n13",
+        "to": "n19",
+        "weight": 0.37
+      },
+      {
+        "from": "n13",
+        "to": "n21",
+        "weight": 0.89
+      },
+      {
+        "from": "n13",
+        "to": "n22",
+        "weight": 0.54
+      },
+      {
+        "from": "n14",
+        "to": "n21",
+        "weight": 0.75
+      },
+      {
+        "from": "n14",
+        "to": "n19",
+        "weight": 0.42
+      },
+      {
+        "from": "n15",
+        "to": "n20",
+        "weight": 0.33
+      },
+      {
+        "from": "n15",
+        "to": "n21",
+        "weight": 0.38
+      },
+      {
+        "from": "n15",
+        "to": "n17",
+        "weight": 0.5
+      },
+      {
+        "from": "n16",
+        "to": "n21",
+        "weight": 0.39
+      },
+      {
+        "from": "n16",
+        "to": "n20",
+        "weight": 0.84
+      },
+      {
+        "from": "n17",
+        "to": "n26",
+        "weight": 0.86
+      },
+      {
+        "from": "n18",
+        "to": "n25",
+        "weight": 0.89
+      },
+      {
+        "from": "n18",
+        "to": "n27",
+        "weight": 0.74
+      },
+      {
+        "from": "n19",
+        "to": "n28",
+        "weight": 0.6
+      },
+      {
+        "from": "n19",
+        "to": "n26",
+        "weight": 0.61
+      },
+      {
+        "from": "n20",
+        "to": "n28",
+        "weight": 0.58
+      },
+      {
+        "from": "n20",
+        "to": "n26",
+        "weight": 0.31
+      },
+      {
+        "from": "n21",
+        "to": "n24",
+        "weight": 0.65
+      },
+      {
+        "from": "n21",
+        "to": "n27",
+        "weight": 0.78
+      },
+      {
+        "from": "n22",
+        "to": "n24",
+        "weight": 0.88
+      },
+      {
+        "from": "n22",
+        "to": "n27",
+        "weight": 0.77
+      },
+      {
+        "from": "n22",
+        "to": "n25",
+        "weight": 0.77
+      },
+      {
+        "from": "n23",
+        "to": "n25",
+        "weight": 0.59
+      },
+      {
+        "from": "n23",
+        "to": "n24",
+        "weight": 0.61
+      },
+      {
+        "from": "n23",
+        "to": "n26",
+        "weight": 0.73
+      },
+      {
+        "from": "n24",
+        "to": "n29",
+        "weight": 0.32
+      },
+      {
+        "from": "n24",
+        "to": "n31",
+        "weight": 0.87
+      },
+      {
+        "from": "n25",
+        "to": "n29",
+        "weight": 0.31
+      },
+      {
+        "from": "n26",
+        "to": "n30",
+        "weight": 0.55
+      },
+      {
+        "from": "n26",
+        "to": "n29",
+        "weight": 0.42
+      },
+      {
+        "from": "n27",
+        "to": "n31",
+        "weight": 0.72
+      },
+      {
+        "from": "n27",
+        "to": "n30",
+        "weight": 0.61
+      },
+      {
+        "from": "n27",
+        "to": "n29",
+        "weight": 0.64
+      },
+      {
+        "from": "n28",
+        "to": "n30",
+        "weight": 0.87
+      },
+      {
+        "from": "n28",
+        "to": "n31",
+        "weight": 0.58
+      },
+      {
+        "from": "n28",
+        "to": "n29",
+        "weight": 0.62
+      }
+    ],
+    "layer_summary": {
+      "layer_1_input": {
+        "nodes": 8,
+        "learning_rate": 0.01,
+        "sensors": [
+          "heartbeat",
+          "latency",
+          "error_rate",
+          "token_usage",
+          "memory",
+          "cpu",
+          "pqc_status",
+          "anomaly_count"
+        ]
+      },
+      "layer_2_hidden": {
+        "nodes": 8,
+        "learning_rate": 0.02,
+        "processors": [
+          "pattern_match",
+          "trend_detect",
+          "anomaly_classify",
+          "severity_eval",
+          "root_cause",
+          "blast_radius",
+          "playbook_match",
+          "confidence_score"
+        ]
+      },
+      "layer_3_deep": {
+        "nodes": 7,
+        "learning_rate": 0.04,
+        "analyzers": [
+          "isolation_strategy",
+          "healing_selection",
+          "verification_logic",
+          "escalation_eval",
+          "quantum_threat",
+          "cross_app_cascade",
+          "learning_extract"
+        ]
+      },
+      "layer_4_output": {
+        "nodes": 5,
+        "learning_rate": 0.06,
+        "actions": [
+          "heal",
+          "escalate",
+          "log",
+          "alert",
+          "propose"
+        ]
+      },
+      "layer_5_terminal": {
+        "nodes": 4,
+        "learning_rate": 0.08,
+        "results": [
+          "healing_result",
+          "escalation_result",
+          "learning_result",
+          "pattern_update"
+        ]
+      }
+    }
+  },
+  "pqc_distribution": {
+    "CRYSTALS-Dilithium3": {
+      "apps": 38,
+      "percentage": 0.567
+    },
+    "CRYSTALS-Kyber-1024": {
+      "apps": 21,
+      "percentage": 0.313
+    },
+    "SPHINCS+-256f": {
+      "apps": 8,
+      "percentage": 0.119
+    }
+  },
+  "credit_status": {
+    "message_credits_used": 785,
+    "message_credits_total": 1200,
+    "message_credits_remaining": 415,
+    "integration_credits_used": 20735.9,
+    "integration_credits_total": 50000,
+    "integration_credits_remaining": 29264.1
+  },
+  "workflow_status": {
+    "monthly_ecosystem_pulse": {
+      "schedule": "1st & 15th, 9am CT",
+      "status": "active"
+    },
+    "friday_backend_monitoring": {
+      "schedule": "Every Friday, 9am CT",
+      "status": "active"
+    },
+    "cross_app_heartbeat_monitor": {
+      "schedule": "Every 15 min",
+      "status": "paused"
+    },
+    "daily_ecosystem_sweep": {
+      "schedule": "Daily 3am CT",
+      "status": "paused"
+    },
+    "critical_anomaly_response": {
+      "schedule": "Entity trigger",
+      "status": "paused"
+    }
+  },
+  "recent_remediation": {
+    "rlais_pqc_migration": {
+      "app": "RLAIS Control Center",
+      "app_id": "69078f371e9b674994e408c9",
+      "issue": "RSA-2048 crypto degradation",
+      "remediation": "Migrated to CRYSTALS-Kyber-1024, CRYSTALS-Dilithium3, CRYSTALS-Kyber KEM",
+      "health_before": 40,
+      "health_after": 99,
+      "pqc_before": 10,
+      "pqc_after": 98,
+      "authorized_by": "Leon Long",
+      "timestamp": "2026-07-26T23:55:00Z"
+    }
+  }
+}
