@@ -1,0 +1,5322 @@
+[
+  {
+    "name": "JWT Validation Fix",
+    "description": "Auto-healing for JWT Validation Fix",
+    "playbook_id": "SEC-008",
+    "category": "security",
+    "trigger_conditions": [
+      "security_trigger"
+    ],
+    "steps": [
+      "Detect",
+      "Analyze",
+      "Execute",
+      "Validate",
+      "Report"
+    ],
+    "action_types": [
+      "heal",
+      "optimize",
+      "scale"
+    ],
+    "safety_measures": [
+      "validate",
+      "rollback",
+      "notify",
+      "log"
+    ],
+    "fallbacks": [],
+    "avg_success_rate": 96.22100148931706,
+    "avg_recovery_time_s": 113.0,
+    "execution_count": 0.0
+  },
+  {
+    "name": "Session Hijacking Block",
+    "description": "Auto-healing for Session Hijacking Block",
+    "playbook_id": "SEC-009",
+    "category": "security",
+    "trigger_conditions": [
+      "security_trigger"
+    ],
+    "steps": [
+      "Detect",
+      "Analyze",
+      "Execute",
+      "Validate",
+      "Report"
+    ],
+    "action_types": [
+      "heal",
+      "optimize",
+      "scale"
+    ],
+    "safety_measures": [
+      "validate",
+      "rollback",
+      "notify",
+      "log"
+    ],
+    "fallbacks": [],
+    "avg_success_rate": 91.75795717327375,
+    "avg_recovery_time_s": 37.0,
+    "execution_count": 0.0
+  },
+  {
+    "name": "Man-in-Middle Prevention",
+    "description": "Auto-healing for Man-in-Middle Prevention",
+    "playbook_id": "SEC-010",
+    "category": "security",
+    "trigger_conditions": [
+      "security_trigger"
+    ],
+    "steps": [
+      "Detect",
+      "Analyze",
+      "Execute",
+      "Validate",
+      "Report"
+    ],
+    "action_types": [
+      "heal",
+      "optimize",
+      "scale"
+    ],
+    "safety_measures": [
+      "validate",
+      "rollback",
+      "notify",
+      "log"
+    ],
+    "fallbacks": [],
+    "avg_success_rate": 97.84151069861058,
+    "avg_recovery_time_s": 80.0,
+    "execution_count": 0.0
+  },
+  {
+    "name": "Zero-Day Vulnerability Patch",
+    "description": "Auto-healing for Zero-Day Vulnerability Patch",
+    "playbook_id": "SEC-011",
+    "category": "security",
+    "trigger_conditions": [
+      "security_trigger"
+    ],
+    "steps": [
+      "Detect",
+      "Analyze",
+      "Execute",
+      "Validate",
+      "Report"
+    ],
+    "action_types": [
+      "heal",
+      "optimize",
+      "scale"
+    ],
+    "safety_measures": [
+      "validate",
+      "rollback",
+      "notify",
+      "log"
+    ],
+    "fallbacks": [],
+    "avg_success_rate": 91.61141686805533,
+    "avg_recovery_time_s": 40.0,
+    "execution_count": 0.0
+  },
+  {
+    "name": "Malware Detection Response",
+    "description": "Auto-healing for Malware Detection Response",
+    "playbook_id": "SEC-012",
+    "category": "security",
+    "trigger_conditions": [
+      "security_trigger"
+    ],
+    "steps": [
+      "Detect",
+      "Analyze",
+      "Execute",
+      "Validate",
+      "Report"
+    ],
+    "action_types": [
+      "heal",
+      "optimize",
+      "scale"
+    ],
+    "safety_measures": [
+      "validate",
+      "rollback",
+      "notify",
+      "log"
+    ],
+    "fallbacks": [],
+    "avg_success_rate": 94.34168856869866,
+    "avg_recovery_time_s": 73.0,
+    "execution_count": 0.0
+  },
+  {
+    "name": "Intrusion Detection Fix",
+    "description": "Auto-healing for Intrusion Detection Fix",
+    "playbook_id": "SEC-013",
+    "category": "security",
+    "trigger_conditions": [
+      "security_trigger"
+    ],
+    "steps": [
+      "Detect",
+      "Analyze",
+      "Execute",
+      "Validate",
+      "Report"
+    ],
+    "action_types": [
+      "heal",
+      "optimize",
+      "scale"
+    ],
+    "safety_measures": [
+      "validate",
+      "rollback",
+      "notify",
+      "log"
+    ],
+    "fallbacks": [],
+    "avg_success_rate": 92.68109004783125,
+    "avg_recovery_time_s": 52.0,
+    "execution_count": 0.0
+  },
+  {
+    "name": "Data Breach Response",
+    "description": "Auto-healing for Data Breach Response",
+    "playbook_id": "SEC-014",
+    "category": "security",
+    "trigger_conditions": [
+      "security_trigger"
+    ],
+    "steps": [
+      "Detect",
+      "Analyze",
+      "Execute",
+      "Validate",
+      "Report"
+    ],
+    "action_types": [
+      "heal",
+      "optimize",
+      "scale"
+    ],
+    "safety_measures": [
+      "validate",
+      "rollback",
+      "notify",
+      "log"
+    ],
+    "fallbacks": [],
+    "avg_success_rate": 99.98917880440419,
+    "avg_recovery_time_s": 59.0,
+    "execution_count": 0.0
+  },
+  {
+    "name": "Encryption Key Rotation",
+    "description": "Auto-healing for Encryption Key Rotation",
+    "playbook_id": "SEC-015",
+    "category": "security",
+    "trigger_conditions": [
+      "security_trigger"
+    ],
+    "steps": [
+      "Detect",
+      "Analyze",
+      "Execute",
+      "Validate",
+      "Report"
+    ],
+    "action_types": [
+      "heal",
+      "optimize",
+      "scale"
+    ],
+    "safety_measures": [
+      "validate",
+      "rollback",
+      "notify",
+      "log"
+    ],
+    "fallbacks": [],
+    "avg_success_rate": 95.01537582586727,
+    "avg_recovery_time_s": 114.0,
+    "execution_count": 0.0
+  },
+  {
+    "name": "Access Control Fix",
+    "description": "Auto-healing for Access Control Fix",
+    "playbook_id": "SEC-016",
+    "category": "security",
+    "trigger_conditions": [
+      "security_trigger"
+    ],
+    "steps": [
+      "Detect",
+      "Analyze",
+      "Execute",
+      "Validate",
+      "Report"
+    ],
+    "action_types": [
+      "heal",
+      "optimize",
+      "scale"
+    ],
+    "safety_measures": [
+      "validate",
+      "rollback",
+      "notify",
+      "log"
+    ],
+    "fallbacks": [],
+    "avg_success_rate": 92.22394857749585,
+    "avg_recovery_time_s": 96.0,
+    "execution_count": 0.0
+  },
+  {
+    "name": "Privilege Escalation Block",
+    "description": "Auto-healing for Privilege Escalation Block",
+    "playbook_id": "SEC-017",
+    "category": "security",
+    "trigger_conditions": [
+      "security_trigger"
+    ],
+    "steps": [
+      "Detect",
+      "Analyze",
+      "Execute",
+      "Validate",
+      "Report"
+    ],
+    "action_types": [
+      "heal",
+      "optimize",
+      "scale"
+    ],
+    "safety_measures": [
+      "validate",
+      "rollback",
+      "notify",
+      "log"
+    ],
+    "fallbacks": [],
+    "avg_success_rate": 96.52841822688565,
+    "avg_recovery_time_s": 83.0,
+    "execution_count": 0.0
+  },
+  {
+    "name": "Identity Verification",
+    "description": "Auto-healing for Identity Verification",
+    "playbook_id": "SEC-018",
+    "category": "security",
+    "trigger_conditions": [
+      "security_trigger"
+    ],
+    "steps": [
+      "Detect",
+      "Analyze",
+      "Execute",
+      "Validate",
+      "Report"
+    ],
+    "action_types": [
+      "heal",
+      "optimize",
+      "scale"
+    ],
+    "safety_measures": [
+      "validate",
+      "rollback",
+      "notify",
+      "log"
+    ],
+    "fallbacks": [],
+    "avg_success_rate": 94.32122029714427,
+    "avg_recovery_time_s": 91.0,
+    "execution_count": 0.0
+  },
+  {
+    "name": "Multi-Factor Auth Fix",
+    "description": "Auto-healing for Multi-Factor Auth Fix",
+    "playbook_id": "SEC-019",
+    "category": "security",
+    "trigger_conditions": [
+      "security_trigger"
+    ],
+    "steps": [
+      "Detect",
+      "Analyze",
+      "Execute",
+      "Validate",
+      "Report"
+    ],
+    "action_types": [
+      "heal",
+      "optimize",
+      "scale"
+    ],
+    "safety_measures": [
+      "validate",
+      "rollback",
+      "notify",
+      "log"
+    ],
+    "fallbacks": [],
+    "avg_success_rate": 98.83942870835904,
+    "avg_recovery_time_s": 37.0,
+    "execution_count": 0.0
+  },
+  {
+    "name": "Password Policy Enforcement",
+    "description": "Auto-healing for Password Policy Enforcement",
+    "playbook_id": "SEC-020",
+    "category": "security",
+    "trigger_conditions": [
+      "security_trigger"
+    ],
+    "steps": [
+      "Detect",
+      "Analyze",
+      "Execute",
+      "Validate",
+      "Report"
+    ],
+    "action_types": [
+      "heal",
+      "optimize",
+      "scale"
+    ],
+    "safety_measures": [
+      "validate",
+      "rollback",
+      "notify",
+      "log"
+    ],
+    "fallbacks": [],
+    "avg_success_rate": 92.56447757547163,
+    "avg_recovery_time_s": 73.0,
+    "execution_count": 0.0
+  },
+  {
+    "name": "GDPR Compliance Check",
+    "description": "Auto-healing for GDPR Compliance Check",
+    "playbook_id": "SEC-021",
+    "category": "security",
+    "trigger_conditions": [
+      "security_trigger"
+    ],
+    "steps": [
+      "Detect",
+      "Analyze",
+      "Execute",
+      "Validate",
+      "Report"
+    ],
+    "action_types": [
+      "heal",
+      "optimize",
+      "scale"
+    ],
+    "safety_measures": [
+      "validate",
+      "rollback",
+      "notify",
+      "log"
+    ],
+    "fallbacks": [],
+    "avg_success_rate": 91.13440171227877,
+    "avg_recovery_time_s": 109.0,
+    "execution_count": 0.0
+  },
+  {
+    "name": "HIPAA Audit Trail",
+    "description": "Auto-healing for HIPAA Audit Trail",
+    "playbook_id": "SEC-022",
+    "category": "security",
+    "trigger_conditions": [
+      "security_trigger"
+    ],
+    "steps": [
+      "Detect",
+      "Analyze",
+      "Execute",
+      "Validate",
+      "Report"
+    ],
+    "action_types": [
+      "heal",
+      "optimize",
+      "scale"
+    ],
+    "safety_measures": [
+      "validate",
+      "rollback",
+      "notify",
+      "log"
+    ],
+    "fallbacks": [],
+    "avg_success_rate": 90.29617425797025,
+    "avg_recovery_time_s": 59.0,
+    "execution_count": 0.0
+  },
+  {
+    "name": "PCI-DSS Validation",
+    "description": "Auto-healing for PCI-DSS Validation",
+    "playbook_id": "SEC-023",
+    "category": "security",
+    "trigger_conditions": [
+      "security_trigger"
+    ],
+    "steps": [
+      "Detect",
+      "Analyze",
+      "Execute",
+      "Validate",
+      "Report"
+    ],
+    "action_types": [
+      "heal",
+      "optimize",
+      "scale"
+    ],
+    "safety_measures": [
+      "validate",
+      "rollback",
+      "notify",
+      "log"
+    ],
+    "fallbacks": [],
+    "avg_success_rate": 91.4786105661773,
+    "avg_recovery_time_s": 80.0,
+    "execution_count": 0.0
+  },
+  {
+    "name": "SOC 2 Compliance Fix",
+    "description": "Auto-healing for SOC 2 Compliance Fix",
+    "playbook_id": "SEC-024",
+    "category": "security",
+    "trigger_conditions": [
+      "security_trigger"
+    ],
+    "steps": [
+      "Detect",
+      "Analyze",
+      "Execute",
+      "Validate",
+      "Report"
+    ],
+    "action_types": [
+      "heal",
+      "optimize",
+      "scale"
+    ],
+    "safety_measures": [
+      "validate",
+      "rollback",
+      "notify",
+      "log"
+    ],
+    "fallbacks": [],
+    "avg_success_rate": 93.20590492710306,
+    "avg_recovery_time_s": 33.0,
+    "execution_count": 0.0
+  },
+  {
+    "name": "ISO 27001 Check",
+    "description": "Auto-healing for ISO 27001 Check",
+    "playbook_id": "SEC-025",
+    "category": "security",
+    "trigger_conditions": [
+      "security_trigger"
+    ],
+    "steps": [
+      "Detect",
+      "Analyze",
+      "Execute",
+      "Validate",
+      "Report"
+    ],
+    "action_types": [
+      "heal",
+      "optimize",
+      "scale"
+    ],
+    "safety_measures": [
+      "validate",
+      "rollback",
+      "notify",
+      "log"
+    ],
+    "fallbacks": [],
+    "avg_success_rate": 94.26066305359323,
+    "avg_recovery_time_s": 70.0,
+    "execution_count": 0.0
+  },
+  {
+    "name": "Audit Log Integrity",
+    "description": "Auto-healing for Audit Log Integrity",
+    "playbook_id": "SEC-026",
+    "category": "security",
+    "trigger_conditions": [
+      "security_trigger"
+    ],
+    "steps": [
+      "Detect",
+      "Analyze",
+      "Execute",
+      "Validate",
+      "Report"
+    ],
+    "action_types": [
+      "heal",
+      "optimize",
+      "scale"
+    ],
+    "safety_measures": [
+      "validate",
+      "rollback",
+      "notify",
+      "log"
+    ],
+    "fallbacks": [],
+    "avg_success_rate": 93.38341866300874,
+    "avg_recovery_time_s": 58.0,
+    "execution_count": 0.0
+  },
+  {
+    "name": "Data Retention Policy",
+    "description": "Auto-healing for Data Retention Policy",
+    "playbook_id": "SEC-027",
+    "category": "security",
+    "trigger_conditions": [
+      "security_trigger"
+    ],
+    "steps": [
+      "Detect",
+      "Analyze",
+      "Execute",
+      "Validate",
+      "Report"
+    ],
+    "action_types": [
+      "heal",
+      "optimize",
+      "scale"
+    ],
+    "safety_measures": [
+      "validate",
+      "rollback",
+      "notify",
+      "log"
+    ],
+    "fallbacks": [],
+    "avg_success_rate": 98.41607787339376,
+    "avg_recovery_time_s": 58.0,
+    "execution_count": 0.0
+  },
+  {
+    "name": "Privacy Shield Update",
+    "description": "Auto-healing for Privacy Shield Update",
+    "playbook_id": "SEC-028",
+    "category": "security",
+    "trigger_conditions": [
+      "security_trigger"
+    ],
+    "steps": [
+      "Detect",
+      "Analyze",
+      "Execute",
+      "Validate",
+      "Report"
+    ],
+    "action_types": [
+      "heal",
+      "optimize",
+      "scale"
+    ],
+    "safety_measures": [
+      "validate",
+      "rollback",
+      "notify",
+      "log"
+    ],
+    "fallbacks": [],
+    "avg_success_rate": 94.02612552633578,
+    "avg_recovery_time_s": 72.0,
+    "execution_count": 0.0
+  },
+  {
+    "name": "Secure Code Review",
+    "description": "Auto-healing for Secure Code Review",
+    "playbook_id": "SEC-029",
+    "category": "security",
+    "trigger_conditions": [
+      "security_trigger"
+    ],
+    "steps": [
+      "Detect",
+      "Analyze",
+      "Execute",
+      "Validate",
+      "Report"
+    ],
+    "action_types": [
+      "heal",
+      "optimize",
+      "scale"
+    ],
+    "safety_measures": [
+      "validate",
+      "rollback",
+      "notify",
+      "log"
+    ],
+    "fallbacks": [],
+    "avg_success_rate": 97.12338645169162,
+    "avg_recovery_time_s": 94.0,
+    "execution_count": 0.0
+  },
+  {
+    "name": "Vulnerability Scan Auto",
+    "description": "Auto-healing for Vulnerability Scan Auto",
+    "playbook_id": "SEC-030",
+    "category": "security",
+    "trigger_conditions": [
+      "security_trigger"
+    ],
+    "steps": [
+      "Detect",
+      "Analyze",
+      "Execute",
+      "Validate",
+      "Report"
+    ],
+    "action_types": [
+      "heal",
+      "optimize",
+      "scale"
+    ],
+    "safety_measures": [
+      "validate",
+      "rollback",
+      "notify",
+      "log"
+    ],
+    "fallbacks": [],
+    "avg_success_rate": 97.23372307589007,
+    "avg_recovery_time_s": 111.0,
+    "execution_count": 0.0
+  },
+  {
+    "name": "Penetration Test Response",
+    "description": "Auto-healing for Penetration Test Response",
+    "playbook_id": "SEC-031",
+    "category": "security",
+    "trigger_conditions": [
+      "security_trigger"
+    ],
+    "steps": [
+      "Detect",
+      "Analyze",
+      "Execute",
+      "Validate",
+      "Report"
+    ],
+    "action_types": [
+      "heal",
+      "optimize",
+      "scale"
+    ],
+    "safety_measures": [
+      "validate",
+      "rollback",
+      "notify",
+      "log"
+    ],
+    "fallbacks": [],
+    "avg_success_rate": 96.68504471586846,
+    "avg_recovery_time_s": 54.0,
+    "execution_count": 0.0
+  },
+  {
+    "name": "Security Patch Deploy",
+    "description": "Auto-healing for Security Patch Deploy",
+    "playbook_id": "SEC-032",
+    "category": "security",
+    "trigger_conditions": [
+      "security_trigger"
+    ],
+    "steps": [
+      "Detect",
+      "Analyze",
+      "Execute",
+      "Validate",
+      "Report"
+    ],
+    "action_types": [
+      "heal",
+      "optimize",
+      "scale"
+    ],
+    "safety_measures": [
+      "validate",
+      "rollback",
+      "notify",
+      "log"
+    ],
+    "fallbacks": [],
+    "avg_success_rate": 99.16645648167521,
+    "avg_recovery_time_s": 117.0,
+    "execution_count": 0.0
+  },
+  {
+    "name": "Firewall Rule Audit",
+    "description": "Auto-healing for Firewall Rule Audit",
+    "playbook_id": "SEC-033",
+    "category": "security",
+    "trigger_conditions": [
+      "security_trigger"
+    ],
+    "steps": [
+      "Detect",
+      "Analyze",
+      "Execute",
+      "Validate",
+      "Report"
+    ],
+    "action_types": [
+      "heal",
+      "optimize",
+      "scale"
+    ],
+    "safety_measures": [
+      "validate",
+      "rollback",
+      "notify",
+      "log"
+    ],
+    "fallbacks": [],
+    "avg_success_rate": 96.0928801556475,
+    "avg_recovery_time_s": 55.0,
+    "execution_count": 0.0
+  },
+  {
+    "name": "Network Segmentation",
+    "description": "Auto-healing for Network Segmentation",
+    "playbook_id": "SEC-034",
+    "category": "security",
+    "trigger_conditions": [
+      "security_trigger"
+    ],
+    "steps": [
+      "Detect",
+      "Analyze",
+      "Execute",
+      "Validate",
+      "Report"
+    ],
+    "action_types": [
+      "heal",
+      "optimize",
+      "scale"
+    ],
+    "safety_measures": [
+      "validate",
+      "rollback",
+      "notify",
+      "log"
+    ],
+    "fallbacks": [],
+    "avg_success_rate": 93.13490809422164,
+    "avg_recovery_time_s": 100.0,
+    "execution_count": 0.0
+  },
+  {
+    "name": "VPN Connection Fix",
+    "description": "Auto-healing for VPN Connection Fix",
+    "playbook_id": "SEC-035",
+    "category": "security",
+    "trigger_conditions": [
+      "security_trigger"
+    ],
+    "steps": [
+      "Detect",
+      "Analyze",
+      "Execute",
+      "Validate",
+      "Report"
+    ],
+    "action_types": [
+      "heal",
+      "optimize",
+      "scale"
+    ],
+    "safety_measures": [
+      "validate",
+      "rollback",
+      "notify",
+      "log"
+    ],
+    "fallbacks": [],
+    "avg_success_rate": 96.36836437387308,
+    "avg_recovery_time_s": 49.0,
+    "execution_count": 0.0
+  },
+  {
+    "name": "Secure DNS Config",
+    "description": "Auto-healing for Secure DNS Config",
+    "playbook_id": "SEC-036",
+    "category": "security",
+    "trigger_conditions": [
+      "security_trigger"
+    ],
+    "steps": [
+      "Detect",
+      "Analyze",
+      "Execute",
+      "Validate",
+      "Report"
+    ],
+    "action_types": [
+      "heal",
+      "optimize",
+      "scale"
+    ],
+    "safety_measures": [
+      "validate",
+      "rollback",
+      "notify",
+      "log"
+    ],
+    "fallbacks": [],
+    "avg_success_rate": 99.30251298388134,
+    "avg_recovery_time_s": 65.0,
+    "execution_count": 0.0
+  },
+  {
+    "name": "WAF Rule Update",
+    "description": "Auto-healing for WAF Rule Update",
+    "playbook_id": "SEC-037",
+    "category": "security",
+    "trigger_conditions": [
+      "security_trigger"
+    ],
+    "steps": [
+      "Detect",
+      "Analyze",
+      "Execute",
+      "Validate",
+      "Report"
+    ],
+    "action_types": [
+      "heal",
+      "optimize",
+      "scale"
+    ],
+    "safety_measures": [
+      "validate",
+      "rollback",
+      "notify",
+      "log"
+    ],
+    "fallbacks": [],
+    "avg_success_rate": 99.48917565352512,
+    "avg_recovery_time_s": 97.0,
+    "execution_count": 0.0
+  },
+  {
+    "name": "Bot Detection Strategy",
+    "description": "Auto-healing for Bot Detection Strategy",
+    "playbook_id": "SEC-038",
+    "category": "security",
+    "trigger_conditions": [
+      "security_trigger"
+    ],
+    "steps": [
+      "Detect",
+      "Analyze",
+      "Execute",
+      "Validate",
+      "Report"
+    ],
+    "action_types": [
+      "heal",
+      "optimize",
+      "scale"
+    ],
+    "safety_measures": [
+      "validate",
+      "rollback",
+      "notify",
+      "log"
+    ],
+    "fallbacks": [],
+    "avg_success_rate": 92.44899636144063,
+    "avg_recovery_time_s": 83.0,
+    "execution_count": 0.0
+  },
+  {
+    "name": "Rate Limiting Enforcement",
+    "description": "Auto-healing for Rate Limiting Enforcement",
+    "playbook_id": "SEC-039",
+    "category": "security",
+    "trigger_conditions": [
+      "security_trigger"
+    ],
+    "steps": [
+      "Detect",
+      "Analyze",
+      "Execute",
+      "Validate",
+      "Report"
+    ],
+    "action_types": [
+      "heal",
+      "optimize",
+      "scale"
+    ],
+    "safety_measures": [
+      "validate",
+      "rollback",
+      "notify",
+      "log"
+    ],
+    "fallbacks": [],
+    "avg_success_rate": 94.36697217751868,
+    "avg_recovery_time_s": 74.0,
+    "execution_count": 0.0
+  },
+  {
+    "name": "IP Whitelist Management",
+    "description": "Auto-healing for IP Whitelist Management",
+    "playbook_id": "SEC-040",
+    "category": "security",
+    "trigger_conditions": [
+      "security_trigger"
+    ],
+    "steps": [
+      "Detect",
+      "Analyze",
+      "Execute",
+      "Validate",
+      "Report"
+    ],
+    "action_types": [
+      "heal",
+      "optimize",
+      "scale"
+    ],
+    "safety_measures": [
+      "validate",
+      "rollback",
+      "notify",
+      "log"
+    ],
+    "fallbacks": [],
+    "avg_success_rate": 98.23458762511122,
+    "avg_recovery_time_s": 108.0,
+    "execution_count": 0.0
+  },
+  {
+    "name": "DDoS Attack Mitigation",
+    "description": "Auto-healing for DDoS Attack Mitigation",
+    "playbook_id": "SEC-001",
+    "category": "security",
+    "trigger_conditions": [
+      "security_trigger"
+    ],
+    "steps": [
+      "Detect",
+      "Analyze",
+      "Execute",
+      "Validate",
+      "Report"
+    ],
+    "action_types": [
+      "heal",
+      "optimize",
+      "scale"
+    ],
+    "safety_measures": [
+      "validate",
+      "rollback",
+      "notify",
+      "log"
+    ],
+    "fallbacks": [],
+    "avg_success_rate": 97.96367155933699,
+    "avg_recovery_time_s": 49.0,
+    "execution_count": 0.0
+  },
+  {
+    "name": "SQL Injection Prevention",
+    "description": "Auto-healing for SQL Injection Prevention",
+    "playbook_id": "SEC-002",
+    "category": "security",
+    "trigger_conditions": [
+      "security_trigger"
+    ],
+    "steps": [
+      "Detect",
+      "Analyze",
+      "Execute",
+      "Validate",
+      "Report"
+    ],
+    "action_types": [
+      "heal",
+      "optimize",
+      "scale"
+    ],
+    "safety_measures": [
+      "validate",
+      "rollback",
+      "notify",
+      "log"
+    ],
+    "fallbacks": [],
+    "avg_success_rate": 95.34808451730264,
+    "avg_recovery_time_s": 58.0,
+    "execution_count": 0.0
+  },
+  {
+    "name": "XSS Attack Blocker",
+    "description": "Auto-healing for XSS Attack Blocker",
+    "playbook_id": "SEC-003",
+    "category": "security",
+    "trigger_conditions": [
+      "security_trigger"
+    ],
+    "steps": [
+      "Detect",
+      "Analyze",
+      "Execute",
+      "Validate",
+      "Report"
+    ],
+    "action_types": [
+      "heal",
+      "optimize",
+      "scale"
+    ],
+    "safety_measures": [
+      "validate",
+      "rollback",
+      "notify",
+      "log"
+    ],
+    "fallbacks": [],
+    "avg_success_rate": 95.72821294847209,
+    "avg_recovery_time_s": 35.0,
+    "execution_count": 0.0
+  },
+  {
+    "name": "CSRF Token Validation",
+    "description": "Auto-healing for CSRF Token Validation",
+    "playbook_id": "SEC-004",
+    "category": "security",
+    "trigger_conditions": [
+      "security_trigger"
+    ],
+    "steps": [
+      "Detect",
+      "Analyze",
+      "Execute",
+      "Validate",
+      "Report"
+    ],
+    "action_types": [
+      "heal",
+      "optimize",
+      "scale"
+    ],
+    "safety_measures": [
+      "validate",
+      "rollback",
+      "notify",
+      "log"
+    ],
+    "fallbacks": [],
+    "avg_success_rate": 95.8784199232266,
+    "avg_recovery_time_s": 86.0,
+    "execution_count": 0.0
+  },
+  {
+    "name": "Brute Force Protection",
+    "description": "Auto-healing for Brute Force Protection",
+    "playbook_id": "SEC-005",
+    "category": "security",
+    "trigger_conditions": [
+      "security_trigger"
+    ],
+    "steps": [
+      "Detect",
+      "Analyze",
+      "Execute",
+      "Validate",
+      "Report"
+    ],
+    "action_types": [
+      "heal",
+      "optimize",
+      "scale"
+    ],
+    "safety_measures": [
+      "validate",
+      "rollback",
+      "notify",
+      "log"
+    ],
+    "fallbacks": [],
+    "avg_success_rate": 96.30547832575104,
+    "avg_recovery_time_s": 95.0,
+    "execution_count": 0.0
+  },
+  {
+    "name": "API Key Rotation",
+    "description": "Auto-healing for API Key Rotation",
+    "playbook_id": "SEC-006",
+    "category": "security",
+    "trigger_conditions": [
+      "security_trigger"
+    ],
+    "steps": [
+      "Detect",
+      "Analyze",
+      "Execute",
+      "Validate",
+      "Report"
+    ],
+    "action_types": [
+      "heal",
+      "optimize",
+      "scale"
+    ],
+    "safety_measures": [
+      "validate",
+      "rollback",
+      "notify",
+      "log"
+    ],
+    "fallbacks": [],
+    "avg_success_rate": 91.23756889006444,
+    "avg_recovery_time_s": 83.0,
+    "execution_count": 0.0
+  },
+  {
+    "name": "OAuth Token Refresh",
+    "description": "Auto-healing for OAuth Token Refresh",
+    "playbook_id": "SEC-007",
+    "category": "security",
+    "trigger_conditions": [
+      "security_trigger"
+    ],
+    "steps": [
+      "Detect",
+      "Analyze",
+      "Execute",
+      "Validate",
+      "Report"
+    ],
+    "action_types": [
+      "heal",
+      "optimize",
+      "scale"
+    ],
+    "safety_measures": [
+      "validate",
+      "rollback",
+      "notify",
+      "log"
+    ],
+    "fallbacks": [],
+    "avg_success_rate": 99.69584405364694,
+    "avg_recovery_time_s": 46.0,
+    "execution_count": 0.0
+  },
+  {
+    "name": "Ensemble Model Fix",
+    "description": "Auto-healing for Ensemble Model Fix",
+    "playbook_id": "DL-035",
+    "category": "deep_learning",
+    "trigger_conditions": [
+      "deep_learning_trigger"
+    ],
+    "steps": [
+      "Detect",
+      "Analyze",
+      "Execute",
+      "Validate",
+      "Report"
+    ],
+    "action_types": [
+      "heal",
+      "optimize",
+      "scale"
+    ],
+    "safety_measures": [
+      "validate",
+      "rollback",
+      "notify",
+      "log"
+    ],
+    "fallbacks": [],
+    "avg_success_rate": 92.80705753673159,
+    "avg_recovery_time_s": 67.0,
+    "execution_count": 0.0
+  },
+  {
+    "name": "Neural Architecture Search",
+    "description": "Auto-healing for Neural Architecture Search",
+    "playbook_id": "DL-036",
+    "category": "deep_learning",
+    "trigger_conditions": [
+      "deep_learning_trigger"
+    ],
+    "steps": [
+      "Detect",
+      "Analyze",
+      "Execute",
+      "Validate",
+      "Report"
+    ],
+    "action_types": [
+      "heal",
+      "optimize",
+      "scale"
+    ],
+    "safety_measures": [
+      "validate",
+      "rollback",
+      "notify",
+      "log"
+    ],
+    "fallbacks": [],
+    "avg_success_rate": 91.36180526754076,
+    "avg_recovery_time_s": 52.0,
+    "execution_count": 0.0
+  },
+  {
+    "name": "AutoML Pipeline Recovery",
+    "description": "Auto-healing for AutoML Pipeline Recovery",
+    "playbook_id": "DL-037",
+    "category": "deep_learning",
+    "trigger_conditions": [
+      "deep_learning_trigger"
+    ],
+    "steps": [
+      "Detect",
+      "Analyze",
+      "Execute",
+      "Validate",
+      "Report"
+    ],
+    "action_types": [
+      "heal",
+      "optimize",
+      "scale"
+    ],
+    "safety_measures": [
+      "validate",
+      "rollback",
+      "notify",
+      "log"
+    ],
+    "fallbacks": [],
+    "avg_success_rate": 95.93876121069859,
+    "avg_recovery_time_s": 92.0,
+    "execution_count": 0.0
+  },
+  {
+    "name": "Model Registry Sync",
+    "description": "Auto-healing for Model Registry Sync",
+    "playbook_id": "DL-038",
+    "category": "deep_learning",
+    "trigger_conditions": [
+      "deep_learning_trigger"
+    ],
+    "steps": [
+      "Detect",
+      "Analyze",
+      "Execute",
+      "Validate",
+      "Report"
+    ],
+    "action_types": [
+      "heal",
+      "optimize",
+      "scale"
+    ],
+    "safety_measures": [
+      "validate",
+      "rollback",
+      "notify",
+      "log"
+    ],
+    "fallbacks": [],
+    "avg_success_rate": 96.69853152199414,
+    "avg_recovery_time_s": 101.0,
+    "execution_count": 0.0
+  },
+  {
+    "name": "Experiment Tracking Fix",
+    "description": "Auto-healing for Experiment Tracking Fix",
+    "playbook_id": "DL-039",
+    "category": "deep_learning",
+    "trigger_conditions": [
+      "deep_learning_trigger"
+    ],
+    "steps": [
+      "Detect",
+      "Analyze",
+      "Execute",
+      "Validate",
+      "Report"
+    ],
+    "action_types": [
+      "heal",
+      "optimize",
+      "scale"
+    ],
+    "safety_measures": [
+      "validate",
+      "rollback",
+      "notify",
+      "log"
+    ],
+    "fallbacks": [],
+    "avg_success_rate": 92.64688745737314,
+    "avg_recovery_time_s": 87.0,
+    "execution_count": 0.0
+  },
+  {
+    "name": "MLOps Pipeline Heal",
+    "description": "Auto-healing for MLOps Pipeline Heal",
+    "playbook_id": "DL-040",
+    "category": "deep_learning",
+    "trigger_conditions": [
+      "deep_learning_trigger"
+    ],
+    "steps": [
+      "Detect",
+      "Analyze",
+      "Execute",
+      "Validate",
+      "Report"
+    ],
+    "action_types": [
+      "heal",
+      "optimize",
+      "scale"
+    ],
+    "safety_measures": [
+      "validate",
+      "rollback",
+      "notify",
+      "log"
+    ],
+    "fallbacks": [],
+    "avg_success_rate": 95.82472378444339,
+    "avg_recovery_time_s": 111.0,
+    "execution_count": 0.0
+  },
+  {
+    "name": "Vanishing Gradient Emergency Fix",
+    "description": "Auto-healing for Vanishing Gradient Emergency Fix",
+    "playbook_id": "DL-001",
+    "category": "deep_learning",
+    "trigger_conditions": [
+      "deep_learning_trigger"
+    ],
+    "steps": [
+      "Detect",
+      "Analyze",
+      "Execute",
+      "Validate",
+      "Report"
+    ],
+    "action_types": [
+      "heal",
+      "optimize",
+      "scale"
+    ],
+    "safety_measures": [
+      "validate",
+      "rollback",
+      "notify",
+      "log"
+    ],
+    "fallbacks": [],
+    "avg_success_rate": 90.23284318712528,
+    "avg_recovery_time_s": 47.0,
+    "execution_count": 0.0
+  },
+  {
+    "name": "Exploding Gradient Control",
+    "description": "Auto-healing for Exploding Gradient Control",
+    "playbook_id": "DL-002",
+    "category": "deep_learning",
+    "trigger_conditions": [
+      "deep_learning_trigger"
+    ],
+    "steps": [
+      "Detect",
+      "Analyze",
+      "Execute",
+      "Validate",
+      "Report"
+    ],
+    "action_types": [
+      "heal",
+      "optimize",
+      "scale"
+    ],
+    "safety_measures": [
+      "validate",
+      "rollback",
+      "notify",
+      "log"
+    ],
+    "fallbacks": [],
+    "avg_success_rate": 92.12102533103699,
+    "avg_recovery_time_s": 47.0,
+    "execution_count": 0.0
+  },
+  {
+    "name": "Overfitting Prevention System",
+    "description": "Auto-healing for Overfitting Prevention System",
+    "playbook_id": "DL-003",
+    "category": "deep_learning",
+    "trigger_conditions": [
+      "deep_learning_trigger"
+    ],
+    "steps": [
+      "Detect",
+      "Analyze",
+      "Execute",
+      "Validate",
+      "Report"
+    ],
+    "action_types": [
+      "heal",
+      "optimize",
+      "scale"
+    ],
+    "safety_measures": [
+      "validate",
+      "rollback",
+      "notify",
+      "log"
+    ],
+    "fallbacks": [],
+    "avg_success_rate": 94.56579738874676,
+    "avg_recovery_time_s": 30.0,
+    "execution_count": 0.0
+  },
+  {
+    "name": "Training Divergence Recovery",
+    "description": "Auto-healing for Training Divergence Recovery",
+    "playbook_id": "DL-004",
+    "category": "deep_learning",
+    "trigger_conditions": [
+      "deep_learning_trigger"
+    ],
+    "steps": [
+      "Detect",
+      "Analyze",
+      "Execute",
+      "Validate",
+      "Report"
+    ],
+    "action_types": [
+      "heal",
+      "optimize",
+      "scale"
+    ],
+    "safety_measures": [
+      "validate",
+      "rollback",
+      "notify",
+      "log"
+    ],
+    "fallbacks": [],
+    "avg_success_rate": 91.31773153864988,
+    "avg_recovery_time_s": 109.0,
+    "execution_count": 0.0
+  },
+  {
+    "name": "Batch Size Auto-Optimization",
+    "description": "Auto-healing for Batch Size Auto-Optimization",
+    "playbook_id": "DL-005",
+    "category": "deep_learning",
+    "trigger_conditions": [
+      "deep_learning_trigger"
+    ],
+    "steps": [
+      "Detect",
+      "Analyze",
+      "Execute",
+      "Validate",
+      "Report"
+    ],
+    "action_types": [
+      "heal",
+      "optimize",
+      "scale"
+    ],
+    "safety_measures": [
+      "validate",
+      "rollback",
+      "notify",
+      "log"
+    ],
+    "fallbacks": [],
+    "avg_success_rate": 90.68887451155526,
+    "avg_recovery_time_s": 68.0,
+    "execution_count": 0.0
+  },
+  {
+    "name": "10K-Layer Stability Monitor",
+    "description": "Auto-healing for 10K-Layer Stability Monitor",
+    "playbook_id": "DL-006",
+    "category": "deep_learning",
+    "trigger_conditions": [
+      "deep_learning_trigger"
+    ],
+    "steps": [
+      "Detect",
+      "Analyze",
+      "Execute",
+      "Validate",
+      "Report"
+    ],
+    "action_types": [
+      "heal",
+      "optimize",
+      "scale"
+    ],
+    "safety_measures": [
+      "validate",
+      "rollback",
+      "notify",
+      "log"
+    ],
+    "fallbacks": [],
+    "avg_success_rate": 99.53368369823762,
+    "avg_recovery_time_s": 36.0,
+    "execution_count": 0.0
+  },
+  {
+    "name": "GPU Memory Optimization",
+    "description": "Auto-healing for GPU Memory Optimization",
+    "playbook_id": "DL-007",
+    "category": "deep_learning",
+    "trigger_conditions": [
+      "deep_learning_trigger"
+    ],
+    "steps": [
+      "Detect",
+      "Analyze",
+      "Execute",
+      "Validate",
+      "Report"
+    ],
+    "action_types": [
+      "heal",
+      "optimize",
+      "scale"
+    ],
+    "safety_measures": [
+      "validate",
+      "rollback",
+      "notify",
+      "log"
+    ],
+    "fallbacks": [],
+    "avg_success_rate": 93.1177326006291,
+    "avg_recovery_time_s": 101.0,
+    "execution_count": 0.0
+  },
+  {
+    "name": "Distributed Training Sync",
+    "description": "Auto-healing for Distributed Training Sync",
+    "playbook_id": "DL-008",
+    "category": "deep_learning",
+    "trigger_conditions": [
+      "deep_learning_trigger"
+    ],
+    "steps": [
+      "Detect",
+      "Analyze",
+      "Execute",
+      "Validate",
+      "Report"
+    ],
+    "action_types": [
+      "heal",
+      "optimize",
+      "scale"
+    ],
+    "safety_measures": [
+      "validate",
+      "rollback",
+      "notify",
+      "log"
+    ],
+    "fallbacks": [],
+    "avg_success_rate": 91.90334881611815,
+    "avg_recovery_time_s": 95.0,
+    "execution_count": 0.0
+  },
+  {
+    "name": "Attention Layer Optimization",
+    "description": "Auto-healing for Attention Layer Optimization",
+    "playbook_id": "DL-009",
+    "category": "deep_learning",
+    "trigger_conditions": [
+      "deep_learning_trigger"
+    ],
+    "steps": [
+      "Detect",
+      "Analyze",
+      "Execute",
+      "Validate",
+      "Report"
+    ],
+    "action_types": [
+      "heal",
+      "optimize",
+      "scale"
+    ],
+    "safety_measures": [
+      "validate",
+      "rollback",
+      "notify",
+      "log"
+    ],
+    "fallbacks": [],
+    "avg_success_rate": 95.41594369069524,
+    "avg_recovery_time_s": 109.0,
+    "execution_count": 0.0
+  },
+  {
+    "name": "Model Checkpoint Recovery",
+    "description": "Auto-healing for Model Checkpoint Recovery",
+    "playbook_id": "DL-010",
+    "category": "deep_learning",
+    "trigger_conditions": [
+      "deep_learning_trigger"
+    ],
+    "steps": [
+      "Detect",
+      "Analyze",
+      "Execute",
+      "Validate",
+      "Report"
+    ],
+    "action_types": [
+      "heal",
+      "optimize",
+      "scale"
+    ],
+    "safety_measures": [
+      "validate",
+      "rollback",
+      "notify",
+      "log"
+    ],
+    "fallbacks": [],
+    "avg_success_rate": 98.91095943685988,
+    "avg_recovery_time_s": 89.0,
+    "execution_count": 0.0
+  },
+  {
+    "name": "Learning Rate Auto-Adjust",
+    "description": "Auto-healing for Learning Rate Auto-Adjust",
+    "playbook_id": "DL-011",
+    "category": "deep_learning",
+    "trigger_conditions": [
+      "deep_learning_trigger"
+    ],
+    "steps": [
+      "Detect",
+      "Analyze",
+      "Execute",
+      "Validate",
+      "Report"
+    ],
+    "action_types": [
+      "heal",
+      "optimize",
+      "scale"
+    ],
+    "safety_measures": [
+      "validate",
+      "rollback",
+      "notify",
+      "log"
+    ],
+    "fallbacks": [],
+    "avg_success_rate": 99.36976865569977,
+    "avg_recovery_time_s": 36.0,
+    "execution_count": 0.0
+  },
+  {
+    "name": "Data Augmentation Fix",
+    "description": "Auto-healing for Data Augmentation Fix",
+    "playbook_id": "DL-012",
+    "category": "deep_learning",
+    "trigger_conditions": [
+      "deep_learning_trigger"
+    ],
+    "steps": [
+      "Detect",
+      "Analyze",
+      "Execute",
+      "Validate",
+      "Report"
+    ],
+    "action_types": [
+      "heal",
+      "optimize",
+      "scale"
+    ],
+    "safety_measures": [
+      "validate",
+      "rollback",
+      "notify",
+      "log"
+    ],
+    "fallbacks": [],
+    "avg_success_rate": 99.34780249189484,
+    "avg_recovery_time_s": 51.0,
+    "execution_count": 0.0
+  },
+  {
+    "name": "Batch Norm Instability Fix",
+    "description": "Auto-healing for Batch Norm Instability Fix",
+    "playbook_id": "DL-013",
+    "category": "deep_learning",
+    "trigger_conditions": [
+      "deep_learning_trigger"
+    ],
+    "steps": [
+      "Detect",
+      "Analyze",
+      "Execute",
+      "Validate",
+      "Report"
+    ],
+    "action_types": [
+      "heal",
+      "optimize",
+      "scale"
+    ],
+    "safety_measures": [
+      "validate",
+      "rollback",
+      "notify",
+      "log"
+    ],
+    "fallbacks": [],
+    "avg_success_rate": 98.38591339270911,
+    "avg_recovery_time_s": 103.0,
+    "execution_count": 0.0
+  },
+  {
+    "name": "Dropout Layer Optimization",
+    "description": "Auto-healing for Dropout Layer Optimization",
+    "playbook_id": "DL-014",
+    "category": "deep_learning",
+    "trigger_conditions": [
+      "deep_learning_trigger"
+    ],
+    "steps": [
+      "Detect",
+      "Analyze",
+      "Execute",
+      "Validate",
+      "Report"
+    ],
+    "action_types": [
+      "heal",
+      "optimize",
+      "scale"
+    ],
+    "safety_measures": [
+      "validate",
+      "rollback",
+      "notify",
+      "log"
+    ],
+    "fallbacks": [],
+    "avg_success_rate": 93.66588873625757,
+    "avg_recovery_time_s": 65.0,
+    "execution_count": 0.0
+  },
+  {
+    "name": "Skip Connection Repair",
+    "description": "Auto-healing for Skip Connection Repair",
+    "playbook_id": "DL-015",
+    "category": "deep_learning",
+    "trigger_conditions": [
+      "deep_learning_trigger"
+    ],
+    "steps": [
+      "Detect",
+      "Analyze",
+      "Execute",
+      "Validate",
+      "Report"
+    ],
+    "action_types": [
+      "heal",
+      "optimize",
+      "scale"
+    ],
+    "safety_measures": [
+      "validate",
+      "rollback",
+      "notify",
+      "log"
+    ],
+    "fallbacks": [],
+    "avg_success_rate": 97.42490711699591,
+    "avg_recovery_time_s": 49.0,
+    "execution_count": 0.0
+  },
+  {
+    "name": "Transformer Block Fix",
+    "description": "Auto-healing for Transformer Block Fix",
+    "playbook_id": "DL-016",
+    "category": "deep_learning",
+    "trigger_conditions": [
+      "deep_learning_trigger"
+    ],
+    "steps": [
+      "Detect",
+      "Analyze",
+      "Execute",
+      "Validate",
+      "Report"
+    ],
+    "action_types": [
+      "heal",
+      "optimize",
+      "scale"
+    ],
+    "safety_measures": [
+      "validate",
+      "rollback",
+      "notify",
+      "log"
+    ],
+    "fallbacks": [],
+    "avg_success_rate": 92.21865266088675,
+    "avg_recovery_time_s": 93.0,
+    "execution_count": 0.0
+  },
+  {
+    "name": "Embedding Layer Optimization",
+    "description": "Auto-healing for Embedding Layer Optimization",
+    "playbook_id": "DL-017",
+    "category": "deep_learning",
+    "trigger_conditions": [
+      "deep_learning_trigger"
+    ],
+    "steps": [
+      "Detect",
+      "Analyze",
+      "Execute",
+      "Validate",
+      "Report"
+    ],
+    "action_types": [
+      "heal",
+      "optimize",
+      "scale"
+    ],
+    "safety_measures": [
+      "validate",
+      "rollback",
+      "notify",
+      "log"
+    ],
+    "fallbacks": [],
+    "avg_success_rate": 91.55698140876987,
+    "avg_recovery_time_s": 81.0,
+    "execution_count": 0.0
+  },
+  {
+    "name": "Activation Function Swap",
+    "description": "Auto-healing for Activation Function Swap",
+    "playbook_id": "DL-018",
+    "category": "deep_learning",
+    "trigger_conditions": [
+      "deep_learning_trigger"
+    ],
+    "steps": [
+      "Detect",
+      "Analyze",
+      "Execute",
+      "Validate",
+      "Report"
+    ],
+    "action_types": [
+      "heal",
+      "optimize",
+      "scale"
+    ],
+    "safety_measures": [
+      "validate",
+      "rollback",
+      "notify",
+      "log"
+    ],
+    "fallbacks": [],
+    "avg_success_rate": 93.1083845852237,
+    "avg_recovery_time_s": 75.0,
+    "execution_count": 0.0
+  },
+  {
+    "name": "Weight Initialization Fix",
+    "description": "Auto-healing for Weight Initialization Fix",
+    "playbook_id": "DL-019",
+    "category": "deep_learning",
+    "trigger_conditions": [
+      "deep_learning_trigger"
+    ],
+    "steps": [
+      "Detect",
+      "Analyze",
+      "Execute",
+      "Validate",
+      "Report"
+    ],
+    "action_types": [
+      "heal",
+      "optimize",
+      "scale"
+    ],
+    "safety_measures": [
+      "validate",
+      "rollback",
+      "notify",
+      "log"
+    ],
+    "fallbacks": [],
+    "avg_success_rate": 92.92761745781718,
+    "avg_recovery_time_s": 43.0,
+    "execution_count": 0.0
+  },
+  {
+    "name": "Gradient Clipping Auto-Tune",
+    "description": "Auto-healing for Gradient Clipping Auto-Tune",
+    "playbook_id": "DL-020",
+    "category": "deep_learning",
+    "trigger_conditions": [
+      "deep_learning_trigger"
+    ],
+    "steps": [
+      "Detect",
+      "Analyze",
+      "Execute",
+      "Validate",
+      "Report"
+    ],
+    "action_types": [
+      "heal",
+      "optimize",
+      "scale"
+    ],
+    "safety_measures": [
+      "validate",
+      "rollback",
+      "notify",
+      "log"
+    ],
+    "fallbacks": [],
+    "avg_success_rate": 90.81045803404568,
+    "avg_recovery_time_s": 68.0,
+    "execution_count": 0.0
+  },
+  {
+    "name": "Model Pruning Strategy",
+    "description": "Auto-healing for Model Pruning Strategy",
+    "playbook_id": "DL-021",
+    "category": "deep_learning",
+    "trigger_conditions": [
+      "deep_learning_trigger"
+    ],
+    "steps": [
+      "Detect",
+      "Analyze",
+      "Execute",
+      "Validate",
+      "Report"
+    ],
+    "action_types": [
+      "heal",
+      "optimize",
+      "scale"
+    ],
+    "safety_measures": [
+      "validate",
+      "rollback",
+      "notify",
+      "log"
+    ],
+    "fallbacks": [],
+    "avg_success_rate": 93.36429617377064,
+    "avg_recovery_time_s": 86.0,
+    "execution_count": 0.0
+  },
+  {
+    "name": "Quantization Optimization",
+    "description": "Auto-healing for Quantization Optimization",
+    "playbook_id": "DL-022",
+    "category": "deep_learning",
+    "trigger_conditions": [
+      "deep_learning_trigger"
+    ],
+    "steps": [
+      "Detect",
+      "Analyze",
+      "Execute",
+      "Validate",
+      "Report"
+    ],
+    "action_types": [
+      "heal",
+      "optimize",
+      "scale"
+    ],
+    "safety_measures": [
+      "validate",
+      "rollback",
+      "notify",
+      "log"
+    ],
+    "fallbacks": [],
+    "avg_success_rate": 91.5736089718186,
+    "avg_recovery_time_s": 57.0,
+    "execution_count": 0.0
+  },
+  {
+    "name": "Knowledge Distillation",
+    "description": "Auto-healing for Knowledge Distillation",
+    "playbook_id": "DL-023",
+    "category": "deep_learning",
+    "trigger_conditions": [
+      "deep_learning_trigger"
+    ],
+    "steps": [
+      "Detect",
+      "Analyze",
+      "Execute",
+      "Validate",
+      "Report"
+    ],
+    "action_types": [
+      "heal",
+      "optimize",
+      "scale"
+    ],
+    "safety_measures": [
+      "validate",
+      "rollback",
+      "notify",
+      "log"
+    ],
+    "fallbacks": [],
+    "avg_success_rate": 92.05262818241408,
+    "avg_recovery_time_s": 106.0,
+    "execution_count": 0.0
+  },
+  {
+    "name": "Transfer Learning Fix",
+    "description": "Auto-healing for Transfer Learning Fix",
+    "playbook_id": "DL-024",
+    "category": "deep_learning",
+    "trigger_conditions": [
+      "deep_learning_trigger"
+    ],
+    "steps": [
+      "Detect",
+      "Analyze",
+      "Execute",
+      "Validate",
+      "Report"
+    ],
+    "action_types": [
+      "heal",
+      "optimize",
+      "scale"
+    ],
+    "safety_measures": [
+      "validate",
+      "rollback",
+      "notify",
+      "log"
+    ],
+    "fallbacks": [],
+    "avg_success_rate": 91.24857180434684,
+    "avg_recovery_time_s": 84.0,
+    "execution_count": 0.0
+  },
+  {
+    "name": "Fine-Tuning Strategy",
+    "description": "Auto-healing for Fine-Tuning Strategy",
+    "playbook_id": "DL-025",
+    "category": "deep_learning",
+    "trigger_conditions": [
+      "deep_learning_trigger"
+    ],
+    "steps": [
+      "Detect",
+      "Analyze",
+      "Execute",
+      "Validate",
+      "Report"
+    ],
+    "action_types": [
+      "heal",
+      "optimize",
+      "scale"
+    ],
+    "safety_measures": [
+      "validate",
+      "rollback",
+      "notify",
+      "log"
+    ],
+    "fallbacks": [],
+    "avg_success_rate": 94.92230054193995,
+    "avg_recovery_time_s": 117.0,
+    "execution_count": 0.0
+  },
+  {
+    "name": "Multi-GPU Sync Fix",
+    "description": "Auto-healing for Multi-GPU Sync Fix",
+    "playbook_id": "DL-026",
+    "category": "deep_learning",
+    "trigger_conditions": [
+      "deep_learning_trigger"
+    ],
+    "steps": [
+      "Detect",
+      "Analyze",
+      "Execute",
+      "Validate",
+      "Report"
+    ],
+    "action_types": [
+      "heal",
+      "optimize",
+      "scale"
+    ],
+    "safety_measures": [
+      "validate",
+      "rollback",
+      "notify",
+      "log"
+    ],
+    "fallbacks": [],
+    "avg_success_rate": 95.28377771686166,
+    "avg_recovery_time_s": 116.0,
+    "execution_count": 0.0
+  },
+  {
+    "name": "Mixed Precision Training",
+    "description": "Auto-healing for Mixed Precision Training",
+    "playbook_id": "DL-027",
+    "category": "deep_learning",
+    "trigger_conditions": [
+      "deep_learning_trigger"
+    ],
+    "steps": [
+      "Detect",
+      "Analyze",
+      "Execute",
+      "Validate",
+      "Report"
+    ],
+    "action_types": [
+      "heal",
+      "optimize",
+      "scale"
+    ],
+    "safety_measures": [
+      "validate",
+      "rollback",
+      "notify",
+      "log"
+    ],
+    "fallbacks": [],
+    "avg_success_rate": 99.67490497844084,
+    "avg_recovery_time_s": 43.0,
+    "execution_count": 0.0
+  },
+  {
+    "name": "Inference Optimization",
+    "description": "Auto-healing for Inference Optimization",
+    "playbook_id": "DL-028",
+    "category": "deep_learning",
+    "trigger_conditions": [
+      "deep_learning_trigger"
+    ],
+    "steps": [
+      "Detect",
+      "Analyze",
+      "Execute",
+      "Validate",
+      "Report"
+    ],
+    "action_types": [
+      "heal",
+      "optimize",
+      "scale"
+    ],
+    "safety_measures": [
+      "validate",
+      "rollback",
+      "notify",
+      "log"
+    ],
+    "fallbacks": [],
+    "avg_success_rate": 97.67300973168781,
+    "avg_recovery_time_s": 57.0,
+    "execution_count": 0.0
+  },
+  {
+    "name": "Model Serving Fix",
+    "description": "Auto-healing for Model Serving Fix",
+    "playbook_id": "DL-029",
+    "category": "deep_learning",
+    "trigger_conditions": [
+      "deep_learning_trigger"
+    ],
+    "steps": [
+      "Detect",
+      "Analyze",
+      "Execute",
+      "Validate",
+      "Report"
+    ],
+    "action_types": [
+      "heal",
+      "optimize",
+      "scale"
+    ],
+    "safety_measures": [
+      "validate",
+      "rollback",
+      "notify",
+      "log"
+    ],
+    "fallbacks": [],
+    "avg_success_rate": 95.69992196746772,
+    "avg_recovery_time_s": 41.0,
+    "execution_count": 0.0
+  },
+  {
+    "name": "A/B Testing Recovery",
+    "description": "Auto-healing for A/B Testing Recovery",
+    "playbook_id": "DL-030",
+    "category": "deep_learning",
+    "trigger_conditions": [
+      "deep_learning_trigger"
+    ],
+    "steps": [
+      "Detect",
+      "Analyze",
+      "Execute",
+      "Validate",
+      "Report"
+    ],
+    "action_types": [
+      "heal",
+      "optimize",
+      "scale"
+    ],
+    "safety_measures": [
+      "validate",
+      "rollback",
+      "notify",
+      "log"
+    ],
+    "fallbacks": [],
+    "avg_success_rate": 95.55976777819943,
+    "avg_recovery_time_s": 57.0,
+    "execution_count": 0.0
+  },
+  {
+    "name": "Feature Store Sync",
+    "description": "Auto-healing for Feature Store Sync",
+    "playbook_id": "DL-031",
+    "category": "deep_learning",
+    "trigger_conditions": [
+      "deep_learning_trigger"
+    ],
+    "steps": [
+      "Detect",
+      "Analyze",
+      "Execute",
+      "Validate",
+      "Report"
+    ],
+    "action_types": [
+      "heal",
+      "optimize",
+      "scale"
+    ],
+    "safety_measures": [
+      "validate",
+      "rollback",
+      "notify",
+      "log"
+    ],
+    "fallbacks": [],
+    "avg_success_rate": 97.89411310780466,
+    "avg_recovery_time_s": 66.0,
+    "execution_count": 0.0
+  },
+  {
+    "name": "Training Pipeline Fix",
+    "description": "Auto-healing for Training Pipeline Fix",
+    "playbook_id": "DL-032",
+    "category": "deep_learning",
+    "trigger_conditions": [
+      "deep_learning_trigger"
+    ],
+    "steps": [
+      "Detect",
+      "Analyze",
+      "Execute",
+      "Validate",
+      "Report"
+    ],
+    "action_types": [
+      "heal",
+      "optimize",
+      "scale"
+    ],
+    "safety_measures": [
+      "validate",
+      "rollback",
+      "notify",
+      "log"
+    ],
+    "fallbacks": [],
+    "avg_success_rate": 99.29973991315151,
+    "avg_recovery_time_s": 59.0,
+    "execution_count": 0.0
+  },
+  {
+    "name": "Hyperparameter Auto-Tune",
+    "description": "Auto-healing for Hyperparameter Auto-Tune",
+    "playbook_id": "DL-033",
+    "category": "deep_learning",
+    "trigger_conditions": [
+      "deep_learning_trigger"
+    ],
+    "steps": [
+      "Detect",
+      "Analyze",
+      "Execute",
+      "Validate",
+      "Report"
+    ],
+    "action_types": [
+      "heal",
+      "optimize",
+      "scale"
+    ],
+    "safety_measures": [
+      "validate",
+      "rollback",
+      "notify",
+      "log"
+    ],
+    "fallbacks": [],
+    "avg_success_rate": 99.24044410701092,
+    "avg_recovery_time_s": 38.0,
+    "execution_count": 0.0
+  },
+  {
+    "name": "Early Stopping Strategy",
+    "description": "Auto-healing for Early Stopping Strategy",
+    "playbook_id": "DL-034",
+    "category": "deep_learning",
+    "trigger_conditions": [
+      "deep_learning_trigger"
+    ],
+    "steps": [
+      "Detect",
+      "Analyze",
+      "Execute",
+      "Validate",
+      "Report"
+    ],
+    "action_types": [
+      "heal",
+      "optimize",
+      "scale"
+    ],
+    "safety_measures": [
+      "validate",
+      "rollback",
+      "notify",
+      "log"
+    ],
+    "fallbacks": [],
+    "avg_success_rate": 93.28160129025812,
+    "avg_recovery_time_s": 82.0,
+    "execution_count": 0.0
+  },
+  {
+    "name": "Blue-Green Deployment Switch",
+    "description": "Auto-healing for Blue-Green Deployment Switch",
+    "playbook_id": "ADV-011",
+    "category": "advanced",
+    "trigger_conditions": [
+      "advanced_trigger"
+    ],
+    "steps": [
+      "Detect",
+      "Analyze",
+      "Execute",
+      "Validate",
+      "Report"
+    ],
+    "action_types": [
+      "heal",
+      "optimize",
+      "scale"
+    ],
+    "safety_measures": [
+      "validate",
+      "rollback",
+      "notify",
+      "log"
+    ],
+    "fallbacks": [],
+    "avg_success_rate": 95.88105626560676,
+    "avg_recovery_time_s": 81.0,
+    "execution_count": 0.0
+  },
+  {
+    "name": "Canary Release Manager",
+    "description": "Auto-healing for Canary Release Manager",
+    "playbook_id": "ADV-012",
+    "category": "advanced",
+    "trigger_conditions": [
+      "advanced_trigger"
+    ],
+    "steps": [
+      "Detect",
+      "Analyze",
+      "Execute",
+      "Validate",
+      "Report"
+    ],
+    "action_types": [
+      "heal",
+      "optimize",
+      "scale"
+    ],
+    "safety_measures": [
+      "validate",
+      "rollback",
+      "notify",
+      "log"
+    ],
+    "fallbacks": [],
+    "avg_success_rate": 95.84891863514763,
+    "avg_recovery_time_s": 62.0,
+    "execution_count": 0.0
+  },
+  {
+    "name": "Feature Flag Emergency Toggle",
+    "description": "Auto-healing for Feature Flag Emergency Toggle",
+    "playbook_id": "ADV-013",
+    "category": "advanced",
+    "trigger_conditions": [
+      "advanced_trigger"
+    ],
+    "steps": [
+      "Detect",
+      "Analyze",
+      "Execute",
+      "Validate",
+      "Report"
+    ],
+    "action_types": [
+      "heal",
+      "optimize",
+      "scale"
+    ],
+    "safety_measures": [
+      "validate",
+      "rollback",
+      "notify",
+      "log"
+    ],
+    "fallbacks": [],
+    "avg_success_rate": 99.13205639326705,
+    "avg_recovery_time_s": 47.0,
+    "execution_count": 0.0
+  },
+  {
+    "name": "Async Job Queue Optimization",
+    "description": "Auto-healing for Async Job Queue Optimization",
+    "playbook_id": "ADV-014",
+    "category": "advanced",
+    "trigger_conditions": [
+      "advanced_trigger"
+    ],
+    "steps": [
+      "Detect",
+      "Analyze",
+      "Execute",
+      "Validate",
+      "Report"
+    ],
+    "action_types": [
+      "heal",
+      "optimize",
+      "scale"
+    ],
+    "safety_measures": [
+      "validate",
+      "rollback",
+      "notify",
+      "log"
+    ],
+    "fallbacks": [],
+    "avg_success_rate": 98.23449021140347,
+    "avg_recovery_time_s": 115.0,
+    "execution_count": 0.0
+  },
+  {
+    "name": "Microservice Communication Fix",
+    "description": "Auto-healing for Microservice Communication Fix",
+    "playbook_id": "ADV-015",
+    "category": "advanced",
+    "trigger_conditions": [
+      "advanced_trigger"
+    ],
+    "steps": [
+      "Detect",
+      "Analyze",
+      "Execute",
+      "Validate",
+      "Report"
+    ],
+    "action_types": [
+      "heal",
+      "optimize",
+      "scale"
+    ],
+    "safety_measures": [
+      "validate",
+      "rollback",
+      "notify",
+      "log"
+    ],
+    "fallbacks": [],
+    "avg_success_rate": 98.61455320287712,
+    "avg_recovery_time_s": 32.0,
+    "execution_count": 0.0
+  },
+  {
+    "name": "API Gateway Rate Shaping",
+    "description": "Auto-healing for API Gateway Rate Shaping",
+    "playbook_id": "ADV-016",
+    "category": "advanced",
+    "trigger_conditions": [
+      "advanced_trigger"
+    ],
+    "steps": [
+      "Detect",
+      "Analyze",
+      "Execute",
+      "Validate",
+      "Report"
+    ],
+    "action_types": [
+      "heal",
+      "optimize",
+      "scale"
+    ],
+    "safety_measures": [
+      "validate",
+      "rollback",
+      "notify",
+      "log"
+    ],
+    "fallbacks": [],
+    "avg_success_rate": 91.53679007649387,
+    "avg_recovery_time_s": 107.0,
+    "execution_count": 0.0
+  },
+  {
+    "name": "CDN Cache Optimization",
+    "description": "Auto-healing for CDN Cache Optimization",
+    "playbook_id": "ADV-017",
+    "category": "advanced",
+    "trigger_conditions": [
+      "advanced_trigger"
+    ],
+    "steps": [
+      "Detect",
+      "Analyze",
+      "Execute",
+      "Validate",
+      "Report"
+    ],
+    "action_types": [
+      "heal",
+      "optimize",
+      "scale"
+    ],
+    "safety_measures": [
+      "validate",
+      "rollback",
+      "notify",
+      "log"
+    ],
+    "fallbacks": [],
+    "avg_success_rate": 91.46950825854479,
+    "avg_recovery_time_s": 45.0,
+    "execution_count": 0.0
+  },
+  {
+    "name": "Database Sharding Rebalance",
+    "description": "Auto-healing for Database Sharding Rebalance",
+    "playbook_id": "ADV-018",
+    "category": "advanced",
+    "trigger_conditions": [
+      "advanced_trigger"
+    ],
+    "steps": [
+      "Detect",
+      "Analyze",
+      "Execute",
+      "Validate",
+      "Report"
+    ],
+    "action_types": [
+      "heal",
+      "optimize",
+      "scale"
+    ],
+    "safety_measures": [
+      "validate",
+      "rollback",
+      "notify",
+      "log"
+    ],
+    "fallbacks": [],
+    "avg_success_rate": 98.58129243047136,
+    "avg_recovery_time_s": 54.0,
+    "execution_count": 0.0
+  },
+  {
+    "name": "Message Queue Overflow Fix",
+    "description": "Auto-healing for Message Queue Overflow Fix",
+    "playbook_id": "ADV-019",
+    "category": "advanced",
+    "trigger_conditions": [
+      "advanced_trigger"
+    ],
+    "steps": [
+      "Detect",
+      "Analyze",
+      "Execute",
+      "Validate",
+      "Report"
+    ],
+    "action_types": [
+      "heal",
+      "optimize",
+      "scale"
+    ],
+    "safety_measures": [
+      "validate",
+      "rollback",
+      "notify",
+      "log"
+    ],
+    "fallbacks": [],
+    "avg_success_rate": 91.150793450031,
+    "avg_recovery_time_s": 77.0,
+    "execution_count": 0.0
+  },
+  {
+    "name": "Stream Processing Recovery",
+    "description": "Auto-healing for Stream Processing Recovery",
+    "playbook_id": "ADV-020",
+    "category": "advanced",
+    "trigger_conditions": [
+      "advanced_trigger"
+    ],
+    "steps": [
+      "Detect",
+      "Analyze",
+      "Execute",
+      "Validate",
+      "Report"
+    ],
+    "action_types": [
+      "heal",
+      "optimize",
+      "scale"
+    ],
+    "safety_measures": [
+      "validate",
+      "rollback",
+      "notify",
+      "log"
+    ],
+    "fallbacks": [],
+    "avg_success_rate": 97.70203627824958,
+    "avg_recovery_time_s": 73.0,
+    "execution_count": 0.0
+  },
+  {
+    "name": "Real-time Analytics Fix",
+    "description": "Auto-healing for Real-time Analytics Fix",
+    "playbook_id": "ADV-021",
+    "category": "advanced",
+    "trigger_conditions": [
+      "advanced_trigger"
+    ],
+    "steps": [
+      "Detect",
+      "Analyze",
+      "Execute",
+      "Validate",
+      "Report"
+    ],
+    "action_types": [
+      "heal",
+      "optimize",
+      "scale"
+    ],
+    "safety_measures": [
+      "validate",
+      "rollback",
+      "notify",
+      "log"
+    ],
+    "fallbacks": [],
+    "avg_success_rate": 93.17560065658125,
+    "avg_recovery_time_s": 64.0,
+    "execution_count": 0.0
+  },
+  {
+    "name": "Session Store Optimization",
+    "description": "Auto-healing for Session Store Optimization",
+    "playbook_id": "ADV-022",
+    "category": "advanced",
+    "trigger_conditions": [
+      "advanced_trigger"
+    ],
+    "steps": [
+      "Detect",
+      "Analyze",
+      "Execute",
+      "Validate",
+      "Report"
+    ],
+    "action_types": [
+      "heal",
+      "optimize",
+      "scale"
+    ],
+    "safety_measures": [
+      "validate",
+      "rollback",
+      "notify",
+      "log"
+    ],
+    "fallbacks": [],
+    "avg_success_rate": 97.1646112523455,
+    "avg_recovery_time_s": 89.0,
+    "execution_count": 0.0
+  },
+  {
+    "name": "WebSocket Connection Pool",
+    "description": "Auto-healing for WebSocket Connection Pool",
+    "playbook_id": "ADV-023",
+    "category": "advanced",
+    "trigger_conditions": [
+      "advanced_trigger"
+    ],
+    "steps": [
+      "Detect",
+      "Analyze",
+      "Execute",
+      "Validate",
+      "Report"
+    ],
+    "action_types": [
+      "heal",
+      "optimize",
+      "scale"
+    ],
+    "safety_measures": [
+      "validate",
+      "rollback",
+      "notify",
+      "log"
+    ],
+    "fallbacks": [],
+    "avg_success_rate": 96.98424777841758,
+    "avg_recovery_time_s": 40.0,
+    "execution_count": 0.0
+  },
+  {
+    "name": "GraphQL Query Optimization",
+    "description": "Auto-healing for GraphQL Query Optimization",
+    "playbook_id": "ADV-024",
+    "category": "advanced",
+    "trigger_conditions": [
+      "advanced_trigger"
+    ],
+    "steps": [
+      "Detect",
+      "Analyze",
+      "Execute",
+      "Validate",
+      "Report"
+    ],
+    "action_types": [
+      "heal",
+      "optimize",
+      "scale"
+    ],
+    "safety_measures": [
+      "validate",
+      "rollback",
+      "notify",
+      "log"
+    ],
+    "fallbacks": [],
+    "avg_success_rate": 92.47092911900553,
+    "avg_recovery_time_s": 99.0,
+    "execution_count": 0.0
+  },
+  {
+    "name": "Object Storage Migration",
+    "description": "Auto-healing for Object Storage Migration",
+    "playbook_id": "ADV-025",
+    "category": "advanced",
+    "trigger_conditions": [
+      "advanced_trigger"
+    ],
+    "steps": [
+      "Detect",
+      "Analyze",
+      "Execute",
+      "Validate",
+      "Report"
+    ],
+    "action_types": [
+      "heal",
+      "optimize",
+      "scale"
+    ],
+    "safety_measures": [
+      "validate",
+      "rollback",
+      "notify",
+      "log"
+    ],
+    "fallbacks": [],
+    "avg_success_rate": 98.76285445699992,
+    "avg_recovery_time_s": 99.0,
+    "execution_count": 0.0
+  },
+  {
+    "name": "Search Index Rebuild",
+    "description": "Auto-healing for Search Index Rebuild",
+    "playbook_id": "ADV-026",
+    "category": "advanced",
+    "trigger_conditions": [
+      "advanced_trigger"
+    ],
+    "steps": [
+      "Detect",
+      "Analyze",
+      "Execute",
+      "Validate",
+      "Report"
+    ],
+    "action_types": [
+      "heal",
+      "optimize",
+      "scale"
+    ],
+    "safety_measures": [
+      "validate",
+      "rollback",
+      "notify",
+      "log"
+    ],
+    "fallbacks": [],
+    "avg_success_rate": 90.76973940053611,
+    "avg_recovery_time_s": 43.0,
+    "execution_count": 0.0
+  },
+  {
+    "name": "Time Series Data Compression",
+    "description": "Auto-healing for Time Series Data Compression",
+    "playbook_id": "ADV-027",
+    "category": "advanced",
+    "trigger_conditions": [
+      "advanced_trigger"
+    ],
+    "steps": [
+      "Detect",
+      "Analyze",
+      "Execute",
+      "Validate",
+      "Report"
+    ],
+    "action_types": [
+      "heal",
+      "optimize",
+      "scale"
+    ],
+    "safety_measures": [
+      "validate",
+      "rollback",
+      "notify",
+      "log"
+    ],
+    "fallbacks": [],
+    "avg_success_rate": 98.29212951626637,
+    "avg_recovery_time_s": 61.0,
+    "execution_count": 0.0
+  },
+  {
+    "name": "Geo-Replication Sync",
+    "description": "Auto-healing for Geo-Replication Sync",
+    "playbook_id": "ADV-028",
+    "category": "advanced",
+    "trigger_conditions": [
+      "advanced_trigger"
+    ],
+    "steps": [
+      "Detect",
+      "Analyze",
+      "Execute",
+      "Validate",
+      "Report"
+    ],
+    "action_types": [
+      "heal",
+      "optimize",
+      "scale"
+    ],
+    "safety_measures": [
+      "validate",
+      "rollback",
+      "notify",
+      "log"
+    ],
+    "fallbacks": [],
+    "avg_success_rate": 90.7081956984433,
+    "avg_recovery_time_s": 85.0,
+    "execution_count": 0.0
+  },
+  {
+    "name": "Multi-Region Failover",
+    "description": "Auto-healing for Multi-Region Failover",
+    "playbook_id": "ADV-029",
+    "category": "advanced",
+    "trigger_conditions": [
+      "advanced_trigger"
+    ],
+    "steps": [
+      "Detect",
+      "Analyze",
+      "Execute",
+      "Validate",
+      "Report"
+    ],
+    "action_types": [
+      "heal",
+      "optimize",
+      "scale"
+    ],
+    "safety_measures": [
+      "validate",
+      "rollback",
+      "notify",
+      "log"
+    ],
+    "fallbacks": [],
+    "avg_success_rate": 98.19838091262224,
+    "avg_recovery_time_s": 100.0,
+    "execution_count": 0.0
+  },
+  {
+    "name": "Chaos Engineering Recovery",
+    "description": "Auto-healing for Chaos Engineering Recovery",
+    "playbook_id": "ADV-030",
+    "category": "advanced",
+    "trigger_conditions": [
+      "advanced_trigger"
+    ],
+    "steps": [
+      "Detect",
+      "Analyze",
+      "Execute",
+      "Validate",
+      "Report"
+    ],
+    "action_types": [
+      "heal",
+      "optimize",
+      "scale"
+    ],
+    "safety_measures": [
+      "validate",
+      "rollback",
+      "notify",
+      "log"
+    ],
+    "fallbacks": [],
+    "avg_success_rate": 97.0466645635502,
+    "avg_recovery_time_s": 104.0,
+    "execution_count": 0.0
+  },
+  {
+    "name": "RSA Vulnerability Scan",
+    "description": "Auto-healing for RSA Vulnerability Scan",
+    "playbook_id": "QUANTUM-001",
+    "category": "quantum",
+    "trigger_conditions": [
+      "quantum_trigger"
+    ],
+    "steps": [
+      "Detect",
+      "Analyze",
+      "Execute",
+      "Validate",
+      "Report"
+    ],
+    "action_types": [
+      "heal",
+      "optimize",
+      "scale"
+    ],
+    "safety_measures": [
+      "validate",
+      "rollback",
+      "notify",
+      "log"
+    ],
+    "fallbacks": [],
+    "avg_success_rate": 95.12900697164825,
+    "avg_recovery_time_s": 44.0,
+    "execution_count": 0.0
+  },
+  {
+    "name": "ECDSA to PQC Migration",
+    "description": "Auto-healing for ECDSA to PQC Migration",
+    "playbook_id": "QUANTUM-002",
+    "category": "quantum",
+    "trigger_conditions": [
+      "quantum_trigger"
+    ],
+    "steps": [
+      "Detect",
+      "Analyze",
+      "Execute",
+      "Validate",
+      "Report"
+    ],
+    "action_types": [
+      "heal",
+      "optimize",
+      "scale"
+    ],
+    "safety_measures": [
+      "validate",
+      "rollback",
+      "notify",
+      "log"
+    ],
+    "fallbacks": [],
+    "avg_success_rate": 91.84491815585042,
+    "avg_recovery_time_s": 58.0,
+    "execution_count": 0.0
+  },
+  {
+    "name": "Quantum Key Distribution",
+    "description": "Auto-healing for Quantum Key Distribution",
+    "playbook_id": "QUANTUM-003",
+    "category": "quantum",
+    "trigger_conditions": [
+      "quantum_trigger"
+    ],
+    "steps": [
+      "Detect",
+      "Analyze",
+      "Execute",
+      "Validate",
+      "Report"
+    ],
+    "action_types": [
+      "heal",
+      "optimize",
+      "scale"
+    ],
+    "safety_measures": [
+      "validate",
+      "rollback",
+      "notify",
+      "log"
+    ],
+    "fallbacks": [],
+    "avg_success_rate": 90.79429676441995,
+    "avg_recovery_time_s": 60.0,
+    "execution_count": 0.0
+  },
+  {
+    "name": "Post-Quantum TLS Setup",
+    "description": "Auto-healing for Post-Quantum TLS Setup",
+    "playbook_id": "QUANTUM-004",
+    "category": "quantum",
+    "trigger_conditions": [
+      "quantum_trigger"
+    ],
+    "steps": [
+      "Detect",
+      "Analyze",
+      "Execute",
+      "Validate",
+      "Report"
+    ],
+    "action_types": [
+      "heal",
+      "optimize",
+      "scale"
+    ],
+    "safety_measures": [
+      "validate",
+      "rollback",
+      "notify",
+      "log"
+    ],
+    "fallbacks": [],
+    "avg_success_rate": 92.30840739361561,
+    "avg_recovery_time_s": 78.0,
+    "execution_count": 0.0
+  },
+  {
+    "name": "Lattice-Based Crypto Deploy",
+    "description": "Auto-healing for Lattice-Based Crypto Deploy",
+    "playbook_id": "QUANTUM-005",
+    "category": "quantum",
+    "trigger_conditions": [
+      "quantum_trigger"
+    ],
+    "steps": [
+      "Detect",
+      "Analyze",
+      "Execute",
+      "Validate",
+      "Report"
+    ],
+    "action_types": [
+      "heal",
+      "optimize",
+      "scale"
+    ],
+    "safety_measures": [
+      "validate",
+      "rollback",
+      "notify",
+      "log"
+    ],
+    "fallbacks": [],
+    "avg_success_rate": 94.29035409259502,
+    "avg_recovery_time_s": 39.0,
+    "execution_count": 0.0
+  },
+  {
+    "name": "NTRU Key Exchange",
+    "description": "Auto-healing for NTRU Key Exchange",
+    "playbook_id": "QUANTUM-006",
+    "category": "quantum",
+    "trigger_conditions": [
+      "quantum_trigger"
+    ],
+    "steps": [
+      "Detect",
+      "Analyze",
+      "Execute",
+      "Validate",
+      "Report"
+    ],
+    "action_types": [
+      "heal",
+      "optimize",
+      "scale"
+    ],
+    "safety_measures": [
+      "validate",
+      "rollback",
+      "notify",
+      "log"
+    ],
+    "fallbacks": [],
+    "avg_success_rate": 97.3933753910078,
+    "avg_recovery_time_s": 86.0,
+    "execution_count": 0.0
+  },
+  {
+    "name": "SPHINCS+ Signature Deploy",
+    "description": "Auto-healing for SPHINCS+ Signature Deploy",
+    "playbook_id": "QUANTUM-007",
+    "category": "quantum",
+    "trigger_conditions": [
+      "quantum_trigger"
+    ],
+    "steps": [
+      "Detect",
+      "Analyze",
+      "Execute",
+      "Validate",
+      "Report"
+    ],
+    "action_types": [
+      "heal",
+      "optimize",
+      "scale"
+    ],
+    "safety_measures": [
+      "validate",
+      "rollback",
+      "notify",
+      "log"
+    ],
+    "fallbacks": [],
+    "avg_success_rate": 91.07890490106753,
+    "avg_recovery_time_s": 107.0,
+    "execution_count": 0.0
+  },
+  {
+    "name": "Kyber KEM Implementation",
+    "description": "Auto-healing for Kyber KEM Implementation",
+    "playbook_id": "QUANTUM-008",
+    "category": "quantum",
+    "trigger_conditions": [
+      "quantum_trigger"
+    ],
+    "steps": [
+      "Detect",
+      "Analyze",
+      "Execute",
+      "Validate",
+      "Report"
+    ],
+    "action_types": [
+      "heal",
+      "optimize",
+      "scale"
+    ],
+    "safety_measures": [
+      "validate",
+      "rollback",
+      "notify",
+      "log"
+    ],
+    "fallbacks": [],
+    "avg_success_rate": 99.65095780941078,
+    "avg_recovery_time_s": 68.0,
+    "execution_count": 0.0
+  },
+  {
+    "name": "Dilithium Signature Upgrade",
+    "description": "Auto-healing for Dilithium Signature Upgrade",
+    "playbook_id": "QUANTUM-009",
+    "category": "quantum",
+    "trigger_conditions": [
+      "quantum_trigger"
+    ],
+    "steps": [
+      "Detect",
+      "Analyze",
+      "Execute",
+      "Validate",
+      "Report"
+    ],
+    "action_types": [
+      "heal",
+      "optimize",
+      "scale"
+    ],
+    "safety_measures": [
+      "validate",
+      "rollback",
+      "notify",
+      "log"
+    ],
+    "fallbacks": [],
+    "avg_success_rate": 99.40509727069721,
+    "avg_recovery_time_s": 74.0,
+    "execution_count": 0.0
+  },
+  {
+    "name": "Falcon Signature Deploy",
+    "description": "Auto-healing for Falcon Signature Deploy",
+    "playbook_id": "QUANTUM-010",
+    "category": "quantum",
+    "trigger_conditions": [
+      "quantum_trigger"
+    ],
+    "steps": [
+      "Detect",
+      "Analyze",
+      "Execute",
+      "Validate",
+      "Report"
+    ],
+    "action_types": [
+      "heal",
+      "optimize",
+      "scale"
+    ],
+    "safety_measures": [
+      "validate",
+      "rollback",
+      "notify",
+      "log"
+    ],
+    "fallbacks": [],
+    "avg_success_rate": 96.01520906242618,
+    "avg_recovery_time_s": 107.0,
+    "execution_count": 0.0
+  },
+  {
+    "name": "Rainbow Signature Migration",
+    "description": "Auto-healing for Rainbow Signature Migration",
+    "playbook_id": "QUANTUM-011",
+    "category": "quantum",
+    "trigger_conditions": [
+      "quantum_trigger"
+    ],
+    "steps": [
+      "Detect",
+      "Analyze",
+      "Execute",
+      "Validate",
+      "Report"
+    ],
+    "action_types": [
+      "heal",
+      "optimize",
+      "scale"
+    ],
+    "safety_measures": [
+      "validate",
+      "rollback",
+      "notify",
+      "log"
+    ],
+    "fallbacks": [],
+    "avg_success_rate": 99.625666974436,
+    "avg_recovery_time_s": 51.0,
+    "execution_count": 0.0
+  },
+  {
+    "name": "SIKE Protocol Activation",
+    "description": "Auto-healing for SIKE Protocol Activation",
+    "playbook_id": "QUANTUM-012",
+    "category": "quantum",
+    "trigger_conditions": [
+      "quantum_trigger"
+    ],
+    "steps": [
+      "Detect",
+      "Analyze",
+      "Execute",
+      "Validate",
+      "Report"
+    ],
+    "action_types": [
+      "heal",
+      "optimize",
+      "scale"
+    ],
+    "safety_measures": [
+      "validate",
+      "rollback",
+      "notify",
+      "log"
+    ],
+    "fallbacks": [],
+    "avg_success_rate": 91.45758262457069,
+    "avg_recovery_time_s": 101.0,
+    "execution_count": 0.0
+  },
+  {
+    "name": "McEliece Crypto Deploy",
+    "description": "Auto-healing for McEliece Crypto Deploy",
+    "playbook_id": "QUANTUM-013",
+    "category": "quantum",
+    "trigger_conditions": [
+      "quantum_trigger"
+    ],
+    "steps": [
+      "Detect",
+      "Analyze",
+      "Execute",
+      "Validate",
+      "Report"
+    ],
+    "action_types": [
+      "heal",
+      "optimize",
+      "scale"
+    ],
+    "safety_measures": [
+      "validate",
+      "rollback",
+      "notify",
+      "log"
+    ],
+    "fallbacks": [],
+    "avg_success_rate": 93.7519473544848,
+    "avg_recovery_time_s": 54.0,
+    "execution_count": 0.0
+  },
+  {
+    "name": "Hash-Based Signature Setup",
+    "description": "Auto-healing for Hash-Based Signature Setup",
+    "playbook_id": "QUANTUM-014",
+    "category": "quantum",
+    "trigger_conditions": [
+      "quantum_trigger"
+    ],
+    "steps": [
+      "Detect",
+      "Analyze",
+      "Execute",
+      "Validate",
+      "Report"
+    ],
+    "action_types": [
+      "heal",
+      "optimize",
+      "scale"
+    ],
+    "safety_measures": [
+      "validate",
+      "rollback",
+      "notify",
+      "log"
+    ],
+    "fallbacks": [],
+    "avg_success_rate": 98.2688390770542,
+    "avg_recovery_time_s": 34.0,
+    "execution_count": 0.0
+  },
+  {
+    "name": "Quantum-Safe VPN Config",
+    "description": "Auto-healing for Quantum-Safe VPN Config",
+    "playbook_id": "QUANTUM-015",
+    "category": "quantum",
+    "trigger_conditions": [
+      "quantum_trigger"
+    ],
+    "steps": [
+      "Detect",
+      "Analyze",
+      "Execute",
+      "Validate",
+      "Report"
+    ],
+    "action_types": [
+      "heal",
+      "optimize",
+      "scale"
+    ],
+    "safety_measures": [
+      "validate",
+      "rollback",
+      "notify",
+      "log"
+    ],
+    "fallbacks": [],
+    "avg_success_rate": 95.76838051698817,
+    "avg_recovery_time_s": 34.0,
+    "execution_count": 0.0
+  },
+  {
+    "name": "PQC Certificate Rotation",
+    "description": "Auto-healing for PQC Certificate Rotation",
+    "playbook_id": "QUANTUM-016",
+    "category": "quantum",
+    "trigger_conditions": [
+      "quantum_trigger"
+    ],
+    "steps": [
+      "Detect",
+      "Analyze",
+      "Execute",
+      "Validate",
+      "Report"
+    ],
+    "action_types": [
+      "heal",
+      "optimize",
+      "scale"
+    ],
+    "safety_measures": [
+      "validate",
+      "rollback",
+      "notify",
+      "log"
+    ],
+    "fallbacks": [],
+    "avg_success_rate": 96.85593630933694,
+    "avg_recovery_time_s": 101.0,
+    "execution_count": 0.0
+  },
+  {
+    "name": "Quantum Threat Assessment",
+    "description": "Auto-healing for Quantum Threat Assessment",
+    "playbook_id": "QUANTUM-017",
+    "category": "quantum",
+    "trigger_conditions": [
+      "quantum_trigger"
+    ],
+    "steps": [
+      "Detect",
+      "Analyze",
+      "Execute",
+      "Validate",
+      "Report"
+    ],
+    "action_types": [
+      "heal",
+      "optimize",
+      "scale"
+    ],
+    "safety_measures": [
+      "validate",
+      "rollback",
+      "notify",
+      "log"
+    ],
+    "fallbacks": [],
+    "avg_success_rate": 95.9864282470394,
+    "avg_recovery_time_s": 75.0,
+    "execution_count": 0.0
+  },
+  {
+    "name": "Hybrid Crypto Scheme",
+    "description": "Auto-healing for Hybrid Crypto Scheme",
+    "playbook_id": "QUANTUM-018",
+    "category": "quantum",
+    "trigger_conditions": [
+      "quantum_trigger"
+    ],
+    "steps": [
+      "Detect",
+      "Analyze",
+      "Execute",
+      "Validate",
+      "Report"
+    ],
+    "action_types": [
+      "heal",
+      "optimize",
+      "scale"
+    ],
+    "safety_measures": [
+      "validate",
+      "rollback",
+      "notify",
+      "log"
+    ],
+    "fallbacks": [],
+    "avg_success_rate": 92.63116402282753,
+    "avg_recovery_time_s": 45.0,
+    "execution_count": 0.0
+  },
+  {
+    "name": "Quantum Random Number Gen",
+    "description": "Auto-healing for Quantum Random Number Gen",
+    "playbook_id": "QUANTUM-019",
+    "category": "quantum",
+    "trigger_conditions": [
+      "quantum_trigger"
+    ],
+    "steps": [
+      "Detect",
+      "Analyze",
+      "Execute",
+      "Validate",
+      "Report"
+    ],
+    "action_types": [
+      "heal",
+      "optimize",
+      "scale"
+    ],
+    "safety_measures": [
+      "validate",
+      "rollback",
+      "notify",
+      "log"
+    ],
+    "fallbacks": [],
+    "avg_success_rate": 94.9495757668283,
+    "avg_recovery_time_s": 82.0,
+    "execution_count": 0.0
+  },
+  {
+    "name": "PQC Compliance Check",
+    "description": "Auto-healing for PQC Compliance Check",
+    "playbook_id": "QUANTUM-020",
+    "category": "quantum",
+    "trigger_conditions": [
+      "quantum_trigger"
+    ],
+    "steps": [
+      "Detect",
+      "Analyze",
+      "Execute",
+      "Validate",
+      "Report"
+    ],
+    "action_types": [
+      "heal",
+      "optimize",
+      "scale"
+    ],
+    "safety_measures": [
+      "validate",
+      "rollback",
+      "notify",
+      "log"
+    ],
+    "fallbacks": [],
+    "avg_success_rate": 94.79826279958039,
+    "avg_recovery_time_s": 73.0,
+    "execution_count": 0.0
+  },
+  {
+    "name": "CPU Spike Emergency Mitigation",
+    "description": "Auto-healing for CPU Spike Emergency Mitigation",
+    "playbook_id": "CORE-001",
+    "category": "core",
+    "trigger_conditions": [
+      "core_trigger"
+    ],
+    "steps": [
+      "Detect",
+      "Analyze",
+      "Execute",
+      "Validate",
+      "Report"
+    ],
+    "action_types": [
+      "heal",
+      "optimize",
+      "scale"
+    ],
+    "safety_measures": [
+      "validate",
+      "rollback",
+      "notify",
+      "log"
+    ],
+    "fallbacks": [],
+    "avg_success_rate": 91.20632081128426,
+    "avg_recovery_time_s": 54.0,
+    "execution_count": 0.0
+  },
+  {
+    "name": "Memory Leak Detection & Fix",
+    "description": "Auto-healing for Memory Leak Detection & Fix",
+    "playbook_id": "CORE-002",
+    "category": "core",
+    "trigger_conditions": [
+      "core_trigger"
+    ],
+    "steps": [
+      "Detect",
+      "Analyze",
+      "Execute",
+      "Validate",
+      "Report"
+    ],
+    "action_types": [
+      "heal",
+      "optimize",
+      "scale"
+    ],
+    "safety_measures": [
+      "validate",
+      "rollback",
+      "notify",
+      "log"
+    ],
+    "fallbacks": [],
+    "avg_success_rate": 93.44823242531126,
+    "avg_recovery_time_s": 109.0,
+    "execution_count": 0.0
+  },
+  {
+    "name": "Network Latency Resolution",
+    "description": "Auto-healing for Network Latency Resolution",
+    "playbook_id": "CORE-003",
+    "category": "core",
+    "trigger_conditions": [
+      "core_trigger"
+    ],
+    "steps": [
+      "Detect",
+      "Analyze",
+      "Execute",
+      "Validate",
+      "Report"
+    ],
+    "action_types": [
+      "heal",
+      "optimize",
+      "scale"
+    ],
+    "safety_measures": [
+      "validate",
+      "rollback",
+      "notify",
+      "log"
+    ],
+    "fallbacks": [],
+    "avg_success_rate": 91.17004829022328,
+    "avg_recovery_time_s": 107.0,
+    "execution_count": 0.0
+  },
+  {
+    "name": "Agent Failure Recovery",
+    "description": "Auto-healing for Agent Failure Recovery",
+    "playbook_id": "CORE-004",
+    "category": "core",
+    "trigger_conditions": [
+      "core_trigger"
+    ],
+    "steps": [
+      "Detect",
+      "Analyze",
+      "Execute",
+      "Validate",
+      "Report"
+    ],
+    "action_types": [
+      "heal",
+      "optimize",
+      "scale"
+    ],
+    "safety_measures": [
+      "validate",
+      "rollback",
+      "notify",
+      "log"
+    ],
+    "fallbacks": [],
+    "avg_success_rate": 99.02304906207517,
+    "avg_recovery_time_s": 87.0,
+    "execution_count": 0.0
+  },
+  {
+    "name": "Database Connection Pool Fix",
+    "description": "Auto-healing for Database Connection Pool Fix",
+    "playbook_id": "CORE-005",
+    "category": "core",
+    "trigger_conditions": [
+      "core_trigger"
+    ],
+    "steps": [
+      "Detect",
+      "Analyze",
+      "Execute",
+      "Validate",
+      "Report"
+    ],
+    "action_types": [
+      "heal",
+      "optimize",
+      "scale"
+    ],
+    "safety_measures": [
+      "validate",
+      "rollback",
+      "notify",
+      "log"
+    ],
+    "fallbacks": [],
+    "avg_success_rate": 97.59762942848663,
+    "avg_recovery_time_s": 99.0,
+    "execution_count": 0.0
+  },
+  {
+    "name": "Disk Space Critical Alert",
+    "description": "Auto-healing for Disk Space Critical Alert",
+    "playbook_id": "CORE-006",
+    "category": "core",
+    "trigger_conditions": [
+      "core_trigger"
+    ],
+    "steps": [
+      "Detect",
+      "Analyze",
+      "Execute",
+      "Validate",
+      "Report"
+    ],
+    "action_types": [
+      "heal",
+      "optimize",
+      "scale"
+    ],
+    "safety_measures": [
+      "validate",
+      "rollback",
+      "notify",
+      "log"
+    ],
+    "fallbacks": [],
+    "avg_success_rate": 97.99809669001145,
+    "avg_recovery_time_s": 85.0,
+    "execution_count": 0.0
+  },
+  {
+    "name": "Service Timeout Prevention",
+    "description": "Auto-healing for Service Timeout Prevention",
+    "playbook_id": "CORE-007",
+    "category": "core",
+    "trigger_conditions": [
+      "core_trigger"
+    ],
+    "steps": [
+      "Detect",
+      "Analyze",
+      "Execute",
+      "Validate",
+      "Report"
+    ],
+    "action_types": [
+      "heal",
+      "optimize",
+      "scale"
+    ],
+    "safety_measures": [
+      "validate",
+      "rollback",
+      "notify",
+      "log"
+    ],
+    "fallbacks": [],
+    "avg_success_rate": 95.57993158217195,
+    "avg_recovery_time_s": 35.0,
+    "execution_count": 0.0
+  },
+  {
+    "name": "API Rate Limit Handler",
+    "description": "Auto-healing for API Rate Limit Handler",
+    "playbook_id": "CORE-008",
+    "category": "core",
+    "trigger_conditions": [
+      "core_trigger"
+    ],
+    "steps": [
+      "Detect",
+      "Analyze",
+      "Execute",
+      "Validate",
+      "Report"
+    ],
+    "action_types": [
+      "heal",
+      "optimize",
+      "scale"
+    ],
+    "safety_measures": [
+      "validate",
+      "rollback",
+      "notify",
+      "log"
+    ],
+    "fallbacks": [],
+    "avg_success_rate": 94.91725085416907,
+    "avg_recovery_time_s": 70.0,
+    "execution_count": 0.0
+  },
+  {
+    "name": "Load Balancer Rebalance",
+    "description": "Auto-healing for Load Balancer Rebalance",
+    "playbook_id": "CORE-009",
+    "category": "core",
+    "trigger_conditions": [
+      "core_trigger"
+    ],
+    "steps": [
+      "Detect",
+      "Analyze",
+      "Execute",
+      "Validate",
+      "Report"
+    ],
+    "action_types": [
+      "heal",
+      "optimize",
+      "scale"
+    ],
+    "safety_measures": [
+      "validate",
+      "rollback",
+      "notify",
+      "log"
+    ],
+    "fallbacks": [],
+    "avg_success_rate": 94.16018652495544,
+    "avg_recovery_time_s": 85.0,
+    "execution_count": 0.0
+  },
+  {
+    "name": "Config Drift Auto-Correction",
+    "description": "Auto-healing for Config Drift Auto-Correction",
+    "playbook_id": "CORE-010",
+    "category": "core",
+    "trigger_conditions": [
+      "core_trigger"
+    ],
+    "steps": [
+      "Detect",
+      "Analyze",
+      "Execute",
+      "Validate",
+      "Report"
+    ],
+    "action_types": [
+      "heal",
+      "optimize",
+      "scale"
+    ],
+    "safety_measures": [
+      "validate",
+      "rollback",
+      "notify",
+      "log"
+    ],
+    "fallbacks": [],
+    "avg_success_rate": 91.77076917741306,
+    "avg_recovery_time_s": 54.0,
+    "execution_count": 0.0
+  },
+  {
+    "name": "Thread Pool Exhaustion Fix",
+    "description": "Auto-healing for Thread Pool Exhaustion Fix",
+    "playbook_id": "CORE-011",
+    "category": "core",
+    "trigger_conditions": [
+      "core_trigger"
+    ],
+    "steps": [
+      "Detect",
+      "Analyze",
+      "Execute",
+      "Validate",
+      "Report"
+    ],
+    "action_types": [
+      "heal",
+      "optimize",
+      "scale"
+    ],
+    "safety_measures": [
+      "validate",
+      "rollback",
+      "notify",
+      "log"
+    ],
+    "fallbacks": [],
+    "avg_success_rate": 99.44446038638557,
+    "avg_recovery_time_s": 47.0,
+    "execution_count": 0.0
+  },
+  {
+    "name": "Cache Overload Prevention",
+    "description": "Auto-healing for Cache Overload Prevention",
+    "playbook_id": "CORE-012",
+    "category": "core",
+    "trigger_conditions": [
+      "core_trigger"
+    ],
+    "steps": [
+      "Detect",
+      "Analyze",
+      "Execute",
+      "Validate",
+      "Report"
+    ],
+    "action_types": [
+      "heal",
+      "optimize",
+      "scale"
+    ],
+    "safety_measures": [
+      "validate",
+      "rollback",
+      "notify",
+      "log"
+    ],
+    "fallbacks": [],
+    "avg_success_rate": 96.08402770366787,
+    "avg_recovery_time_s": 107.0,
+    "execution_count": 0.0
+  },
+  {
+    "name": "DNS Resolution Failure Fix",
+    "description": "Auto-healing for DNS Resolution Failure Fix",
+    "playbook_id": "CORE-013",
+    "category": "core",
+    "trigger_conditions": [
+      "core_trigger"
+    ],
+    "steps": [
+      "Detect",
+      "Analyze",
+      "Execute",
+      "Validate",
+      "Report"
+    ],
+    "action_types": [
+      "heal",
+      "optimize",
+      "scale"
+    ],
+    "safety_measures": [
+      "validate",
+      "rollback",
+      "notify",
+      "log"
+    ],
+    "fallbacks": [],
+    "avg_success_rate": 94.01303903118969,
+    "avg_recovery_time_s": 111.0,
+    "execution_count": 0.0
+  },
+  {
+    "name": "SSL Certificate Auto-Renewal",
+    "description": "Auto-healing for SSL Certificate Auto-Renewal",
+    "playbook_id": "CORE-014",
+    "category": "core",
+    "trigger_conditions": [
+      "core_trigger"
+    ],
+    "steps": [
+      "Detect",
+      "Analyze",
+      "Execute",
+      "Validate",
+      "Report"
+    ],
+    "action_types": [
+      "heal",
+      "optimize",
+      "scale"
+    ],
+    "safety_measures": [
+      "validate",
+      "rollback",
+      "notify",
+      "log"
+    ],
+    "fallbacks": [],
+    "avg_success_rate": 92.24142279772006,
+    "avg_recovery_time_s": 80.0,
+    "execution_count": 0.0
+  },
+  {
+    "name": "Port Exhaustion Recovery",
+    "description": "Auto-healing for Port Exhaustion Recovery",
+    "playbook_id": "CORE-015",
+    "category": "core",
+    "trigger_conditions": [
+      "core_trigger"
+    ],
+    "steps": [
+      "Detect",
+      "Analyze",
+      "Execute",
+      "Validate",
+      "Report"
+    ],
+    "action_types": [
+      "heal",
+      "optimize",
+      "scale"
+    ],
+    "safety_measures": [
+      "validate",
+      "rollback",
+      "notify",
+      "log"
+    ],
+    "fallbacks": [],
+    "avg_success_rate": 99.87734472143379,
+    "avg_recovery_time_s": 103.0,
+    "execution_count": 0.0
+  },
+  {
+    "name": "File Descriptor Leak Fix",
+    "description": "Auto-healing for File Descriptor Leak Fix",
+    "playbook_id": "CORE-016",
+    "category": "core",
+    "trigger_conditions": [
+      "core_trigger"
+    ],
+    "steps": [
+      "Detect",
+      "Analyze",
+      "Execute",
+      "Validate",
+      "Report"
+    ],
+    "action_types": [
+      "heal",
+      "optimize",
+      "scale"
+    ],
+    "safety_measures": [
+      "validate",
+      "rollback",
+      "notify",
+      "log"
+    ],
+    "fallbacks": [],
+    "avg_success_rate": 96.27408573258715,
+    "avg_recovery_time_s": 99.0,
+    "execution_count": 0.0
+  },
+  {
+    "name": "Connection Timeout Handler",
+    "description": "Auto-healing for Connection Timeout Handler",
+    "playbook_id": "CORE-017",
+    "category": "core",
+    "trigger_conditions": [
+      "core_trigger"
+    ],
+    "steps": [
+      "Detect",
+      "Analyze",
+      "Execute",
+      "Validate",
+      "Report"
+    ],
+    "action_types": [
+      "heal",
+      "optimize",
+      "scale"
+    ],
+    "safety_measures": [
+      "validate",
+      "rollback",
+      "notify",
+      "log"
+    ],
+    "fallbacks": [],
+    "avg_success_rate": 97.2172938140514,
+    "avg_recovery_time_s": 110.0,
+    "execution_count": 0.0
+  },
+  {
+    "name": "Process Zombie Cleanup",
+    "description": "Auto-healing for Process Zombie Cleanup",
+    "playbook_id": "CORE-018",
+    "category": "core",
+    "trigger_conditions": [
+      "core_trigger"
+    ],
+    "steps": [
+      "Detect",
+      "Analyze",
+      "Execute",
+      "Validate",
+      "Report"
+    ],
+    "action_types": [
+      "heal",
+      "optimize",
+      "scale"
+    ],
+    "safety_measures": [
+      "validate",
+      "rollback",
+      "notify",
+      "log"
+    ],
+    "fallbacks": [],
+    "avg_success_rate": 92.86336908444812,
+    "avg_recovery_time_s": 87.0,
+    "execution_count": 0.0
+  },
+  {
+    "name": "Swap Space Management",
+    "description": "Auto-healing for Swap Space Management",
+    "playbook_id": "CORE-019",
+    "category": "core",
+    "trigger_conditions": [
+      "core_trigger"
+    ],
+    "steps": [
+      "Detect",
+      "Analyze",
+      "Execute",
+      "Validate",
+      "Report"
+    ],
+    "action_types": [
+      "heal",
+      "optimize",
+      "scale"
+    ],
+    "safety_measures": [
+      "validate",
+      "rollback",
+      "notify",
+      "log"
+    ],
+    "fallbacks": [],
+    "avg_success_rate": 90.90322254861454,
+    "avg_recovery_time_s": 49.0,
+    "execution_count": 0.0
+  },
+  {
+    "name": "Inode Exhaustion Fix",
+    "description": "Auto-healing for Inode Exhaustion Fix",
+    "playbook_id": "CORE-020",
+    "category": "core",
+    "trigger_conditions": [
+      "core_trigger"
+    ],
+    "steps": [
+      "Detect",
+      "Analyze",
+      "Execute",
+      "Validate",
+      "Report"
+    ],
+    "action_types": [
+      "heal",
+      "optimize",
+      "scale"
+    ],
+    "safety_measures": [
+      "validate",
+      "rollback",
+      "notify",
+      "log"
+    ],
+    "fallbacks": [],
+    "avg_success_rate": 96.79520314585083,
+    "avg_recovery_time_s": 101.0,
+    "execution_count": 0.0
+  },
+  {
+    "name": "Log Rotation Emergency",
+    "description": "Auto-healing for Log Rotation Emergency",
+    "playbook_id": "CORE-021",
+    "category": "core",
+    "trigger_conditions": [
+      "core_trigger"
+    ],
+    "steps": [
+      "Detect",
+      "Analyze",
+      "Execute",
+      "Validate",
+      "Report"
+    ],
+    "action_types": [
+      "heal",
+      "optimize",
+      "scale"
+    ],
+    "safety_measures": [
+      "validate",
+      "rollback",
+      "notify",
+      "log"
+    ],
+    "fallbacks": [],
+    "avg_success_rate": 91.37057813755621,
+    "avg_recovery_time_s": 38.0,
+    "execution_count": 0.0
+  },
+  {
+    "name": "Temp File Cleanup",
+    "description": "Auto-healing for Temp File Cleanup",
+    "playbook_id": "CORE-022",
+    "category": "core",
+    "trigger_conditions": [
+      "core_trigger"
+    ],
+    "steps": [
+      "Detect",
+      "Analyze",
+      "Execute",
+      "Validate",
+      "Report"
+    ],
+    "action_types": [
+      "heal",
+      "optimize",
+      "scale"
+    ],
+    "safety_measures": [
+      "validate",
+      "rollback",
+      "notify",
+      "log"
+    ],
+    "fallbacks": [],
+    "avg_success_rate": 90.92072865446386,
+    "avg_recovery_time_s": 82.0,
+    "execution_count": 0.0
+  },
+  {
+    "name": "Container Restart Policy",
+    "description": "Auto-healing for Container Restart Policy",
+    "playbook_id": "CORE-023",
+    "category": "core",
+    "trigger_conditions": [
+      "core_trigger"
+    ],
+    "steps": [
+      "Detect",
+      "Analyze",
+      "Execute",
+      "Validate",
+      "Report"
+    ],
+    "action_types": [
+      "heal",
+      "optimize",
+      "scale"
+    ],
+    "safety_measures": [
+      "validate",
+      "rollback",
+      "notify",
+      "log"
+    ],
+    "fallbacks": [],
+    "avg_success_rate": 99.40869741982348,
+    "avg_recovery_time_s": 46.0,
+    "execution_count": 0.0
+  },
+  {
+    "name": "Service Dependency Check",
+    "description": "Auto-healing for Service Dependency Check",
+    "playbook_id": "CORE-024",
+    "category": "core",
+    "trigger_conditions": [
+      "core_trigger"
+    ],
+    "steps": [
+      "Detect",
+      "Analyze",
+      "Execute",
+      "Validate",
+      "Report"
+    ],
+    "action_types": [
+      "heal",
+      "optimize",
+      "scale"
+    ],
+    "safety_measures": [
+      "validate",
+      "rollback",
+      "notify",
+      "log"
+    ],
+    "fallbacks": [],
+    "avg_success_rate": 99.1737654259219,
+    "avg_recovery_time_s": 84.0,
+    "execution_count": 0.0
+  },
+  {
+    "name": "Health Check Endpoint Fix",
+    "description": "Auto-healing for Health Check Endpoint Fix",
+    "playbook_id": "CORE-025",
+    "category": "core",
+    "trigger_conditions": [
+      "core_trigger"
+    ],
+    "steps": [
+      "Detect",
+      "Analyze",
+      "Execute",
+      "Validate",
+      "Report"
+    ],
+    "action_types": [
+      "heal",
+      "optimize",
+      "scale"
+    ],
+    "safety_measures": [
+      "validate",
+      "rollback",
+      "notify",
+      "log"
+    ],
+    "fallbacks": [],
+    "avg_success_rate": 90.43863372112656,
+    "avg_recovery_time_s": 38.0,
+    "execution_count": 0.0
+  },
+  {
+    "name": "Backup Verification",
+    "description": "Auto-healing for Backup Verification",
+    "playbook_id": "CORE-026",
+    "category": "core",
+    "trigger_conditions": [
+      "core_trigger"
+    ],
+    "steps": [
+      "Detect",
+      "Analyze",
+      "Execute",
+      "Validate",
+      "Report"
+    ],
+    "action_types": [
+      "heal",
+      "optimize",
+      "scale"
+    ],
+    "safety_measures": [
+      "validate",
+      "rollback",
+      "notify",
+      "log"
+    ],
+    "fallbacks": [],
+    "avg_success_rate": 90.05727299589564,
+    "avg_recovery_time_s": 87.0,
+    "execution_count": 0.0
+  },
+  {
+    "name": "Firewall Rule Update",
+    "description": "Auto-healing for Firewall Rule Update",
+    "playbook_id": "CORE-027",
+    "category": "core",
+    "trigger_conditions": [
+      "core_trigger"
+    ],
+    "steps": [
+      "Detect",
+      "Analyze",
+      "Execute",
+      "Validate",
+      "Report"
+    ],
+    "action_types": [
+      "heal",
+      "optimize",
+      "scale"
+    ],
+    "safety_measures": [
+      "validate",
+      "rollback",
+      "notify",
+      "log"
+    ],
+    "fallbacks": [],
+    "avg_success_rate": 99.6919278576863,
+    "avg_recovery_time_s": 92.0,
+    "execution_count": 0.0
+  },
+  {
+    "name": "Resource Quota Enforcement",
+    "description": "Auto-healing for Resource Quota Enforcement",
+    "playbook_id": "CORE-028",
+    "category": "core",
+    "trigger_conditions": [
+      "core_trigger"
+    ],
+    "steps": [
+      "Detect",
+      "Analyze",
+      "Execute",
+      "Validate",
+      "Report"
+    ],
+    "action_types": [
+      "heal",
+      "optimize",
+      "scale"
+    ],
+    "safety_measures": [
+      "validate",
+      "rollback",
+      "notify",
+      "log"
+    ],
+    "fallbacks": [],
+    "avg_success_rate": 96.22831325763887,
+    "avg_recovery_time_s": 36.0,
+    "execution_count": 0.0
+  },
+  {
+    "name": "Monitoring Alert Routing",
+    "description": "Auto-healing for Monitoring Alert Routing",
+    "playbook_id": "CORE-029",
+    "category": "core",
+    "trigger_conditions": [
+      "core_trigger"
+    ],
+    "steps": [
+      "Detect",
+      "Analyze",
+      "Execute",
+      "Validate",
+      "Report"
+    ],
+    "action_types": [
+      "heal",
+      "optimize",
+      "scale"
+    ],
+    "safety_measures": [
+      "validate",
+      "rollback",
+      "notify",
+      "log"
+    ],
+    "fallbacks": [],
+    "avg_success_rate": 91.1185521679039,
+    "avg_recovery_time_s": 77.0,
+    "execution_count": 0.0
+  },
+  {
+    "name": "Circuit Breaker Activation",
+    "description": "Auto-healing for Circuit Breaker Activation",
+    "playbook_id": "CORE-030",
+    "category": "core",
+    "trigger_conditions": [
+      "core_trigger"
+    ],
+    "steps": [
+      "Detect",
+      "Analyze",
+      "Execute",
+      "Validate",
+      "Report"
+    ],
+    "action_types": [
+      "heal",
+      "optimize",
+      "scale"
+    ],
+    "safety_measures": [
+      "validate",
+      "rollback",
+      "notify",
+      "log"
+    ],
+    "fallbacks": [],
+    "avg_success_rate": 94.6639572695583,
+    "avg_recovery_time_s": 93.0,
+    "execution_count": 0.0
+  },
+  {
+    "name": "Cascading Failure Prevention",
+    "description": "Auto-healing for Cascading Failure Prevention",
+    "playbook_id": "ADV-001",
+    "category": "advanced",
+    "trigger_conditions": [
+      "advanced_trigger"
+    ],
+    "steps": [
+      "Detect",
+      "Analyze",
+      "Execute",
+      "Validate",
+      "Report"
+    ],
+    "action_types": [
+      "heal",
+      "optimize",
+      "scale"
+    ],
+    "safety_measures": [
+      "validate",
+      "rollback",
+      "notify",
+      "log"
+    ],
+    "fallbacks": [],
+    "avg_success_rate": 90.67335943276467,
+    "avg_recovery_time_s": 99.0,
+    "execution_count": 0.0
+  },
+  {
+    "name": "Zero-Downtime Deployment",
+    "description": "Auto-healing for Zero-Downtime Deployment",
+    "playbook_id": "ADV-002",
+    "category": "advanced",
+    "trigger_conditions": [
+      "advanced_trigger"
+    ],
+    "steps": [
+      "Detect",
+      "Analyze",
+      "Execute",
+      "Validate",
+      "Report"
+    ],
+    "action_types": [
+      "heal",
+      "optimize",
+      "scale"
+    ],
+    "safety_measures": [
+      "validate",
+      "rollback",
+      "notify",
+      "log"
+    ],
+    "fallbacks": [],
+    "avg_success_rate": 91.73563953970302,
+    "avg_recovery_time_s": 33.0,
+    "execution_count": 0.0
+  },
+  {
+    "name": "Predictive Auto-Scaling",
+    "description": "Auto-healing for Predictive Auto-Scaling",
+    "playbook_id": "ADV-003",
+    "category": "advanced",
+    "trigger_conditions": [
+      "advanced_trigger"
+    ],
+    "steps": [
+      "Detect",
+      "Analyze",
+      "Execute",
+      "Validate",
+      "Report"
+    ],
+    "action_types": [
+      "heal",
+      "optimize",
+      "scale"
+    ],
+    "safety_measures": [
+      "validate",
+      "rollback",
+      "notify",
+      "log"
+    ],
+    "fallbacks": [],
+    "avg_success_rate": 99.32575201316577,
+    "avg_recovery_time_s": 86.0,
+    "execution_count": 0.0
+  },
+  {
+    "name": "Data Consistency Validation",
+    "description": "Auto-healing for Data Consistency Validation",
+    "playbook_id": "ADV-004",
+    "category": "advanced",
+    "trigger_conditions": [
+      "advanced_trigger"
+    ],
+    "steps": [
+      "Detect",
+      "Analyze",
+      "Execute",
+      "Validate",
+      "Report"
+    ],
+    "action_types": [
+      "heal",
+      "optimize",
+      "scale"
+    ],
+    "safety_measures": [
+      "validate",
+      "rollback",
+      "notify",
+      "log"
+    ],
+    "fallbacks": [],
+    "avg_success_rate": 94.90986966666132,
+    "avg_recovery_time_s": 108.0,
+    "execution_count": 0.0
+  },
+  {
+    "name": "Service Mesh Optimization",
+    "description": "Auto-healing for Service Mesh Optimization",
+    "playbook_id": "ADV-005",
+    "category": "advanced",
+    "trigger_conditions": [
+      "advanced_trigger"
+    ],
+    "steps": [
+      "Detect",
+      "Analyze",
+      "Execute",
+      "Validate",
+      "Report"
+    ],
+    "action_types": [
+      "heal",
+      "optimize",
+      "scale"
+    ],
+    "safety_measures": [
+      "validate",
+      "rollback",
+      "notify",
+      "log"
+    ],
+    "fallbacks": [],
+    "avg_success_rate": 98.75064285219092,
+    "avg_recovery_time_s": 54.0,
+    "execution_count": 0.0
+  },
+  {
+    "name": "Container Orchestration Heal",
+    "description": "Auto-healing for Container Orchestration Heal",
+    "playbook_id": "ADV-006",
+    "category": "advanced",
+    "trigger_conditions": [
+      "advanced_trigger"
+    ],
+    "steps": [
+      "Detect",
+      "Analyze",
+      "Execute",
+      "Validate",
+      "Report"
+    ],
+    "action_types": [
+      "heal",
+      "optimize",
+      "scale"
+    ],
+    "safety_measures": [
+      "validate",
+      "rollback",
+      "notify",
+      "log"
+    ],
+    "fallbacks": [],
+    "avg_success_rate": 99.14746917003987,
+    "avg_recovery_time_s": 60.0,
+    "execution_count": 0.0
+  },
+  {
+    "name": "ML Model Drift Detection",
+    "description": "Auto-healing for ML Model Drift Detection",
+    "playbook_id": "ADV-007",
+    "category": "advanced",
+    "trigger_conditions": [
+      "advanced_trigger"
+    ],
+    "steps": [
+      "Detect",
+      "Analyze",
+      "Execute",
+      "Validate",
+      "Report"
+    ],
+    "action_types": [
+      "heal",
+      "optimize",
+      "scale"
+    ],
+    "safety_measures": [
+      "validate",
+      "rollback",
+      "notify",
+      "log"
+    ],
+    "fallbacks": [],
+    "avg_success_rate": 92.39651264127997,
+    "avg_recovery_time_s": 94.0,
+    "execution_count": 0.0
+  },
+  {
+    "name": "Cache Invalidation Strategy",
+    "description": "Auto-healing for Cache Invalidation Strategy",
+    "playbook_id": "ADV-008",
+    "category": "advanced",
+    "trigger_conditions": [
+      "advanced_trigger"
+    ],
+    "steps": [
+      "Detect",
+      "Analyze",
+      "Execute",
+      "Validate",
+      "Report"
+    ],
+    "action_types": [
+      "heal",
+      "optimize",
+      "scale"
+    ],
+    "safety_measures": [
+      "validate",
+      "rollback",
+      "notify",
+      "log"
+    ],
+    "fallbacks": [],
+    "avg_success_rate": 92.59819719999075,
+    "avg_recovery_time_s": 117.0,
+    "execution_count": 0.0
+  },
+  {
+    "name": "Distributed Lock Resolution",
+    "description": "Auto-healing for Distributed Lock Resolution",
+    "playbook_id": "ADV-009",
+    "category": "advanced",
+    "trigger_conditions": [
+      "advanced_trigger"
+    ],
+    "steps": [
+      "Detect",
+      "Analyze",
+      "Execute",
+      "Validate",
+      "Report"
+    ],
+    "action_types": [
+      "heal",
+      "optimize",
+      "scale"
+    ],
+    "safety_measures": [
+      "validate",
+      "rollback",
+      "notify",
+      "log"
+    ],
+    "fallbacks": [],
+    "avg_success_rate": 90.99201635867354,
+    "avg_recovery_time_s": 93.0,
+    "execution_count": 0.0
+  },
+  {
+    "name": "Event Stream Backpressure",
+    "description": "Auto-healing for Event Stream Backpressure",
+    "playbook_id": "ADV-010",
+    "category": "advanced",
+    "trigger_conditions": [
+      "advanced_trigger"
+    ],
+    "steps": [
+      "Detect",
+      "Analyze",
+      "Execute",
+      "Validate",
+      "Report"
+    ],
+    "action_types": [
+      "heal",
+      "optimize",
+      "scale"
+    ],
+    "safety_measures": [
+      "validate",
+      "rollback",
+      "notify",
+      "log"
+    ],
+    "fallbacks": [],
+    "avg_success_rate": 98.29033551438559,
+    "avg_recovery_time_s": 104.0,
+    "execution_count": 0.0
+  },
+  {
+    "name": "Key Rotation Automation",
+    "description": "Automated Key Rotation Automation playbook",
+    "playbook_id": "PB-PQC-003",
+    "category": "quantum",
+    "trigger_conditions": [
+      "quantum_vulnerability_detected"
+    ],
+    "steps": [
+      "Detect anomaly",
+      "Analyze root cause",
+      "Execute remediation",
+      "Validate fix",
+      "Update metrics"
+    ],
+    "action_types": [
+      "restart",
+      "scale",
+      "optimize",
+      "recycle"
+    ],
+    "safety_measures": [
+      "backup_before_action",
+      "validate_impact"
+    ],
+    "fallbacks": [],
+    "avg_success_rate": 95.0,
+    "avg_recovery_time_s": 120.0,
+    "execution_count": 0.0
+  },
+  {
+    "name": "Hybrid Crypto Deployer",
+    "description": "Automated Hybrid Crypto Deployer playbook",
+    "playbook_id": "PB-PQC-002",
+    "category": "quantum",
+    "trigger_conditions": [
+      "quantum_vulnerability_detected"
+    ],
+    "steps": [
+      "Detect anomaly",
+      "Analyze root cause",
+      "Execute remediation",
+      "Validate fix",
+      "Update metrics"
+    ],
+    "action_types": [
+      "restart",
+      "scale",
+      "optimize",
+      "recycle"
+    ],
+    "safety_measures": [
+      "backup_before_action",
+      "validate_impact"
+    ],
+    "fallbacks": [],
+    "avg_success_rate": 95.0,
+    "avg_recovery_time_s": 120.0,
+    "execution_count": 0.0
+  },
+  {
+    "name": "PQC Migration Orchestrator",
+    "description": "Automated PQC Migration Orchestrator playbook",
+    "playbook_id": "PB-PQC-001",
+    "category": "quantum",
+    "trigger_conditions": [
+      "quantum_vulnerability_detected"
+    ],
+    "steps": [
+      "Detect anomaly",
+      "Analyze root cause",
+      "Execute remediation",
+      "Validate fix",
+      "Update metrics"
+    ],
+    "action_types": [
+      "restart",
+      "scale",
+      "optimize",
+      "recycle"
+    ],
+    "safety_measures": [
+      "backup_before_action",
+      "validate_impact"
+    ],
+    "fallbacks": [],
+    "avg_success_rate": 95.0,
+    "avg_recovery_time_s": 120.0,
+    "execution_count": 0.0
+  },
+  {
+    "name": "Canary Deployment Rollback",
+    "description": "Automated Canary Deployment Rollback playbook",
+    "playbook_id": "PB-009",
+    "category": "advanced",
+    "trigger_conditions": [
+      "canary_failure"
+    ],
+    "steps": [
+      "Detect anomaly",
+      "Analyze root cause",
+      "Execute remediation",
+      "Validate fix",
+      "Update metrics"
+    ],
+    "action_types": [
+      "restart",
+      "scale",
+      "optimize",
+      "recycle"
+    ],
+    "safety_measures": [
+      "backup_before_action",
+      "validate_impact"
+    ],
+    "fallbacks": [],
+    "avg_success_rate": 95.0,
+    "avg_recovery_time_s": 120.0,
+    "execution_count": 0.0
+  },
+  {
+    "name": "DDoS Mitigator",
+    "description": "Automated DDoS Mitigator playbook",
+    "playbook_id": "PB-008",
+    "category": "security",
+    "trigger_conditions": [
+      "ddos_attack"
+    ],
+    "steps": [
+      "Detect anomaly",
+      "Analyze root cause",
+      "Execute remediation",
+      "Validate fix",
+      "Update metrics"
+    ],
+    "action_types": [
+      "restart",
+      "scale",
+      "optimize",
+      "recycle"
+    ],
+    "safety_measures": [
+      "backup_before_action",
+      "validate_impact"
+    ],
+    "fallbacks": [],
+    "avg_success_rate": 95.0,
+    "avg_recovery_time_s": 120.0,
+    "execution_count": 0.0
+  },
+  {
+    "name": "Config Drift Corrector",
+    "description": "Automated Config Drift Corrector playbook",
+    "playbook_id": "PB-007",
+    "category": "advanced",
+    "trigger_conditions": [
+      "config_drift"
+    ],
+    "steps": [
+      "Detect anomaly",
+      "Analyze root cause",
+      "Execute remediation",
+      "Validate fix",
+      "Update metrics"
+    ],
+    "action_types": [
+      "restart",
+      "scale",
+      "optimize",
+      "recycle"
+    ],
+    "safety_measures": [
+      "backup_before_action",
+      "validate_impact"
+    ],
+    "fallbacks": [],
+    "avg_success_rate": 95.0,
+    "avg_recovery_time_s": 120.0,
+    "execution_count": 0.0
+  },
+  {
+    "name": "Database Performance Tuner",
+    "description": "Automated Database Performance Tuner playbook",
+    "playbook_id": "PB-006",
+    "category": "advanced",
+    "trigger_conditions": [
+      "database_slow"
+    ],
+    "steps": [
+      "Detect anomaly",
+      "Analyze root cause",
+      "Execute remediation",
+      "Validate fix",
+      "Update metrics"
+    ],
+    "action_types": [
+      "restart",
+      "scale",
+      "optimize",
+      "recycle"
+    ],
+    "safety_measures": [
+      "backup_before_action",
+      "validate_impact"
+    ],
+    "fallbacks": [],
+    "avg_success_rate": 95.0,
+    "avg_recovery_time_s": 120.0,
+    "execution_count": 0.0
+  },
+  {
+    "name": "Load Rebalancer",
+    "description": "Automated Load Rebalancer playbook",
+    "playbook_id": "PB-005",
+    "category": "advanced",
+    "trigger_conditions": [
+      "cascading_failure"
+    ],
+    "steps": [
+      "Detect anomaly",
+      "Analyze root cause",
+      "Execute remediation",
+      "Validate fix",
+      "Update metrics"
+    ],
+    "action_types": [
+      "restart",
+      "scale",
+      "optimize",
+      "recycle"
+    ],
+    "safety_measures": [
+      "backup_before_action",
+      "validate_impact"
+    ],
+    "fallbacks": [],
+    "avg_success_rate": 95.0,
+    "avg_recovery_time_s": 120.0,
+    "execution_count": 0.0
+  },
+  {
+    "name": "Network Latency Optimizer",
+    "description": "Automated Network Latency Optimizer playbook",
+    "playbook_id": "PB-004",
+    "category": "core",
+    "trigger_conditions": [
+      "network_latency"
+    ],
+    "steps": [
+      "Detect anomaly",
+      "Analyze root cause",
+      "Execute remediation",
+      "Validate fix",
+      "Update metrics"
+    ],
+    "action_types": [
+      "restart",
+      "scale",
+      "optimize",
+      "recycle"
+    ],
+    "safety_measures": [
+      "backup_before_action",
+      "validate_impact"
+    ],
+    "fallbacks": [],
+    "avg_success_rate": 95.0,
+    "avg_recovery_time_s": 120.0,
+    "execution_count": 0.0
+  },
+  {
+    "name": "Agent Failure Recovery",
+    "description": "Automated Agent Failure Recovery playbook",
+    "playbook_id": "PB-003",
+    "category": "core",
+    "trigger_conditions": [
+      "agent_failure"
+    ],
+    "steps": [
+      "Detect anomaly",
+      "Analyze root cause",
+      "Execute remediation",
+      "Validate fix",
+      "Update metrics"
+    ],
+    "action_types": [
+      "restart",
+      "scale",
+      "optimize",
+      "recycle"
+    ],
+    "safety_measures": [
+      "backup_before_action",
+      "validate_impact"
+    ],
+    "fallbacks": [],
+    "avg_success_rate": 95.0,
+    "avg_recovery_time_s": 120.0,
+    "execution_count": 0.0
+  },
+  {
+    "name": "Memory Leak Recycler",
+    "description": "Automated Memory Leak Recycler playbook",
+    "playbook_id": "PB-002",
+    "category": "core",
+    "trigger_conditions": [
+      "memory_leak"
+    ],
+    "steps": [
+      "Detect anomaly",
+      "Analyze root cause",
+      "Execute remediation",
+      "Validate fix",
+      "Update metrics"
+    ],
+    "action_types": [
+      "restart",
+      "scale",
+      "optimize",
+      "recycle"
+    ],
+    "safety_measures": [
+      "backup_before_action",
+      "validate_impact"
+    ],
+    "fallbacks": [],
+    "avg_success_rate": 95.0,
+    "avg_recovery_time_s": 120.0,
+    "execution_count": 0.0
+  },
+  {
+    "name": "CPU Spike Handler",
+    "description": "Automated CPU Spike Handler playbook",
+    "playbook_id": "PB-001",
+    "category": "core",
+    "trigger_conditions": [
+      "cpu_spike"
+    ],
+    "steps": [
+      "Detect anomaly",
+      "Analyze root cause",
+      "Execute remediation",
+      "Validate fix",
+      "Update metrics"
+    ],
+    "action_types": [
+      "restart",
+      "scale",
+      "optimize",
+      "recycle"
+    ],
+    "safety_measures": [
+      "backup_before_action",
+      "validate_impact"
+    ],
+    "fallbacks": [],
+    "avg_success_rate": 95.0,
+    "avg_recovery_time_s": 120.0,
+    "execution_count": 0.0
+  }
+]
