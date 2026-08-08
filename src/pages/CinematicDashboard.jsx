@@ -87,7 +87,7 @@ export default function CinematicDashboard() {
       <header className="border-b border-green-900 px-6 py-3 flex items-center justify-between bg-black/90 relative z-30">
         <div className="flex items-center gap-3">
           <div className="h-2 w-2 rounded-full bg-green-400 animate-pulse" />
-          <span className="text-green-300 text-sm tracking-widest font-bold">HYPERCHAIN TREASURY X∞</span>
+          <span className="text-green-300 text-sm tracking-widest font-bold">ISO20022 UNIVERSAL BRIDGE</span>
           <span className="text-green-700 text-xs">// SCRIBE PROTOCOL ACTIVE</span>
         </div>
         <div className="flex items-center gap-6 text-xs">

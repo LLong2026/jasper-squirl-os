@@ -28,7 +28,7 @@ Deno.serve(async (req) => {
     "690bf3e9cf37db7868503c17", // SHIB-Forge
     "6a1c693566007b13a4192ac3", // Cardano Forge
     "6908258dca189dc72b0b72c2", // QuantumLedger Orchestrator
-    "688c037bf9a76b56e24adcb0", // HyperChain Treasury
+    "688c037bf9a76b56e24adcb0", // ISO20022 Universal Bridge
     "6a247e79e0a6160ec2b5c487", // Jasper OS
     "693d9a99ca82e178be7bca1b", // Jasper
     "69112155cd8439e414cd9fe8", // Amelia
@@ -68,7 +68,7 @@ Deno.serve(async (req) => {
     "690bf3e9cf37db7868503c17": "SHIB-Forge",
     "6a1c693566007b13a4192ac3": "Cardano Forge",
     "6908258dca189dc72b0b72c2": "QuantumLedger Orchestrator",
-    "688c037bf9a76b56e24adcb0": "HyperChain Treasury",
+    "688c037bf9a76b56e24adcb0": "ISO20022 Universal Bridge",
     "6a247e79e0a6160ec2b5c487": "Jasper OS",
     "693d9a99ca82e178be7bca1b": "Jasper",
     "69112155cd8439e414cd9fe8": "Amelia",

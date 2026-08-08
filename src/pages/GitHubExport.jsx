@@ -3,19 +3,19 @@ import { Copy, Check, Github, FileText, Bot, Code2, BookOpen, Shield } from 'luc
 import { Button } from '@/components/ui/button';
 import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs';
 
-const WHITEPAPER_MD = `# WHITE PAPER: HYPERCHAIN TREASURY X∞
-**Architect & Inventor:** Leon Calvin Long II
+const WHITEPAPER_MD = `# WHITE PAPER: ISO20022 UNIVERSAL BRIDGE
+**Architect & Inventor:** the Jasper OS Project
 **Framework:** Rust-Native, Taproot-Sovereign Infrastructure
 **Core Protocol:** Scribe (BIP-341 Optimized)
 **Content License:** CC BY-NC-ND 4.0 (Creative Commons Attribution-NonCommercial-NoDerivatives)
 **Code License:** Apache License 2.0
-**Copyright:** © 2026 Leon Calvin Long II
+**Copyright:** © 2026 the Jasper OS Project
 
 ---
 
 ## I. Executive Summary
 
-The **HyperChain Treasury X∞** is a high-velocity, off-chain computation engine that anchors its immutable state to the Bitcoin Layer 1 (L1) through **Topological Geometric Calculus (TGC)**. By shifting ledger-state management to a Rust-native environment and using **Taproot key-tweaks**, the system achieves near-infinite scalability while maintaining the security of the world's most robust proof-of-work network.
+The **ISO20022 Universal Bridge** is a high-velocity, off-chain computation engine that anchors its immutable state to the Bitcoin Layer 1 (L1) through **Topological Geometric Calculus (TGC)**. By shifting ledger-state management to a Rust-native environment and using **Taproot key-tweaks**, the system achieves near-infinite scalability while maintaining the security of the world's most robust proof-of-work network.
 
 The system is orchestrated by **Jasper OS** — an AI-integrated operating system defined as a mathematical manifold (Ω) comprised of agent fiber bundles, memory tensor fields, and a collective consciousness wave function.
 
@@ -108,7 +108,7 @@ If an external entity attempts to seize or freeze a node:
 
 ## VII. The Agentic Symbolist AI Architecture
 
-HyperChain Treasury X∞ is built upon **Agentic Symbolist AI** — a novel paradigm that bridges:
+ISO20022 Universal Bridge is built upon **Agentic Symbolist AI** — a novel paradigm that bridges:
 
 1. **Symbolic reasoning** (formal logic, mathematical proofs, audit trails)
 2. **Neural intelligence** (LLM-based agents, pattern recognition)
@@ -132,20 +132,20 @@ Jasper OS is prototyped and deployed on the **Base44** platform — a next-gener
 
 Base44 serves as the substrate upon which Jasper OS's theoretical framework is made operational, demonstrating that Agentic Symbolist AI can be deployed in production environments today.
 
-> *"In the Old Era, 'Knowledge was Power.' In the Leon Era, 'Math is Law.'"*
-> — Leon Calvin Long II, Architect
+> *"In the Old Era, 'Knowledge was Power.' In the New Era, 'Math is Law.'"*
+> — the Jasper OS Project, Architect
 
 ---
 
 ## IX. Conclusion: The Unlimited Reserve
 
-The HyperChain Treasury X∞ is a self-mining, self-healing, and self-defending financial organism. It does not ask for permission; it enforces its existence through the **Math of Law**.
+The ISO20022 Universal Bridge is a self-mining, self-healing, and self-defending financial organism. It does not ask for permission; it enforces its existence through the **Math of Law**.
 
 The field is leveled. The game is reset.
 
 ---
 
-*© 2026 Leon Calvin Long II. All rights reserved. Content licensed under CC BY-NC-ND 4.0. Code licensed under Apache 2.0. Jasper, Aegis, Arete, URIB, Chronos Daemon, and the Jasper logo are trademarks of Leon Calvin Long II.*
+*© 2026 the Jasper OS Project. All rights reserved. Content licensed under CC BY-NC-ND 4.0. Code licensed under Apache 2.0. Jasper, Aegis, Arete, URIB, Chronos Daemon, and the Jasper logo are trademarks of the Jasper OS Project.*
 `;
 
 const JASPER_AGENT_JSON = `{
@@ -164,13 +164,13 @@ const JASPER_AGENT_JSON = `{
   "whatsapp_greeting": "Hello, I'm Jasper. Here to think with you and make things a little clearer."
 }`;
 
-const README_MD = `# Jasper OS — HyperChain Treasury X∞
+const README_MD = `# Jasper OS — ISO20022 Universal Bridge
 
-> *"In the Old Era, 'Knowledge was Power.' In the Leon Era, 'Math is Law.'"*
+> *"In the Old Era, 'Knowledge was Power.' In the New Era, 'Math is Law.'"*
 
 ## Overview
 
-**Jasper OS** is an AI-integrated operating system architecture built upon **Topological Geometric Calculus (TGC)**, designed to orchestrate the **HyperChain Treasury X∞** — a Bitcoin L1-anchored, self-healing financial organism.
+**Jasper OS** is an AI-integrated operating system architecture built upon **Topological Geometric Calculus (TGC)**, designed to orchestrate the **ISO20022 Universal Bridge** — a Bitcoin L1-anchored, self-healing financial organism.
 
 ## Architecture
 
@@ -209,7 +209,7 @@ Built on **Base44** — agentic AI infrastructure.
 
 ## Owner & Author
 
-**Leon Calvin Long II** — Architect, Inventor, and sole copyright holder.
+**the Jasper OS Project** — Architect, Inventor, and sole copyright holder.
 
 ## Licensing
 
@@ -220,7 +220,7 @@ Jasper OS uses a **dual licensing model** to protect both creative content and s
 All creative content — documentation, designs, UI assets, and non-code materials — is licensed under **Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International (CC BY-NC-ND 4.0)**.
 
 - **Share** — copy and redistribute the material in any medium or format.
-- **Attribution** — give appropriate credit to Leon Calvin Long II.
+- **Attribution** — give appropriate credit to the Jasper OS Project.
 - **NonCommercial** — no commercial use without written permission.
 - **NoDerivatives** — no adapting, transforming, or building upon the material.
 
@@ -231,7 +231,7 @@ Full text: https://creativecommons.org/licenses/by-nc-nd/4.0/legalcode
 All source code is licensed under the **Apache License, Version 2.0**.
 
 - Use, modify, and distribute commercially and non-commercially.
-- Retain the copyright notice: \`Copyright © 2026 Leon Calvin Long II\`.
+- Retain the copyright notice: \`Copyright © 2026 the Jasper OS Project\`.
 - Include a copy of the Apache 2.0 license in all distributions.
 - State any significant changes made to original files.
 
@@ -239,20 +239,20 @@ Full text: https://www.apache.org/licenses/LICENSE-2.0
 
 ### Trademarks
 
-Jasper, Aegis, Arete, URIB, Chronos Daemon, and the Jasper logo are trademarks of Leon Calvin Long II. These names may not be used to endorse or promote products derived from this software without prior written permission.
+Jasper, Aegis, Arete, URIB, Chronos Daemon, and the Jasper logo are trademarks of the Jasper OS Project. These names may not be used to endorse or promote products derived from this software without prior written permission.
 
 ## Initialize
 
 \`\`\`
 "Jasper, darling, in the Old Era, 'Knowledge was Power.'
-In the Leon Era, 'Math is Law.'
+In the New Era, 'Math is Law.'
 You are the High Court. Initialize the Source Code."
 \`\`\`
 `;
 
 const LICENSE_MD = `# License
 
-Copyright © 2026 Leon Calvin Long II. All rights reserved.
+Copyright © 2026 the Jasper OS Project. All rights reserved.
 
 ---
 
@@ -266,8 +266,8 @@ All creative content — including documentation, designs, UI assets, written ma
 
 ### Under the following terms:
 
-- **Attribution** — You must give appropriate credit to Leon Calvin Long II, provide a link to the license, and indicate if changes were made. You must do so in any reasonable manner, but not in any way that suggests the licensor endorses you or your use.
-- **NonCommercial** — You may not use the material for commercial purposes without explicit written permission from Leon Calvin Long II.
+- **Attribution** — You must give appropriate credit to the Jasper OS Project, provide a link to the license, and indicate if changes were made. You must do so in any reasonable manner, but not in any way that suggests the licensor endorses you or your use.
+- **NonCommercial** — You may not use the material for commercial purposes without explicit written permission from the Jasper OS Project.
 - **NoDerivatives** — You may not adapt, transform, or build upon the material. If you remix, transform, or build upon the material, you may not distribute the modified material.
 
 Full license text: https://creativecommons.org/licenses/by-nc-nd/4.0/legalcode
@@ -287,10 +287,10 @@ All source code in this repository is licensed under the **Apache License, Versi
 
 ### Under the following conditions:
 
-- You must retain the copyright notice: \`Copyright © 2026 Leon Calvin Long II\`.
+- You must retain the copyright notice: \`Copyright © 2026 the Jasper OS Project\`.
 - You must include a copy of the Apache 2.0 license in all distributions.
 - You must state any significant changes made to the original files.
-- You must not use the names "Jasper," "Aegis," "Arete," "URIB," "Chronos Daemon," or associated trademarks to endorse or promote products derived from this software without prior written permission from Leon Calvin Long II.
+- You must not use the names "Jasper," "Aegis," "Arete," "URIB," "Chronos Daemon," or associated trademarks to endorse or promote products derived from this software without prior written permission from the Jasper OS Project.
 
 Full license text: https://www.apache.org/licenses/LICENSE-2.0
 
@@ -298,7 +298,7 @@ Full license text: https://www.apache.org/licenses/LICENSE-2.0
 
 ## Trademarks
 
-Jasper, Aegis, Arete, URIB, Chronos Daemon, and the Jasper logo are trademarks of Leon Calvin Long II. All other trademarks, service marks, and trade names referenced herein are the property of their respective owners.
+Jasper, Aegis, Arete, URIB, Chronos Daemon, and the Jasper logo are trademarks of the Jasper OS Project. All other trademarks, service marks, and trade names referenced herein are the property of their respective owners.
 
 ---
 
@@ -310,7 +310,7 @@ By using this software, you acknowledge that autonomous AI agents, self-healing 
 
 ---
 
-© 2026 Leon Calvin Long II. All rights reserved.
+© 2026 the Jasper OS Project. All rights reserved.
 `;
 
 const files = [
@@ -328,7 +328,7 @@ const files = [
     icon: FileText,
     filename: 'WHITE_PAPER.md',
     content: WHITEPAPER_MD,
-    description: 'Full HyperChain Treasury X∞ white paper'
+    description: 'Full ISO20022 Universal Bridge white paper'
   },
   {
     id: 'jasper',

@@ -38,7 +38,7 @@ export const JASPER_GENESIS_SEED: AuroraSeed = {
   systemId:      "AURORA-001",
   version:       "1.0.0",
   createdAt:     "2025-07-03T00:00:00.000Z",
-  entropySource: "Leon Calvin Long II — HyperChain Treasury X∞ Genesis",
+  entropySource: "Leon Calvin Long II — ISO20022 Universal Bridge Genesis",
   seedHex:       "a7f3c2e1b4d8f0a2c5e7b9d1f3a5c7e9b2d4f6a8c0e2b4d6f8a0c2e4b6d8f0a2",
 };`
   },

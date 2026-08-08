@@ -15,7 +15,7 @@ const LICENSES = [
 You are free to:
 • Share — copy and redistribute the material in any medium or format.
 Under the following terms:
-• Attribution — You must give appropriate credit to Leon Calvin Long II, provide a link to the license, and indicate if changes were made. You must do so in any reasonable manner, but not in any way that suggests the licensor endorses you or your use.
+• Attribution — You must give appropriate credit to the Jasper OS Project, provide a link to the license, and indicate if changes were made. You must do so in any reasonable manner, but not in any way that suggests the licensor endorses you or your use.
 • NonCommercial — You may not use the material for commercial purposes without explicit written permission.
 • NoDerivatives — You may not adapt, transform, or build upon the material. If you remix, transform, or build upon the material, you may not distribute the modified material.
 
@@ -37,10 +37,10 @@ You are free to:
 • Sublicense — grant a sublicense under a compatible license.
 
 Under the following conditions:
-• You must retain the copyright notice ("Copyright © 2026 Leon Calvin Long II").
+• You must retain the copyright notice ("Copyright © 2026 the Jasper OS Project").
 • You must include a copy of the Apache 2.0 license in all distributions.
 • You must state any significant changes made to the original files.
-• You must not use the names "Jasper," "Aegis," "Arete," or associated trademarks to endorse or promote products derived from this software without prior written permission from Leon Calvin Long II.
+• You must not use the names "Jasper," "Aegis," "Arete," or associated trademarks to endorse or promote products derived from this software without prior written permission from the Jasper OS Project.
 
 Full license text: https://www.apache.org/licenses/LICENSE-2.0`,
     },
@@ -58,7 +58,7 @@ The platform features three core subsystems:
     },
     {
         title: 'Owner & Author',
-        body: `This software is owned and authored by Leon Calvin Long II. All copyright, trademark, and licensing rights are held by Leon Calvin Long II. Third-party contributions are accepted under the terms of the Apache 2.0 license and must include appropriate attribution.`,
+        body: `This software is owned and authored by the Jasper OS Project. All copyright, trademark, and licensing rights are held by the Jasper OS Project. Third-party contributions are accepted under the terms of the Apache 2.0 license and must include appropriate attribution.`,
     },
     {
         title: 'Dual Licensing Model',
@@ -104,7 +104,7 @@ export default function Readme() {
                     </div>
                     <div>
                         <p className="text-sm font-medium text-slate-200">Owner & Author</p>
-                        <p className="text-lg font-bold text-slate-100">Leon Calvin Long II</p>
+                        <p className="text-lg font-bold text-slate-100">the Jasper OS Project</p>
                         <p className="text-xs text-slate-500">Copyright © 2026 — All rights reserved</p>
                     </div>
                 </div>
