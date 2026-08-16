@@ -6,6 +6,9 @@ export default function LegalFooter() {
 
   return (
     <footer className="border-t border-slate-800 bg-slate-950/60 shrink-0">
+      <p className="px-4 py-1 text-[10px] leading-relaxed text-slate-500 italic">
+        This software is a prototype and is provided for educational and research purposes only. It is not intended for production use, commercial deployment, or safety-critical environments. All systems are experimental and may contain defects on them.
+      </p>
       <button
         onClick={() => setExpanded(!expanded)}
         className="w-full flex items-center justify-between gap-2 px-4 py-1.5 text-[10px] text-slate-500 hover:text-slate-300 transition-colors"
