@@ -134,3 +134,10 @@ Squirrel OS aligns with federal research priorities across:
 © 2026 Squirrel OS Technologies / Leon Calvin Long II. All Rights Reserved.
 
 > **Prototype package — starting point to learn from and build on. Licensed tier grants USE rights to 7 patents pending + 5 SBIR tracks, NOT ownership. Buyer completes production hardening.**
+
+---
+## Disclaimer
+
+This software is a prototype and is provided for educational and research purposes only.
+It is not intended for production use, commercial deployment, or safety-critical environments.
+All systems are experimental and may contain defects on them.
